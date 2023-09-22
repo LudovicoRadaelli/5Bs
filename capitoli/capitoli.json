@@ -20,7 +20,15 @@
                 {
                     "titolo": "Equazioni logaritmiche per sostituzione",
                     "nomeCartella": "equazioniLogaritmicheSostituzione"
-                }      
+                },
+                {
+                    "titolo": "Grafico di una funzione logaritmica",
+                    "nomeCartella": "graficoFunzioneLogaritmica"
+                },
+                {
+                    "titolo": "Traslazione del grafico di una funzione logaritmica",
+                    "nomeCartella": "traslazioniGraficoFunzioneLogaritmica"
+                }            
             ]
         }
     ],
