@@ -30,10 +30,8 @@
                     "nomeCartella": "traslazioniGraficoFunzioneLogaritmica"
                 }            
             ]
-        }
-    ],
+        },
 
-    "daSvolgere": [
         {
             "numero": 2,
             "titolo": "Le funzioni",
@@ -53,7 +51,17 @@
                     "numero": "1.3",
                     "titolo": "Rappresentazione grafica di una funzione",
                     "nomeCartella": "1-3graficoFunzione"
-                },
+                }
+            ]
+        }
+    ],
+
+    "daSvolgere": [
+        {
+            "numero": 2,
+            "titolo": "Le funzioni",
+            "nomeCartella": "2funzioni",
+            "paragrafo": [            
                 {
                     "numero": "1.4",
                     "titolo": "Altri esempi di funzione",
