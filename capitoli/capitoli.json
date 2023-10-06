@@ -51,17 +51,7 @@
                     "numero": "1.3",
                     "titolo": "Rappresentazione grafica di una funzione",
                     "nomeCartella": "1-3graficoFunzione"
-                }
-            ]
-        }
-    ],
-
-    "daSvolgere": [
-        {
-            "numero": 2,
-            "titolo": "Le funzioni",
-            "nomeCartella": "2funzioni",
-            "paragrafo": [            
+                },
                 {
                     "numero": "1.4",
                     "titolo": "Altri esempi di funzione",
@@ -86,7 +76,17 @@
                     "numero": "1.8",
                     "titolo": "Dominio di una funzione (3)",
                     "nomeCartella": "1-8dominioFunzioneParte3"
-                },
+                }
+            ]
+        }
+    ],
+
+    "daSvolgere": [
+        {
+            "numero": 2,
+            "titolo": "Le funzioni",
+            "nomeCartella": "2funzioni",
+            "paragrafo": [                           
                 {
                     "numero": "1.9",
                     "titolo": "Segno di una funzione",
