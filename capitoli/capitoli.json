@@ -81,7 +81,34 @@
                         "numero": "1.9",
                         "titolo": "Segno di una funzione",
                         "nomeCartella": "1-9segnoFunzione"
+                    },
+                    {
+                        "numero": "1.10",
+                        "titolo": "Traslazione del grafico di una funzione",
+                        "nomeCartella": "1-10traslazioneGraficoFunzione"
+                    },
+                    {
+                        "numero": "1.11",
+                        "titolo": "Simmetria del grafico di una funzione",
+                        "nomeCartella": "1-11simmetriaGraficoFunzione"
+                    },
+                    {
+                        "numero": "1.12",
+                        "titolo": "Trasformazioni del grafico di una funzione legate al modulo",
+                        "nomeCartella": "1-12trasformazioniLegateALModuloGraficoFunzione"
+                    },
+                    {
+                        "numero": "1.13",
+                        "titolo": "Contrazione del grafico di una funzione",
+                        "nomeCartella": "1-13contrazioneGraficoFunzione"
+                    },
+                    {
+                        "numero": "1.14",
+                        "titolo": "Dilatazione del grafico di una funzione",
+                        "nomeCartella": "1-14dilatazioneGraficoFunzione"
                     }
+
+                    
                 ]
             }
         ],
