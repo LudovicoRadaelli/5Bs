@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <!-- ARGOMENTI SVOLTI -->
+    <!-- <section id="argomenti">
+        <h3 class="blue">Argomenti svolti</h3>
+        <div class="grayBorder">            
+
+            <br>
+
+            <div style="text-align: left;">
+                <b>2) Bliblibli blablabla</b>
+            </div>
+            <div class="gray">
+                [Par. 12.2, 12.3, pag. da 668 a 676]
+                <br>
+                <a class="gray" href="../../../3/goniometria/index.html">dispense</a>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br> -->
+
+
+    <!-- ESERCIZI -->
+
+    <h3 class="green">Esercizio 0</h3>
+    <br>
+    <p>
+        Ripassare i paragrafi 
+        <br>
+        <br>
+        <ul>
+            <li>
+                <b class="blue">Operazioni sui limiti</b> (pagina da 1487 a 1495 del libro di testo).
+            </li>
+            <br>
+            <li>
+                <b class="blue">Limiti di funzioni elementari</b> (<a href="../../capitoli/3limiti/limitiFunzioniElementari/index.html">link</a>)
+            </li>
+        </ul>
+
+       
+        <!-- <ul>
+            <li>
+                <b class="blue">Esempi di funzione</b> (<a href="../../capitoli/2funzioni/1-1primiEsempi/index.html">link</a>)
+            </li>
+            <br>
+            <li>
+                <b class="blue">Notazione</b> (<a href="../../capitoli/2funzioni/1-2notazione/index.html">link</a>)
+            </li>
+            <br>
+            <li>
+                <b class="blue">Rappresentazione grafica di una funzione</b> (<a href="../../capitoli/2funzioni/1-3graficoFunzione/index.html">link</a>)
+            </li>
+        </ul> -->
+    </p>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <h3 class="green">Preludio agli esercizi 1, 2 e 3</h3>
+    <br>
+    <div>
+        Risolviamo il seguente limite. 
+        \[
+            \lim_{x \to +\infty} \left(3x - 5x^2\right)
+        \]
+        Procediamo come al solito per sostuzione:
+        \[
+            ''\,\,\,
+                3 \cdot \left(+\infty\right) - 5\left(+\infty\right)^2 = \color{red}{}+\infty -\infty\color{black}{} \,\,\,=\,\,\, ???
+            \,\,\,''
+        \]
+        La forma \(\color{red}{}+\infty -\infty\) viene detta <b>indeterminata</b>, poiché quando otteniamo tale 
+        forma nel calcolo di un limite, non riusciamo a dedurre il limite della funzione: esso varia da caso a caso.
+        <br>
+        Gli esercizi 1, 2 e  3 sono dedicati a chiarire quasta affermazione.
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        Calcoliamo il limite
+        \[
+            \lim_{x \to +\infty} \left(6x^5 - 2x^3\right)
+        \]
+        Provando a risolvere il limite per sostituzione otteniamo la forma "\(+\infty - \infty\)" (verificatelo).
+        <br>
+        <br>
+        Seguite le seguenti istruzioni per calcolarlo.
+        <br>
+        <br>
+        <ul>
+            <li>
+                Raccogliete a fattor comune \(x^5\) nel polinomio \(6x^5 - 2x^3\).
+                <br>
+                <br>
+                Ricordate, nella parentesi andremo ad inserire i termini che moltplicati per \(x^5\) ci restituiscono il 
+                polinomio di partenza \(6x^5 -2x^3\)
+                \[
+                    6x^5 - 2x^3 = x^5 \, \left(6 - \dfrac{2}{x^2}\right)
+                \]
+            </li>            
+            <li>
+                Effettuate il limite per entrambi i fattori della scomposizione ottenuta e successivamente concludete quale sia il limite 
+                del prodotto.
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Calcolare il limite 
+        \[
+            \lim_{x \to +\infty} \left(5x - 10x^6\right)
+        \]
+        Provando a risolvere il limite per sostituzione otteniamo la forma "\(+\infty - \infty\)" (verificatelo).
+        <br>
+        <br>
+        Seguite le seguenti istruzioni per calcolarlo.
+        <br>
+        <br>
+        <ul>
+            <li>
+                Raccogliete a fattor comune \(x^6\) nel polinomio \(6x^5 - 2x^3\).
+                <br>
+                <br>
+                Ricordate, nella parentesi andremo ad inserire i termini che moltplicati per \(x^5\) ci restituiscono il 
+                polinomio di partenza \(6x^5 -2x^3\)
+                \[
+                    5x - 10x^6 = x^6 \, \underset{completate\,\,voi}{\underbrace{\Big(\cdots\cdots\cdots\cdots\cdots\Big)}}
+                \]
+            </li>
+            <li>
+                Effettuate il limite per entrambi i fattori della scomposizione ottenuta e successivamente concludete quale sia il limite 
+                del prodotto.
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>
+    <br>
+    <div>
+        Calcolare il limite
+        \[
+            \lim_{x \to +\infty} \left({5x + 1}{10} -\dfrac{1}{2}x\right)
+        \]
+        Anche in questo caso procedendo per sostituzione si ottiene la forma \(+\infty - \infty\) (verificatelo).
+        Seguite le seguenti istruzioni per calcolarlo.
+        
+        <br>
+        <br>
+        <ul>
+            <li>
+                In questo caso effettuiamo la somma tra le due frazioni.
+            </li>
+            <br>
+            <li>
+                Successivamente calcoliamo il limite.
+            </li>
+        </ul>
+    </div>
+    
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Morale degli esercizi 1, 2 e 3</h3>
+    <br>
+    <div>
+        Quando nel calcolo del limite per sostituzione otteniamo la forma indeterminata \(+\infty - \infty\) la situazione
+        che otteniamo può variare da caso a caso. 
+        <br>
+        Prova ne sono gli esercizi 1, 2, 3. Tutti e tre portavano alla forma \(+\infty - \infty\), ma risolvendoli con tecniche
+        adeguate abbiamo ottenuto tre risultati differenti, rispettivamente \(+\infty\), \(-\infty\), \(\dfrac{1}{10}\).
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <h3 class="green">Esercizio 4</h3>
+    <br>
+    <div>
+        Discutere il seguente limite al variare della scelta del parametro \(b\).
+        \[
+            \lim_{x \to 3^{+}} \left(\dfrac{4b - 3x}{\sqrt{x - 3}}\right)
+        \]
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio ⭐</h3>
+    <br>
+    <div>
+        Ripassare un esercizio tra quelli svolti in passato che vi ha posto di fronte a particolare
+        difficoltà.
+    </div>
+
+
+
+    
+
+    
+        
+
+</body>
