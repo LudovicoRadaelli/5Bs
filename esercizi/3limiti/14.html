@@ -62,7 +62,7 @@
     <div class="grayBorder">
         Consideriamo il moto di un'auto su un rettilineo.
         <br>
-        Supponiamo di conoscere la <b>posizione</b> dell'auto (espressa in metri) in funzione del tempo (espresso in secondi, \(s\)):
+        Supponiamo di conoscere la <b>posizione</b> dell'auto (espressa in metri) in funzione del tempo (espresso in secondi):
         \[
             p(t) = 3t
         \]
@@ -76,7 +76,7 @@
                     \]
                 </li>
                 <li>
-                    Nell'istante in cui iniziamo ad osservare il moto, ovvero  per \(t = 1\,s\), la posizione del veicolo è \(0\,m\)
+                    Nell'istante in cui iniziamo ad osservare il moto, ovvero  per \(t = 0\,s\), la posizione del veicolo è \(0\,m\)
                     \[
                         p(0) = 3 \cdot 0 = 0
                     \]
@@ -84,7 +84,7 @@
                 <li>
                     Nell'istante \(t = 5\), la posizione del veicolo è \(15\,m\)
                     \[
-                        p(0) = 3 \cdot 5 = 15
+                        p(5) = 3 \cdot 5 = 15
                     \]
                 </li>
             </ul>
@@ -132,13 +132,18 @@
         \[
             p(t) = \dfrac{1}{4}t^2
         \]
-        La <b>velocità media</b> tra l'istante \(t_1\) e l'istante \(t_2\) è la velocità che l'auto deve mantenere costante per
-        passare dalla posizione \(p(t_1)\) alla posizone \(p(t_2)\) nell'intervallo di tempo che va da \(t_1\) a \(t_2\).
+
+        <div class="grayBorder">
+            La <b>velocità media</b> tra l'istante \(t_1\) e l'istante \(t_2\) è la velocità che l'auto deve mantenere costante per
+            passare dalla posizione \(p(t_1)\) alla posizone \(p(t_2)\) nell'intervallo di tempo che va da \(t_1\) a \(t_2\).
+            In formule:
+            \[
+                v_m = \dfrac{p(t_2) - p(t_1)}{t_2 - t_1}
+            \]
+        </div>
+        
         <br>
-        In formule:
-        \[
-            v_m = \dfrac{p(t_2) - p(t_1)}{t_2 - t_1}
-        \]
+        <br>
         
         <h3 class="yellow">Esempio</h3>
         <div class="esempi-container">
@@ -204,20 +209,37 @@
                 \[
                     t = 2 + \color{blue}{}h
                 \] 
-                che immaginiamo come vicinissimo all'istante \(t = 2\).
+
+                <div class="gray">
+                    <b>Osservazione</b>
+                    <br>
+                    L'istante \(2 + \color{blue}{}h\) lo consideriamo per valori molto piccoli di \(\color{blue}{}h\), ovvero vicinissimo all'istante \(t = 2\).
+                </div>
             </li>
             <br>
             <li>
                 Calcolare la velocità media dell'auto nell'intervallo di tempo 
                 che va da \(t = 2\) a \(t = 2 + \color{blue}{}h\).
                 <br>
-                In altre parole stiamo calcolando la velocità media in un intervallo di tempo molto breve.
                 <br>
-                Osserviamo che la velocità media calcolata dipenderà da \(\color{blue}{}h\).
+                <div class="gray">
+                    <b>Osservazione</b>
+                    <br>
+                    La velocità media calcolata dipenderà da \(\color{blue}{}h\).    
+                    <br>
+                    Per quanto osservato prima, stiamo calcolando la velocità media in un intervallo di tempo molto breve.
+                </div>
             </li>
             <br>
             <li>
                 <i>Dulcis in fundo</i>, calcolare il limite per \(h \to 0\) della velocità media ottenuta nel punto precedente.
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Domanda</b>
+                    <br>
+                    Cosa abbiamo ottenuto secondo voi con questo procedimento?
+                </div>
             </li>
         </ul>
         
