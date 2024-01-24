@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <!-- ARGOMENTI SVOLTI -->
+    <!-- <section id="argomenti">
+        <h3 class="blue">Argomenti svolti</h3>
+        <div class="grayBorder">            
+
+            <br>
+
+            <div style="text-align: left;">
+                <b>2) Bliblibli blablabla</b>
+            </div>
+            <div class="gray">
+                [Par. 12.2, 12.3, pag. da 668 a 676]
+                <br>
+                <a class="gray" href="../../../3/goniometria/index.html">dispense</a>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br> -->
+
+    <!-- ESERCIZI -->  
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        <ul>
+            <li>
+                Studiare il paragrafo <b>Asintoti obliqui</b> pagg. da 1516 a 1518.
+            </li>
+            <br>
+            <li>
+                Studiare l'esercizio guida n° 948 a pag. 1566.
+            </li>
+            <br>
+            <li>
+                Svolgere gli esercizi n° 953, 954 a pag. 1567.
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Si consideri la funzione 
+        \[
+            h:\qquad y = \dfrac{ln(x) - 3}{ln(x) + 2}
+        \]
+        <ul>
+            <li>
+                Individuare il dominio \(D\) di \(h\);
+            </li>
+            <br>
+            <li>
+                analizzare il segno assunto dalla funzione al variare del valore assunto da \(x\) in \(D\);
+            </li>
+            <br>
+            <li>
+                studiare il comportamento di \(h\) in corrispondenza degli estremi del dominio, 
+                individuando eventuali asintoti orizzontali, verticali o obliqui;
+            </li>
+            <br>
+            <li>
+                rappresentare le informazioni precedentemente ottenute in linguaggio grafico.
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="gray">
+        <b>Soluzione</b>
+        <br>
+        <ul class="gray">
+            <li>
+                Il dominio di \(h\) è l'insimeme \(D = \left(0\,;\,\,\dfrac{1}{e^2}\right) \cup \left(\dfrac{1}{e^2}\,;\,\,+\infty\right) \)
+            </li>
+            <br>
+            <li>
+                La funzione assume valori 
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        positivi per \(x \in \left(0\,;\,\,\dfrac{1}{e^2}\right) \cup \left(e^3\,;\,\,+\infty\right)\)
+                    </li>
+                    <br>
+                    <li>
+                        negativi per \(x \in \left(\dfrac{1}{e^2}\,;\,\,e^3\right)\)
+                    </li>
+                    <br>
+                    <li>
+                        zero per \(x = e^3\)
+                    </li>
+                </ul>
+
+            </li>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \lim_{x \to 0^{+}} f(x) = 1
+                    \]
+                    (non è una situazione di asintoto, semplicemente più ci avviciniamo a \(0\) più la funzione assume valori 
+                    vicini ad \(1\))
+                    \[
+                        \lim_{x \to \frac{1}{e^2}^{-}} f(x) = +\infty
+                    \]
+                    \[
+                        \lim_{x \to \frac{1}{e^2}^{+}} f(x) = -\infty
+                    \]
+                    quindi la retta \(x = \dfrac{1}{e^2}\) è asintoto verticale per la funzione. 
+                    \[
+                        \lim_{x \to +\infty} f(x) = 1
+                    \]
+                    quindi la retta \(y = 1\) è asintoto verticale per la funzione. 
+                </div>
+            </li>
+            <br>
+            <li>
+                Disegnamo gli asintoti con una linea tratteggiata e cancelliamo le zone del piano per le quali il grafico della
+                funzione <b>non</b> passa
+                <br>
+                <br>
+                <img src="img/23(1).png" style="width: 100%;">
+            </li>            
+        </ul>
+    </div>
+    
+
+
+    <br>
+    <br>
+</body>
