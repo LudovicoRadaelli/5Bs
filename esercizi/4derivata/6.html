@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <!-- ARGOMENTI SVOLTI -->
+    <!-- <section id="argomenti">
+        <h3 class="blue">Argomenti svolti</h3>
+        <div class="grayBorder">            
+
+            <br>
+
+            <div style="text-align: left;">
+                <b>2) Bliblibli blablabla</b>
+            </div>
+            <div class="gray">
+                [Par. 12.2, 12.3, pag. da 668 a 676]
+                <br>
+                <a class="gray" href="../../../3/goniometria/index.html">dispense</a>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br> -->
+
+
+    <!-- ESERCIZI -->
+    
+    
+    <h3 class="yellow">Derivate fondamentali</h3>    
+    <div class="esempi-container">
+        <ul>
+            <li>
+                \(\left(ln(x)\right)' = \dfrac{1}{x}\)
+            </li>
+            <br>
+            <li>
+                \(\left(sin(x)\right)' = cos(x)\)
+            </li>    
+            <br>
+            <li>
+                \(\left(cos(x)\right)' = -sin(x)\,\,\,\,\)
+            </li>
+            <br>
+            <li>
+                \(\left(e^x\right)' = e^x\,\,\,\,\)
+            </li>
+            <br>
+            <li>
+                \(\left(ax + b\right)' = a\,\,\,\,\,\)
+            </li>
+            <br>
+            <li>
+                \(\left(x^{\alpha}\right)' = \alpha\,x^{\alpha - 1}\,\,\,\) con \(\alpha \in \mathbb{R}\,\,\,\,\,\)
+            </li>          
+            <br>
+            <li>
+                \(
+                    \begin{align*}
+                        \left(tan(x)\right)' &= \dfrac{1}{cos^2(x)}
+                        \\\\
+                        &= 1 + tan^2(x)
+                    \end{align*}
+                \)
+            </li>             
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <h3 class="yellow">Regole di derivazione</h3>
+    <div class="esempi-container">
+        <ul>
+            <li>
+                <b>Derivata del prodotto di una costante per una funzione</b>
+                <br>
+                <br>
+                \(\left(c\,f(x)\right)' = c\,f'(x)\)
+            </li>
+            <br>
+            <li>
+                <b>Derivata delle somma di due funzioni</b>
+                <br>
+                <br>
+                \(\left(f(x) + g(x)\right)' = f'(x) + g'(x)\)
+            </li>
+            <br>
+            <li>
+                <b>Regola di Leibniz</b>
+                <br>
+                <br>
+                \(\left(f(x) \cdot g(x)\right)' = f'(x)\,g(x) + f(x)\,g'(x)\)
+            </li>
+            <br>
+            <li>
+                <b>Derivata del rapporto di due funzioni</b>
+                <br>
+                <br>
+                \(\left(\dfrac{f(x)}{g(x)}\right)' = \dfrac{f'(x)\,g(x) - f(x)\,g'(x)}{\big[g(x)\big]^2}\)
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <!-- <h3 class="green">Esercizio guida 1</h3>
+    <br>
+    <div>
+        
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio guida 2</h3>
+    <br>
+    <div>
+
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br> -->
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <ul>
+        <li>
+            Nel seguente video trovate la definizione della <b>composizione</b> tra due funzioni ed alcuni esempi pratici.
+            <br>
+            <br>
+            <iframe style="width: 100%;" src="https://www.youtube.com/embed/c0T19GCVeu8?si=RgjvrN83mujRcQy_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>       
+        <br> 
+        <li>
+            Svolgere gli esercizi n° 456, 457, 458, 459 a pag. 1384.
+        </li>        
+    </ul>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio guida 1</h3>
+    <br>
+    <div>
+        Data la funzione
+        \[
+            h(x) = sin(x^2)
+        \]
+        individuare le due funzioni \(f\) e \(g\) tali che \(f \circ g = h\).        
+    </div>
+
+    <br>
+    <br>
+
+    <b>Svolgimento</b>
+    <br>
+    <div class="grayBorder">  
+        Nell'<b class="green">Esercizio 1</b> vi siete allenati a calcolare la funzione composta ottuenuta a partire da due funzioni assegnate. 
+        <br>
+        In questo esercizio si richiede il problema inverso:
+        
+        la funzione \(h\) proposta dal testo è una funzione composta; la richiesta dell'esercizio è di individuare
+        quali sono le funzioni che la compongono.
+        <br>
+        <br>
+        Andiamo alla ricerca della funzione interna \(g\) e della funzione esterna \(f\) tali che 
+        \[
+            h(x) = f\Big(g(x)\Big)
+        \]
+        In parte ciò che faremo ricorda il <a href="https://www.youtube.com/watch?v=uvfwcLVO_SE">procedimento di sostituzione</a> che abbiamo visto nelle equazioni esponenziali e logaritmiche.
+        <br>
+        <br>
+        La funzione più interna, la prima che applichiamo all'argomento \(x\) è il quadrato:
+        \[
+            h(x) = sin(\color{blue}{}x^2\color{black}{})
+        \]
+        Ovvero la funzione interna \(g\) è 
+        \[
+            g(x) = x^2
+        \]
+        Possiamo così riscrivere che 
+        \[
+            h(x) = sin(\color{blue}{}x^2\color{black}{}) = sin(\color{blue}{}g(x)\color{black}{})
+        \]
+        A questo punto osserviamo a funzione più esterna è il quella che ad un argomento \(a\) associa l'immagine \(sin(a)\):
+        \[
+            f(\color{blue}{}a\color{black}{}) = sin(\color{blue}{}a\color{black}{})
+        \]
+        Esercizio concluso: le funzioni che compongono \(h\) sono 
+        \[
+            f(a) = sin(a) \qquad g(x) = x^2
+        \]
+        Facciamo una rapida verifica:
+        \[
+            \begin{align*}  
+                f(\color{blue}{}a\color{black}{}) &= sin(\color{blue}{}a\color{black}{})    
+                \\   
+                &\downarrow        
+                \\
+                f(\color{blue}{}g(x)\color{black}{}) &= sin(\color{blue}{}g(x)\color{black}{}) = sin(\color{blue}{}x^2\color{black}{})
+            \end{align*}    
+        \]
+       <!--  Osserviamo che scrivere la funzione con variabile \(a\) oppure \(x\) <u>è la stessa cosa</u>, sono etichette arbitrarie
+        con le quali indichiamo l'input delle funzione.         -->    
+
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <ul>
+        Per ciascuna delle seguenti funzioni composte \(h\) individuare le due funzioni \(f\) e \(g\) tali che \(f \circ g = h\)
+        <br>
+        <br>
+        <li>
+            \(h(x) = ln\left(\dfrac{1}{x}\right)\)
+            <br>
+            <br>
+            <button id="hint1-button" onclick="showHint(1)" style="color: black">Soluzione</button>
+            <br>
+            <div id="hint1" style="display: none;" class="grayBorder">
+                \[
+                    f(a) = ln(a) \qquad g(x) = \dfrac{1}{x}
+                \]
+                Una spiegazione "visiva" potrebbe essere la seguente:
+                \[
+                    \begin{align*}
+                        ln\left(\color{blue}{}\dfrac{1}{x}\color{black}{}\right) &= ln\left(\color{blue}{}g(x)\color{black}{}\right) = 
+                        \\\\
+                        &= ln(\color{blue}{}a\color{black}{}) 
+                    \end{align*}
+                \]
+            </div>
+        </li>
+        <br>
+        <li>
+            \(h(x) = \left(sin(x) + 1\right)^2\)
+            <br>
+            <br>
+            <button id="hint2-button" onclick="showHint(2)" style="color: black">Soluzione</button>
+            <br>
+            <div id="hint2" style="display: none;" class="grayBorder">
+                \[
+                    f(a) = a^2 \qquad g(x) = sin(x) + 1
+                \]
+                Una spiegazione "visiva" potrebbe essere la seguente:
+                \[
+                    \begin{align*}
+                        \left(\color{blue}{}sin(x) + 1\color{black}{}\right)^2 &= \left(\color{blue}{}g(x)\color{black}{}\right)^2 = 
+                        \\\\
+                        &= \color{blue}{}a\color{black}{}^2
+                    \end{align*}
+                \]
+            </div>
+        </li>
+        <br>
+        <li>
+            \(h(x) = (3x - 2)^2 - sin(3x -2)\)
+            <br>
+            <br>
+            <button id="hint3-button" onclick="showHint(3)" style="color: black">Soluzione</button>
+            <br>
+            <div id="hint3" style="display: none;" class="grayBorder">
+                \[
+                    f(a) = a^2 -sin(a) \qquad g(x) = 3x - 2
+                \]
+                Una spiegazione "visiva" potrebbe essere la seguente:
+                <div class="formula">
+                    \[
+                        \begin{align*}
+                            &\left(\color{blue}{}3x - 2\color{black}{}\right)^2 - sin(\color{blue}{}3x - 2\color{black}{}) = 
+                            \\\\
+                            =\,\, &\left(\color{blue}{}g(x)\color{black}{}\right)^2 - sin(\color{blue}{}g(x)\color{black}{}) =
+                            \\\\
+                            =\,\, &\color{blue}{}a\color{black}{}^2 - sin(\color{blue}{}a\color{black}{})
+                        \end{align*}
+                    \]
+                </div>
+            </div>
+        </li>
+        <br>
+        <li>
+            \(h(x) = ln(3x^2 - 5x + 2)\)
+            <br>
+            <br>
+            <button id="hint4-button" onclick="showHint(4)" style="color: black">Soluzione</button>
+            <br>
+            <div id="hint4" style="display: none;" class="grayBorder">
+                \[
+                    f(a) = ln(a) \qquad g(x) = 3x^2 - 5x + 2
+                \]
+                Una spiegazione "visiva" potrebbe essere la seguente:
+                <div class="formula">
+                    \[
+                        \begin{align*}
+                            &ln(\color{blue}{}3x^2 - 5x + 2\color{black}{}) = 
+                            \\\\
+                            =\,\, &ln(\color{blue}{}g(x)\color{black}{}) =
+                            \\\\
+                            =\,\, &ln(\color{blue}{}a\color{black}{})
+                        \end{align*}
+                    \]
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>
+    <br>
+    <div>            
+        Svolgere gli esercizi n° 229, 237, 238 a pag. 1632.        
+    </div>
+
+
+
+    <br>
+    <br>
+
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }  
+    </script>
+
+
+</body>
