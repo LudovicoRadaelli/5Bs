@@ -144,7 +144,7 @@
             Potete consultare anche la seguente  video spiegazione.
             <br>
             <br>
-            🚧Work in progress🚧
+            <iframe style="width: 100%" src="https://www.youtube.com/embed/vfJSB30p6T4?si=RHEUbk5wo0YxrwLp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </li>       
         <br> 
         <li>
@@ -156,14 +156,32 @@
         </li>        
     </ul>
 
-    <!-- <br>
+    <br>
     <br>
 
     <div class="gray">
-        <b>Svolgimento n° </b>        
+        <b>Svolgimento n° 655</b>        
         <br>
-        
-    </div>     -->
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/VuiMJxCntWk?si=3V7tSgGsyvAiv7f4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>    
+
+    <br>
+    <br>
+
+    <div class="gray">
+        <b>Svolgimento n° 658</b>        
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/gQXPpS9LVOY?si=DPMN2PeGC4v8tl2T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>    
+
+    <br>
+    <br>
+
+    <div class="gray">
+        <b>Svolgimento n° 660</b>        
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/tIedKsGZZyg?si=cn8G3qI_-gGoqPNt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>    
 
     <br>
     <br>
@@ -176,6 +194,15 @@
     <div>
         Svolgere gli esercizi n° 720, 721 a pag. 1656.
     </div>
+
+    <br>
+    <br>
+
+    <div class="gray">
+        <b>Svolgimento n° 720</b>        
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/Comakx8dB2k?si=ThjY82tUQwiLweY2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>    
 
     <br>
     <br>
@@ -193,13 +220,9 @@
             <li>
                 Studiare il dominio \(D_{a}\) al variare di \(a \in \mathbb{R}\)
             </li>
-            <br>
+            <br>            
             <li>
-                Studiare il segno che la funzione \(f_{a}\) assume in \(D_{a}\)
-            </li>
-            <br>
-            <li>
-                Si consideri la funzione \(f_{_2}\). Determinare la derivata della funzione \(g(x) = x^2 \cdot f(x)\)
+                Si consideri la funzione \(f_{_2}\). Determinare la derivata della funzione \(g(x) = x^2 \cdot f_{_2}(x)\)
             </li>
         </ul>
     </div>
@@ -207,8 +230,58 @@
     <br>
     <br>
 
-
+    <div class="gray">
+        <b>Suggerimento punto c)</b>
+    </div>
+    <br>
+    <button id="hint4-button" onclick="showHint(4)" style="color: black">Mosta suggerimento</button>
+    <br>
     
+    <div id="hint4" class="gray" style="display: none;" class="grayBorder">
+        \(f_{_2}\,\) è la funzione che otteniamo scegliendo \(2\) come valore del parametro \(a\). Ovvero
+        \[
+            f_{_2}(x) = \dfrac{3-2x}{\sqrt{5x - 18}}
+        \]        
+        La funzione \(g(x)\) la otteniamo come segue
+        \[
+            \begin{align*}
+                g(x) 
+                &= x^2 \cdot \underset{f_{_2}(x)}{\underbrace{\dfrac{3-2x}{\sqrt{5x - 18}}}}  
+                \\\\
+                &= \dfrac{3x^3 -2x^2}{\sqrt{5x - 18}}
+            \end{align*}
+        \]
+        A questo punto calcoliamo la derivata.
+    </div>
+    
+    
+
+
+    <br>
+    
+
+    <div class="gray">
+        <b>Svolgimento del punto a)</b>        
+        <br>
+        ⚠️⚠️⚠️ Rispetto al video ho levato la richiesta dello studio del segno, perché eccessivamente 
+        lunga da svolgere (si ottengono cinque diversi grafici dei segni al variare della scelta di \(a\))
+        <br>
+        <br>
+
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/fV-wVfFvKK8?si=Sv4YqgWG175BMAGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>    
+
+
+    <br>
+    <br>
+
+
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }  
+    </script>
 
 
 </body>
