@@ -124,7 +124,7 @@
                 <br>
                 <br>
                 \(\big[f\big(g(x)\big)\big]' = f'\big(g(x)\big)\,g'(x)\)
-            </li>
+            </li>            
         </ul>
     </div>
 
@@ -138,50 +138,36 @@
     <br>
     <ul>
         <li>
-            Studiare il paragrafo <b>Retta tangente</b> a pagg. da 1610 a 1611.
+            Studiare il paragrafo <b>Funzione inversa</b> a pagg. da 1348 a 1349
             <br>
             
             Potete consultare anche la seguente  video spiegazione.
             <br>
             <br>
-            <iframe style="width: 100%" src="https://www.youtube.com/embed/vfJSB30p6T4?si=RHEUbk5wo0YxrwLp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe style="width: 100%" src="https://www.youtube.com/embed/6StfjiwGT9I?si=6n5ASwQkOcpSt5zx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+            <iframe style="width: 100%" src="https://www.youtube.com/embed/m_uY1ZG37pk?si=6QQ5y7m70CCy-MCp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </li>       
         <br> 
         <li>
-            Studiare l'esercizio guida n° 652 a pag. 1650.
+            Studiare l'esercizio guida n° 423 a pag. 1382.
         </li>
         <br>
         <li>
-            Svolgere gli esercizi n° 655, 658, 659, 660 a pag. 1651.
+            Svolgere gli esercizi n° 424, 425, 426, 427, 430 a pag. 1382.
         </li>        
     </ul>
 
-    <br>
-    <br>
-
-    <div class="gray">
-        <b>Svolgimento n° 655</b>        
-        <br>
-        <iframe style="width: 100%" src="https://www.youtube.com/embed/VuiMJxCntWk?si=3V7tSgGsyvAiv7f4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>    
-
-    <br>
+    <!-- <br>
     <br>
 
     <div class="gray">
-        <b>Svolgimento n° 658</b>        
+        <b>Svolgimento n° </b>        
         <br>
-        <iframe style="width: 100%" src="https://www.youtube.com/embed/gQXPpS9LVOY?si=DPMN2PeGC4v8tl2T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
     </div>    
 
-    <br>
-    <br>
-
-    <div class="gray">
-        <b>Svolgimento n° 660</b>        
-        <br>
-        <iframe style="width: 100%" src="https://www.youtube.com/embed/tIedKsGZZyg?si=cn8G3qI_-gGoqPNt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>    
+     -->
 
     <br>
     <br>
@@ -189,20 +175,143 @@
     <br>
     <br>
 
+    <h3 id="esercizioGuida" class="green">Esercizio guida</h3>
+    <br>
+     <div>
+        Determina i parametri \(a\) e \(b\) in modo che il grafico della funzione \(y = \dfrac{ax + b}{x}\) 
+        <span id="span1" style="color: black">abbia nel punto \(P(1\,;\,\,1)\)</span> una <span id="span2" style="color:black">retta 
+        tangente parallela a quella passante per i punti \(A(0\,;\,\,2)\) e \(B(4\,;\,\,-1)\)</span>.
+     </div>
+
+    <br>
+    <br>
+
+    <b>Svolgimento</b>
+    <br>
+    <div class="grayBorder">
+        
+        Etichettiamo la funzione \(y = \dfrac{ax + b}{x}\) con il nome \(f_{a,\,b}\)
+        <br>
+        Al variare dei parametri di \(a\) e \(b\) il grafico di \(f_{a,\,b}\) cambia.
+        <br>
+        Il nostro obiettivo è trovare i valori di \(a\) e \(b\) in modo che siano soddisfatte le proprietà assegnate
+        dal testo. 
+        <br>
+        Quali sono queste proprietà? Suggerimento: sono due. Dopo averci pensato cliccate il pulsante per evidenziarle 
+        nel testo.
+        <br>
+        <br>
+        <button id="button"  onclick="continua()">Continua</button>
+        <br>
+        <div id="svolgimento" style="display: none;">
+            <b class="red">Proprietà 1</b>
+            <br>
+            Il punto di tangenza è \(P(1\,;\,\,1)\), Ovvero
+            \[
+                f(1) = 1
+            \]
+            Quindi
+            \[
+                \begin{align*}
+                    &1 = \dfrac{a + b}{1}
+                    \\\\
+                    &a + b = 1
+                \end{align*}
+            \]
+            <b class="blue">Proprietà 2</b>
+            <br>
+            La tangente al grafico di \(f_{a,\,b}\) in \((1\,;\,\,1)\) è parallela alla retta passante per i punti \(A\) e \(B\).
+            <br>
+            Due rette sono parallele quando hanno lo stesso coeffieciente angolare.
+            <br>
+            Quindi 
+            \[
+                f_{a,\,b}'(1) = m_{_{AB}}
+            \]
+            Calcoliamo la derivata di \(f_{a,\,b}\) e valutiamola in \(1\).
+            \[
+                \begin{align*}
+                    f_{a,\,b}'(x) 
+                    &= \left(\dfrac{ax + b}{x}\right)' = 
+                    \\\\
+                    &= \dfrac{a \cdot x - (ax + b) \cdot 1}{x^2}
+                    \\\\
+                    &= \dfrac{ax - ax - b}{x^2}
+                    \\\\
+                    &= -\dfrac{b}{x^2}
+                \end{align*}
+            \]
+            Quindi \(f_{a,\,b}'(1) = -\dfrac{b}{1^2} = -b\).
+            <br>
+            Calcoliamo il coefficiente angolare della retta passante per \(A(0\,;\,\,2)\) e \(B(4\,;\,\,-1)\).
+            \[
+                \begin{align*} 
+                    m = \dfrac{y_B - y_{A}}{x_B - x_A} = \dfrac{-1 - 2}{4 - 0} = -\dfrac{3}{4}
+                \end{align*}
+
+            \]
+            Alla luce di questi calcoli possimo riscrivere la condizione
+            \[
+                f_{a,\,b}'(1) = m_{_{AB}}
+            \]
+            come 
+            \[
+                -b = -\dfrac{3}{4}
+            \]
+            Mettiamo a sistema la <b class="red">proprietà 1</b> e <b class="blue">proprietà 1</b>:
+            \[
+                \begin{cases}
+                    a + b = 1
+                    \\\\
+                    -b = -\dfrac{3}{4}
+                \end{cases}
+            \]
+            La soluzione del sistema 
+            \[
+                \begin{cases}
+                    a = \dfrac{1}{4}
+                    \\\\
+                    b = \dfrac{3}{4}
+                \end{cases}
+            \] 
+            fornisce i valori \(a\) e \(b\) per cui la funzione \(f_{a,\,b}\) gode delle proprietà
+            richieste dal testo.
+            <br>
+            <br>
+            Provate ad impostare i valori di \(a\) e \(b\) attraverso gli slider.
+            <br>
+            <br>
+            <div class="geogebra-container">
+                <div id="geogebra1"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function continua() {
+            let svolgimento = document.getElementById("svolgimento");
+            svolgimento.style.display = "block";
+            let span1 = document.getElementById("span1");
+            span1.style.color = "#DB4437";
+            let span2 = document.getElementById("span2");
+            span2.style.color = "#4285F4";
+            document.location.href=`#esercizioGuida`;            
+            document.getElementById("button").style.display = "none"
+        }
+    </script>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+
     <h3 class="green">Esercizio 2</h3>
     <br>
     <div>
-        Svolgere gli esercizi n° 720, 721 a pag. 1656.
+        Svolgere gli esercizi n° 727, 729 a pag. 1657.
     </div>
-
-    <br>
-    <br>
-
-    <div class="gray">
-        <b>Svolgimento n° 720</b>        
-        <br>
-        <iframe style="width: 100%" src="https://www.youtube.com/embed/Comakx8dB2k?si=ThjY82tUQwiLweY2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>    
 
     <br>
     <br>
@@ -213,74 +322,33 @@
     <h3 class="green">Esercizio 3</h3>
     <br>
     <div>
-        Si consideri la funzione \(\,f_{a}\,\) avente espressione analitica \(y = \dfrac{3-ax}{\sqrt{5x - 9a}}\)
-        <br>
-        <br>
-        <ul style="list-style:lower-latin;">
-            <li>
-                Studiare il dominio \(D_{a}\) al variare di \(a \in \mathbb{R}\)
-            </li>
-            <br>            
-            <li>
-                Si consideri la funzione \(f_{_2}\). Determinare la derivata della funzione \(g(x) = x^2 \cdot f_{_2}(x)\)
-            </li>
-        </ul>
+        Svolgere gli esercizi n° 505, 506, 507, 508 a pag. 1645.
     </div>
-
-    <br>
-    <br>
-
-    <div class="gray">
-        <b>Suggerimento punto c)</b>
-    </div>
-    <br>
-    <button id="hint4-button" onclick="showHint(4)" style="color: black">Mosta suggerimento</button>
-    <br>
-    
-    <div id="hint4" class="gray" style="display: none;" class="grayBorder">
-        \(f_{_2}\,\) è la funzione che otteniamo scegliendo \(2\) come valore del parametro \(a\). Ovvero
-        \[
-            f_{_2}(x) = \dfrac{3-2x}{\sqrt{5x - 18}}
-        \]        
-        La funzione \(g(x)\) la otteniamo come segue
-        \[
-            \begin{align*}
-                g(x) 
-                &= x^2 \cdot \underset{f_{_2}(x)}{\underbrace{\dfrac{3-2x}{\sqrt{5x - 18}}}}  
-                \\\\
-                &= \dfrac{3x^3 -2x^2}{\sqrt{5x - 18}}
-            \end{align*}
-        \]
-        A questo punto calcoliamo la derivata.
-    </div>
-    
-    
-
-
-    <br>
-    
-
-    <div class="gray">
-        <b>Svolgimento del punto a)</b>        
-        <br>
-        ⚠️⚠️⚠️ Rispetto al video ho levato la richiesta dello studio del segno, perché eccessivamente 
-        lunga da svolgere (si ottengono cinque diversi grafici dei segni al variare della scelta di \(a\))
-        <br>
-        <br>
-
-        <iframe style="width: 100%" src="https://www.youtube.com/embed/fV-wVfFvKK8?si=Sv4YqgWG175BMAGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>    
-
 
     <br>
     <br>
 
 
     <script>
-        function showHint(i) {
-            document.getElementById("hint"+i+"-button").style.display = "none";
-            document.getElementById("hint"+i).style.display = "block";
-        }  
+        let ggbApp1 = new GGBApplet({
+        /* appletOnLoad(api) {
+            api.registerObjectUpdateListener("K","stampaValori1");
+        }, */
+        "appName": "classic", 
+        "id": "gg1",
+        "scaleContainerClass":"geogebra-container",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "filename":"img/9(1).ggb"
+        },
+        true);
+
+        window.addEventListener("load", function() { 
+            ggbApp1.inject('geogebra1');         
+        });
+
     </script>
 
 
