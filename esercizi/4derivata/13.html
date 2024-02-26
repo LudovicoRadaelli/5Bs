@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <!-- ARGOMENTI SVOLTI -->
+    <!-- <section id="argomenti">
+        <h3 class="blue">Argomenti svolti</h3>
+        <div class="grayBorder">            
+
+            <br>
+
+            <div style="text-align: left;">
+                <b>2) Bliblibli blablabla</b>
+            </div>
+            <div class="gray">
+                [Par. 12.2, 12.3, pag. da 668 a 676]
+                <br>
+                <a class="gray" href="../../../3/goniometria/index.html">dispense</a>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br> -->
+
+
+    <!-- ESERCIZI -->      
+    <h3 class="yellow">Osservazioni sulle funzioni continue</h3>
+    <div class="esempi-container">
+        Abbiamo visto la definizione di continuità di una funzione \(f\) in un punto \(c\):
+        \[
+            \lim_{x \to c} f(x) = f(c)
+        \]
+        Vorremmo trovare un modo di mostrare la continuità di una funzione senza ricorrere alla definizione (ovvero senza dover 
+        calcolare alcun limite).
+        <br>
+        Ricalchiamo la strategia <b>dividi et impera</b> impiegata nello sviluppare il calcolo delle derivate, ovvero
+        <br>
+        <br>
+        <ul>
+            <li>
+                individuiamo una lista di funzioni elementari continue 
+            </li>
+            <br>
+            <li>
+                mostriamo che combinando tra di loro funzioni continue otteniamo una funzione che è ancora continua <span class="gray">(affermazione grossolana da considerare con le
+                    dovute cautele).</span>
+            </li>
+        </ul>
+
+        <br>
+
+        Riporto di seguito una serie di funzioni elementari seguite dall'insieme di valori nei quali sono continue.
+        <br>
+        <br>
+        <b>Lista funzioni continue</b>
+        <div class="grayBorder">
+            <ul>
+                <li>
+                    i polinomi in \(\mathbb{R}\)
+                </li>
+                <br>
+                <li>
+                    le funzioni \(y = sin(x)\,\,\) e \(\,\,y = cos(x)\) in \(\,\,\mathbb{R}\)                
+                </li>
+                <br>
+                <li>
+                    la funzione \(\,\,y = tan(x)\,\,\) in \(\,\,\mathbb{R} - \Big\{\dfrac{\pi}{2} + k\,\pi,\,\,\,\,\,con\,\,k\in\mathbb{Z}\Big\}\)
+                </li>
+                <br>
+                <li>
+                    le funzione radice di indice pari, \(\,\,y = \sqrt[pari]{x}\), in \(\,\,[0\,,\,\,+\infty)\)
+                </li>
+                <br>
+                <li>
+                    le funzione radice di indice dispari, \(\,\,y = \sqrt[dispari]{x}\), in \(\mathbb{R}\)
+                </li>
+                <br>
+                <li>
+                    le esponiziali \(y = a^x\) in \(\mathbb{R}\)
+                </li>
+                <br>
+                <li>
+                    le logaritmiche \(y = log_{b}(x)\) in \(\,\,(0\,,\,\,+\infty)\)
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+        <b>Ereditarietà della continuità</b>
+        <div class="grayBorder">
+            Date due funzioni \(f\) e \(g\) continue in un intervallo \(I\)
+            <ul>
+                <li>
+                    la funzione somma \(f + g\) è continua in \(I\)
+                </li>
+                <br>
+                <li>
+                    la funzione differenza \(f - g\) è continua in \(I\)
+                </li>
+                <br>
+                <li>
+                    la funzione prodotto \(f \cdot  g\) è continua in \(I\)
+                </li>
+                <br>
+                <li>
+                    la funzione rapporto \(\dfrac{f}{g}\) è continua nel suo dominio.
+                    
+                </li>                
+                <li>
+                    la funzione composta \(f \circ  g\) nel suo dominio.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        La dimostrazione dei fatti elencati in queste due liste è lasciata al lettore (che è una maniera in cui gli autori dei testi
+        universitari si risparmiano di scrivere dimostrazioni lunge e tediose).
+        <br>
+        <br>
+        Vediamo nei due esericzi guida come possiamo discutere la continuità di una funzione più complessa a partire da questi risultati.
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio guida 1</h3>
+    <br>
+    <div>
+        Discutere l'insieme di continuità della funzione 
+        \[
+            f(x) = \dfrac{3x - cos(x)}{x -2}
+        \]
+    </div>    
+    <b>Svolgimento</b>
+    <br>
+    <div class="grayBorder">        
+        Prima di tutto individuiamo il dominio di \(f\): 
+        \[
+            D = \mathbb{R} - \{2\}
+        \]
+        Osserviamo che
+        <br>
+        <br>
+       <ul>
+            <li>
+                La funzione \(f\) si ottiene come rapporto di due funzioni. 
+            </li>
+            <br>
+            <li>
+                Il monomio \(\,3x\,\) e la funzione \(\,cos(x)\,\) sono continue in \(\mathbb{R}\), quindi anche la funzione \(3x -cos(x)\) è continua in \(\mathbb{R}\).                
+            </li>
+            <br>
+            <li>
+                Il denominatore è un polinomio, quindi è continuo in \(\mathbb{R}\)                
+            </li>
+       </ul>
+       <br>
+       Possiamo dedurre che la funzione \(f\) è continua nel suo dominio. 
+       <br>
+       Osserviamo che \(D = \mathbb{R} - \{2\}\) è un insieme più ristretto di \(\mathbb{R}\), che è l'insieme
+       sul quale sono continue le funzioni al numeratore e al denominatore.        
+    </div>    
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio guida 2</h3>
+    <br>
+    <div>
+        Discutere l'insieme di continuità della funzione 
+        \[
+            f(x) = ln(x^2 -1)
+        \]
+    </div>    
+    <b>Svolgimento</b>
+    <br>
+    <div class="grayBorder">        
+        Prima di tutto individuiamo il dominio di \(f\): 
+        \[
+            D = (-\infty\,,\,\,-1) \cup (1\,,\,\,+\infty)
+        \]
+        Osserviamo che
+        <br>
+        <br>
+       <ul>
+            <li>
+                La funzione \(f\) si ottiene come composizione di funzioni.
+            </li>
+            <br>
+            <li>
+                La funzione interna \(\,x^2 -1\,\) è un polinomio, quindi è continua in \(\mathbb{R}\)
+            </li>
+            <br>
+            <li>
+                La funzione esterna \(\,ln(x)\,\) è continua in \((0\,,\,\,+\infty)\)
+            </li>
+       </ul>
+       <br>
+       Possiamo dedurre che la funzione \(f\) è continua nel suo dominio. 
+       <br>
+       Osserviamo che \(D = (-\infty\,,\,\,-1) \cup (1\,,\,\,+\infty)\) è un insieme più ristretto di \(\mathbb{R}\), che è l'insieme
+       sul quale è continua la funzione più interna.
+    </div>    
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>  
+        Discutere l'insieme di continuità delle seguenti funzioni
+        <br>
+        <br>
+        <ul>
+            <li style="width: fit-content;">
+                \[
+                    f(x) = \sqrt{x^2 - 5}
+                \]
+            </li>
+            <li style="width: fit-content;">
+                \[
+                    g(x) = \dfrac{x^2 - 1}{sin(x)}
+                \]
+            </li>
+            <li style="width: fit-content;">
+                \[
+                    h(x) = tan\left(2x + \dfrac{\pi}{3}\right)
+                \]
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <ul> 
+        <li>
+            Studiare i <b>derivata sinistra e derivata destra</b> e <b>continuità e derivabilità</b> pagg. da 1597 a 1599.
+        </li>
+        <br>
+        <li>
+            Studiare l'esercizio guida n° 75 a pag. 1624.
+        </li>
+        <br>
+        <li>
+            Svolgere gli esercizi n° 77, 78, 79 a pag. 1624.
+        </li>
+
+    </ul>
+
+    
+    <br>
+    <br>
+
+
+
+</body>
