@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <!-- ARGOMENTI SVOLTI -->
+    <!-- <section id="argomenti">
+        <h3 class="blue">Argomenti svolti</h3>
+        <div class="grayBorder">            
+
+            <br>
+
+            <div style="text-align: left;">
+                <b>2) Bliblibli blablabla</b>
+            </div>
+            <div class="gray">
+                [Par. 12.2, 12.3, pag. da 668 a 676]
+                <br>
+                <a class="gray" href="../../../3/goniometria/index.html">dispense</a>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br> -->
+
+
+    <!-- ESERCIZI -->      
+    <h3 class="green">Esercizio guida 1</h3>
+    <br>
+    <div>
+        Calcolare la derivata seconda della funzione 
+        \[
+            f(x) = 7x^2 \cdot sin(x)
+        \]        
+    </div>
+    <b>Svolgimento</b>
+    <br>
+    <div class="grayBorder">
+        Prima di tutto calcoliamo \(f'(x)\).
+        \[
+            \begin{align*}
+                f'(x) &= \left[7x^2 \cdot sin(x)\right]' =
+                \\\\
+                & = 14x \cdot sin(x) + 7x^2 \cdot cos(x)
+            \end{align*}
+        \]
+        Quindi di ha
+        \[
+            f'(x) = 14x\,sin(x) + 7x^2\,cos(x)
+        \]
+        Per calcolare \(f''(x) \) dobbiamo derivare la funzione \(f'(x)\):
+        <div class="formula">
+            \[
+                \begin{align*}
+                    f''(x) &= \left[f'(x)\right]' = \left[14x\,sin(x) + 7x^2\,cos(x)\right]' = 
+                    \\\\
+                    &= \left[14x\,sin(x)]' + [7x^2\,cos(x)\right]' = 
+                    \\\\
+                    &= 14\,\left[x\,sin(x)\right]' + 7\left[x^2\,cos(x)\right]' = 
+                    \\\\
+                    &= 14\,\left[sin(x) + x\,cos(x)\right] + 7\,\left[2x\,cos(x) + x^2\,(-sin(x))\right]
+                    \\\\
+                    &= 14\,sin(x) + 14\,x\,cos(x) + 14\,x\,cos(x) -7\,x^2\,sin(x)
+                    \\\\
+                    &= \left(14 - 7x^2\right)\,sin(x) + 28\,cos(x)
+                \end{align*}
+            \]
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio guida 2</h3>
+    <br>
+    <div>
+        Sia \(y = x + ln(x)\). Verificare che 
+        \[
+            y'\cdot x -x -1 = 0
+        \]
+    </div>
+    <b>Svolgimento</b>
+    <br>
+    <div class="grayBorder">
+        Sostituiamo il membro destro della funzione 
+        \[
+            \color{red}{}y \color{black}{} = \color{red}{}x + ln(x)
+        \]
+        nella uguaglianza
+        \[
+            \color{red}{}y\color{black}{}'\cdot x -x -1 = 0
+        \]
+        Abbiamo 
+        \[
+            \begin{align*}
+                &\color{red}{}\left(x + ln(x)\right)\color{black}{}'\cdot x -x -1 = 0
+                \\\\
+                &(1 +\dfrac{1}{x}) \cdot x - x - 1 = 0
+                \\\\
+                &x + 1 - x - 1 = 0
+                \\\\
+                &0 = 0
+            \end{align*}
+        \]
+        Abbiamo così verificato che la funzione assegnata dal testo soddisfa l'uguaglianza sopra indicata.
+        <br>
+        <br>
+        <br>
+        
+        <div class="gray">
+            <b>Osservaizone a margine</b>
+            <br>
+            In questo esercizio la legge analitica ci viene fornita dal testo ed il nostro compito è solamente quello di 
+            controllare che essa soddisfi l'uguaglianza assegnata. 
+            <br>
+            <br>
+            Immaginate se invece ci fosse stato chiesto: 
+            <br>
+            <br>
+            <i>
+                <u>Trovare</u> una funzione \(f\) tale che sia soddisfatta l'uguaglianza \(\,\,y'\cdot x -x -1 = 0\)
+            </i>
+            <br>
+            <br>
+            Questo tipo di problema è il culmine dell'analisi matematica e si chiama <b>equaizone differenziale</b>.
+        </div>        
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <ul> 
+        <li>
+            Studiare il paragrafo <b>derivate di ordine superiore al primo</b> pagg. da 1609 a 1610.
+        </li>
+        <br>            
+        <li>
+            Svolgere gli esercizi n° 619, 620, 624, 642, 643 a pag. 1649.
+        </li>
+
+
+    </ul>
+
+    
+    <br>
+    <br>
+
+
+
+</body>
