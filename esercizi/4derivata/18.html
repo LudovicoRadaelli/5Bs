@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <!-- ARGOMENTI SVOLTI -->
+    <!-- <section id="argomenti">
+        <h3 class="blue">Argomenti svolti</h3>
+        <div class="grayBorder">            
+
+            <br>
+
+            <div style="text-align: left;">
+                <b>2) Bliblibli blablabla</b>
+            </div>
+            <div class="gray">
+                [Par. 12.2, 12.3, pag. da 668 a 676]
+                <br>
+                <a class="gray" href="../../../3/goniometria/index.html">dispense</a>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br> -->
+
+
+    <!-- ESERCIZI -->      
+    <h3 class="yellow"><b>Derivabilità \(\boldsymbol{\Rightarrow}\) continuità</b></h3>
+    <div class="esempi-container">
+        In questo paragrafetto vediamo un risultato che spiega la connessione tra la continutità e la derivabilità. 
+        <br>
+        <br>
+        <div class="grayBorder">
+            <div class="grayBackground">
+                Se una funzione è derivabile in \(c\) 
+                <br>
+                allora la funzione è continua in \(c\).
+            </div>            
+            <b style="font-size: 1rem;">Dimostrazione</b>
+            <br>
+            <br>
+            Il nostro obiettivo è dimostrare che 
+            \[ 
+                \lim_{x \to c} f(x) = f(c)
+            \]
+            a partire dall'informazione che la funzione è derivabile in \(c\), ovvero che 
+            \[
+                f'(c) = \lim_{h \to 0} \dfrac{f(c + h) - f(c)}{h}
+            \]
+            <br>
+            Partiamo la seguente identità
+            \[
+                \dfrac{\color{blue}{}f(c + h)\color{black}{} - f(c)}{h} = \dfrac{f(c + h) - f(c)}{h}
+            \]
+            Isoliamo il termine \(\color{blue}{}f(c + h)\) evidenziato in blu. Moltiplichiamo entrambi i membri per \(h\).
+            \[
+                \begin{align*}
+                    &\color{blue}{}f(c + h)\color{black}{} - f(c) = \dfrac{f(c + h) - f(c)}{h} \cdot h
+                    \\\\
+                    &\color{blue}{}f(c + h)\color{black}{}  = \dfrac{f(c + h) - f(c)}{h} \cdot h + f(c)
+                \end{align*}
+            \]
+            Al membro sinistro ed al destro abbiamo due termini uguali che dipendono da \(h\).
+            Se effettuiamo il limite per \(h \to 0\) entrambi convergeranno alla stessa quantità.
+            \[
+                \lim_{h \to 0} \, f(c + h) = \lim_{h \to 0} \, \left[\dfrac{f(c + h) - f(c)}{h} \cdot h + f(c)\right]
+            \]
+            concentriamoci sul membro destro
+            <br>
+            \[
+                \lim_{h \to 0} \, \left[\color{red}{}\dfrac{f(c + h) - f(c)}{h}\color{black}{} \cdot \color{blue}{}h\color{black}{} + f(c)\right] 
+            \]
+            il termine <span style="color: red">rosso</span> tende alla derivata di \(f\) in \(x = c\), <u>che esiste 
+            per ipotesi</u>. Il termine <span style="color: blue;">blu</span> tende a \(0\).
+            Quindi
+            \[
+                \begin{align*}
+                    &\lim_{h \to 0} \, \left[\color{red}{}\dfrac{f(c + h) - f(c)}{h}\color{black}{} \cdot \color{blue}{}h\color{black}{} + f(c)\right] =
+                    \\\\
+                    &= \color{red}{}f'(c)\color{black}{} \cdot \color{blue}{}0\color{black}{} + f(c) = f(c)
+                \end{align*}
+            \]
+            Inserendo questo risultato  nella precedente uguaglianza dei limiti, possiamo riscrivere che
+            \[
+                \lim_{h \to 0} \, f(c + h) = f(c)
+            \]
+            che a ben pensarci è proprio la definizione di continuità: per \(h \to 0\) l'argomento  \(c + h\) della funzione tende a \(c\) e di conseguenza il valore della funzione tende a \(f(x)\).
+            Il teorema è dimostrato.
+            <div style="width: 100%; text-align: right;">
+                \(\square\)
+            </div>
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <ul>         
+        <li>
+            Ripassare il paragrafo <b>punti di non derivabilità</b>, pagg. da 1689 a 1691. Prestate particolare attenzione alla tabella <b>In sintesi</b>.
+            <br>
+            Potete integrare il libro di testo con queste spiegazioni:
+            <br>
+            <br>
+            <b>Flesso a tangente verticale</b>
+            <br>
+            <iframe style = "width: 100%" src="https://www.youtube.com/embed/Vrkk5mP2Th0?si=lO9W6IS5iUntYdaP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+            <br>
+            <b>Cuspidi</b>
+            <br>
+            <iframe style = "width: 100%" src="https://www.youtube.com/embed/Y8ctEN3hAnY?si=uz_rkY_ovFWuxbBP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+            <br>
+            <b>Punti angolosi</b>
+            <br>
+            <iframe style = "width: 100%" src="https://www.youtube.com/embed/z8B6tnloFdA?si=g47cxUByuvSpiNeN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </li>
+        <br>
+        <li>
+            studiare l'esempio svolto <b>studiare la derivabilità di una funzione</b> a pagg. 1707 e 1708.
+        </li>
+        <br>        
+        <li>
+            Svolgere gli esercizi n° 20, 21, 25 pag. 1708.
+        </li>
+        <br>
+        <li>
+            Svolgere gli esercizi n° 41, 42 pag. 1709
+        </li>
+    </ul>    
+    
+    <br>
+    <br>
+
+
+
+</body>
