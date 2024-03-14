@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <h3 class="yellow">Il teorema di Rolle</h3>
+    <div class="esempi-container">
+        <b>Enunciato del teorema</b>
+        <div class="grayBorder">
+            Sia \(y = f(x)\) una funzione definita su un intervallo \([a\,,\,b]\)
+            <br>
+            <br>
+            <ol style="list-style: none">
+                <li>
+                    \(\boldsymbol{1})\,\,\) continua su un intervallo \([a\,,\,\,b]\).
+                </li>
+                <br>
+                <li>
+                    \(\boldsymbol{2})\,\,\) derivabile in \((a\,,\,\,b)\)
+                </li>
+                <br>
+                <li>
+                    \(\boldsymbol{3})\,\,\) \(f(a) = f(b)\)
+                </li>
+            </ol>
+            <br>
+            Allora \(\exists c \in (a\,,\,b)\) tale che \(f'(c) = 0\)
+        </div>
+        <br>
+        <br>
+        Interpretiamo cosa afferma il teorema
+        <br>
+        <br>
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/we8kKxKWq3o?si=a7zDBvQla3WC4cgv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- <br>
+        <br>
+        Di seguito viene fornita una dimostrazione del teorema.
+        <br>
+        <br>
+        <span style="font-size: 1rem;"><u><b>Dimostrazione</b></u></span>
+        <div class="grayBorder">
+            Per ipotesi la funzione  è continua sull'intervallo \([a\,,\,b]\). Segue per il teorema 
+            di Weierstrass che la funzione ammette (almeno) un minimo \(m\) ed un massimo \(M\), assunti
+            in corrispondenza dei valori \(x_{_{m}}, x_{_{M}} \in [a\,,\,b]\). 
+            <br>
+            Per ogni valore \(x \in [a\,,\,\,b]\) si ha 
+            \[
+                \underset{= m}{\underbrace{f(x_{_m})}} \leq f(x) \leq \underset{= M}{\underbrace{f(x_{_M})}} \quad (*)
+            \]
+            Distinguiamo tutte le situazioni possibili in due casi. 
+
+            <br>
+            <br>
+
+            <b>Primo caso</b>
+            <br>
+            Consideriamo il caso in cui il minimo \(m\) ed il massimo \(M\) della funzione coincidano, ovvero \(m = M\).
+            Questo caso si può verificare solo se la funzione è costante, infatti la diseguaglianza \((*)\) diventa l'uguaglianza            
+            \[
+                m = f(x) = M \qquad \forall x \in [a\,,\,b]
+            \]            
+            La funzione ha derivata uguale a \(0\) in tutto \((a\,,\,b)\) in quanto costante.
+            <br>
+            <br>
+            <img src="" alt="">
+            <br>
+            <br>
+
+            <b>Secondo caso</b>
+            <br>
+            Supponiamo che il minimo \(m\) sia strettamente miniore del massimo \(M\), ovvero \(m \lt M\).
+            Questo implica che la funzione non è costante ed almeno uno dei due estremi vengono assunti internamente all'intervallo.
+            Supponiamo che il minimo \(m\) venga assunto internamente all'intervallo, ovvero \(x_{_m} \in (a\,,\,b)\).
+
+            <br>
+            <br>
+            <img src="" alt="">
+            <br>
+
+            Discostandoci di un incremento \(h\) rispetto al valore \(x_{_m}\) si ha che
+            \[
+                f(x_{_m} + h) \geq f(x_{_m})                 
+            \]
+            \[
+                \Downarrow
+            \]
+            \[
+                f(x_{_m} + h)  - f(x_{_m}) \geq 0
+            \]
+            Consideriamo i rapporti incrementali da sinistra e da destra
+            \[
+                \dfrac{f(x_{_m} + h)  - f(x_{_m})}{h} \geq 0  \,\,\,\,se\,\,h \gt 0
+            \]
+            \[
+                \dfrac{f(x_{_m} + h)  - f(x_{_m})}{h} \leq 0  \,\,\,\,se\,\,h \lt 0
+            \]
+            passando al limiti per \(h\)
+
+
+
+        </div> -->
+
+        <br>
+        <br>
+        
+        Per la dimostrazione del teorema fate rifermento al libro di testo: pagg. 1693 e 1694.
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <ul>
+        <li>
+            Svolgere l'esercizio n° 82  pag. 1712
+        </li>
+        <br>
+        <li>
+            Studiare l'esecizio guida n° 83 pag. 1712
+        </li>
+        <br>
+        <li>
+            Svolgere gli esercizi n° 87, 88, 89  pag. 1713
+        </li>
+    </ul>    
+
+    <br>
+    <br>
+
+    <button id="hint1-button" onclick="showHint(1)">Svolgimento n° 87</button>
+    <div id="hint1" class="hint" style="display: none;">
+        <b class="gray">Svolgimento n° 87</b> 
+        <div class="grayBorder">       
+            <iframe style="width: 100%;" src="https://www.youtube.com/embed/JDWa-vtDFYY?si=OH-S9r33RLWi15ZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div> 
+
+    <br>
+    <br>
+
+    <button id="hint2-button" onclick="showHint(2)">Svolgimento n° 88</button>
+    <div id="hint2" class="hint" style="display: none;">
+        <b class="gray">Svolgimento n° 88</b> 
+        <div class="grayBorder">
+            Mostriamo che la funzione 
+            \[
+                f(x) = x^2 +2x +3 
+            \]
+            soddisfa le ipotesi del teorema di Rolle in  \([-3\,,\,1]\).
+            <br>
+            <br>
+            <u><b>Dominio, continuità e derivabilità</b></u>
+            <br>
+            La funzione è polinomiale, quindi il suo dominio è \(\mathbb{R}\) ed è ivi continua e derivabile.
+            Da ciò segue che \(f\) è continua e derivabile in \([-3\,,\,1]\) (ipotesi \(\boldsymbol{1)}\) e \(\boldsymbol{2)}\) del teorema).
+            <br>
+            <br>
+            <u><b>Valori negli estremi dell'intervallo</b></u>
+            <br>
+            Si ha che 
+            \[
+                f(-3) = (-3)^2 +2\cdot(-3) +3  = 9 -6 +3 = 6
+            \]
+            \[
+                f(1) = 1^2 +2\cdot 1 +3  = 1 +2 +3 = 6
+            \]
+            quindi \(f(-3) = f(1)\), ovvero vale l'ipotesi \(\boldsymbol{3)}\) del teorema.
+            <br>
+            <br>
+            Segue la tesi: esiste (almeno) un valore \(c \in (-3\,,\,1)\) tale che \(f'(c) = 0\).
+            <br>
+            <br>
+            Svolgiamo ora il secondo punto  dell'esercizio: individuiamo quale sia il punto (o i punti)
+            di cui l'esistenza è garantita dal teorema.
+            <br>
+            La derivata di \(f\) è 
+            \[
+                f'(x) = 2x +2
+            \]
+            Risolviamo l'equazione 
+            \[
+                \begin{align*}
+                    f'(x) &= 0
+                    \\\\
+                    2x +2 &= 0
+                    \\\\
+                    2x &= -2
+                    \\\\
+                    x &= -1
+                \end{align*}
+            \]
+            Si ha quindi che il valore \(c = -1 \in (-3\,,\,\,1)\).
+        </div>
+    </div> 
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Svolgere l'esercizio n° 61  pag. 1711
+    </div>
+
+
+    <br>
+    <br>
+    <button id="hint3-button" onclick="showHint(3)">Svolgimento n° 61</button>
+    <div id="hint3" class="hint" style="display: none;">
+        <b class="gray">Svolgimento n° 61</b> 
+        <div class="grayBorder">
+            <div class="grayBorder">
+                \[
+                    f(x) = \dfrac{\left|x^2 -4\right|}{x -2} + 2x^2
+                \]
+                <u><b>Dominio</b></u>
+                <br>
+                L'espressione analitica di \(f\) presenta una divisione, quindi imponiamo la condizione
+                \[
+                    x -2 \neq 0 \quad \Rightarrow \quad  x \neq 2
+                \]
+                Il dominio di \(f\) è 
+                \[
+                    D = (-\infty\,,\,\,2) \cup (2\,,\,\,+\infty)
+                \]
+                
+                <u><b>Continuità</b></u>
+                <br>
+                La funzione \(f\) è sommando, dividendo e componendo funzioni continue, dunque risulta a sua volta continua nel dominio \(D\).
+                
+                <br>
+                <br>
+        
+                <u><b>Derivata</b></u>
+                <br>
+                Calcoliamo la derivata di \(f\).
+                <br>
+                <br>
+                <div class="slide-container grayBorder">
+                    <div class="slide1">
+                        \(\left(\dfrac{\left|x^2 -4\right|}{x -2} + 2x^2\right)'\) = 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Applichiamo la linerità della derivata
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\left(\dfrac{\left|x^2 -4\right|}{x -2}\right)' + \left(2x^2\right)'\) = 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Applichiamo la linerità della derivata
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\color{red}{}\underbrace{\color{black}{}\left(\dfrac{\left|x^2 -4\right|}{x -2}\right)'} \color{black}{}+ \color{blue}{}\underbrace{\color{black}{}\left(2x^2\right)'} \color{black}{} = \)  
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Al il <span style="color: red">primo addendo</span> applichiamo la regola di derivazione del rapporto tra funzioni. Il <span style="color: blue">secondo addendo</span>
+                            lo deriviamo come al solito.
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\color{red}{}\underbrace{\color{black}{}\dfrac{\left|x^2 -4\right|' (x-2) - \left|x^2 -4\right| \cdot 1}{(x -2)^2}}\color{black}{} + \color{blue}{}\underbrace{\color{black}{}4x}\color{black}{} =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Al il <span style="color: red">primo addendo</span> applichiamo la regola di derivazione del rapporto tra funzioni. Il <span style="color: blue">secondo addendo</span>
+                            lo deriviamo come al solito.
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\dfrac{\color{red}{}\left|x^2 -4\right|'\color{black}{} (x-2) - \left|x^2 -4\right|}{(x -2)^2} + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Il termine in <span style="color: red;">rosso</span> è una funzione composta. 
+                            Si ha
+                            \[
+                                \begin{align*}
+                                    \color{red}{}\left|x^2 -4\right|' \color{gray}{}
+                                    &=  \dfrac{\left|x^2 -4\right|}{x^2 -4} \cdot (x^2 - 4)' =
+                                    \\\\
+                                    &=  \color{red}{}\dfrac{\left|x^2 -4\right|}{x^2 -4} \cdot 2x 
+                                \end{align*}
+                            \]
+                            
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\dfrac{\color{red}{}\dfrac{\left|x^2 -4\right|}{x^2 -4} \cdot 2x \color{black}{} \,\cdot (x-2) - \left|x^2 -4\right|}{(x -2)^2} + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Il termine in <span style="color: red;">rosso</span> è una funzione composta. 
+                            Si ha
+                            \[
+                                \begin{align*}
+                                    \color{red}{}\left|x^2 -4\right|' \color{gray}{}
+                                    &=  \dfrac{\left|x^2 -4\right|}{x^2 -4} \cdot (x^2 - 4)' =
+                                    \\\\
+                                    &=  \color{red}{}\dfrac{\left|x^2 -4\right|}{x^2 -4} \cdot 2x 
+                                \end{align*}
+                            \]
+                            
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\dfrac{\dfrac{\color{blue}{}\left|x^2 -4\right|\color{black}{}}{x^2 -4} \cdot 2x  \,\cdot (x-2) - \color{blue}{}\left|x^2 -4\right|\color{black}{}}{(x -2)^2} + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Raccogliamo a fattor comune il termine in <span style="color: blue">blu</span>.
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\dfrac{\color{blue}{}\left|x^2 -4\right|\color{black}{} \left(\dfrac{2x  \,\cdot (x-2)}{x^2 -4} - 1\right)}{(x -2)^2} + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Raccogliamo a fattor comune il termine in <span style="color: blue">blu</span>.
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right| \left(\dfrac{2x  \,\cdot (x-2)}{x^2 -4} - 1\right)}{(x -2)^2} + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Scomponiamo il denominatore \(x^2 -4 = (x - 2)(x + 2)\) e semplifichiamo
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right| \left(\dfrac{2x  \,\cdot (x-2)}{(x - 2)(x + 2)} - 1\right)}{(x -2)^2} \color{black}{}+ 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Scomponiamo il denominatore \(x^2 -4 = (x - 2)(x + 2)\) e semplifichiamo
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right| \left(\dfrac{2x  \,\cdot \cancel{(x-2)}}{\cancel{(x - 2)}(x + 2)} - 1\right)}{(x -2)^2} \color{black}{}+ 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Scomponiamo il denominatore \(x^2 -4 = (x - 2)(x + 2)\) e semplifichiamo
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right| \left(\dfrac{2x}{x + 2} - 1\right)}{(x -2)^2} \color{black}{}+ 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Scomponiamo il denominatore \(x^2 -4 = (x - 2)(x + 2)\) e semplifichiamo
+                        </span>
+                    </div>
+                    <div class="slide1">
+                        \(\color{red}{}\dfrac{\color{black}{}\left|x^2 -4\right| \left(\dfrac{2x}{x + 2} - 1\right)}{(x -2)^2} \color{black}{}+ 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">        
+                            Riscriviamo la frazione in <span style="color: red">rosso</span> in modo più pratico.
+                        </span>
+                    </div>  
+                    <div class="slide1">
+                        \(\color{red}{}\dfrac{\color{black}{}\left|x^2 -4\right|}{(x -2)^2} \color{black}{} \left(\dfrac{2x}{x + 2} - 1\right) + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Riscriviamo la frazione in <span style="color: red">rosso</span> in modo più pratico.
+                        </span>
+                    </div>  
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right|}{(x -2)^2} \color{black}{} \left(\dfrac{2x}{x + 2} - 1\right) + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Svolgiamo i calcoli in parentesi.
+                        </span>
+                    </div> 
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right|}{(x -2)^2} \color{black}{} \left(\dfrac{2x - (x +2)}{x + 2}\right) + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Svolgiamo i calcoli in parentesi.
+                        </span>
+                    </div>  
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right|}{(x -2)^2} \color{black}{} \left(\dfrac{x - 2}{x + 2}\right) + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Svolgiamo i calcoli in parentesi.
+                        </span>
+                    </div>  
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right|}{(x -2)^2} \color{black}{} \left(\dfrac{x - 2}{x + 2}\right) + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Semplifichiamo 
+                        </span>
+                    </div>  
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right|}{(x -2)^{\cancel{2}}} \color{black}{} \left(\dfrac{\cancel{x - 2}}{x + 2}\right) + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Semplifichiamo 
+                        </span>
+                    </div>  
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right|}{x -2} \color{black}{} \left(\dfrac{1}{x + 2}\right) + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Semplifichiamo 
+                        </span>
+                    </div>  
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right|}{x -2} \color{black}{} \left(\dfrac{1}{x + 2}\right) + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Moltiplichiamo le frazioni
+                        </span>
+                    </div>  
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right|}{(x -2)(x + 2)} + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Moltiplichiamo i denominatori
+                        </span>
+                    </div>  
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right|}{x^2 - 4} + 4x =\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            Moltiplichiamo i denominatori
+                        </span>
+                    </div>  
+                    <div class="slide1">
+                        \(\dfrac{\left|x^2 -4\right|}{x^2 - 4} + 4x\) 
+                        <br>
+                        <br>
+                        <span class="gray">
+                            
+                        </span>
+                    </div>  
+                    
+                </div>
+                <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                    <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+                    <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+                </div> 
+        
+                <br>
+                <br>
+        
+                La derivata è
+                \[
+                    f'(x) = \dfrac{\left|x^2 -4\right|}{x^2 - 4} + 4x
+                \]
+        
+                Osserviamo che la funzione \(\frac{\left|x^2 -4\right|}{x^2 - 4}\) ci restituisce il segno di \(x^2 -4\), che è
+                <br>
+                <br>
+                <img src="img/22(1).png" style="width: 60%; border: 0rem;">
+                <br>
+        
+                <u><b>Punti di non derivabilità</b></u>
+                <br>
+                Controlliamo se esistono punti del dominio \(D\) di \(f\) dove la definita la derivata \(f'\) non è definita.
+                <br>
+                La derivata è definita se il denominatore della sua espressione analitica 
+                \[
+                    x^2 - 4 \neq 0 \,\,\Rightarrow\,\, x^2 \neq 4 \,\,\Rightarrow\,\, x \neq \pm 2
+                \]
+                In \(x = 2\) la funzione non è definita, quindi non è neanche derivabile.
+                <br>
+                Prendiamo in considerazione \(x = -2\) che appartiene al dominio di \(f\).
+                Calcoliamo le derivate sinistra e destra in corrispondenza di \(x = -2\), considerando che siamo sotto le ipotesi 
+                del criterio di derivabilità.                
+        
+                \[
+                    \begin{align*}
+                        f'_{-}(-2) 
+                        &= \lim_{x \to -2^{-}} f'(x) = 
+                        \\\\
+                        &= \lim_{x \to -2^{-}} \color{blue}{}\underbrace{\color{black}{}\dfrac{\left|x^2 -4\right|}{x^2 - 4}}\color{black}{} + 4x = 
+                        \\\\
+                        &= \color{blue}{}\underbrace{\color{black}{}1}\color{black}{}  + 4\cdot (-2) = -7
+                    \end{align*}
+                \] 
+        
+                <br>
+        
+                \[
+                    \begin{align*}
+                        f'_{+}(-2) 
+                        &= \lim_{x \to -2^{+}} f'(x) = 
+                        \\\\
+                        &= \lim_{x \to -2^{+}} \color{blue}{}\underbrace{\color{black}{}\dfrac{\left|x^2 -4\right|}{x^2 - 4}}\color{black}{} + 4x = 
+                        \\\\
+                        &= \color{blue}{}\underbrace{\color{black}{}-1}\color{black}{}  + 4\cdot (-2) = -9
+                    \end{align*}
+                \] 
+        
+                Concludiamo che  \(x = -2\) è un punto angoloso
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <br>
+    <br>
+    
+    
+
+    <script>            
+        function showHint(i) {
+            for(let j = 1; j <= document.getElementsByClassName("hint").length; j++) {
+                document.getElementById("hint"+j+"-button").style.display = "block";
+                document.getElementById("hint"+j).style.display = "none";    
+            }
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+            document.location.href = `#hint${i}`
+        }  
+
+    </script>
+    <script>
+        let slideIndex = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+        inizialize(1);
+
+
+        //funzione per passare alla slide successiva
+        function nextSlide(n) {
+            
+            //ogni volta che il bottone viene premuto scrollo in modo da centrare le slide
+            document.location.href=`#slide-container${n}`
+
+            //nascondo tutte le slide
+            let slide = document.getElementsByClassName(`slide${n}`)
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+
+            //aggiorno l'indice
+            slideIndex[n]++;
+
+            if(slideIndex[n] !== 0 ) {
+                //pulsante previous abiliatato
+                document.getElementById(`previousSlide-button${n}`).disabled = false;
+            }
+
+            //se ci sono ancora slide da mostrare passo alla successiva
+            if(slideIndex[n] < slide.length) {
+                slide[slideIndex[n]].style.display = "block";
+            }
+
+            //le slide da mostrare sono finite. rendo nuovamente visibile l'ultima slide (altimenti sparisce)
+            //e scrollo la vista al riquadro conclusiovo
+            if(slideIndex[n]  === slide.length -1) {
+                slide[slide.length-1].style.display = "block";
+                document.getElementById(`nextSlide-button${n}`).disabled = true;  
+            }
+
+        }
+            
+        //funzione per passare alla slide successiva
+        function previousSlide(n) {
+
+            
+            //ogni volta che il bottone viene premuto scrollo in modo da centrare le slide
+            document.location.href=`#slide-container${n}`
+
+            //nascondo tutte le slide
+            let slide = document.getElementsByClassName(`slide${n}`)
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+
+            //aggiorno l'indice
+            slideIndex[n]--;
+
+
+            //passo alla precedente. se è la prima slide disattivo il tasto previous
+            slide[slideIndex[n]].style.display = "block";
+            //slide[slideIndex[n]].style.fontSize = "1.1rem";
+            if(slideIndex[n] === 0) {
+                document.getElementById(`previousSlide-button${n}`).disabled = true;
+            } 
+
+            //nel caso in cui il pulsante next sia disabilitato lo riattivo
+            if(document.getElementById(`nextSlide-button${n}`).disabled === true) {
+                document.getElementById(`nextSlide-button${n}`).disabled = false;  
+            }
+        }
+
+
+        function inizialize(n) {
+
+            slideIndex[n] = 0
+
+            let slide = document.getElementsByClassName(`slide${n}`)
+
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none"
+            }
+
+            //rendo visibile la prima slide
+            slide[0].style.display = "block"
+
+            //pulsante next disabled
+            document.getElementById(`nextSlide-button${n}`).disabled = false;
+
+            //pulsante previous disabled
+            document.getElementById(`previousSlide-button${n}`).disabled = true;
+
+        }
+    </script>
+</body>
+
+<!--
+    <div class="slide-container grayBorder">
+        <div class="slide1">
+            \(\Big|ln\sqrt{x}\Big|' = \)
+        </div>
+        <div class="slide1">
+            \(\color{blue}{}\Big|\color{red}{}ln\sqrt{x}\color{black}{}\color{blue}{}\Big|\color{black}{}' = \)
+            <br>
+            <br>
+            <span class="gray">Deriviamo la funzione <span style="color: blue">modulo</span> considerando il termine in <span style="color: red">rosso</span> come un'unica variabile.</span>
+        </div>
+        <div class="slide1">
+            \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|\color{red}{}ln\sqrt{x}\color{black}{}\right|}{\color{red}{}ln\sqrt{x}\color{black}{}} \,\cdot\,\) 
+            <br>
+            <br>
+            <span class="gray">Deriviamo la funzione <span style="color: blue">modulo</span> considerando il termine in <span style="color: red">rosso</span> come un'unica variabile.</span>
+        </div>
+        <div class="slide1">
+            \(\Big|\color{blue}{}ln\color{red}{}\sqrt{x}\color{black}{}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \,\cdot\,\)
+            <br>
+            <br>
+            <span class="gray">Deriviamo la funzione <span style="color: blue">logaritmo</span> considerando il termine in <span style="color: red">rosso</span> come un'unica variabile.</span>
+        </div>
+        <div class="slide1">
+            \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}}  \,\cdot\, \dfrac{1}{\color{red}{}\sqrt{x}} \,\cdot\,\) 
+            <br>
+            <br>
+            <span class="gray">Deriviamo la funzione <span style="color: blue">logaritmo</span> considerando il termine in <span style="color: red">rosso</span> come un'unica variabile.</span>
+        </div>
+        <div class="slide1">
+            \(\Big|ln\color{blue}{}\sqrt{\color{red}{}x}\color{black}{}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \,\cdot\, \dfrac{1}{\sqrt{x}} \,\cdot\,\) 
+            <br>
+            <br>
+            <span class="gray">Deriviamo la funzione <span style="color: blue">radice</span>.</span>
+        </div>
+        <div class="slide1">
+            \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \,\cdot\, \dfrac{1}{\sqrt{x}} \,\cdot\,\dfrac{1}{2\sqrt{x}}\) 
+            <br>
+            <br>
+            <span class="gray">Deriviamo la funzione <span style="color: blue">radice</span>.</span>
+        </div>
+        <div class="slide1">
+            \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \,\cdot\, \dfrac{1}{\sqrt{x}} \,\cdot\,\dfrac{1}{2\sqrt{x}}\) 
+            <br>
+            <br>
+            <span class="gray">Moltiplichiamo il secondo ed il terzo fattore.</span>
+        </div>
+        <div class="slide1">
+            \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \dfrac{1}{2\sqrt{x}^2}\) 
+            <br>
+            <br>
+            <span class="gray">Moltiplichiamo il secondo ed il terzo fattore.</span>
+        </div>
+        <div class="slide1">
+            \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \dfrac{1}{2\sqrt{x}^2}\) 
+            <br>
+            <br>
+            <span class="gray">Semplifichiamo radice e quadrato lasiando traccia del modulo</span>
+        </div>
+        <div class="slide1">
+            \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \dfrac{1}{2\left|x\right|}\) 
+            <br>
+            <br>
+            <span class="gray">Semplifichiamo radice e quadrato lasiando traccia del modulo</span>
+        </div>
+        <div class="slide1">
+            \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{2\left|x\right| \, ln\sqrt{x}}\) 
+            <br>
+            <br>
+            <span class="gray">Moltiplichiamo le due frazioni</span>
+        </div>
+        <div class="slide1">
+            \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{2\left|x\right| \, ln\sqrt{x}}\) 
+            <br>
+            <br>
+            <span class="gray">Per il dominio, stiamo considerando valori di \(x\) maggiori di \(0\), quindi \(|x| = x\)</span>
+        </div>
+        <div class="slide1">
+            \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{2x  \, ln\sqrt{x}}\) 
+            <br>
+            <br>
+            <span class="gray">Per il dominio, stiamo considerando valori di \(x\) maggiori di \(0\), quindi \(|x| = x\)</span>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+        <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+    </div> 
+ -->
