@@ -83,6 +83,200 @@
 
     <br>
     <br>
+
+    <button id="hint3-button" onclick="showHint(3)">Svolgimento n° 60</button>
+    <div id="hint3" class="hint grayBorder" style="display: none;">
+        \[
+            f(x) = \left|ln\sqrt{x}\right|
+        \]
+        <u><b>Dominio</b></u>
+        <br>
+        Nella espressione analitica di \(f\) sono presenti un logaritmo ed una radice. Imponiamo le
+        seguenti condizioni
+        \[
+            \begin{cases} 
+                \sqrt{x} \gt 0 \qquad &(condizione\,\,logaritmo)
+                \\\\
+                x \geq 0 &(condizione\,\,radice)
+            \end{cases}
+        \]
+        La radice di \(x\) è sempre positiva, eccetto se \(x = 0\), perciò queste condizioni sono riassumibili nell'unica condizione 
+        \(x \gt  0\). Il dominio della funzione è
+        \[
+            D = (0\,,\,\,+\infty)
+        \]
+        <u><b>Continuità</b></u>
+        <br>
+        La funzione \(f\) è una funzione continua in \(D\), perché composizione di tre funzioni continue su \(D\) (il modulo, 
+        logaritmo e la radice).
+        
+        <br>
+        <br>
+        
+        <u><b>Derivabilità</b></u>
+        <br>
+        Calcoliamo la derivata di \(f\)
+        \[
+            f(x) = \left|ln\sqrt{x}\right|
+        \]        
+        <div class="slide-container grayBorder">
+            <div class="slide1">
+                \(\Big|ln\sqrt{x}\Big|' = \)
+            </div>
+            <div class="slide1">
+                \(\color{blue}{}\Big|\color{red}{}ln\sqrt{x}\color{black}{}\color{blue}{}\Big|\color{black}{}' = \)
+                <br>
+                <br>
+                <span class="gray">Deriviamo la funzione <span style="color: blue">modulo</span> considerando il termine in <span style="color: red">rosso</span> come un'unica variabile.</span>
+            </div>
+            <div class="slide1">
+                \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|\color{red}{}ln\sqrt{x}\color{black}{}\right|}{\color{red}{}ln\sqrt{x}\color{black}{}} \,\cdot\,\) 
+                <br>
+                <br>
+                <span class="gray">Deriviamo la funzione <span style="color: blue">modulo</span> considerando il termine in <span style="color: red">rosso</span> come un'unica variabile.</span>
+            </div>
+            <div class="slide1">
+                \(\Big|\color{blue}{}ln\color{red}{}\sqrt{x}\color{black}{}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \,\cdot\,\)
+                <br>
+                <br>
+                <span class="gray">Deriviamo la funzione <span style="color: blue">logaritmo</span> considerando il termine in <span style="color: red">rosso</span> come un'unica variabile.</span>
+            </div>
+            <div class="slide1">
+                \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}}  \,\cdot\, \dfrac{1}{\color{red}{}\sqrt{x}} \,\cdot\,\) 
+                <br>
+                <br>
+                <span class="gray">Deriviamo la funzione <span style="color: blue">logaritmo</span> considerando il termine in <span style="color: red">rosso</span> come un'unica variabile.</span>
+            </div>
+            <div class="slide1">
+                \(\Big|ln\color{blue}{}\sqrt{\color{red}{}x}\color{black}{}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \,\cdot\, \dfrac{1}{\sqrt{x}} \,\cdot\,\) 
+                <br>
+                <br>
+                <span class="gray">Deriviamo la funzione <span style="color: blue">radice</span>.</span>
+            </div>
+            <div class="slide1">
+                \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \,\cdot\, \dfrac{1}{\sqrt{x}} \,\cdot\,\dfrac{1}{2\sqrt{x}}\) 
+                <br>
+                <br>
+                <span class="gray">Deriviamo la funzione <span style="color: blue">radice</span>.</span>
+            </div>
+            <div class="slide1">
+                \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \,\cdot\, \dfrac{1}{\sqrt{x}} \,\cdot\,\dfrac{1}{2\sqrt{x}}\) 
+                <br>
+                <br>
+                <span class="gray">Moltiplichiamo il secondo ed il terzo fattore.</span>
+            </div>
+            <div class="slide1">
+                \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \dfrac{1}{2\sqrt{x}^2}\) 
+                <br>
+                <br>
+                <span class="gray">Moltiplichiamo il secondo ed il terzo fattore.</span>
+            </div>
+            <div class="slide1">
+                \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \dfrac{1}{2\sqrt{x}^2}\) 
+                <br>
+                <br>
+                <span class="gray">Semplifichiamo radice e quadrato lasiando traccia del modulo</span>
+            </div>
+            <div class="slide1">
+                \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \dfrac{1}{2\left|x\right|}\) 
+                <br>
+                <br>
+                <span class="gray">Semplifichiamo radice e quadrato lasiando traccia del modulo</span>
+            </div>
+            <div class="slide1">
+                \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{2\left|x\right| \, ln\sqrt{x}}\) 
+                <br>
+                <br>
+                <span class="gray">Moltiplichiamo le due frazioni</span>
+            </div>
+            <div class="slide1">
+                \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{2\left|x\right| \, ln\sqrt{x}}\) 
+                <br>
+                <br>
+                <span class="gray">Per il dominio, stiamo considerando valori di \(x\) maggiori di \(0\), quindi \(|x| = x\)</span>
+            </div>
+            <div class="slide1">
+                \(\Big|ln\sqrt{x}\Big|' = \dfrac{\left|ln\sqrt{x}\right|}{2x  \, ln\sqrt{x}}\) 
+                <br>
+                <br>
+                <span class="gray">Per il dominio, stiamo considerando valori di \(x\) maggiori di \(0\), quindi \(|x| = x\)</span>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div>
+
+        <br>
+
+        Abbiamo così ottenuto
+        \[
+            f'(x) = \dfrac{\left|ln\sqrt{x}\right|}{2x \, ln\sqrt{x}}
+        \]
+        Individuiamo il dominio della derivata \(f'\).
+        <br>
+        Le condizioni per cui essa è definita sono le stesse della funzione \(f\), con l'aggiunta della seguente 
+        \[
+            2x \, ln\sqrt{x} \neq 0
+        \]
+        Perché ciò sia vero, sia il primo che il secondo fattore (evidenziati attraverso le parentesi graffe) devono essere diversi da \(0\):
+        \[
+            \underbrace{2x} \, \underbrace{ln\sqrt{x}} \neq 0
+        \]           
+        \[
+            \begin{align*}
+                2x \neq 0 \qquad &e \qquad ln\sqrt{x} \neq 0
+                \\\\
+                x \neq 0 \qquad &e \qquad ln\sqrt{x} \neq ln(1)
+                \\\\
+                x \neq 0 \qquad &e \qquad \sqrt{x} \neq 1
+                \\\\
+                x \neq 0 \qquad &e \qquad x \neq 1
+            \end{align*}
+        \]
+        Siccome \(0 \notin D\), l'unico punto che ci interessa è \(x = 1\). Vediamo la funzione è derivabile in esso.
+        Siamo nelle ipotesi del criterio di derivabilità, quindi 
+        \[
+            \begin{align*}
+                f'_{-}(1) &=\lim_{x \to 1^{-}} f'(x) = \lim_{x \to 1^{-}}\dfrac{\left|ln\sqrt{x}\right|}{2x \, ln\sqrt{x}} = 
+                \\\\
+                &= \lim_{x \to 1^{-}}\dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \, \dfrac{1}{2x} =
+                \\\\
+                &= \dfrac{\left|ln\sqrt{1^{^-}}\right|}{ln\sqrt{1^{^-}}} \, \dfrac{1}{2\cdot 1} =
+                \\\\
+                &= \dfrac{\left|ln(1^{^-})\right|}{ln(1^{^-})} \, \dfrac{1}{2} =
+                \\\\
+                &= \dfrac{\left|0^{^-}\right|}{0^{^-}} \, \dfrac{1}{2} =
+                \\\\
+                &= -\dfrac{1}{2}
+            \end{align*}
+        \]
+        Un osservazione sul calcolo precedente: la quantità \(ln\sqrt{1^{^-}}\) è <b>negativa</b>. Per definizione di modulo questo implica che 
+        \(\frac{\left|ln\sqrt{1^{^-}}\right|}{ln\sqrt{1^{^-}}} = -1\).
+        <br>
+        Analogamente nel seguente calcolo usiamo il fatto che \(\frac{\left|ln\sqrt{1^{^+}}\right|}{ln\sqrt{1^{^+}}} = +1\).
+        \[
+        \begin{align*}
+            f'_{+}(1) &=\lim_{x \to 1^{+}} f'(x) = \lim_{x \to 1^{+}}\dfrac{\left|ln\sqrt{x}\right|}{2x \, ln\sqrt{x}} = 
+            \\\\
+            &= \lim_{x \to 1^{+}}\dfrac{\left|ln\sqrt{x}\right|}{ln\sqrt{x}} \, \dfrac{1}{2x} =
+            \\\\
+            &= \dfrac{\left|ln\sqrt{1^{^+}}\right|}{ln\sqrt{1^{^+}}} \, \dfrac{1}{2\cdot 1} =
+            \\\\
+            &= \dfrac{\left|ln(1^{^+})\right|}{ln(1^{^+})} \, \dfrac{1}{2} =
+            \\\\
+            &= \dfrac{\left|0^{^+}\right|}{0^{^+}} \, \dfrac{1}{2} =
+            \\\\
+            &= +\dfrac{1}{2}
+        \end{align*}
+    \]
+    Abbiamo così mostrato che la derivata sinistra a destra di \(f\) in \(x = 1\) esisono finite ma sono diverse.
+    La funzion non è derivabile in \(x = 1\), che è un punto angoloso.
+    </div>
+
+
+    <br>
+    <br>
     <hr>
     <br>
     <br>
@@ -347,5 +541,97 @@
             document.location.href = `#hint${i}`
         }  
 
+    </script>
+    <script>
+        let slideIndex = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+        inizialize(1);
+
+
+        //funzione per passare alla slide successiva
+        function nextSlide(n) {
+            
+            //ogni volta che il bottone viene premuto scrollo in modo da centrare le slide
+            document.location.href=`#slide-container${n}`
+
+            //nascondo tutte le slide
+            let slide = document.getElementsByClassName(`slide${n}`)
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+
+            //aggiorno l'indice
+            slideIndex[n]++;
+
+            if(slideIndex[n] !== 0 ) {
+                //pulsante previous abiliatato
+                document.getElementById(`previousSlide-button${n}`).disabled = false;
+            }
+
+            //se ci sono ancora slide da mostrare passo alla successiva
+            if(slideIndex[n] < slide.length) {
+                slide[slideIndex[n]].style.display = "block";
+            }
+
+            //le slide da mostrare sono finite. rendo nuovamente visibile l'ultima slide (altimenti sparisce)
+            //e scrollo la vista al riquadro conclusiovo
+            if(slideIndex[n]  === slide.length -1) {
+                slide[slide.length-1].style.display = "block";
+                document.getElementById(`nextSlide-button${n}`).disabled = true;  
+            }
+
+        }
+            
+        //funzione per passare alla slide successiva
+        function previousSlide(n) {
+
+            
+            //ogni volta che il bottone viene premuto scrollo in modo da centrare le slide
+            document.location.href=`#slide-container${n}`
+
+            //nascondo tutte le slide
+            let slide = document.getElementsByClassName(`slide${n}`)
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+
+            //aggiorno l'indice
+            slideIndex[n]--;
+
+
+            //passo alla precedente. se è la prima slide disattivo il tasto previous
+            slide[slideIndex[n]].style.display = "block";
+            //slide[slideIndex[n]].style.fontSize = "1.1rem";
+            if(slideIndex[n] === 0) {
+                document.getElementById(`previousSlide-button${n}`).disabled = true;
+            } 
+
+            //nel caso in cui il pulsante next sia disabilitato lo riattivo
+            if(document.getElementById(`nextSlide-button${n}`).disabled === true) {
+                document.getElementById(`nextSlide-button${n}`).disabled = false;  
+            }
+        }
+
+
+        function inizialize(n) {
+
+            slideIndex[n] = 0
+
+            let slide = document.getElementsByClassName(`slide${n}`)
+
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none"
+            }
+
+            //rendo visibile la prima slide
+            slide[0].style.display = "block"
+
+            //pulsante next disabled
+            document.getElementById(`nextSlide-button${n}`).disabled = false;
+
+            //pulsante previous disabled
+            document.getElementById(`previousSlide-button${n}`).disabled = true;
+
+        }
     </script>
 </body>
