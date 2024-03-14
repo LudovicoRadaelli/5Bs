@@ -75,6 +75,14 @@
 
     <br>
     <br>
+    <div class="gray">
+        <b>Svolgimento</b>
+        <br>
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/WGILEYdp8Vs?si=_ojjVgEWtM6kwUZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <br>
+    <br>
     <hr>
     <br>
     <br>
@@ -89,13 +97,255 @@
         <li>
             Svolgere gli esercizi n° 42, 43 pag. 1709
         </li>        
-    </ul>    
+    </ul>   
+    
+    <br>
+
+    
+    <button id="hint1-button" onclick="showHint(1)">Svolgimento n° 25</button>
+    <div id="hint1" class="hint grayBorder" style="display: none;">
+        <b>Svolgimento n° 25</b>
+        \[
+            f(x) = 
+            \begin{cases}
+                -x^2 -2x &\,\,\,se\,\,x\leq 0
+                \\\\
+                \sqrt{x} &\,\,\,se\,\,x\gt 0
+            \end{cases}
+        \]
+
+        <u><b>Dominio</b></u>
+        <br>
+        La funzione \(y = -x^2 -2x\), che definisce \(f\) nel tratto \((-\infty\,,\,\,0]\), è definita su tutto \(\mathbb{R}\).
+        Di conseguenza \(f\) è definita su 
+        \[
+            \mathbb{R} \cap (-\infty\,,\,\,0] = (-\infty\,,\,\,0]
+        \]
+        La funzione \(y = \sqrt{x}\), che definisce \(f\) nel tratto \((0\,,\,\,+\infty)\), è definita su \([0\,\,,\,\,+\infty)\).
+        Di conseguenza \(f\) è definita su 
+        \[
+            [0\,\,,\,\,+\infty) \cap (0\,,\,\,+\infty) = (0\,,\,\,+\infty)
+        \]
+        Concludiamo che il dominio di \(f\) è 
+        \[
+            D = (-\infty\,,\,\,0] \cup (0\,,\,\,+\infty) = \mathbb{R}
+        \]
+
+        <u><b>Continuità</b></u>
+        <br>
+        La funzione che definisce \(f\) nel tratto sinistro è un polinomio, quindi è continua
+        in \(\mathbb{R}\), quindi in particolare in \((-\infty\,,\,\,0)\).
+        <br>
+        La funzione che definisce \(f\) nel tratto destro è continua in \([0\,,\,\,+\infty)\), quindi in particolare
+        in \((0\,,\,\,+\infty)\)
+        Rimane da controllare la continuità nel punto \(x = 0\) dove i due tratti si "incollano".
+        <div class="formula">
+            \[
+                \lim_{x \to 0^{-}} f(x) = \lim_{x \to 0^{-}} -x^2 -2x
+                = -0^2 -2\cdot 0 = 0
+            \]  
+        </div>
+        <div class="formula">
+            \[
+                \lim_{x \to 0^{+}} f(x) = \lim_{x \to 0^{+}} \sqrt{x} = \sqrt{0} = 0
+            \]  
+        </div>
+        Infine si ha \(f(0) = -0^2 -2\cdot 0 = 0\)
+        <br>
+        Segue che \(f\) è continua in \(x = 0\).
+
+        <br>
+        <br>
+        Possiamo concludere che la funzione è continua in tutto \(\mathbb{R}\).
+
+        <br>
+        <br>
+
+        <u><b>Calcolo derivata ed insieme di definizione della derivata</b></u>
+        <br>
+        Deriviamo la legge pertinente a ciascun tratto della derivata, tralasciando il punto \(x = 0\)        
+        \[
+            f(x) = 
+            \begin{cases}
+                -x^2 -2x &\,\,\,se\,\,x\leq 0
+                \\\\
+                \sqrt{x} &\,\,\,se\,\,x\gt 0
+            \end{cases}
+        \]
+        \[
+            f'(x) = 
+            \begin{cases}
+                -2x -2 &\,\,\,se\,\,x\lt 0
+                \\\\
+                \dfrac{1}{2\sqrt{x}} &\,\,\,se\,\,x\gt 0
+            \end{cases}
+        \]
+        Questo calcolo mostra che \(f\) è derivabile in \(\mathbb{R} - {0}\).
+        Controlliamo la derivabilità in \(x = 0\) sfruttando il <a href="19.html">criterio di derivabilità</a>.
+        <div class="formula">
+            \[
+                f_{-}(0) = \lim_{x \to 0^{-}} f'(x) = \lim_{x \to 0^{-}} -x^2 -2 = -2
+            \]
+        </div>
+        <div class="formula">
+            \[
+                f_{+}(0) = \lim_{x \to 0^{+}} f'(x) = \lim_{x \to 0^{+}} \dfrac{1}{2\sqrt{x}} = \dfrac{1}{2\sqrt{0^{^+}}} = \dfrac{1}{0^{^+}} = +\infty
+            \]
+        </div>
+        <br>
+        
+        La derivata destra non è finita, ovvero la parte del grafico a destra di \(x = 0\) ha tangente verticale.
+        Siccome derivata destra è finita ed il tratto di grafico a sinistra \(x = 0\) ha una tangente non verticale.
+        Segue che \(f\) non è derivabile in \(x = 0\), che è un punto angoloso.
+        <br>
+        <br>
+        <img src="img/21(1).png" alt="">        
+    </div> 
+
+    <br>
+
+
+    <button id="hint2-button" onclick="showHint(2)">Svolgimento n° 43</button>
+    <div id="hint2" class="hint grayBorder" style="display: none;">
+        <b>Svolgimento n° 43</b>
+        \[
+            f(x) = 
+            \begin{cases}
+                -2ax^2 + bx &\,\,\,se\,\,x \leq 1
+                \\\\
+                \dfrac{1}{x^2 + 1} &\,\,\,se\,\,x \gt 1
+            \end{cases}
+        \]
+
+        <u><b>Dominio</b></u>
+        <br>
+        La fuzione \(y = -2ax^2 + bx\) è un polinomio, quindi è definita su tutto \(\mathbb{R}\). 
+        Di conseguenza \(f\) è definita su tutto il tratto sinistro \((-\infty\,,\,\,1]\)
+        <br>
+        La fuzione \(y = \frac{1}{x^2 + 1}\) quindi è definita su tutto \(\mathbb{R}\), perché 
+        \[
+            x^2 + 1 \neq 0 \qquad \forall x \in \mathbb{R}
+        \] 
+        Di conseguenza \(f\) è definita su tutto il tratto destro \([1\,,\,\,+\infty)\).
+        Concludiamo che il dominio di \(f\) è \(D = \mathbb{R}\)        
+
+        <br>
+        <br>
+
+        <u><b>Continuità</b></u>
+        <br>
+        Comunque scegliamo i parametri \(a\) e \(b\), la funzione è continua in \((-\infty\,,\,\,1) \cup (1\,,\,\,+\infty)\) poichè la funzione che definisce \(f\) sul
+        tratto sinistro è un polinomio e quella che la definisce sul tratto destro è il rapporto tra una costante ed un polinomio.
+        <br>
+        <br>
+        Affinché \(f\) sia continutà in \(x = 0\) deve essere vero che
+        \[
+            \lim_{x \to 1^{-}} f(x) = \lim_{x \to 1^{+}} f(x)
+        \]
+        ovvero
+        \[
+            \begin{align*}
+                \lim_{x \to 1^{-}} -2ax^2 + bx &= \lim_{x \to 1^{+}} \dfrac{1}{x^2 + 1}
+                \\\\
+                -2a \cdot 1^2 + b\cdot1 &= \dfrac{1}{1^2 + 1}
+                \\\\
+                -2a + b &= \dfrac{1}{2}
+                \\\\
+                \color{red}{}-4a + 2b &\color{red}{}= 1
+
+            \end{align*}
+
+        \]
+        
+        <u><b>Derivabilità</b></u>
+        <br>
+        Calcoliamo la derivata della funzione in tutti nel tratto sinistro e destro, escludendo il punto \(x = 1\).
+        <span class="gray">(ometto i calcoli intermedi)</span>
+
+        \[
+            f(x) = 
+            \begin{cases}
+                -2ax^2 + bx &\,\,\,se\,\,x \leq 1
+                \\\\
+                \dfrac{1}{x^2 + 1} &\,\,\,se\,\,x \gt 1
+            \end{cases}
+        \]
+        <br>
+        \[
+            f'(x) =                
+            \begin{cases}
+                -4ax + b &\,\,\,se\,\,x \lt 1
+                \\\\
+                \dfrac{- 2x}{(x^2 + 1)^2} &\,\,\,se\,\,x \gt 1
+            \end{cases}
+        \]
+        La funzione è derivabile in \(x = 1\) se vale la derivata sinistra e destra coincidono. 
+        \[
+            f'_{-}(x) = f'_{+}(x)
+        \]
+        Siccome siamo nelle ipotesi del criterio di derivabilità, questa condizione equivale a dire
+        \[
+            \lim_{x \to 1^{-}}f'(x) = \lim_{x \to 1^{+}}f'(x)
+        \]  
+        ovvero
+        \[
+            \begin{align*}
+                \lim_{x \to 1^{-}}(-4ax + b) &= \lim_{x \to 1^{+}}\dfrac{- 2x}{(x^2 + 1)^2}
+                \\\\
+                -4a\cdot 1 + b &= \dfrac{- 2\cdot 1}{(1^2 + 1)^2}
+                \\\\
+                -4a + b &= \dfrac{-1}{2}
+                \\\\
+                \color{red}{}-8a + 2b &\color{red}{}= -1
+
+            \end{align*}
+        \]
+        Mettiamo  a sistema le condizioni di continuità e derivabilità evidenziate in rosso:
+        \[
+            \begin{cases}
+                -4a + 2b = 1
+                \\\\
+                -8a + 2b = -1
+            \end{cases}
+        \]
+        Risolviamo questo sistema con un metodo qualsiasi. Scelgo ad esempio il metodo di riduzione, perché 
+        entrambe le equazioni presentano il termine \(2b\). Sottrendo membro a membro le equazioni otteniamo 
+        \[
+            4a = 2 \,\,\,\Rightarrow\,\,\, a = \dfrac{1}{2}
+        \]
+        Prendiamo una qualsiasi delle equaizioni, la prima ad esempio,  e sostituiamo ad \(a\) il valore appena trovato:
+        \[
+            \begin{align*}
+            -4a + 2b &= 1  
+            \\\\
+            -4\cdot\dfrac{1}{2} + 2b &= 1 
+            \\\\
+            -2 +2b &= 1
+            \\\\
+            b &= \dfrac{3}{2}
+            \end{align*}
+            
+        \]
+        Concludiamo che la funzione \(f\) è derivabile e continua se \(a = \dfrac{1}{2}\) e \(b = \dfrac{3}{2}\)
+    </div>
 
     
     
     <br>
     <br>
+    
+    
 
+    <script>            
+        function showHint(i) {
+            for(let j = 1; j <= document.getElementsByClassName("hint").length; j++) {
+                document.getElementById("hint"+j+"-button").style.display = "block";
+                document.getElementById("hint"+j).style.display = "none";    
+            }
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+            document.location.href = `#hint${i}`
+        }  
 
-
+    </script>
 </body>
