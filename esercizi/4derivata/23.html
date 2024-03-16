@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <h3 class="yellow">Il teorema di Lagrange</h3>
+    <div class="esempi-container">
+        <b>Enunciato del teorema</b>
+        <div class="grayBorder">
+            Sia \(y = f(x)\) una funzione definita su un intervallo \([a\,,\,b]\)
+            <br>
+            <br>
+            <ol style="list-style: none">
+                <li>
+                    \(\boldsymbol{1})\,\,\) continua su un intervallo \([a\,,\,\,b]\).
+                </li>
+                <br>
+                <li>
+                    \(\boldsymbol{2})\,\,\) derivabile in \((a\,,\,\,b)\)
+                </li>                
+            </ol>
+            <br>
+            Allora \(\exists c \in (a\,,\,b)\) tale che 
+            \[ 
+                f'(c) = \dfrac{f(b) - f(a)}{b -a}
+            \]
+        </div>
+        <br>
+        <br>
+        <b>Osservazione</b>
+        <br>
+        Il teorema di Rolle è un caso particolare di quello di Lagrange. 
+        <br>
+        Le ipotesi \(\boldsymbol{1)}\) e \(\boldsymbol{2)}\)
+        sono le stesse. 
+        Per il teorema di Lagrange sappiamo che \(\exists x \in (a\,,\,b)\) tale che 
+        \[
+            f'(c) = \dfrac{f(b) - f(a)}{b -a}
+        \]
+        Aggiungendo l'ipotesi \(\boldsymbol{3)}\) di Rolle, ovvero che \(f(a) = f(b)\), possiamo sviluppare il calcolo
+        \[
+            f'(c) = \dfrac{f(b) - f(a)}{b -a} = \dfrac{0}{b -a} = 0
+        \]
+        ovvero esiste (almeno) un valore \(c\) interno all'intervallo tale che la derivata si annulli: precisamente 
+        la tesi del teorema di Rolle.
+        <br>
+        <br>
+        <b>Interpretazione grafica</b>
+        <br>
+        Interpretiamo cosa afferma il teorema
+        <br>
+        <br>
+        
+
+        
+        <b>Dimostrazione</b>
+        <br>
+        Per la dimostrazione del teorema fate rifermento al libro di testo: pagg. 1694 e 1695.
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <ul>
+        <li>
+            Svolgere l'esercizio n° 124  pag. 1715
+        </li>
+        <br>
+        <li>
+            Studiare l'esecizio guida n° 125 pag. 1715
+        </li>
+        <br>
+        <li>
+            Svolgere gli esercizi n° 133, 135, 136  pag. 1716
+        </li>
+    </ul>    
+
+    <br>
+    <br>
+
+    <button id="hint1-button" onclick="showHint(1)">Svolgimento n° 133</button>
+    <div id="hint1" class="hint" style="display: none;">
+        <b class="gray">Svolgimento n° 133</b> 
+        <div class="grayBorder">
+            Mostriamo che la funzione 
+            \[
+                f(x) = -\dfrac{1}{2}x^2 +5x +2 
+            \]
+            soddisfa le ipotesi del teorema di Lagrange nell'intervallo \([-2\,,\,4]\).
+            Prima di tutti studiamo il suo dominio, continuità e derivabilità.
+            <br>
+            <br>
+            <u><b>Dominio, continuità, derivabilità</b></u>
+            <br>
+            La funzione \(f\) è polinomiale, il suo dominio è \(D = \mathbb{R}\), in esso è ovunque continua e derivabile.
+            La sua derivata è 
+            \[
+                f'(x) = -x +5
+            \]
+            <br>
+            <br>
+            <u><b>Verifica delle ipotesi</b></u>
+            <br> 
+            
+            Le ipotesi \(\boldsymbol{1)}\) e \(\boldsymbol{2)}\) sono soddisfatte. Infatti abbiamo mostrato che la funzione \(f\) è continua e derivabile su \(\mathbb{R}\). 
+            In particolare lo sarà su \([-2\,,\,4]\), che è contenuto in \(\mathbb{R}\).
+    
+            <br>
+            
+            Il teorema di Lagrange ci assicura che vale la proprietà affermata in tesi, ovvero esiste (almeno) un valore \(c \in (-2\,,\,4)\) tale che
+            \[
+                f'(c) = \dfrac{f(4) -f(-2)}{4 - (-2)}
+            \]
+            Per trovare quale sia questo valore risolviamo l'equazione nell'incognita \(c\), che per nostra serenità psicologica 
+            ribatteziamo con l'etichetta \(x\), come tutte le incognite del mondo:
+            <div class="formula">
+                \[
+                  \begin{align*}
+                        &f'(x) = \dfrac{f(4) -f(-2)}{4 - (-2)}
+                        \\\\
+                        &-x +5 = \dfrac{-\dfrac{1}{2}4^2 +5\cdot4 +2  -\left(-\dfrac{1}{2}(-2)^2 +5\cdot(-2) +2 \right)}{4 + 2} 
+                        \\\\
+                        &-x +5 = \dfrac{-8 +20 +2  -\left(-2 -10 +2\right)}{6} 
+                        \\\\
+                        &-x +5 = \dfrac{24}{6} 
+                        \\\\
+                        &-x +5 = 4
+                        \\\\                    
+                        &x  = 1
+                    \end{align*}            
+                \]
+    
+                Nell'immagine che segue vediamo l'interpretazione grafica del teorema:
+                in corrispondenza dell'intervallo \((-2\,,\,4)\) esiste una <span style="color: blue">tangente</span> al grafico parallela la <span style="color: red">retta</span> passante per i punti del grafico \(f\)
+                di ascissa \(x = -2\) e \(x = 4\)
+                <br>
+                <br>
+                <img src="img/23(1).png">
+            </div>
+        </div>
+    </div> 
+
+    <br>
+    <br>
+    <button id="hint2-button" onclick="showHint(2)">Svolgimento n° 135</button>
+    <div id="hint2" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento n° 135</b> 
+        <div class="grayBorder">
+            Mostriamo che la funzione 
+            \[
+                f(x) = \left|x^2 - 1\right|
+            \]
+            soddisfa le ipotesi del teorema di Lagrange nell'intervallo \([2\,,\,3]\).
+            Prima di tutti studiamo il suo dominio, continuità e derivabilità.
+            <br>
+            <br>
+            <u><b>Dominio, continuità</b></u>
+            <br>
+            La funzione \(f\) è composizione del modulo e di un polinomio, il suo dominio è \(D = \mathbb{R}\), in esso è ovunque continua.
+            <br>
+            <br>
+    
+            <u><b>Derivabilità</b></u>
+            <br>
+            Calcoliamo la derivata di \(f\)
+            <br>
+            <br>
+            <div class="slide-container grayBorder">
+                <div class="slide1">
+                    \(\Big|x^2 - 1\Big|' = \)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        La funzione è composta. Evidenziamo la funzione più interna.
+                    </span>
+                </div>
+                <div class="slide1">
+                    \(\Big|\color{red}{}{x^2 - 1}\color{black}{}\Big|' = \)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        La funzione è composta. Evidenziamo la funzione più interna.
+                    </span>
+                </div>
+                <div class="slide1">
+                    \(\Big|\color{red}{}{x^2 - 1}\color{black}{}\Big|' = \)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Procediamo con la regola di derivazione di una funzione composta. Deriviamo la funzione più esterna.
+                    </span>
+                </div>
+                <div class="slide1">
+                    \(\Big|\color{red}{}{x^2 - 1}\color{black}{}\Big|' = \dfrac{\Big|\color{red}{}{x^2 - 1}\color{black}{}\Big|}{\color{red}{}{x^2 - 1}}\)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Procediamo con la regola di derivazione di una funzione composta. Deriviamo la funzione più esterna.
+                    </span>
+                </div>
+                <div class="slide1">
+                    \(\Big|\color{red}{}{x^2 - 1}\color{black}{}\Big|' = \dfrac{\Big|x^2 - 1\Big|}{x^2 - 1}\) 
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Moltiplichiamo per la derivata della <span style="color: red;">funzione più interna</span>.
+                    </span>
+                </div>
+                <div class="slide1">
+                    \(\Big|\color{red}{}{x^2 - 1}\color{black}{}\Big|' = \dfrac{\Big|x^2 - 1\Big|}{x^2 - 1} \cdot (2x)\) 
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Moltiplichiamo per la derivata della <span style="color: red;">funzione più interna</span>.
+                    </span>
+                </div>
+                <div class="slide1">
+                    \(\Big|x^2 - 1\Big|' = \dfrac{\Big|x^2 - 1\Big|}{x^2 - 1} \cdot 2x\) 
+                    <br>
+                    <br>
+                    <span class="gray">
+                        
+                    </span>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+                <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+            </div> 
+    
+            <br>
+            <br>
+            La derivata della funzione è 
+            \[
+                f'(x) = \dfrac{\Big|x^2 - 1\Big|}{x^2 - 1} \cdot 2x
+            \]
+            Individuiamo il suo dominio. Nell'espressione analitica di \(f'\) è presente una frazione. Imponiamo la condizione
+            \[
+                x^2 - 1 \neq 0 \,\,\Rightarrow\,\, x^2 \neq 1 \,\,\Rightarrow\,\, x = \pm 1
+            \]
+            L'insieme di derivabilità è 
+            \[
+                D' = (-\infty\,,\,\,-1) \cup (-1\,,\,\,1) \cup (1\,,\,\,+\infty)
+            \]
+            Rispetto all'insieme dove la funzione è continua abbiamo "perso" i valori \(x = \pm1\)
+    
+            <br>
+            <br>
+    
+            <u><b>Verifica ipotesi del teorema in \(\boldsymbol{[2\,,\,3]}\)</b></u>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    <!-- <b>Ipotesi</b> \(\boldsymbol{1)}\) 
+                    <br> -->
+                    L'intervallo \([2\,,\,3]\) è contenuto in \(\mathbb{R}\), dove la funzione è continua. Segue la continuità di \(f\)
+                    in \([2\,,\,3]\). L'ipotesi \(\boldsymbol{1)}\) è soddisfatta.
+                </li>
+                <br>
+                <li>
+                    L'intervallo \((2\,,\,3)\) è contenuto in \(D'\), dove la funzione è derivabile. Segue la derivabiltà di \(f\)
+                    in \((2\,,\,3)\). L'ipotesi \(\boldsymbol{2)}\) è soddisfatta.
+                </li>
+            </ul>
+            <br>        
+            Poiché sono verificate per \(f\) le ipotesi del teorema di Lagrange, segue la tesi, ovvero esiste (almeno) un valore \(c \in (2\,,\,3)\)
+            tale che
+            \[
+                f'(c) = \dfrac{f(3) - f(2)}{3 - 2}
+            \]
+            Per trovare il valore in questione, risolviamo l'equazione scritta sopra nell'incognita \(c\), che rietichettiamo con
+            il nome di \(x\).
+    
+            <br>
+    
+            Un'osservazione prima di immergerci nei calcoli. 
+            <br>
+            La funzione 
+            \[ 
+                \dfrac{\Big|x^2 - 1\Big|}{x^2 - 1}
+            \] 
+            ci restituisce 
+            come output \(+1\) se il segno del polinomio \(x^2 -1\) è positivo, \(-1\) se è negativo. Con il metodo della 
+            parabola vediamo che il segno di \(x^2 - 1\) è
+            <br>
+            <br>
+            <img src="img/23(2).png" style="width: 50%; border: 0;">
+            <br>
+            Dalla tesi del teorema sappiamo che \(x \in (2\,,\,3)\). In corrispondenza di tale intervallo il segno di 
+            \(x^2 - 1\) è positivo, quindi \(\frac{\Big|x^2 - 1\Big|}{x^2 - 1} = +1\).
+            \[
+                \begin{align*}
+                &f'(x) = \dfrac{f(3) - f(2)}{3 - 2}
+                \\\\
+                &\dfrac{\Big|x^2 - 1\Big|}{x^2 - 1} \cdot 2x = \dfrac{ \left|3^2 - 1\right| -  \left|2^2 - 1\right|}{1}
+                \\\\
+                & +1 \cdot 2x = \left|8\right| -  \left|5\right|
+                \\\\
+                &2x = 3
+                \\\\
+                &x = \dfrac{3}{2}
+                \end{align*}
+            \]
+            Il valore che soddisfa la proprietà della tesi è \(x = \dfrac{3}{2}\).
+        </div>   
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <ul>        
+        <li>
+            Studiare l'esecizio guida n° 162 pag. 1717
+        </li>
+        <br>
+        <li>
+            Svolgere gli esercizi n° 163  pag. 1718
+        </li>
+    </ul>    
+
+
+    
+
+    
+    
+    <br>
+    <br>
+    
+    
+
+    <script>            
+        function showHint(i) {
+            for(let j = 1; j <= document.getElementsByClassName("hint").length; j++) {
+                document.getElementById("hint"+j+"-button").style.display = "block";
+                document.getElementById("hint"+j).style.display = "none";    
+            }
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+            document.location.href = `#hint${i}`
+        }  
+
+    </script>
+    <script>
+        let slideIndex = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+        inizialize(1);
+
+
+        //funzione per passare alla slide successiva
+        function nextSlide(n) {
+            
+            //ogni volta che il bottone viene premuto scrollo in modo da centrare le slide
+            document.location.href=`#slide-container${n}`
+
+            //nascondo tutte le slide
+            let slide = document.getElementsByClassName(`slide${n}`)
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+
+            //aggiorno l'indice
+            slideIndex[n]++;
+
+            if(slideIndex[n] !== 0 ) {
+                //pulsante previous abiliatato
+                document.getElementById(`previousSlide-button${n}`).disabled = false;
+            }
+
+            //se ci sono ancora slide da mostrare passo alla successiva
+            if(slideIndex[n] < slide.length) {
+                slide[slideIndex[n]].style.display = "block";
+            }
+
+            //le slide da mostrare sono finite. rendo nuovamente visibile l'ultima slide (altimenti sparisce)
+            //e scrollo la vista al riquadro conclusiovo
+            if(slideIndex[n]  === slide.length -1) {
+                slide[slide.length-1].style.display = "block";
+                document.getElementById(`nextSlide-button${n}`).disabled = true;  
+            }
+
+        }
+            
+        //funzione per passare alla slide successiva
+        function previousSlide(n) {
+
+            
+            //ogni volta che il bottone viene premuto scrollo in modo da centrare le slide
+            document.location.href=`#slide-container${n}`
+
+            //nascondo tutte le slide
+            let slide = document.getElementsByClassName(`slide${n}`)
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+
+            //aggiorno l'indice
+            slideIndex[n]--;
+
+
+            //passo alla precedente. se è la prima slide disattivo il tasto previous
+            slide[slideIndex[n]].style.display = "block";
+            //slide[slideIndex[n]].style.fontSize = "1.1rem";
+            if(slideIndex[n] === 0) {
+                document.getElementById(`previousSlide-button${n}`).disabled = true;
+            } 
+
+            //nel caso in cui il pulsante next sia disabilitato lo riattivo
+            if(document.getElementById(`nextSlide-button${n}`).disabled === true) {
+                document.getElementById(`nextSlide-button${n}`).disabled = false;  
+            }
+        }
+
+
+        function inizialize(n) {
+
+            slideIndex[n] = 0
+
+            let slide = document.getElementsByClassName(`slide${n}`)
+
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none"
+            }
+
+            //rendo visibile la prima slide
+            slide[0].style.display = "block"
+
+            //pulsante next disabled
+            document.getElementById(`nextSlide-button${n}`).disabled = false;
+
+            //pulsante previous disabled
+            document.getElementById(`previousSlide-button${n}`).disabled = true;
+
+        }
+    </script>
+</body>
+
+<!--
+    <div class="slide-container grayBorder">
+        <div class="slide1">
+            
+        </div>
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+        <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+    </div> 
+ -->
+
+ <!-- 
+
+    <div class="grayBorder">
+        \[
+            f(x) = \sqrt{4x^2 -1}
+        \]
+        <u><b>Dominio</b></u>
+        <br>
+        L'espressione analitica della funzione presenta una radice, quindi poniamo la condizione
+        \[
+            4x^2 -1 \geq 0
+        \]
+        Usiamo il metodo della parabola. Risolviamo l'equazione associata 
+        \[
+            4x^2 - 1 = 0 \,\,\Rightarrow\,\, x^2 = \dfrac{1}{4} \,\,\Rightarrow\,\, x = \pm\dfrac{1}{2}
+        \]
+        Dalla parabola 
+        <br>
+        <br>
+        <img src="" alt="">
+        <br>
+        deduciamo che la disequazione è risolta per \(x \leq -\dfrac{1}{2}\,\) oppure \(\,x \geq \dfrac{1}{2}\).
+        Quindi il dominio è
+        \[
+            D = \Big(-\infty\,,\,\,-\dfrac{1}{2}\Big] \cup \Big[\dfrac{1}{2}\,,\,\,+\infty\Big)
+        \]
+        
+        <u><b>Continuità</b></u>
+        <br>
+        La funzione è continua in tutto il dominio D poiché composizione di funzioni continue.
+        Scriviamo esplicitamente l'insieme di continuità \(C\) della funzione
+        \[
+            C = D = \Big(-\infty\,,\,\,-\dfrac{1}{2}\Big] \cup \Big[\dfrac{1}{2}\,,\,\,+\infty\Big)
+        \]
+
+        <u><b>Derivata ed insieme di derivabilità</b></u>
+        <br>
+        Calcoliamo la derivata della funzione \(f\)     
+        <br>
+        <br>   
+        <div class="slide-container grayBorder">
+            <div class="slide1">
+                \(\Big(\sqrt{4x^2 -1}\Big)' =\)
+                <br>
+                <br>
+                <span class="gray">
+                    La funzione è composta, evidenziamo in <span style="color: red">rosso</span> la funzione più 
+                    interna e trasformiamo la radice in potenza con esponente frazionario.
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(\color{red}{}4x^2 -1\color{black}{}\right)^{\frac{1}{2}}\Big)' =\)
+                <br>
+                <br>
+                <span class="gray">
+                    La funzione è composta, evidenziamo in <span style="color: red">rosso</span> la funzione più 
+                    interna e trasformiamo la radice in potenza con esponente frazionario.
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(\color{red}{}4x^2 -1\color{black}{}\right)^{\frac{1}{2}}\Big)' =\)
+                <br>
+                <br>
+                <span class="gray">
+                    Calcoliamo la derivata della funzione più esterna, la radice, e valutiamola in \(\color{red}{}4x^2 -1\)
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(\color{red}{}4x^2 -1\color{black}{}\right)^{\frac{1}{2}}\Big)' = \dfrac{1}{2}\left(\color{red}{}4x^2 -1\color{black}{}\right)^{-\frac{1}{2}}\)
+                <br>
+                <br>
+                <span class="gray">
+                    Calcoliamo la derivata della funzione più esterna, la radice, e valutiamola in \(\color{red}{}4x^2 -1\)
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(\color{red}{}4x^2 -1\color{black}{}\right)^{\frac{1}{2}}\Big)' = \dfrac{1}{2}\left(\color{red}{}4x^2 -1\color{black}{}\right)^{-\frac{1}{2}}\)
+                <br>
+                <br>
+                <span class="gray">
+                    Moltiplichiamo per la derivata della <span style="color: red">funzione più interna</span>
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(\color{red}{}4x^2 -1\color{black}{}\right)^{\frac{1}{2}}\Big)' = \dfrac{1}{2}\left(\color{red}{}4x^2 -1\color{black}{}\right)^{-\frac{1}{2}} \cdot 8x\)
+                <br>
+                <br>
+                <span class="gray">
+                    Moltiplichiamo per la derivata della <span style="color: red">funzione più interna</span>
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(4x^2 -1\right)^{\frac{1}{2}}\Big)' = \dfrac{1}{2}\left(4x^2 -1\right)^{\color{blue}{}-\color{black}{}\frac{1}{2}} \cdot 8x\)
+                <br>
+                <br>
+                <span class="gray">
+                    Facciamo agire il segno <span style="color: blue">meno</span> della potenza
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(4x^2 -1\right)^{\frac{1}{2}}\Big)' = \dfrac{1}{2}\dfrac{1}{\left(4x^2 -1\right)^{\frac{1}{2}}} \cdot 8x\)
+                <br>
+                <br>
+                <span class="gray">
+                    Facciamo agire il segno <span style="color: blue">meno</span> della potenza
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(4x^2 -1\right)^{\frac{1}{2}}\Big)' = \dfrac{1}{2}\dfrac{1}{\left(4x^2 -1\right)^{\frac{1}{2}}} \cdot 8x\)
+                <br>
+                <br>
+                <span class="gray">
+                    Trasformiamo nuovamente la potenza con esponente frazionario in radice
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(4x^2 -1\right)^{\frac{1}{2}}\Big)' = \dfrac{1}{2}\dfrac{1}{\sqrt{4x^2 -1}} \cdot 8x\)
+                <br>
+                <br>
+                <span class="gray">
+                    Trasformiamo nuovamente la potenza con esponente frazionario in radice
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(4x^2 -1\right)^{\frac{1}{2}}\Big)' = \dfrac{1}{2}\dfrac{1}{\sqrt{4x^2 -1}} \cdot 8x\)
+                <br>
+                <br>
+                <span class="gray">
+                    Semplifichiamo i coefficienti
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(4x^2 -1\right)^{\frac{1}{2}}\Big)' = \dfrac{1}{\cancel{2}}\dfrac{1}{\sqrt{4x^2 -1}} \cdot \overset{4}{\cancel{8}}x\)
+                <br>
+                <br>
+                <span class="gray">
+                    Semplifichiamo i coefficienti
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(4x^2 -1\right)^{\frac{1}{2}}\Big)' = \dfrac{1}{\sqrt{4x^2 -1}} \cdot 4x\)
+                <br>
+                <br>
+                <span class="gray">
+                    Compattiamo la scrittura
+                </span>
+            </div>
+            <div class="slide1">
+                \(\Big(\left(4x^2 -1\right)^{\frac{1}{2}}\Big)' = \dfrac{4x}{\sqrt{4x^2 -1}}\)
+                <br>
+                <br>
+                <span class="gray">
+                    Compattiamo la scrittura
+                </span>
+            </div>
+
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div> 
+
+        <br>
+        <br>
+
+        Abbiamo così ottenuto 
+        \[
+            f'(x) = \dfrac{4x}{\sqrt{4x^2 -1}}
+        \]
+
+        Individuiamone il dominio per confrontarlo con l'insieme \(C\). Nell'espressione anlitica di \(f'\) sono present
+        una radice ed una frazione
+        \[
+            \begin{cases}
+                \sqrt{4x^2 -1} \neq 0 \quad &(condizione\,\,frazione)
+                \\\\
+                4x^2 -1 \geq 0 \quad &(condizione\,\,radice)
+            \end{cases}            
+        \]
+        Il sistema si può riformulare nell'unica condizione 
+        \[
+            4x^2 -1 \gt 0  
+        \]
+        che (vedi sopra) è soddisfatta per 
+        \[
+            x \lt -\dfrac{1}{2} \quad oppure \quad x \gt \dfrac{1}{2}
+        \]
+        Quindi l'insieme di derivabilità è 
+        \[
+            D' = \Big(-\infty\,,\,\,-\dfrac{1}{2}\Big) \cup \Big(\dfrac{1}{2}\,,\,\,+\infty\Big)
+        \]
+        Osserviamo che rispetto all'insieme \(C\) dove \(f\) è continua abbiamo "perso" due punti, \(x =\pm\dfrac{1}{2}\)
+        
+        <br>
+        <br>
+        
+        <u><b>Controllo ipotesi</b></u>
+        <br>
+        Ora che abbiamo gli insiemi \(D\), \(C\), \(D'\) possiamo verificare le ipotesi del teorema di Lagrange.
+        <br>
+        <br>
+        <ul style="list-style: none;">
+            <li>
+                \(\boldsymbol{1)}\) La funzione è continua in \(D\), quindi è continua anche in \([1\,,\,\,2]\).
+            </li>
+            <br>
+            <li>
+                \(\boldsymbol{2)}\) La funzione è derivabile in \(D'\), quindi è continua anche in \((1\,,\,\,2)\).
+            </li>            
+        </ul>
+        <br>
+        Poiché la funzione \(f\) gode nell'intervallo \([1\,,\,\,2]\) delle due proprietà ipotesi del teorema, possiamo 
+        concludere che gode anche della proprietà affermata dalla tesi: esiste (almeno) un valore \(c \in (1\,,\,\,2)\)
+        tale che 
+        \[
+            f'(c) = \dfrac{f(2) - f(1)}{2 -1}
+        \]
+        Per calcolare quale sia questo valore dobbiamo risolvere l'equazione è precedente.
+        \[
+            \begin{align*}                
+                \dfrac{4c}{\sqrt{4c^2 -1}} &= \dfrac{\sqrt{4\cdot 2^2 -1} - \sqrt{4\cdot 1^2 -1}}{2 -1} =
+                \\\\
+                \dfrac{4c}{\sqrt{4c^2 -1}} &= \sqrt{15} - \sqrt{3}
+                \\\\
+                4c &= (\sqrt{15} - \sqrt{3}) \cdot \sqrt{4c^2 -1}
+                \\\\
+                (4c)^2 &= \Big((\sqrt{15} - \sqrt{3}) \cdot \sqrt{4c^2 -1}\Big)^2
+                \\\\
+                16c^2 &= (\sqrt{15} - \sqrt{3})^2 \cdot \left|4c^2 -1\right|
+            \end{align*}
+        \]
+        poiché sappiamo che \(c \in (1\,,\,\,2)\) (ce lo assicura il signor Lagrange), sappiamo anche che il numero \(4c^2 -1\) è 
+        positivo. Possiamo lasciar cadere il modulo.
+        Un'alta osservazione: il numero positivo \((\sqrt{15} - \sqrt{3})^2\) è ...un numero. Ma estremamente lungo ed antipatico 
+        da scrivere. Sostituiamolo nel resto dello svolgimento con una lettera a nostro piacere, per esempio \(a\). 
+        \[
+            \begin{align*}                            
+                &16c^2 = a \cdot \left|4c^2 -1\right|
+                \\\\
+                &16c^2 = a \cdot (4c^2 -1)
+                \\\\
+                &16c^2 = 4a\,c^2 -a
+                \\\\      
+                &16c^2 -4a\,c^2  = -a
+                \\\\      
+                &(16 -4a)c^2 = -a
+                \\\\      
+                &c^2 = \dfrac{-a}{16 -4a}
+                \\\\      
+                &c = \pm\sqrt{\dfrac{-a}{16 -4a}}
+                \\\\
+                &sostituiamo\,\,ad\,\,a\,\,il\,\,suo\,\,valore
+                \\\\
+                &c = \pm\sqrt{\dfrac{-(\sqrt{15} - \sqrt{3})^2}{16 -4(\sqrt{15} - \sqrt{3})^2}} \approx \pm 1.4
+            \end{align*}
+        \]
+        Concludiamo che il valore \(c\) che verifica la tesi del teorema è 
+        \[
+            c = \sqrt{\dfrac{-(\sqrt{15} - \sqrt{3})^2}{16 -4(\sqrt{15} - \sqrt{3})^2}} \approx 1.4
+        \]
+        <br>
+        <br>
+
+    </div>
+    
+  -->
