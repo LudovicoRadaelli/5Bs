@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
     <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
     <link rel="stylesheet" href="../../css/style.css">
     <title>Compiti per casa</title>
@@ -343,6 +343,122 @@
         </li>
     </ul>    
 
+    <br>
+    <br>
+
+    <button id="hint3-button" onclick="showHint(3)">Svolgimento n° 163</button>
+    <div id="hint3" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento n° 163</b> 
+        <div class="grayBorder">
+            Vogliamo che la funzione
+            \[
+                f(x) =
+                \begin{cases}
+                    x^2 +ax -1 \qquad &se\,\,x \lt -1 
+                    \\\\
+                    -4x^2 + x + b \qquad &se\,\,x \geq -1 
+                \end{cases}
+            \]
+            soddisfi le ipotesi del teorema di Lagrange nell'intervallo \([-2\,,\,0]\).
+            Osserviamo che, essendo \(f\) definita nei relativi tratti da polinomi, il suo dominio è \(\mathbb{R}\).
+            <br>
+            <br>
+            <u><b>Condizione di continuità</b></u>
+            <br>
+            Poiché la funzione è  definita da polinomi nei tratti \((-\infty\,,\,-1)\) \((-1\,,\,+\infty)\), sarà sicuramente 
+            continua in tali intervalli. 
+            Potrebbe invece non esserlo in \(x = -1\). Detta male, i tratti di grafico potrebbero non "incollarsi" bene.
+            <br>
+            <br>
+            <div class="grayBorder">
+                <div class="geogebra-container">
+                    <div id="geogebra1"></div>
+                    <br>
+                </div>
+                <br>
+                <div class="gray" style="font-size: 0.9rem;">
+                    Modificate i parametri \(a\) è \(b\) attraverso gli slider.
+                </div>
+            </div>
+            <br>        
+            Imponiamo la continuità in \(x = -1\):
+            \[
+                \begin{align*}
+                    &\lim_{x \to -1^{-}} f(x) = \lim_{x \to -1^{+}} f(x)
+                    \\\\
+                    &\lim_{x \to -1^{-}} \left(x^2 +ax -1\right) = \lim_{x \to -1^{+}} \left(-4x^2 + x + b\right)
+                    \\\\
+                    &(-1)^2 +a\cdot(-1) -1 = -4(-1)^2 + (-1) + b
+                    \\\\
+                    &1 -a -1 = -4 -1 + b
+                    \\\\
+                    &-a -b = -5
+                    \\\\
+                    &a + b = 5
+                \end{align*}
+            \]
+    
+            <u><b>Condizione di derivabilità</b></u>
+            <br>
+            Come sopra, possiamo affermare che la funzione è derivabile nei tratti \((-\infty\,,\,-1)\) \((-1\,,\,+\infty)\) 
+            poiché definita da polinomi.
+            La derivata vale 
+            \[
+                f(x) =
+                \begin{cases}
+                    2x + a \qquad &se\,\,x \lt -1 
+                    \\\\
+                    -8x + 1 \qquad &se\,\,x \gt -1 
+                \end{cases}
+            \]
+            <br>
+            Immaginiamo che i tratti si incollino bene, ovvero che valga la condizione \(a + b = 5\). Potrebbe darsi che 
+            la maniera in cui si incollino generi delle "spigolosità" nel grafico, ovvero che in \(x = -1\) la funzione non sia derivabile.
+            <br>
+            <br>
+            <div class="geogebra-container">
+                <div id="geogebra2"></div>
+            </div>
+            <br>
+            
+            Per far sì che la funzione sia "liscia" in corrispondenza di \(x = -1\) imponiamo la derivabilità in tale valore. 
+            \[
+                \begin{align*}
+                    &\lim_{x \to -1^{-}} f'(x) = \lim_{x \to -1^{+}} f'(x)
+                    \\\\
+                    &\lim_{x \to -1^{-}} (2x + a) = \lim_{x \to -1^{+}} (-8x + 1)
+                    \\\\
+                    &2\cdot(-1) + a = -8\cdot(-1) + 1
+                    \\\\
+                    &-2 + a = 9
+                    \\\\
+                    &a = 11
+                \end{align*}
+            \]
+    
+            <u><b>Sistema</b></u>
+            <br>
+            Mettiamo a sistema entrambe le condizioni di contiuità e derivabilità
+            \[
+                \begin{cases}
+                    a + b = 5 
+                    \\\\
+                    a = 11
+                \end{cases}
+    
+                \,\,\,\Rightarrow\,\,\,
+    
+                \begin{cases}
+                    b = 5 - a  = -6
+                    \\\\
+                    a = 11
+                \end{cases}
+            \]
+    
+            La funzione \(f\) soddisfa le ipotesi del teorema di Lagrange se \(a = 11\) e \(b = -6\)            
+        </div>
+    </div>
+
 
     
 
@@ -456,6 +572,41 @@
             document.getElementById(`previousSlide-button${n}`).disabled = true;
 
         }
+    </script>
+    <script>
+    var ggbApp1 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg1",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/23(1).ggb"
+            }, 
+            true
+        );
+
+		var ggbApp2 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg2",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/23(2).ggb"
+            }, 
+            true
+        );
+
+        window.addEventListener("load", function() { 
+            ggbApp1.inject('geogebra1');
+			ggbApp2.inject('geogebra2');
+        });
+
     </script>
 </body>
 
