@@ -59,12 +59,38 @@
         <br>
         <br>
         <b>Interpretazione grafica</b>
+        <br>        
+        Chiamiamo \(A\) e \(B\) i punti del grafico in corrispondenza degli estremi dell'intervallo \([a\,,\,b]\)
         <br>
-        Interpretiamo cosa afferma il teorema
+        <br>
+        <img src="img/lagrange.png" alt="">
+        <br>
+        Il coefficiente della retta passante per \(A\), \(B\) è 
+        \[
+            \dfrac{f(b) -f(a)}{b -a}
+        \]
+        che è il membro destro della proprietà affermata nella tesi.
+        Possiamo quindi riformulare la tesi così:
         <br>
         <br>
-        
+        <i>
+            Esiste una retta tangente al grafico parallela alla retta passante per i punti agli estremi 
+            del grafico
+        </i>
 
+        <div class="grayBorder">
+            <div class="geogebra-container">
+                <div id="geogebra3"></div>
+            </div>            
+            <br>
+            <div class="gray" style="font-size: 1rem;">
+                Spostate il punto triangolare sull'asse \(x\) per variare il punto di tangenza.
+                Lagrange ci assicura che esiste un valore \(c\) tale che la retta tangente sia parallela a quella rossa.
+            </div>
+        </div>
+
+        <br>
+        <br>
         
         <b>Dimostrazione</b>
         <br>
@@ -602,9 +628,24 @@
             true
         );
 
+        var ggbApp3 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg3",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/lagrange.ggb"
+            }, 
+            true
+        );
+
         window.addEventListener("load", function() { 
             ggbApp1.inject('geogebra1');
 			ggbApp2.inject('geogebra2');
+            ggbApp3.inject('geogebra3');
         });
 
     </script>
