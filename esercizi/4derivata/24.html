@@ -728,6 +728,202 @@
     </div>
 
     <br>
+
+    <button id="hint5-button" onclick="showHint(5)">Svolgimento n° 230</button>
+    <div id="hint5" class="hint" style="display: none;">
+        <div class="grayBorder">
+            Individuiamo gli intervalli di monotonia della funzione
+            \[
+                f(x) = 4 sin^2(x)
+            \]
+    
+            <u><b>Dominio</b></u>
+            <br>
+            La funzione \(f\) è definita su tutto \(\mathbb{R}\).
+            
+            <br>
+            <br>
+    
+    
+            <u><b>Continuità</b></u>
+            <br>
+            La funzione è continua nel suo dominio in quanto composizione di funzioni continue.
+            <br>
+            <br>
+    
+            <u><b>Derivabilità</b></u>
+            <br>
+            Calcoliamo la derivata di \(f\).
+            <br>
+            <br>
+            <div class="slide-container grayBorder">            
+                <div class="slide3">
+                    \(
+                        \Big[4 sin^2(x)\Big]' = 
+                    \)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Sappiamo che \(sin^{\color{red}{2}}\color{gray}{}(x)\) è un modo di scrivere \(\color{red}{}\Big(\color{gray}{}sin(x)\color{red}{}\Big)^2\)
+                        "risparmiando" parentesi. Tuttavia in questo contesto usiamo questa scrittura perché ci permette di individuare più
+                        chiaramente la funzione interna di questa funzione composta.
+                    </span>
+                </div>
+                <div class="slide3">
+                    \(
+                        \Big[4 \Big(sin(x)\Big)^2\Big]' = 
+                    \)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Sappiamo che \(sin^{\color{red}{2}}\color{gray}{}(x)\) è un modo di scrivere \(\color{red}{}\Big(\color{gray}{}sin(x)\color{red}{}\Big)^2\)
+                        "risparmiando" parentesi. Tuttavia in questo contesto usiamo questa scrittura perché ci permette di individuare più
+                        chiaramente la funzione interna di questa funzione composta.
+                    </span>
+                </div>            
+                <div class="slide3">
+                    \(
+                        \Big[4 \Big(sin(x)\Big)^2\Big]' = 
+                    \)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Evidenziamo ora la funzione più interna.
+                    </span>
+                </div>
+                <div class="slide3">
+                    \(
+                        \Big[4 \Big(\color{red}{}sin(x)\color{black}{}\Big)^2\Big]' = 
+                    \)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Evidenziamo ora la funzione più interna.
+                    </span>
+                </div>
+                <div class="slide3">
+                    \(
+                        \Big[4 \Big(\color{red}{}sin(x)\color{black}{}\Big)^2\Big]' = 
+                    \)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Calcoliamo la derivata della funzione più esterna \(4\color{red}{}z\color{gray}{}^{2}\) e valutiamola in
+                        \(\color{red}{} z \color{gray}{} = \color{red}{}sin(x)\)
+                    </span>
+                </div>
+                <div class="slide3">
+                    \(
+                        \Big[4 \Big(\color{red}{}sin(x)\color{black}{}\Big)^2\Big]' = 8 \color{red}{sin(x)} \color{black}{} \cdot
+                    \)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Calcoliamo la derivata della funzione più esterna \(4\color{red}{}z\color{gray}{}^{2}\) e valutiamola in
+                        \(\color{red}{} z \color{gray}{} = \color{red}{}sin(x)\)
+                    </span>
+                </div>
+                <div class="slide3">
+                    \(
+                        \Big[4 \Big(sin(x)\Big)^2\Big]' = 8 \color{red}{sin(x)} \color{black}{} \cdot
+                    \)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Moltiplichiamo per la derivata della funzione più interna.
+                    </span>
+                </div>
+                <div class="slide3">
+                    \(
+                        \Big[4 \Big(sin(x)\Big)^2\Big]' = 8 sin(x) \cdot cos(x)
+                    \)
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Moltiplichiamo per la derivata della funzione più interna.
+                    </span>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button3" onclick="previousSlide(3)">Indietro</button>
+                <button id="nextSlide-button3" onclick="nextSlide(3)">Avanti</button>
+            </div> 
+            <br>
+            La derivata della funzione è
+            \[            
+                f'(x) =  8 sin(x) \cdot cos(x)     
+            \]
+            La derivata è ancora definita in tutto \(\mathbb{R}\).
+    
+            <br>
+            <br>
+            Osseriamo che attraverso la formula di duplicazione del seno possiamo compattare la scrittura della derivata:
+            \[
+                \begin{align*} 
+                    f'(x) 
+                    &=  8 sin(x)\,cos(x)     
+                    \\\\
+                    &=  4 \cdot \underset{sin(2x)}{\underbrace{2 sin(x)\,cos(x)}}
+                    \\\\
+                    &=  4 sin(2x)                
+                \end{align*}
+            \]
+            
+    
+            <u><b>Segno derivata</b></u>
+            <br>
+            Studiamo il segno della derivata in \(D\).
+            \[
+                \begin{align*}
+                    &f'(x) \gt 0
+                    \\\\
+                    &4 sin(2x) \gt 0
+                    \\\\
+                    &sin(2x) \gt 0
+                \end{align*} 
+            \] 
+            Rietichettiamo momentaneamente \(2x\) con il nome di \(y\).
+            \[
+                sin(y) \gt 0
+            \]
+            Visualizziamo sulla circonferenza goniometricali gli angoli \(y\) che soddisfano questa condizione
+            <br>    
+            <img src="img/24(8).png" style="border: 0; width: 70%;">
+            In linguaggio simbolico
+            \[
+                0 + 2\pi k \,\lt\, y \,\lt\, \pi + 2\pi k\,\,\,con\,\,k\in \mathbb{Z}
+            \]
+            Sostituendo nuovamente \(y\) con \(2x\) si ha 
+            \[
+                \begin{align*}
+                    2\pi k \,\lt\, &2x \,\lt\, \pi + 2\pi k  
+                    \\\\
+                    \dfrac{2\pi k}{2} \,\lt\, &\dfrac{2x}{2} \,\lt\, \dfrac{\pi + 2\pi k}{2}
+                    \\\\
+                    \pi k \,\lt\, &x \,\lt\, \dfrac{\pi}{2} + \pi k
+                \end{align*}
+            \]        
+            Dal segno di \(f'(x)\) deduciamo il seguente schema di monotonia
+            <br>
+            <br>
+            <img src="img/24(9).png" style="border: 0; width: 70%;">
+            <br>
+            La funzione è 
+            <br>
+            <br>
+            <ul>
+                <li>
+                    crescente in \(\pi k \,\lt\, x \,\lt\, \dfrac{\pi}{2} + \pi k\)
+                </li>
+                <br>
+                <li>
+                    decrescente in \(\dfrac{\pi}{2} + \pi k \,\lt\, x \,\lt\, \pi + \pi k\)
+                </li>
+            </ul>         
+        </div>
+    </div>
+
+    <br>
     <br>
     <hr>
     <br>
