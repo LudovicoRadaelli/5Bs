@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <h3 class="green">Esercizio 0</h3>
+    <br>
+    <div>
+        <a class="blue" href="25.html">QUI</a>  trovate l'esercitazione svolta in classe mercoledì 20/03 e la sua soluzione
+        completa.
+        Consiglio di dargli un'occhiata a chiunque fosse assente o non abbia concluso l'esercizio in classe.
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>    
+    <div>
+        Effettuare lo studio della funzione 
+        \[
+            f(x) = \dfrac{ln(x)}{ln(x) - 1}
+        \]
+    
+        seguendo la seguente scaletta
+    
+        <br>
+        <br>
+        <ul>
+            <li>
+                <u><b>Dominio</b></u>
+                <br>
+                Individuare i valori per i quali la funzione è definita.
+            </li>
+            <br>
+            <li>
+                <u><b>Segno</b></u>
+                <br>
+                Stabilire per quali valori la funzione è positiva, negativa o nulla.
+            </li>
+            <br>
+            <br>
+            <li>
+                <u><b>Comportamento in prossimità degli estremi del dominio - ricerca asintoti</b></u>
+                <br>
+                Calcolare i limiti per \(x\) che tente agli estremi del dominio. 
+                <br>
+                Se ad esempio 
+                \[
+                    D = (1\,,\,\,2] \cup (3\,,\,\,+\infty)
+                \] 
+                calcoliamo i limiti per 
+                \[
+                    x \to 1^{+}\quad x \to 3^{+}\quad x \to +\infty
+                \]
+                Il valore \(x = 2\) appartiene al dominio, quindi non è di nostro interesse.
+            </li>
+            <br>
+            <br>
+            <li>
+                <u><b>Continuità</b></u>
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        Individuare l'insieme \(C\) in cui la funzione è continua.
+                    </li>
+                    <br>
+                    <li>
+                        Classificare evenutali punti di discontinuità (che sono automanticamente anche
+                        punti di non derivabilità)
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <br>
+            <li>
+                <u><b>Derivabilità</b></u>
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        Calcolare la derivata della funzione.
+                    </li>
+                    <br>
+                    <li>
+                        Studiare il dominio \(D'\) della derivata \(f'\) e confrontarlo con \(C\).
+                        <br>
+                        La funzione sarà derivabile in \(D'\). Eventuali valori "persi" da \(C\) a \(D'\) sono
+                        punti di non derivabilità per la funzione.
+                    </li>
+                    <br>
+                    <li>
+                        Classificare evenutali punti di non derivabilità.
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <br>
+            <li>
+                <u><b>Studio intervalli di monotonia</b></u>
+                <br>
+                Studiare il segno della derivata e stabilire attraverso il grafico delle freccete gli intervalli 
+                nei quali la funzione è crescente e decrescnte
+            </li>
+            <br>
+            <br>
+            <li>
+                <u><b>Grafico</b></u>
+                <br>
+                Riassumere tutte le informazioni raccolte nei punti precedenti in un grafico.
+            </li>     
+        </ul>   
+        <br>                
+    </div>
+
+    <button id="hint1-button" onclick="showHint(1)">Svolgimento</button>
+    <div id="hint1" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento</b> 
+        <div class="grayBorder">
+            <u><b>Dominio</b></u>
+            <br>
+            L'espressione analitica della funzione
+            \[
+                f(x) = \dfrac{ln(x)}{ln(x) - 1}
+            \]
+            presenta un logaritmo ed una frazione. Poniamo le condizioni
+            \[
+                \begin{cases}
+                    x \gt 0 \quad &\text{(condizione logaritmo)}
+                    \\\\
+                    ln(x) - 1 \neq 0 \quad &\text{(condizione frazione)}
+                \end{cases}
+            \]
+            Troviamo i valori che soddisfano la seconda condizione 
+            \[
+                \begin{align*}
+                    &ln(x) - 1 \neq 0
+                    \\\\
+                    &ln(x)  \neq 1
+                    \\\\
+                    &ln(x)  \neq ln(e)
+                    \\\\
+                    &x \neq e
+                \end{align*}
+            \]
+            Le due condizioni sono soddisfatte se
+            \[
+                \begin{cases}
+                    x \gt 0 
+                    \\\\
+                    ln(x) - 1 \neq 0
+                \end{cases}
+    
+                \,\,\,\Leftrightarrow\,\,\,
+    
+                \begin{cases}
+                    x \gt 0 
+                    \\\\
+                    x \neq e
+                \end{cases}
+            \]
+            Effettuiamo il grafico delle intersezioni 
+    
+            <br>
+            <br>
+            <img src="img/26(1).png" style="width: 100%; border: 0;">
+            <br>
+    
+            Il dominio della funzione è 
+            \[
+                D = (0\,,\,\,e) \cup (e\,,\,\,+\infty)
+            \]
+            
+            <u><b>Segno</b></u>
+            <br>
+            Studiamo per quali \(x \in D\) la funzione \(f\) assume valori positivi, negativi o nulli.
+            \[
+                \begin{align*} 
+                    &f(x) \gt 0 
+                    \\\\
+                    &\dfrac{ln(x)}{ln(x) - 1} \gt 0                
+                \end{align*}
+            \]
+            &Eacute; una disequazione frazionaria.
+            <br>
+            <br>
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: flex-start;">
+                <div style="width: 50%;">
+                    <u style="font-size: 1rem;"><i><b>Segno numeratore</b></i></u>
+                    <br>
+                    \[
+                        \begin{align*}
+                            &ln(x) \gt 0 
+                            \\\\
+                            &ln(x) \gt ln(1)
+                            \\\\
+                            &x\gt 1
+                        \end{align*}
+                    \]
+                </div>
+                <div style="width: 50%;">
+                    <u style="font-size: 1rem;"><i><b>Segno denominatore</b></i></u>
+                    <br>
+                    \[
+                        \begin{align*}
+                            &ln(x) - 1 \gt 0
+                            \\\\
+                            &ln(x) \gt 1
+                            \\\\
+                            &ln(x) \gt ln(e)
+                            \\\\
+                            &x \gt e
+                            \\\\
+                        \end{align*}
+                    \]
+                </div>
+            </div>        
+            <u style="font-size: 1rem;"><i><b>Grafico dei segni</b></i></u>
+            <br>
+            <img src="img/26(2).png" style="width: 100%; border: 0;">
+            <br>
+            La funzione è 
+            <br>
+            <br>
+            <ul>
+                <li>
+                    positiva per \(x \in (0\,,\,\,1) \cup (e\,,\,\,+\infty)\)
+                </li>
+                <br>
+                <li>
+                    nulla per \(x \in \{1\}\)
+                </li>
+                <br>
+                <li>
+                    negativa per \(x \in (1\,,\,\,e)\)
+                </li>
+            </ul>
+            
+            <br>
+            <br>
+    
+            <u><b>Comportamento in prossimità degli estremi del dominio - ricerca asintoti</b></u>
+            <br>
+            Calcoliamo i limiti per 
+            \[
+                x \to 0^{+} \qquad x \to e^{\pm} \qquad x \to +\infty
+            \]
+            <br>
+            <div class="grayBorder formula">
+                \[
+                    \begin{align*}
+                        \lim_{x \to 0^{+}} \dfrac{ln(x)}{ln(x) - 1} 
+                        &= \lim_{x \to 0^{+}} \dfrac{\cancel{ln(x)}}{\cancel{ln(x)} \left(1 - \dfrac{1}{ln(x)}\right)} 
+                        \\\\
+                        &= \dfrac{1}{1 - \dfrac{1}{ln(0^{+})}} 
+                        \\\\
+                        &= \dfrac{1}{1 - \dfrac{1}{-\infty}} 
+                        \\\\
+                        &= \dfrac{1}{1 - 0}  = 1                            
+                    \end{align*}
+                \]
+            </div>
+    
+            <br>
+    
+            <div class="grayBorder">
+                \[
+                    \begin{align*}
+                        \lim_{x \to e} \dfrac{ln(x)}{ln(x) - 1} 
+                        &= \dfrac{ln(e)}{ln(e) - 1} 
+                        \\\\
+                        &= \dfrac{1}{1 - 1} 
+                        \\\\
+                        &= \dfrac{1}{0} = \infty
+                    \end{align*}
+                \]
+            </div>
+    
+            <br>
+            
+            <div class="grayBorder">
+                \[
+                    \begin{align*}
+                        \lim_{x \to +\infty} \dfrac{ln(x)}{ln(x) - 1} 
+                        &= \lim_{x \to +\infty} \dfrac{\cancel{ln(x)}}{\cancel{ln(x)}} = 1                    
+                    \end{align*}
+                \]
+            </div>
+            
+            <br>
+            <br>
+    
+            La funzione presenta
+            <br>
+            <br>
+            <ul>
+                <li>
+                    asinto orizzontale \(y = 1\) per \(x \to +\infty\)
+                </li>
+                <br>
+                <li>
+                    asintoto verticale \(x = e\). 
+                    <br>
+                    Dal segno della funzione decuciamo che per \(x \to e^{-}\) la funzione 
+                    diverge a \(-\infty\), mentre per \(x \to e^{+}\) diverge a \(+\infty\)
+                </li>
+            </ul>
+    
+            <br>
+            <br>
+    
+            <u><b>Continuità</b></u>
+            <br>
+            La funzione è continua nel suo dominio in quanto rapporto tra funzioni continue.
+            \[
+                C = D = (0\,,\,\,e) \cup (e\,,\,\,+\infty)
+            \]
+    
+            <br>
+            <br>
+    
+            <u><b>Derivabilità</b></u>
+            <br>
+            Calcoliamo la derivata della funzione 
+            \[
+                \begin{align*}
+                    &\Big[\dfrac{ln(x)}{ln(x) - 1}\Big]' =
+                    \\\\
+                    &= \dfrac{\dfrac{1}{x} \cdot (ln(x) - 1) - ln(x) \cdot \dfrac{1}{x}}{(ln(x) - 1)^2} = 
+                    \\\\
+                    &\color{gray}{}\text{mettiamo in evidenza \(\frac{1}{x}\) al numeratore}
+                    \\\\
+                    &= \dfrac{\dfrac{1}{x} \Big[(\cancel{ln(x)} - 1) - \cancel{ln(x)}\Big] }{(ln(x) - 1)^2} = 
+                    \\\\
+                    &= \dfrac{-\dfrac{1}{x}}{(ln(x) - 1)^2} = 
+                    \\\\
+                    &\color{gray}{}\text{usiamo una scrittura che risulti comoda}
+                    \\
+                    &\color{gray}{}\text{per lo studio del segno della derivata}
+                    \\\\
+                    &= \dfrac{-1}{(ln(x) - 1)^2}\, \dfrac{1}{x}
+                \end{align*}
+            \]
+            La derivata della funzione è
+            \[
+                f'(x) = \dfrac{-1}{(ln(x) - 1)^2} \, \dfrac{1}{x}
+            \]
+            Il sistema di condizioni che la rendono definita è equivalente al sistema risolto per stabilire il dominio della funzione:
+            \[
+                \begin{cases}
+                    (ln(x) - 1)^2 \neq 0
+                    \\\\
+                    x \gt 0
+                    \\\\
+                    x \neq 0
+                \end{cases}
+    
+                \,\,\,\Leftrightarrow\,\,\,
+    
+                \begin{cases}
+                    ln(x) - 1 \neq 0
+                    \\\\
+                    x \gt 0                
+                \end{cases}
+            \]
+            quindi l'insieme \(D'\) di derivabilità coincide con il dominio \(D\) della funzione:
+            \[
+                D' = C = D =  (0\,,\,\,e) \cup (e\,,\,\,+\infty)
+            \]
+    
+            <u><b>Studio intervalli di monotonia</b></u>
+            <br>
+            Studiamo il segno della derivata di \(f\).
+            \[
+                \dfrac{-1}{(ln(x) - 1)^2} \, \dfrac{1}{x} \gt 0
+            \]
+            Osserviamo che la prima frazione è negativa, perché al numeratore abbiamo \(-1\) ed al denominatore è presente un
+            quadrato, sicuramente positivo in \(D'\).
+            \[            
+                    \overset{-}{\color{gray}{}\overbrace{\color{black}{}\dfrac{-1}{(ln(x) - 1)^2}}} \,\cdot\, \color{red}{}\overbrace{\color{black}{}\dfrac{1}{x}} \color{black}{}\gt 0
+            \]
+            perché il risultato della moltiplicazione sia positivo, il termine evidenziato in rosso deve essere negativo. 
+            Ovvero la disequazione precedente è equivalente a 
+            \[
+                \color{red}{}\overbrace{\color{black}{}\dfrac{1}{x}} \color{black}{} \lt 0          
+            \]
+            che a sua volta è equivalente a 
+            \[
+                x \lt 0
+            \]
+            Possiamo rappresentare il segno della derivata ed i relativi inervalli di monotonia.
+            <br>
+            <br>
+            <img src="img/26(3).png" style="width: 100%; border: 0;">
+            <br>
+            La funzione è decrescente nell'intervallo \((0\,,\,\,e)\) ed in \((e\,,\,\,+\infty)\)
+    
+            <br>
+            <br>
+
+            <u><b>Grafico</b></u>
+            <br>
+            <div class="slide-container grayBorder">
+                <div class="slide1">
+                    <img src="img/26(4).png" alt="">
+                    <br>
+                    <span class="gray">
+    
+                    </span>
+                </div>
+                <div class="slide1">
+                    <img src="img/26(4).png" alt="">
+                    <br>
+                    <span class="gray">
+                        Il dominio della funzione è
+                        \[
+                            D = (0\,,\,\,e) \cup (e\,,\,\,+\infty)
+                        \]
+                    </span>
+                </div>
+                <div class="slide1">
+                    <img src="img/26(5).png" alt="">
+                    <br>
+                    <span class="gray">
+                        Il dominio della funzione è
+                        \[
+                            D = (0\,,\,\,e) \cup (e\,,\,\,+\infty)
+                        \]
+                    </span>
+                </div>
+                <div class="slide1">
+                    <img src="img/26(5).png" alt="">
+                    <br>
+                    <span class="gray">
+                        La funzione
+                        <br>
+                        <br>
+                        <ul>
+                            <li>
+                                positiva per \(x \in (0\,,\,\,1) \cup (e\,,\,\,+\infty)\)
+                            </li>
+                            <br>
+                            <li>
+                                nulla per \(x \in \{1\}\)
+                            </li>
+                            <br>
+                            <li>
+                                negativa per \(x \in (1\,,\,\,e)\)
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="slide1">
+                    <img src="img/26(6).png" alt="">
+                    <br>
+                    <span class="gray">
+                        La funzione
+                        <br>
+                        <br>
+                        <ul>
+                            <li>
+                                positiva per \(x \in (0\,,\,\,1) \cup (e\,,\,\,+\infty)\)
+                            </li>
+                            <br>
+                            <li>
+                                nulla per \(x \in \{1\}\)
+                            </li>
+                            <br>
+                            <li>
+                                negativa per \(x \in (1\,,\,\,e)\)
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="slide1">
+                    <img src="img/26(6).png" alt="">
+                    <br>
+                    <span class="gray">
+                        La funzione presenta
+                        <br>
+                        <br>
+                        <ul>
+                            <li>
+                                asinto orizzontale \(y = 1\) per \(x \to +\infty\)
+                            </li>
+                            <br>
+                            <li>
+                                asintoto verticale \(x = e\).                             
+                            </li>
+                        </ul>
+                        <br>
+                        Inoltre per \(x \to 0^{+}\) il valore della funzione tende ad \(1\).
+                    </span>
+                </div>
+                <div class="slide1">
+                    <img src="img/26(7).png" alt="">
+                    <br>
+                    <span class="gray">
+                        La funzione presenta
+                        <br>
+                        <br>
+                        <ul>
+                            <li>
+                                asinto orizzontale \(y = 1\) per \(x \to +\infty\)
+                            </li>
+                            <br>
+                            <li>
+                                asintoto verticale \(x = e\).                             
+                            </li>                        
+                        </ul>
+                        <br>
+                        Inoltre per \(x \to 0^{+}\) il valore della funzione tende ad \(1\).
+                    </span>
+                </div>
+                <div class="slide1">
+                    <img src="img/26(7).png" alt="">
+                    <br>
+                    <span class="gray">
+                        La funzione è decrescente nell'intervallo \((0\,,\,\,e)\) ed in \((e\,,\,\,+\infty)\)
+                    </span>
+                </div>
+                <div class="slide1">
+                    <img src="img/26(8).png" alt="">
+                    <br>
+                    <span class="gray">
+                        La funzione è decrescente nell'intervallo \((0\,,\,\,e)\) ed in \((e\,,\,\,+\infty)\)
+                    </span>
+                </div>
+                <div class="slide1">
+                    <img src="img/26(8).png" alt="">
+                    <br>
+                    <span class="gray">
+                        
+                    </span>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+                <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+            </div> 
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <ul>                
+        <li>
+            Ripassare l'esecizio guida n° 249 pag. 1723
+        </li>
+        <br>
+        <li>
+            Svolgere gli esercizi n° 253, 254  pag. 1723
+        </li>
+    </ul>    
+
+    <br>
+
+    <button id="hint2-button" onclick="showHint(2)">Svolgimento n° 253</button>
+    <div id="hint2" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento n° 253</b> 
+        <div class="grayBorder">        
+            \[
+                f(x) = a\,ln(x) + 1
+            \]
+            <u><b>Dominio, continuità, derivabilità</b></u>
+            <br>
+            Il dominio della funzione è
+            \[
+                D = (0\,,\,\,+\infty)
+            \]
+            Per qualsiasi scelta del parametro \(a\) la funzione è continua in \(D\), perché somma di funzioni continue.
+            \[
+                C = D = (0\,,\,\,+\infty)
+            \]    
+            Calcoliamo la derivata della funzione \(f\)
+            \[
+                f'(x) = \big[a\,ln(x) + 1\big]' = a\,\dfrac{1}{x} = \dfrac{a}{x}
+            \]
+            La derivata è definita per ogni \(x \in D\).
+            <br>
+            <br>
+            <u><b>Condizione di decrescenza</b></u>
+            <br>
+            Perché la funzione sia decrescente in tutto il dominio \(D = (0\,,\,\,+\infty)\) dobbiamo imporre la condizione
+            \[
+                f'(x) \lt 0 \quad \text{per}\,\,\, x \in (0\,,\,\,+\infty)
+            \]
+            ovvero
+            \[
+                \dfrac{a}{x} \lt 0 \quad \text{per}\,\,\, x \in (0\,,\,\,+\infty)
+            \]
+            Poiché \(x \in (0\,,\,\,+\infty)\), il denominatore della frazione è sicuramente positivo. Se vogliamo che la frazione 
+            abbia segno negativo dobbiamo scegliere \(a\) positivo.
+            \[
+                \dfrac{a}{x} \lt 0 \quad \text{per}\,\,\, x \in (0\,,\,\,+\infty) \,\,\,\Leftrightarrow\,\,\, a \gt 0
+            \]
+        </div>
+    </div>
+    
+    <br>
+
+    <button id="hint3-button" onclick="showHint(3)">Svolgimento n° 254</button>
+    <div id="hint3" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento n° 254</b> 
+        <div class="grayBorder">        
+            \[
+                f(x) = \dfrac{ax - 1}{x}
+            \]
+            <u><b>Dominio, continuità, derivabilità</b></u>
+            <br>
+            Il dominio della funzione è
+            \[
+                D = (-\infty\,,\,0)\cup (0\,,\,\,+\infty)
+            \]
+            Per qualsiasi scelta del parametro \(a\) la funzione è continua in \(D\), perché rapporto di funzioni continue.
+            \[
+                C = D = (-\infty\,,\,0)\cup (0\,,\,\,+\infty)
+            \]    
+            Calcoliamo la derivata della funzione \(f\)
+            \[
+                \begin{align*}
+                    \Big[\dfrac{ax - 1}{x}\Big]' 
+                    &= \dfrac{a \cdot x - (ax - 1) \cdot 1}{x^2} = 
+                    \\\\
+                    &= \dfrac{ax - ax + 1}{x^2} = 
+                    \\\\
+                    &= \dfrac{1}{x^2}            
+                \end{align*}
+            \]
+            La derivata
+            \[
+                f'(x) = \dfrac{1}{x^2}
+            \]
+            è definita per ogni \(x \in D\). 
+            <br>
+            Osserviamo inoltre che essa non dipende più dal parametro \(a\).
+            Questo significa che a prescindere dalla scelta del valore del parametro \(a\) lo schema della monotonia della funzione è lo stesso.
+            <br>
+            <br>
+            <u><b>Condizione di crescenza</b></u>
+            <br>
+            La funzione è sempre crescente in \(\mathbb{R}^{+} := (0\,,\,\,+\infty)\) se per ogni \(x\) in 
+            tale intervallo si ha \(f'(x) \gt 0\).
+            <br>
+            <br>
+            Osserviamo che la derivata \(f'(x) = \frac{1}{x^2}\) è positiva addirittura in tutto il dominio. Infatti in numeratore \(1\) della 
+            frazione è positivo ed il denominatore \(x^2\) è anch'esso sempre positivo in \(D\).
+            <br>
+            Concludiamo che la funzione è crescente in \(\mathbb{R}^{+}\) per ogni valore del parametro.
+        </div>
+    </div>
+
+    
+
+    
+    
+    <br>
+    <br>
+    
+    
+
+    <script src="../../js/hintAndSlide.js"></script>    
+</body>
+
+<!--
+    <div class="slide-container grayBorder">
+        <div class="slide1">
+            
+        </div>
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+        <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+    </div> 
+ -->
+
+ 
