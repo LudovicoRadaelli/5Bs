@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Esercitazione</h1>
+    
+    <br>
+    
+    Effettuare lo studio della funzione 
+    \[
+        f(x) = \dfrac{\left|x\right|}{x^2 - 4}
+    \]
+
+    seguendo la seguente scaletta
+
+    <br>
+    <br>
+    <ul>
+        <li>
+            <u><b>Dominio</b></u>
+            <br>
+            Individuare i valori per i quali la funzione è definita.
+        </li>
+        <br>
+        <li>
+            <u><b>Segno</b></u>
+            <br>
+            Stabilire per quali valori la funzione è positiva, negativa o nulla.
+        </li>
+        <br>
+        <br>
+        <li>
+            <u><b>Comportamento in prossimità degli estremi del dominio - ricerca asintoti</b></u>
+            <br>
+            Calcolare i limiti per \(x\) che tente agli estremi del dominio. 
+            <br>
+            Se ad esempio 
+            \[
+                D = (1\,,\,\,2] \cup (3\,,\,\,+\infty)
+            \] 
+            calcoliamo i limiti per 
+            \[
+                x \to 1^{-}\quad x \to 3^{+}\quad x \to +\infty
+            \]
+            Il valore \(x = 2\) appartiene al dominio, quindi non è di nostro interesse.
+        </li>
+        <br>
+        <br>
+        <li>
+            <u><b>Continuità</b></u>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    Individuare l'insieme \(C\) in cui la funzione è continua.
+                </li>
+                <br>
+                <li>
+                    Classificare evenutali punti di discontinuità (che sono automanticamente anche
+                    punti di non derivabilità)
+                </li>
+            </ul>
+        </li>
+        <br>
+        <br>
+        <li>
+            <u><b>Derivabilità</b></u>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    Calcolare la derivata della funzione.
+                </li>
+                <br>
+                <li>
+                    Studiare il dominio \(D'\) della derivata \(f'\) e confrontarlo con \(C\).
+                    <br>
+                    La funzione sarà derivabile in \(D'\). Eventuali valori "persi" da \(C\) a \(D'\) sono
+                    punti di non derivabilità per la funzione.
+                </li>
+                <br>
+                <li>
+                    Classificare evenutali punti di non derivabilità.
+                </li>
+            </ul>
+        </li>
+        <br>
+        <br>
+        <li>
+            <u><b>Studio intervalli di monotonia</b></u>
+            <br>
+            Studiare il segno della derivata e stabilire attraverso il grafico delle freccete gli intervalli 
+            nei quali la funzione è crescente e decrescnte
+        </li>
+        <br>
+        <br>
+        <li>
+            <u><b>Grafico</b></u>
+            <br>
+            Riassumere tutte le informazioni raccolte nei punti precedenti in un grafico.
+        </li>
+        
+
+    </ul>
+
+    
+    
+    <br>
+    <br>
+    
+    <div class="grayBorder">
+        <div id="password-container">
+            <div class="gray">
+                Inserisci la password per visualizzare la soluzione.
+            </div>
+            <br>
+            <input type="password" name="" id="password" style="display: block; width: 75%; margin: auto;">
+            <br>
+            <br>
+            <button onclick="invia()">Invia</button>
+        </div>
+        <div id="solution" style="display: none;">
+            sjdbvjkbsdkjvbsdbvl
+        </div>
+    </div>
+
+    <script>
+        function invia() {
+            let guess = document.getElementById("password").value;
+            if(guess === "allesamespaccotutto") {
+                document.getElementById("password-container").style.display = "none";
+                document.getElementById("solution").style.display = "block";
+            }
+        }
+    </script>
+
+    <script src="../../js/hintAndSlide.js"></script>    
+</body>
+
+<!--
+    <div class="slide-container grayBorder">
+        <div class="slide1">
+            
+        </div>
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+        <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+    </div> 
+ -->
+
+ 
