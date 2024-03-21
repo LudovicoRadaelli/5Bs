@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>    
+    <div>
+        Data la funzione 
+        \[
+            f_{a}(x) = \dfrac{ln(x) + 2a}{x}
+        \]
+        <ul>
+            <li>
+                individuare l'ascissa in corrispondenza della quale la tangente al grafico \(\Gamma_{a}\)
+                di \(f_{a}\) è orizzontale.
+            </li>
+            <br>
+            <li>
+                stabilire per quali valori di \(a\) la tangente a \(\Gamma_{a}\) nel punto di ascissa \(x = 1\) ha 
+                coefficiente angolare compreso tra \(-1\) ed \(1\)
+            </li>
+            <br>
+            <li>
+                Stabilire per quale ascissa \(x_0\) la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani.
+            </li>
+            <br>
+            <li>
+                Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\) stabilire per quale 
+                valore di \(a\) la distanza tra \(P_{a}\) e \(Q(0\,,\,1)\) è uguale ad \(1\).
+            </li>
+        </ul>              
+    </div>
+
+    <br>
+    <br>
+
+    <button id="hint1-button" onclick="showHint(1)">Svolgimento</button>
+    <div id="hint1" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento</b> 
+        <div class="grayBorder">
+            <div class="grayBorder">
+                Prima di affrontare i singoli punti, osserviamo che il dominio della funzione        
+                \[
+                    f_{a}(x) = \dfrac{ln(x) + 2a}{x}
+                \]
+                è \(D = (0\,,\,\,+\infty)\)
+                
+                <br>
+                <br>
+                
+                <u><b>Prima richiesta</b></u>
+                <br>        
+                
+                <div class="slide-container grayBorder">
+                    <div class="slide1">
+                        <div class="grayBackground">
+                            Individuare l'ascissa in corrispondenza della quale la tangente al grafico \(\Gamma_{a}\)
+                            di \(f_{a}\) è orizzontale.   
+                        </div>             
+                        <br>                
+                        <div class="span gray">
+                            Analizziamo il testo della richiesta. 
+                            <br>
+                            Vogliamo individuare l'<u>ascissa</u>, ovvero un valore \(x\), tale che valga 
+                            la proprietà che evidenziamo in rosso.
+                        </div>
+                    </div>
+                    <div class="slide1">
+                        <div class="grayBackground">
+                            Individuare l'ascissa in corrispondenza della quale <span style="color: red">la tangente al grafico \(\Gamma_{a}\)
+                            di \(f_{a}\) è orizzontale.</span>   
+                        </div>             
+                        <br>                
+                        <div class="span gray">
+                            Analizziamo il testo della richiesta. 
+                            <br>
+                            Vogliamo individuare l'<u>ascissa</u>, ovvero un valore \(x\), tale che valga 
+                            la proprietà che evidenziamo in rosso.
+                        </div>
+                    </div>
+                    <div class="slide1">
+                        <div class="grayBackground">
+                            Individuare l'ascissa in corrispondenza della quale <span style="color: red">la tangente al grafico \(\Gamma_{a}\)
+                            di \(f_{a}\) è orizzontale.</span>   
+                        </div>             
+                        <br>                
+                        <div class="span gray">
+                            Traduciamo questa condizione.                    
+                        </div>
+                    </div>
+                    <div class="slide1">
+                        <div class="grayBackground">
+                            Individuare l'ascissa in corrispondenza della quale <span style="color: red">la tangente al grafico \(\Gamma_{a}\)
+                            di \(f_{a}\) è orizzontale.</span>   
+                        </div>             
+                        <br>                
+                        <div class="span gray">
+                            Traduciamo questa condizione.
+                            <br>
+                            <br>
+                            Una retta è orizzontale se il suo coefficiente angolare è \(0\).                      
+                        </div>
+                    </div>
+                    <div class="slide1">
+                        <div class="grayBackground">
+                            Individuare l'ascissa in corrispondenza della quale <span style="color: red">la tangente al grafico \(\Gamma_{a}\)
+                            di \(f_{a}\) è orizzontale.</span>   
+                        </div>             
+                        <br>                
+                        <div class="span gray">
+                            Traduciamo questa condizione.
+                            <br>
+                            <br>
+                            Una retta è orizzontale se il suo coefficiente angolare è \(0\).
+                            <br>
+                            <br>
+                            Sappiamo che il coefficiente angolare della retta tangente a \(\Gamma_{a}\) nel punto di ascissa generica \(x\) è  
+                            la derivata di \(f_{a}'(x)\).                     
+                        </div>
+                    </div>
+                    <div class="slide1">
+                        <div class="grayBackground">
+                            Individuare l'ascissa in corrispondenza della quale <span style="color: red">la tangente al grafico \(\Gamma_{a}\)
+                            di \(f_{a}\) è orizzontale.</span>   
+                        </div>             
+                        <br>                
+                        <div class="span gray">
+                            Traduciamo questa condizione.
+                            <br>
+                            <br>
+                            Una retta è orizzontale se il suo coefficiente angolare è \(0\).
+                            <br>
+                            <br>
+                            Sappiamo che il coefficiente angolare della retta tangente a \(\Gamma_{a}\) nel punto di ascissa generica \(x\) è  
+                            la derivata di \(f_{a}'(x)\).
+                            <br>
+                            <br>
+                            Quindi la frase evidenziata in rosso si traduce nella condizione 
+                            \[
+                                f_{a}'(x) = 0
+                            \]    
+                        </div>
+                    </div>            
+                </div>
+                <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                    <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+                    <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+                </div>      
+        
+                <br>        
+                
+                Calcoliamo la derivata di \(f_{a}\)
+                \[
+                    \begin{align*}
+                        \Big[\dfrac{ln(x) + 2a}{x}\Big]' &= \dfrac{\dfrac{1}{x} \cdot x - \left(ln(x) + 2a\right) \cdot 1}{x^2}
+                        \\\\
+                        &= \dfrac{1 - ln(x) - 2a}{x^2}            
+                    \end{align*}
+                \]
+                La condizione 
+                \[
+                    f'_{a}(x) = 0
+                \]
+                si riscrive
+                \[
+                    \dfrac{1 - ln(x) - 2a}{x^2} = 0
+                \]
+                Troviamo per quali \(x \in D\) è soddisfatta. 
+                \[
+                    \begin{align*}
+                        &\dfrac{1 - ln(x) - 2a}{\cancel{x^2}} = 0
+                        \\\\
+                        &1 - ln(x) - 2a = 0
+                        \\\\
+                        &ln(x) = 2a - 1
+                        \\\\
+                        &x = e^{2a - 1}
+                    \end{align*}
+                \]
+                L'ascissa in corrispondenza della quale la funzione possiede la proprietà richiesta dal testo è \(x = e^{2a - 1}\)
+            
+                <br>
+                <br>
+                <br>
+                <br>
+            
+                <u><b>Seconda richiesta</b></u>
+                <br>        
+                
+                <div class="slide-container grayBorder">
+                    <div class="slide2">
+                        <div class="grayBackground">
+                            Stabilire per quali valori di \(a\) la tangente a \(\Gamma_{a}\) nel punto di ascissa \(x = 1\) ha 
+                            coefficiente angolare compreso tra \(-1\) ed \(1\)
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Analizziamo il testo della richiesta. 
+                            <br>
+                            Questa volta siamo interessati ai valori del <u>parametro \(a\)</u> tali che si verifichi la proprietà che 
+                            evidenziamo in rosso.
+                        </span>
+                    </div>        
+                    <div class="slide2">
+                        <div class="grayBackground">
+                            stabilire per quali valori di \(a\) <span style="color: red">la tangente a \(\Gamma_{a}\) nel punto di ascissa \(x = 1\) ha 
+                                coefficiente angolare compreso tra \(-1\) ed \(1\)</span>
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Analizziamo il testo della richiesta. 
+                            <br>
+                            Questa volta siamo interessati ai valori del <u>parametro \(a\)</u> tali che si verifichi la proprietà che 
+                            evidenziamo in rosso.
+                        </span>
+                    </div>        
+                    <div class="slide2">
+                        <div class="grayBackground">
+                            stabilire per quali valori di \(a\) <span style="color: red">la tangente a \(\Gamma_{a}\) nel punto di ascissa \(x = 1\) ha 
+                                coefficiente angolare compreso tra \(-1\) ed \(1\)</span>
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Il soggetto della frase è "la tangente a \(\Gamma_{a}\) nel punto di ascissa \(x = 1\)", che è una retta.
+                        </span>
+                    </div>        
+                    <div class="slide2">
+                        <div class="grayBackground">
+                            stabilire per quali valori di \(a\) <span style="color: red">la tangente a \(\Gamma_{a}\) nel punto di ascissa \(x = 1\) ha 
+                                coefficiente angolare compreso tra \(-1\) ed \(1\)</span>
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Il soggetto della frase è "la tangente a \(\Gamma_{a}\) nel punto di ascissa \(x = 1\)", che è una retta.
+                            <br>
+                            <br>
+                            Di tale retta ci interessa il coefficiente angolare: il testo chiede che sia compreso tra \(-1\) ed \(1\).
+                        </span>
+                    </div>        
+                    <div class="slide2">
+                        <div class="grayBackground">
+                            stabilire per quali valori di \(a\) <span style="color: red">la tangente a \(\Gamma_{a}\) nel punto di ascissa \(x = 1\) ha 
+                                coefficiente angolare compreso tra \(-1\) ed \(1\)</span>
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Il soggetto della frase è "la tangente a \(\Gamma_{a}\) nel punto di ascissa \(x = 1\)", che è una retta.
+                            <br>
+                            <br>
+                            Di tale retta ci interessa il coefficiente angolare: il testo chiede che sia compreso tra \(-1\) ed \(1\).
+                            <br>
+                            <br>
+                            Il coefficiente angolare della tangente \(\Gamma_{a}\) è \(f'(1)\).
+                        </span>
+                    </div>  
+                    <div class="slide2">
+                        <div class="grayBackground">
+                            stabilire per quali valori di \(a\) <span style="color: red">la tangente a \(\Gamma_{a}\) nel punto di ascissa \(x = 1\) ha 
+                                coefficiente angolare compreso tra \(-1\) ed \(1\)</span>
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Quindi la condizione si traduce in 
+                            \[
+                                -1 \lt f'(1) \lt 1
+                            \]
+                        </span>
+                    </div>        
+                </div>
+                <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                    <button id="previousSlide-button2" onclick="previousSlide(2)">Indietro</button>
+                    <button id="nextSlide-button2" onclick="nextSlide(2)">Avanti</button>
+                </div> 
+            
+                <br>        
+        
+                Valutiamo la derivata della funzione in \(x = 1\)
+                \[
+                    \begin{align*}
+                        &f'(x) = \dfrac{1 - ln(x) - 2a}{x^2} 
+                        \\\\
+                        \,\,\,\Rightarrow\,\,\, &f'(1) = \dfrac{1 - ln(1) - 2a}{1^2} = 1 -2a
+                    \end{align*}
+                \]
+                Dunque la condizione 
+                \[
+                    -1 \lt f'(1) \lt 1
+                \]
+                si riscrive     
+                \[
+                    -1 \lt 1 -2a \lt 1
+                \]
+                Queste due disequazioni (che, ricordate, costituiscono un sistema) possono essere risolte effettuando simultaneamente 
+                gli stessi passaggi a l'una ed all'altra:
+                \[
+                    \begin{align*}    
+                        &-1 \lt 1 -2a \lt 1
+                        \\\\
+                        &-1 -1 \lt -2a \lt 1 -1
+                        \\\\
+                        &-2 \lt -2a \lt 0
+                        \\\\
+                        &\dfrac{-2}{-2} \gt \dfrac{-2a}{-2} \gt \dfrac{0}{-2}
+                        \\\\
+                        &\color{gray}{}\text{siccome abbiamo dividiso per}
+                        \\
+                        &\color{gray}{}\text{un numero negativo i versi delle}
+                        \\
+                        &\color{gray}{}\text{diseguaglianze si sono ribaltati}
+                        \\\\
+                        &1 \gt a \gt 0
+                        \\\\
+                        &\color{gray}{}\text{riscriviamo in modo equivalente}
+                        \\\\
+                        &0 \lt a \lt 1
+                    \end{align*}    
+                \]
+                La proprietà richiesta dal testo è soddisfatta se \(a \in (0\,,\,\,1)\)
+        
+                <br>
+                <br>
+                <br>
+                <br>
+        
+                <u><b>Terza richiesta</b></u>
+                <br>                
+                
+                <div class="slide-container grayBorder">
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Siamo interessati all'<u>ascissa</u>, un valore \(x\) al quale il testo dà etichetta \(x_{0}\), per la quale sia verificata la proprietà che evidenziamo
+                            in rosso.
+                        </span>
+                    </div>     
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Siamo interessati all'<u>ascissa</u>, un valore \(x\) al quale il testo dà etichetta \(x_{0}\), per la quale sia verificata la proprietà che evidenziamo
+                            in rosso.
+                        </span>
+                    </div>   
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Il grafico \(\Gamma_{2}\) è quello della funzione \(f_{2}\), ovvero della funzione ottenuta per 
+                            la scelta del parametro \(a = 2\). Si ha
+                            \[
+                                \begin{align*}
+                                    &f_a(x) = \dfrac{ln(x) + 2a}{x} 
+                                    \\\\
+                                    \,\,\,\Rightarrow\,\,\, &f_2(x) = \dfrac{ln(x) + 4}{x} 
+                                \end{align*}
+                            \]
+                            <br>
+                            <br>
+                            \[
+                                \begin{align*}
+                                    &f_a'(x) = \dfrac{1 - ln(x) - 2a}{x^2} 
+                                    \\\\
+                                    \,\,\,\Rightarrow\,\,\, &f_2'(x) = \dfrac{-ln(x) -3}{x^2} 
+                                \end{align*}
+                            \]
+                        </span>
+                    </div>
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            In questo caso la proprietà richiesta dal testo non riguarda solo il coefficiente angolare della retta tangente, 
+                            ma tutta la retta.
+                            <br>
+                            Troviamone l'equazione.
+                        </span>
+                    </div>       
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - f_2(x_0) = f_2'(x_0) (x - x_0)
+                            \]
+                            Concretizziamo la formula per la funzione \(f_2\).
+                        </span>
+                    </div>       
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - \color{blue}{}f_2(x_0)\color{gray}{} = f_2'(x_0) (x - x_0)
+                            \]                   
+                        </span>
+                    </div>   
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - \color{blue}{}f_2(x_0)\color{gray}{} = f_2'(x_0) (x - x_0)
+                            \]
+                            Si ha
+                            \[
+                                f_2(x_0) = \dfrac{ln(x_0) + 4}{x_0} 
+                            \]
+                        </span>
+                    </div>       
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - f_2(x_0) = f_2'(x_0) (x - x_0)
+                            \]
+                            Si ha
+                            \[
+                                \color{blue}{}f_2(x_0)\color{gray}{} = \dfrac{ln(x_0) + 4}{x_0} 
+                            \]
+                        </span>
+                    </div>    
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - f_2(x_0) = f_2'(x_0) (x - x_0)
+                            \]
+                            Si ha
+                            \[
+                                f_2(x_0) = \color{blue}{}\dfrac{ln(x_0) + 4}{x_0}\color{gray}{} 
+                            \]
+                        </span>
+                    </div>       
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - \color{blue}{}\dfrac{ln(x_0) + 4}{x_0}\color{gray}{}  = f_2'(x_0) (x - x_0)
+                            \]
+                            Si ha
+                            \[
+                                f_2(x_0) = \dfrac{ln(x_0) + 4}{x_0}
+                            \]
+                        </span>
+                    </div>                    
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - \dfrac{ln(x_0) + 4}{x_0} = \color{blue}{}f_2'(x_0)\color{gray}{} (x - x_0)
+                            \]    
+                            <br>
+                            \[
+                            
+                            \]                
+                        </span>
+                    </div>       
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - \dfrac{ln(x_0) + 4}{x_0} = \color{blue}{}f_2'(x_0)\color{gray}{} (x - x_0)
+                            \]                
+                            Si ha
+                            \[
+                                f_2'(x_0) = \dfrac{-ln(x_0) -3}{x_0^2} 
+                            \]   
+                        </span>
+                    </div>     
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - \dfrac{ln(x_0) + 4}{x_0} = f_2'(x_0) (x - x_0)
+                            \]                
+                            Si ha
+                            \[
+                                \color{blue}{}f_2'(x_0)\color{gray}{} = \dfrac{-ln(x_0) -3}{x_0^2} 
+                            \]   
+                        </span>
+                    </div>     
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - \dfrac{ln(x_0) + 4}{x_0} = f_2'(x_0) (x - x_0)
+                            \]                
+                            Si ha
+                            \[
+                                f_2'(x_0) = \color{blue}{}\dfrac{-ln(x_0) -3}{x_0^2} \color{gray}{}
+                            \]   
+                        </span>
+                    </div>     
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - \dfrac{ln(x_0) + 4}{x_0} = \color{blue}{}\dfrac{-ln(x_0) -3}{x_0^2} \color{gray}{} (x - x_0)
+                            \]                
+                            Si ha
+                            \[
+                                f_2'(x_0)\color{gray}{} = \dfrac{-ln(x_0) -3}{x_0^2} 
+                            \]   
+                        </span>
+                    </div>       
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - \dfrac{ln(x_0) + 4}{x_0} = \dfrac{-ln(x_0) -3}{x_0^2} (x - x_0)
+                            \]                
+                            Ora vogliamo che questa retta passi per l'origine. 
+                            <br>
+                            Questo significa che se sostituiamo le coordinate \(x = 0\) e \(y = 0\) nell'equazione appena 
+                            scritta otteniamo una uguaglianza vera.
+                        </span>
+                    </div>       
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                \color{blue}{}y\color{gray}{} - \dfrac{ln(x_0) + 4}{x_0} = \dfrac{-ln(x_0) -3}{x_0^2} (\color{blue}{}x\color{gray}{} - x_0)
+                            \]                
+                            Ora vogliamo che questa retta passi per l'origine. 
+                            <br>
+                            Questo significa che se sostituiamo le coordinate \(x = 0\) e \(y = 0\) nell'equazione appena 
+                            scritta otteniamo una uguaglianza vera.
+                        </span>
+                    </div>    
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - \dfrac{ln(x_0) + 4}{x_0} = \dfrac{-ln(x_0) -3}{x_0^2} (x - x_0)
+                            \]                
+                            Ora vogliamo che questa retta passi per l'origine. 
+                            <br>
+                            Questo significa che se sostituiamo le coordinate \(\color{blue}x\color{gray}{} = 0\) e \(\color{blue}{}y\color{gray}{} = 0\) nell'equazione appena 
+                            scritta otteniamo una uguaglianza vera.
+                        </span>
+                    </div>   
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                y - \dfrac{ln(x_0) + 4}{x_0} = \dfrac{-ln(x_0) -3}{x_0^2} (x - x_0)
+                            \]                
+                            Ora vogliamo che questa retta passi per l'origine. 
+                            <br>
+                            Questo significa che se sostituiamo le coordinate \(x = \color{blue}0\color{gray}{}\) e \(y = \color{blue}{0}\) nell'equazione appena 
+                            scritta otteniamo una uguaglianza vera.
+                        </span>
+                    </div>
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'equazione della retta tangente al grafico di \(f_2\) nel punto di ascissa \(x_0\) ha la forma 
+                            \[
+                                \color{blue}0{}\color{gray}{} - \dfrac{ln(x_0) + 4}{x_0} = \dfrac{-ln(x_0) -3}{x_0^2} (\color{blue}0{}\color{gray}{} - x_0)
+                            \]                
+                            Ora vogliamo che questa retta passi per l'origine. 
+                            <br>
+                            Questo significa che se sostituiamo le coordinate \(x = 0\) e \(y = 0\) nell'equazione appena 
+                            scritta otteniamo una uguaglianza vera.
+                        </span>
+                    </div>  
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Otteniamo la condizione
+                            \[
+                                0 - \dfrac{ln(x_0) + 4}{x_0} = \dfrac{-ln(x_0) -3}{x_0^2} (0 - x_0)
+                            \]                                    
+                        </span>
+                    </div>  
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Otteniamo la condizione
+                            \[
+                                0 - \dfrac{ln(x_0) + 4}{x_0} = \dfrac{-ln(x_0) -3}{x_0^2} (0 - x_0)
+                            \]        
+                            Semplifichiamo la scrittura.                            
+                        </span>
+                    </div>  
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Otteniamo la condizione
+                            \[
+                                -\dfrac{ln(x_0) + 4}{x_0} = \dfrac{-ln(x_0) -3}{x_0^2} \, (-x_0)
+                            \]                
+                            Semplifichiamo la scrittura.
+                        </span>
+                    </div>     
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Otteniamo la condizione
+                            \[
+                                -\dfrac{ln(x_0) + 4}{x_0} = \dfrac{-ln(x_0) -3}{x_0^\cancel{2}} \, -(\cancel{x_0})
+                            \]                
+                            Semplifichiamo la scrittura.
+                        </span>
+                    </div>       
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Otteniamo la condizione
+                            \[
+                                -\dfrac{ln(x_0) + 4}{x_0} = \dfrac{-ln(x_0) -3}{x_0} \, (-1)
+                            \]                
+                            Semplifichiamo la scrittura.
+                        </span>
+                    </div>      
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Otteniamo la condizione
+                            \[
+                                -\dfrac{ln(x_0) + 4}{x_0} = \dfrac{ln(x_0) +3}{x_0}
+                            \]                
+                            Semplifichiamo la scrittura.
+                        </span>
+                    </div>      
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Otteniamo la condizione
+                            \[
+                                -\dfrac{ln(x_0) + 4}{\cancel{x_0}} = \dfrac{ln(x_0) +3}{\cancel{x_0}}
+                            \]                
+                            Semplifichiamo la scrittura.
+                        </span>
+                    </div>       
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Otteniamo la condizione
+                            \[
+                                -\Big(ln(x_0) + 4\Big) = ln(x_0) +3
+                            \]                
+                            Semplifichiamo la scrittura.
+                        </span>
+                    </div>       
+                    <div class="slide3">
+                        <div class="grayBackground">
+                            Stabilire per quale ascissa \(x_0\) <span style="color: red;">la retta tangente a \(\Gamma_{2}\) passa per l'origine degli assi cartesiani</span>.
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Otteniamo la condizione
+                            \[
+                                -ln(x_0) - 4 = ln(x_0) +3
+                            \]                
+                            Semplifichiamo la scrittura.
+                        </span>
+                    </div>      
+                </div>
+                <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                    <button id="previousSlide-button3" onclick="previousSlide(3)">Indietro</button>
+                    <button id="nextSlide-button3" onclick="nextSlide(3)">Avanti</button>
+                </div> 
+        
+                <br>
+                <br>
+        
+                Troviamo qual è il valore di \(x_0\) che soddisfa la condizione appena scritta.
+                \[
+                    \begin{align*}
+                        &-ln(x_0) - 4 = ln(x_0) +3   
+                        \\\\
+                        &ln(x_0) = -\dfrac{7}{2}   
+                        \\\\
+                        &x_0 = e^{-\frac{7}{2}}
+                    \end{align*}
+                \]
+                La condizione richiesta dal teso è soddisfatta per l'ascissa \(x_0 = e^{-\frac{7}{2}}\)
+        
+                <br>
+                <br>
+                <br>
+                <br>
+        
+                <u><b>Quarta richiesta</b></u>
+                <br>
+        
+                <div class="slide-container grayBorder">
+                    <div class="slide4">
+                        <div class="grayBackground">
+                            Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\) stabilire se la distanza tra \(P_{3}\) e \(Q(0\,,\,1)\) è uguale ad \(1\)
+                        </div>
+                        <br>
+                        <span class="gray">
+                            
+                        </span>
+                    </div>
+                    <div class="slide4">
+                        <div class="grayBackground">
+                            <span style="color: red">Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\)</span> 
+                            stabilire se la distanza tra \(P_{3}\) e \(Q(0\,,\,1)\) è uguale ad \(1\).
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Concentriamoci sulla prima richiesta.
+                        </span>
+                    </div>
+                    <div class="slide4">
+                        <div class="grayBackground">
+                            <span style="color: red">Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\)</span> 
+                            stabilire se la distanza tra \(P_{3}\) e \(Q(0\,,\,1)\) è uguale ad \(1\).
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'obiettivo è quello di individuare le coordinate del punto \(P\) ottenuto come intersezione dei grafici citati dal testo.                    
+                        </span>
+                    </div>
+                    <div class="slide4">
+                        <div class="grayBackground">
+                            <span style="color: red">Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\)</span> 
+                            stabilire se la distanza tra \(P_{3}\) e \(Q(0\,,\,1)\) è uguale ad \(1\).
+                        </div>
+                        <br>
+                        <span class="gray">
+                            L'obiettivo è quello di individuare le coordinate del punto \(P\) ottenuto come intersezione dei grafici citati dal testo.                    
+                            <br>
+                            Due grafici si intersecano se le funzioni che rappresentano assumono lo stesso valore in corrispondenza di una certa ascissa
+                            <br>
+                            <br>
+                            <img src="img/27(1).png" alt="">
+                        </span>
+                    </div>
+                    <div class="slide4">
+                        <div class="grayBackground">
+                            <span style="color: red">Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\)</span> 
+                            stabilire se la distanza tra \(P_{3}\) e \(Q(0\,,\,1)\) è uguale ad \(1\).
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Cerchiamo per quale valore di  \(x\)
+                            \[
+                                f_a(x) = g(x)
+                            \]                    
+                        </span>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                    <button id="previousSlide-button4" onclick="previousSlide(4)">Indietro</button>
+                    <button id="nextSlide-button4" onclick="nextSlide(4)">Avanti</button>
+                </div> 
+        
+                <br>
+                <br>
+        
+                Si ha
+                \[
+                    \begin{align*}
+                        f_a(x) = g(x)
+                        \\\\
+                        \dfrac{ln(x) + 2a}{x} = \dfrac{1}{x}
+                        \\\\
+                        ln(x) + 2a = 1
+                        \\\\
+                        ln(x)  = 1 - 2a
+                        \\\\
+                        x  = e^{1 - 2a}
+                    \end{align*}
+                \]   
+                Il punto d'intersezione \(P\) ha coordinata \(x = e^{1 - 2a}\). Per individuare la sua coordinata \(y\) calcoliamo
+                \(g(e^{1 - 2a})\) oppure \(f_a(e^{1 - 2a})\) (danno lo stesso risultato).
+                \[
+                    g(e^{1 - 2a}) = \dfrac{1}{e^{1 - 2a}}
+                \]
+                Le coordinate del punto \(P_a\) sono
+                \[
+                    P_a\left(e^{1 - 2a}\,,\,\dfrac{1}{e^{1 - 2a}}\right)
+                \]
+            
+                Concentriamoci ora sulla seconda parte della richiesta.
+                <br>
+                Il punto \(P_3\) ha coordinate
+                \[
+                    \begin{align*}
+                        &P_3\left(e^{1 - 2a}\,,\,\dfrac{1}{e^{1 - 2a}}\right)
+                        \\\\
+                        &P_3\left(e^{1 - 2\cdot 3}\,,\,\dfrac{1}{e^{1 - 2\cdot 3}}\right)
+                        \\\\
+                        &P_3\left(e^{-5}\,,\,\dfrac{1}{e^{-5}}\right)
+                        \\\\
+                        &P_3\left(\dfrac{1}{e^{5}}\,,\,e^{5}\right)
+                    \end{align*}
+                \]
+                <br>
+                <br>
+        
+                <div class="slide-container grayBorder">
+                    <div class="slide5">
+                        <div class="grayBackground">
+                            Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\) <span style="color: red">stabilire se
+                        la distanza tra \(P_{3}\) e \(Q(0\,,\,1)\) è uguale ad \(1\).</span>
+                        </div>
+                        <br>
+                        <span class="gray">
+                            
+                        </span>
+                    </div>
+                    <div class="slide5">
+                        <div class="grayBackground">
+                            Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\) <span style="color: red">stabilire se
+                        la distanza tra \(P_{3}\) e \(Q(0\,,\,1)\) è uguale ad \(1\).</span>
+                        </div>
+                        <br>
+                        <span class="gray">
+                            La formula della distanza tra due punti \(P\) e \(Q\)  è
+                            \[
+                                \sqrt{(x_Q - x_P)^2 + (y_Q - y_P)^2} 
+                            \]                    
+                        </span>
+                    </div>
+                    <div class="slide5">
+                        <div class="grayBackground">
+                            Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\) <span style="color: red">stabilire se
+                        la distanza tra \(P_{3}\) e \(Q(0\,,\,1)\) è uguale ad \(1\).</span>
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Imponiamo che tale distanza sia uguale ad \(1\)
+                            \[
+                                \sqrt{(x_Q - x_P)^2 + (y_Q - y_P)^2} 
+                            \]                    
+                        </span>
+                    </div>
+                    <div class="slide5">
+                        <div class="grayBackground">
+                            Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\) <span style="color: red">stabilire se
+                        la distanza tra \(P_{3}\) e \(Q(0\,,\,1)\) è uguale ad \(1\).</span>
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Sostituiamo le coordinate di \(P_3\) e \(Q\)
+                            \[
+                                \sqrt{(x_Q - x_P)^2 + (y_Q - y_P)^2}
+                            \]                    
+                        </span>
+                    </div>
+                    <div class="slide5">
+                        <div class="grayBackground">
+                            Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\) <span style="color: red">stabilire se
+                        la distanza tra \(P_{3}\) e \(Q(0\,,\,1)\) è uguale ad \(1\).</span>
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Sostituiamo le coordinate di \(P_3\) e \(Q\)
+                            \[
+                                \sqrt{(0 - \dfrac{1}{e^{5}})^2 + (1 - e^{5})^2}
+                            \]                    
+                        </span>
+                    </div>
+                    <div class="slide5">
+                        <div class="grayBackground">
+                            Dopo aver stabilito il punto \(P_a\) di intersezione tra \(\Gamma_{a}\) ed il grafico della funzione \(y = \dfrac{1}{x}\) <span style="color: red">stabilire se
+                        la distanza tra \(P_{3}\) e \(Q(0\,,\,1)\) è uguale ad \(1\).</span>
+                        </div>
+                        <br>
+                        <span class="gray">
+                            Sistemiamo la scrittura
+                            \[
+                                \sqrt{(\dfrac{1}{e^{5}})^2 + (1 - e^{5})^2}
+                            \]                    
+                        </span>
+                    </div>                                                      
+                </div>
+                <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                    <button id="previousSlide-button5" onclick="previousSlide(5)">Indietro</button>
+                    <button id="nextSlide-button5" onclick="nextSlide(5)">Avanti</button>
+                </div> 
+        
+                <br>
+                <br>
+                Svolgendo i calcoli si ha 
+                \[
+                    \sqrt{(\dfrac{1}{e^{5}})^2 + (1 - e^{5})^2} \neq 1
+                \]
+                quindi non è vero che la distanza tra \(P_3\) e \(Q\) è uguale ad \(1\).
+                
+                    
+        
+                <br>
+                <br>
+                   
+            </div> 
+        </div>
+    </div>
+ 
+    <br>
+    <br>
+    
+    
+
+    <script src="../../js/hintAndSlide.js"></script>    
+</body>
+
+<!--
+    <div class="slide-container grayBorder">
+        <div class="slide1">
+            
+        </div>
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+        <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+    </div> 
+ -->
+
+ 
