@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+
+    <h3 class="yellow">Massimi, minimi (assoluti e relativi)</h3>    
+    <div class="esempi-container">
+        <div id="max0" class="definizione0">
+            <u><b style="font-size: 1.3rem;">Definizione (caso assoluto)</b></u>
+            <br>
+            <br>
+            <div class="grayBorder">
+                Data una funzione \(f\) avente dominio \(D\), un punto \(x_0 \in D\) si dice <b> punto di massimo assoluto</b> 
+                per la funzione \(f\) se 
+                <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                    <div style="width: fit-content; padding-right: 1rem;">
+                        \[
+                            f(x) \leq  f(x_0)
+                        \]
+                    </div>
+                    <div style="width: fit-content;">
+                        per ogni \(x \in D\)
+                    </div>
+                </div>
+                Il valore \(M = f(x_0)\) assunto dalla funzione in \(x_0\) si dice <b>massimo assoluto</b> della funzione.                            
+            </div>
+            <br>        
+            <img src="img/massimoAssoluto.png" style="width: 70%; border: 0;">
+            <br>
+
+            In maniera informale possiamo dire che 
+            <br>
+            <br>
+            <ul>
+                <li>
+                    il massimo \(M\) è l'output più grande assunto dalla funzione.
+                </li>
+                <br>
+                <li>
+                    un punto di massimo \(x_0\) è un input in corrispondenza del quale la funzione assume 
+                    il valore massimo \(M\). 
+                    <br>
+                    Osserviamo che possono esistere diversi punti di massimo.
+                    <br>
+                    <br>
+                    <img src="img/massimoAssoluto(2).png" style="width: 70%; border: 0;">
+                </li>            
+            </ul>
+        </div>
+        <div id="min0" class="definizione0" style="display: none;">
+            <u><b style="font-size: 1.3rem;">Definizione (caso assoluto)</b></u>
+            <br>
+            <br>
+            <div class="grayBorder">
+                Data una funzione \(f\) avente dominio \(D\), un punto \(x_0 \in D\) si dice <b> punto di minimo assoluto</b> 
+                per la funzione \(f\) se 
+                <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                    <div style="width: fit-content; padding-right: 1rem;">
+                        \[
+                            f(x) \geq  f(x_0)
+                        \]
+                    </div>
+                    <div style="width: fit-content;">
+                        per ogni \(x \in D\)
+                    </div>
+                </div>
+                Il valore \(m = f(x_0)\) assunto dalla funzione in \(x_0\) si dice <b>minimo assoluto</b> della funzione.                            
+            </div>
+            <br>
+            <img src="img/minimoAssoluto.png" style="width: 70%; border: 0;">        
+            <br>
+            In maniera informale possiamo dire che 
+            <br>
+            <br>
+            <ul>
+                <li>
+                    il minimo \(m\) è l'output più piccolo assunto dalla funzione.
+                </li>
+                <br>
+                <li>
+                    un punto di minimo \(x_0\) è un input in corrispondenza del quale la funzione assume 
+                    il valore \(m\).                
+                    <br>
+                    Osserviamo che possono esistere diversi punti di minimo.
+                    <br>
+                    <br>
+                    <img src="img/minimoAssoluto(2).png" style="width: 70%; border: 0;">
+                </li>                                
+            </ul>        
+        </div>
+        <br>
+        <br>
+        <button id="maxMinButton0" onclick="cambiaDefinizione(0)">Mostra definizione di minimo assoluto</button>
+
+
+        
+        <br>
+        <br>        
+        <br>
+        <br>
+
+        <div id="max1" class="definizione1">
+            <u><b style="font-size: 1.3rem;">Definizione (caso relativo)</b></u>
+            <br>
+            <br>
+            <div class="grayBorder">
+                Data una funzione \(f\) avente dominio \(D\), un punto \(x_0 \in D\) si dice <b> punto di massimo relativo</b> 
+                per la funzione \(f\) se esiste un intorno \(I\) di \(x_0\) tale che 
+                <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                    <div style="width: fit-content; padding-right: 1rem;">
+                        \[
+                            f(x) \leq  f(x_0)
+                        \]
+                    </div>
+                    <div style="width: fit-content;">
+                        per ogni \(x \in I\)
+                    </div>
+                </div>
+                Il valore \(M = f(x_0)\) assunto dalla funzione in \(x_0\) si dice <b>massimo relativo</b> della funzione.                            
+            </div>
+            <br>        
+            <img src="img/massimoRelativo.png" style="width: 70%; border: 0;">
+            <br>
+
+            In maniera informale possiamo dire che il massimo relatico \(M\) è l'output più grande assunto dalla funzione <u>nell'intorno \(I\)</u>.
+            <br>
+            Fuori da \(I\) la funzione potrebbe assumere valori maggiori di \(M\).
+                                            
+        </div>
+        <div id="min1" class="definizione1" style="display: none;">
+            <u><b style="font-size: 1.3rem;">Definizione (caso relativo)</b></u>
+            <br>
+            <br>
+            <div class="grayBorder">
+                Data una funzione \(f\) avente dominio \(D\), un punto \(x_0 \in D\) si dice <b> punto di minimo relativo</b> 
+                per la funzione \(f\) se esiste un intorno \(I\) di \(x_0\) tale che 
+                <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                    <div style="width: fit-content; padding-right: 1rem;">
+                        \[
+                            f(x) \geq  f(x_0)
+                        \]
+                    </div>
+                    <div style="width: fit-content;">
+                        per ogni \(x \in I\)
+                    </div>
+                </div>
+                Il valore \(m = f(x_0)\) assunto dalla funzione in \(x_0\) si dice <b>minimo relativo</b> della funzione.                            
+            </div>
+            <br>
+            <img src="img/minimoRelativo.png" style="width: 70%; border: 0;">        
+            <br>
+            In maniera informale possiamo dire che il minimo relatico \(m\) è l'output più piccolo assunto dalla funzione <u>nell'intorno \(I\)</u>.
+            <br>
+            Fuori da \(I\) la funzione potrebbe assumere valori minori di \(m\).
+        </div>
+        <br>
+        <br>
+        <button id="maxMinButton1" onclick="cambiaDefinizione(1)">Mostra definizione di minimo relativo</button>
+    </div>    
+
+    <br>
+    <br>    
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 0</h3>
+    <br>
+    <div>
+        Studiare 
+        <br>
+        <br>
+        <ul>
+            <li>
+                le dispense allegate sopra.
+            </li>
+            <br>
+            <li>
+                i paragrafi <b>Teorema di Fermat</b> e <b>Ricerca dei massimi e minimi relativi con la derivata prima</b> pagg. da 1759 a 1762 (concentratevi in particolare sugli esempi svolti alle pagine 1761 e 1762)
+            </li>
+        </ul>
+        <br>
+        <br>
+        <span class="gray">
+            ⚠️⚠️ Studiate entrambe le dispense e le pagine assegnate sul libro nell'ordine menzionato, gli argomenti esposti sono diversi.
+        </span>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <ul>        
+        <li>
+            Studiare l'esercizio guida n° 99 a pag. 1781
+        </li>
+        <li>
+            Svolgere gli esercizi n° 40, 57, 70, 81 a pag. 1779
+        </li>
+    </ul>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <ul>
+        <li>
+            Studiare l'esercizio guida n° 99 a pag. 1781
+        </li>
+        <li>
+            Svolgere gli esercizi n° 100 a pag. 1782
+        </li>
+    </ul>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>
+    <br>
+    <ul>
+        <li>
+            Studiare l'esercizio guida n° 109 a pag. 1782
+        </li>
+        <li>
+            Svolgere gli esercizi n° 110, 111 a pag. 1783
+        </li>
+    </ul>
+
+    
+
+ 
+    <br>
+    <br>
+    
+    
+
+    <script src="../../js/hintAndSlide.js"></script>    
+
+    <script>
+        function cambiaDefinizione(i) {
+            
+            let definizioni = document.getElementsByClassName(`definizione${i}`);
+            console.log(definizioni[0].style.display === "none");
+
+            if(definizioni[0].style.display === "none") {
+                
+                definizioni[0].style.display = "block";
+                definizioni[1].style.display = "none";
+                document.location.href = `#max${i}`;
+                document.getElementById("maxMinButton").innerHTML = "Mostra definizione di minimo assoluto"
+
+            } else {
+                definizioni[0].style.display = "none";
+                definizioni[1].style.display = "block";
+                document.location.href = `#min${i}`;
+                document.getElementById("maxMinButton").innerHTML = "Mostra definizione di massimo assoluto"
+            }
+
+        }
+    </script>
+
+<script>
+    var ggbApp1 = new GGBApplet(
+        {
+            "appName": "classic", 
+            "id": "gg1",
+            "showToolBar": false, 
+            "showAlgebraInput": false, 
+            "showMenuBar": false, 
+            "enableShiftDragZoom": false,
+            "scaleContainerClass":"geogebra-container",
+            "filename":"img/concavitaVersoLAlto.ggb"
+        }, 
+        true
+    );
+
+    var ggbApp2 = new GGBApplet(
+        {
+            "appName": "classic", 
+            "id": "gg2",
+            "showToolBar": false, 
+            "showAlgebraInput": false, 
+            "showMenuBar": false, 
+            "enableShiftDragZoom": false,
+            "scaleContainerClass":"geogebra-container",
+            "filename":"img/concavitaVersoIlBasso.ggb"
+        }, 
+        true
+    );
+
+    var ggbApp3 = new GGBApplet(
+        {
+            "appName": "classic", 
+            "id": "gg3",
+            "showToolBar": false, 
+            "showAlgebraInput": false, 
+            "showMenuBar": false, 
+            "enableShiftDragZoom": false,
+            "scaleContainerClass":"geogebra-container",
+            "filename":"img/concavita.ggb"
+        }, 
+        true
+    );
+
+    var ggbApp4 = new GGBApplet(
+        {
+            "appName": "classic", 
+            "id": "gg4",
+            "showToolBar": false, 
+            "showAlgebraInput": false, 
+            "showMenuBar": false, 
+            "enableShiftDragZoom": false,
+            "scaleContainerClass":"geogebra-container",
+            "filename":"img/concavita(2).ggb"
+        }, 
+        true
+    );
+
+    window.addEventListener("load", function() { 
+        ggbApp1.inject('geogebra1');			
+        ggbApp2.inject('geogebra2');			
+        ggbApp3.inject('geogebra3');	
+        ggbApp4.inject('geogebra4');			
+    });
+</script>
+</body>
+
+
+<!--
+    <div class="slide-container grayBorder">
+        <div class="slide1">
+            
+        </div>
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+        <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+    </div> 
+ -->
+
+ <!-- 
+
+<h3 class="yellow">Concavità e flessi</h3>    
+    <div class="esempi-container">
+        <u><b style="font-size: 1.3rem;">Concavità di una funzione in un punto</b></u>
+        <br>
+        <br>
+        Abbiamo già incontrato il concetto di concavità nello studio della parabola. Mettiamo in evidenza una proprietà
+        che ci permetterà di estendere il concetto al grafico di una qualsiasi funzione \(f\).
+        <br>
+        <br>
+
+        Prendiamo una parabola con concavità rivolta verso l'alto. Consideriamo un qualsiasi punto sulla parabola e 
+        disegnamo la tangente al grafico in tale punto.
+        Osserviamo che il grafico della funzione si trova tutto <u>sopra</u> la retta tangente.
+
+
+        <br>
+        <br>
+        <div class="grayBorder">
+            <div class="geogebra-container">
+                <div id="geogebra1"></div>
+            </div>
+            <span class="gray" style="font-size: 1rem;">
+                Usate lo slider per modificare il punto di tangenza. Comunque lo scegliate il grafico della parabola
+                si trova tutto sopra la retta tangente.
+            </span>
+        </div>
+
+        <br>
+        Viceversa, se consideriamo una parabola con concavità rivolta verso il basso, essa si troverà sempre <u>sotto</u> alla 
+        retta tangente, comunque scelto il punto di tangenza.
+
+        <br>
+        <br>
+        <div class="grayBorder">
+            <div class="geogebra-container">
+                <div id="geogebra2"></div>
+            </div>
+            <span class="gray" style="font-size: 1rem;">
+                Usate lo slider per modificare il punto di tangenza. Comunque lo scegliate il grafico della parabola
+                si trova tutto sotto la retta tangente.
+            </span>
+        </div>
+        
+        <br>
+
+        Prendiamo ora il grafico di una generica funzione \(f\). Siccome vogliamo poter disegnare la tangente in 
+        tutti i punti del grafico, supponiamo che la funzione \(f\) sia derivabile in tutto il suo dominio.
+        <br>
+        Guardando il grafico interattivo vediamo che in questo caso parte del grafico si trova sopra la retta tangente al punto 
+        \((x_0\,,\,\,f(x_0))\),
+        parte sotto.
+
+        <br>
+        <br>
+        <div class="grayBorder">
+            <div class="geogebra-container">
+                <div id="geogebra3"></div>
+            </div>       
+            <span class="gray" style="font-size: 1rem;">
+                Premete il pulsante "Avvia".
+            </span>     
+        </div>
+        
+        <br>
+
+        Se restringiamo l'attenzione ad un intorno di \(x_0\) effettivamente tutto il grafico evidenziato in nero è sopra 
+        la retta tangente. Diremo allora che la funzione \(f\) in \(x_0\) ha concavità verso l'alto.
+
+        <br>
+        <br>
+
+        Consideriamo un altro punto di tangenza (figura sotto). In questo caso in corrispondenza dell'intervallo 
+        evidenziato in rosso il tratto di grafico si trova sotto la retta. Diremo che la funzione \(f\) in \(x_0\) 
+        ha concavità verso il basso.
+
+        <br>
+        <br>
+        <div class="grayBorder">
+            <div class="geogebra-container">
+                <div id="geogebra4"></div>
+            </div>                       
+        </div>
+        
+        <br>
+
+        Siamo pronti per digerire le seguenti definizioni 
+
+        <br>
+        <br>
+
+        <b>Concavità verso l'alto</b>
+        <br>
+        <div class="grayBorder">
+            Una funzione derivabile \(f\) ha concavità in \(x_0\) rivolta verso l'alto se esiste un intorno \(I\) tale che
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <div style="width: fit-content; margin-right: 1rem;">
+                    \[
+                        f(x) \gt t(x)
+                    \]
+                </div>
+                <div style="width: fit-content;">
+                    per ogni \(x \in I - \{x_0\}\)
+                </div>
+            </div>
+            dove \(t\) indica la retta tangente.
+            <br>
+            <br>
+            <img src="img/definizioneConcavitaVersoAlto.png" style="width: 100%; border: 0">
+        </div>
+
+        <br>
+        <br>
+
+        <b>Concavità verso il basso</b>
+        <br>
+        <div class="grayBorder">
+            Una funzione derivabile \(f\) ha concavità in \(x_0\) rivolta verso il basso se esiste un intorno \(I\) tale che
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <div style="width: fit-content; margin-right: 1rem;">
+                    \[
+                        f(x) \lt t(x)
+                    \]
+                </div>
+                <div style="width: fit-content;">
+                    per ogni \(x \in I - \{x_0\}\)
+                </div>
+            </div>            
+            dove \(t\) indica la retta tangente.
+            <br>
+            <br>
+            <img src="img/definizioneConcavitaVersoBasso.png" style="width: 100%; border: 0">
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <u><b style="font-size: 1.3rem;">Flessi</b></u>
+        <br>
+        <br>
+        Riprendiamo il grafico interattivo mostrato in precedenza e consideriamo una posizione particolare della tangente.
+        <br>
+        <br>
+        <img src="img/flesso(1).png" alt="">
+        <br>
+        Guardando la parte di intervallo a sinistra di \(x_0\) osserviamo che il grafico è sotto la retta tangente. Viceversa
+        considerando la parte di intervallo a destra di \(x_0\) il grafico si trova sopra la retta tangente.
+        Diremo in questo caso che \(x_0\) è un <b>punto di flesso</b>.
+        
+        <br>
+        <br>
+
+        Non è la prima volta che incontriamo il termine "flesso". Tra le tipologie di punti di non derivabilità abbiamo 
+        presentato il flesso <b>a tangente verticale</b>.
+        <br>
+        <br>
+        <img src="img/flesso(2).png" style="width: 100%; border: 0;">
+        <br>
+        Come già visto caso si presenta se 
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <div style="width: fit-content; margin-right: 1rem;">
+                \(f\) non è 
+                <br>
+                derivabile in \(x_0\) 
+            </div>
+            <div style="width: fit-content; margin-right: 1rem;">
+                e
+            </div>
+            <div style="width: fit-content;">
+                \[            
+                \begin{cases} 
+                    \lim_{x \to x_0} f'(x) = \pm \infty 
+                    \\\\
+                    \lim_{x \to x_0} f'(x) = \mp \infty
+                \end{cases}
+            \]
+            </div>
+        </div>
+        
+        Analizziamo un ultimo caso di flesso, quello <b>a tangente orizzontale</b>. Questo si presenta quando la derivata
+        della funzione assume uno stesso segno in un intervallo \(I\) eccetto in un punto \(x_0\) dove vale zero.
+        <br>
+        <br>
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: flex-start;">
+            <img src="img/flesso(3).png" style="width: 48%; border: 0;">
+            <br>
+            <img src="img/flesso(4).png" style="width: 48%; border: 0;">
+        </div>
+    </div>
+
+  -->
+
+ 
