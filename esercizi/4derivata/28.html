@@ -1270,13 +1270,284 @@
         </div>
     </div>
 
-    <!-- <br>
+    <br>
 
     <button id="hint4-button" onclick="showHint(4)">Svolgimento n° 81</button>
     <div id="hint4" class="hint" style="display: none;">  
         <b class="gray">Svolgimento n° 81</b> 
         <br>  
-    </div> -->
+        <div class="grayBorder">
+            Individuiamo massimi, minimi e flessi orizzontali della funzione
+            \[
+                f(x) = 2x^2\,ln(x)
+            \]
+    
+            <u><b>Dominio</b></u>
+            <br>
+            Il dominio di \(f\) è  \(D = (0\,,\,\,+\infty)\)
+            
+            <br>
+            <br>
+    
+            <u><b>Continuità</b></u>
+            <br>
+            La funzione \(f\) è continua nel suo dominio, in quanto prodotto di funzioni continue.
+            \[
+                C = D = (0\,,\,\,+\infty)
+            \]
+    
+            <u><b>Derivabilità</b></u>
+            <br>
+            Calcoliamo la derivata di \(f\)
+            <br>
+            <br>
+            <div id="slide-container3" class="slide-container grayBorder">
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            \Big[2x^2\,ln(x)\Big]' =
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                          Usiamo la regola di Leibniz.  
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = \left(2x^2\right)'\cdot ln(x) + 2x^2\cdot\left(ln(x)\right)' = 
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                          Usiamo la regola di Leibniz.  
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = \color{red}{}\left(2x^2\right)'\color{black}{}\cdot ln(x) + 2x^2\cdot\left(ln(x)\right)' = 
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                            \(\)
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = \color{red}{}4x\color{black}{}\cdot ln(x) + 2x^2\cdot\left(ln(x)\right)' = 
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                            \(\)
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = 4x \cdot ln(x) + 2x^2\cdot \color{red}{}\left(ln(x)\right)'\color{black}{} = 
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                            \(\)
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = 4x \cdot ln(x) + 2x^2\cdot \color{red}{}\dfrac{1}{x}\color{black}{} = 
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                            \(\)
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = 4x \cdot ln(x) + 2x^{\cancel{2}}\cdot \dfrac{1}{\cancel{x}} = 
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                            \(\)
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = 4x \cdot ln(x) + 2x = 
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                            \(\)
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = \underbrace{4x} \cdot ln(x) + \underbrace{2x} = 
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                            \(\)
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = \underbrace{2x \cdot 2} \cdot ln(x) + \underbrace{2x \cdot 1} = 
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                            \(\)
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = \color{red}{}2x\color{black}{} \cdot 2 \cdot ln(x) + \color{red}{}2x\color{black}{}\cdot 1 = 
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                            \(\)
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = \color{red}{}2x\color{black}{} \left( 2\,ln(x) + 1 \right)= 
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                            \(\)
+                        </span>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="formula">
+                        \(
+                            = 2x \left( 2\,ln(x) + 1 \right)
+                        \)
+                        <br>
+                        <br>
+                        <span class="gray">
+                            \(\)
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button3" onclick="previousSlide(3)">Indietro</button>
+                <button id="nextSlide-button3" onclick="nextSlide(3)">Avanti</button>
+            </div> 
+    
+            <br>
+            <br>
+            La derivata di \(f\) è 
+            \[
+                f'(x) = 2x \left( 2\,ln(x) + 1 \right)
+            \]
+            osserviamo che il dominio della funzione derivata \(f'\) è uguale a quello della funzione \(f\)
+            \[
+                D' = C = D = (0\,,\,\,+\infty)
+            \]
+    
+            <u><b>Segno derivata</b></u>
+            <br>
+            Studiamo il segno della derivata
+            \[
+                \begin{align*}
+                    &f'(x) \gt 0
+                    \\\\
+                    &2x \left( 2\,ln(x) + 1 \right) \gt 0
+                \end{align*}            
+            \]
+            Questa disequazione si risolve effettuando il grafico dei segni dei fattori.
+            \[
+                \underset{\text{1° fattore}}{\underbrace{2x}} \cdot \underset{\text{2° fattore}}{\underbrace{\left( 2\,ln(x) + 1 \right)}} \gt 0
+            \]
+            <br>
+            <br>
+            <b style="font-size: 1rem;">Primo fattore</b>
+            <br>
+            \[
+                2x \gt 0 \,\,\,\Leftrightarrow\,\,\, x \gt 0
+            \]
+    
+            <b style="font-size: 1rem;">Primo fattore</b>
+            <br>
+            \[
+                \begin{align*}
+                    &2\,ln(x) + 1 \gt 0 
+                    \\\\
+                    &ln(x) \gt -\dfrac{1}{2}
+                    \\\\
+                    &ln(x) \gt ln\left(e^{-\frac{1}{2}}\right)
+                    \\\\
+                    &x \gt e^{-\frac{1}{2}}
+                    \\\\
+                    &x \gt \dfrac{1}{e^{\frac{1}{2}}}
+                    \\\\
+                    &x \gt \dfrac{1}{\sqrt{e}}
+                \end{align*}
+            \]
+            <b style="font-size: 1rem;">Grafico dei segni e schema monotonia</b>
+            <br>
+            <img src="img/28(7).png" style="width: 100%; border: 0;">
+            <br>
+    
+            
+            
+            Dal segno della derivata possiamo dedurre che la funzione \(f\) 
+            <br>
+            <br>
+            <ul>
+                <li>
+                    è crescente nell'intervallo \(\left(\dfrac{1}{\sqrt{e}}\,,\,\,+\infty\right)\)
+                </li>
+                <br>
+                <li>
+                    è decrescente nell'intervallo \(\left(0\,,\,\,\dfrac{1}{\sqrt{e}}\right)\)
+                </li>
+                <br>            
+                <li>
+                    assume un minimo relativo in \(x = \dfrac{1}{\sqrt{e}}\)
+                </li>
+            </ul>
+            
+            <br>
+            <br>
+    
+            Per completezza allego di seguito il grafico della funzione, così che possiate osservarne la corrispondenza con
+            le informazioni ricavate.
+            <br>
+            <br>
+            <img src="img/28(8).png" style="width: 100%; border: 0;">
+        </div>
+    </div>
 
     <br>
     <br>
@@ -1296,6 +1567,305 @@
     </ul>
 
     <br>
+
+    <button id="hint5-button" onclick="showHint(5)">Svolgimento n° 100</button>
+    <div id="hint5" class="hint" style="display: none;">  
+        <b class="gray">Svolgimento n° 100</b> 
+        <br>  
+        <div class="grayBorder">
+            Individuiamo massimi, minimi della funzione, distinguendo i punti stazionari da quelli angolosi.
+            \[
+                f(x) = 
+                \begin{cases}
+                    x^2 + 4x \quad &se\,\,x \lt 0
+                    \\\\
+                    -3x \quad &se\,\,x \geq 0
+                \end{cases}
+            \]
+    
+            <u><b>Dominio</b></u>
+            <br>
+            Il dominio di \(f\) è  \(D = \mathbb{R}\) perché in entrambi gli intervalli è definita attraverso polinomi.
+            
+            <br>
+            <br>
+    
+            <u><b>Continuità</b></u>
+            <br>
+            La funzione \(f\) è sicuramente continua in \((-\infty\,,\,\,0) \cup (0\,\,\,\,+\infty)\) poichè ivi definita da 
+            polinomi. 
+            <br>
+            <br>
+            Controlliamo tramite la definizione se la funzione è continua in \(x = 0\).
+            <br>
+            <br>
+            <div style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 100%;">
+                <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; width: 100%;">
+                    <div style="width: 40%; margin-left: 0; margin-right: 10%;">
+                        <b style="font-size: 1rem;">Limite da sinistra</b>                    
+                        \[
+                            \begin{align*}
+                                &\lim_{x \to 0^{-}} f(x) =
+                                \\\\
+                                = &\lim_{x \to 0^{-}} x^2 + 4x = 
+                                \\\\
+                                = &0^2 + 4 \cdot 0 = 0
+                            \end{align*}
+                        \]
+                    </div>
+                    <div style="width: 40%; margin-left: 10%;">
+                        <b style="font-size: 1rem;">Limite da destra</b>                    
+                        \[
+                            \begin{align*}
+                                &\lim_{x \to 0^{+}} f(x) =
+                                \\\\
+                                = &\lim_{x \to 0^{+}} -3x = 
+                                \\\\
+                                = &-3\cdot 0 = 0
+                            \end{align*}
+                        \]
+                    </div>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <b style="font-size: 1rem;">Valore in \(\boldsymbol{x = 0}\)</b>
+                    <br>
+                    \[
+                        f(0) = -3\cdot 0 = 0
+                    \]
+                </div>
+            </div>
+            
+            
+            
+    
+            Poiché 
+            \[
+                \lim_{x \to 0^{-}} f(x) = \lim_{x \to 0^{+}} = f(0)
+            \]
+            la funzione è continua in \(x = 0\)
+            <br>
+            <br>
+            Concludiamo che la funzione è continua in tutto \(D = \mathbb{R}\)
+    
+            <br>
+            <br>
+            
+            <u><b>Derivabilità</b></u>
+            <br>
+            Calcoliamo la derivata di \(f\)
+            
+    
+            <br>
+            <br>
+            La derivata di \(f\) è 
+            \[
+                f'(x) = 
+                \begin{cases}
+                    2x + 4 \quad &se\,\,x \lt 0
+                    \\\\
+                    -3 \quad &se\,\,x \gt 0
+                \end{cases}
+            \]
+            La funzione è sicuramente derivabile in \((-\infty\,,\,\,0) \cup (0\,\,\,\,+\infty)\). 
+            <br>
+            <br>
+            Sappiamo che la funzione è continua in \(x = 0\). Controlliamo se è anche derivabile in corrispondenza di
+            questo valore. Poiché siamo nelle ipotesi, usiamo il criterio di derivabilità 
+            
+            <br>
+            <br>
+    
+            <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; width: 100%;">
+                <div style="width: 40%; margin-left: 0; margin-right: 10%;">
+                    <b style="font-size: 1rem;">Limite derivata da sinistra</b>                    
+                    \[
+                        \begin{align*}
+                            &\lim_{x \to 0^{-}} f'(x) =
+                            \\\\
+                            = &\lim_{x \to 0^{-}} 2x + 4 = 
+                            \\\\
+                            = & 2 \cdot 0 + 4 = 4
+                        \end{align*}
+                    \]
+                </div>
+                <div style="width: 40%; margin-left: 10%;">
+                    <b style="font-size: 1rem;">Limite derivata da destra</b>                    
+                    \[
+                        \begin{align*}
+                            &\lim_{x \to 0^{+}} f'(x) =
+                            \\\\
+                            = &\lim_{x \to 0^{+}} -3 = -3
+                        \end{align*}
+                    \]
+                </div>
+            </div>
+            
+            Poiché si ha 
+            \[
+                \lim_{x \to 0^{-}} f'(x) \neq \lim_{x \to 0^{+}} f'(x)
+            \]
+            la funzione non è derivabile in \(x = 0\) ed esso è un punto angoloso. 
+    
+            <br>
+            <br>
+    
+            <u><b>Segno derivata</b></u>
+            <br>
+            Studiamo il segno della derivata
+            \[            
+                f'(x) \gt 0                            
+            \]
+            Chiediamoci per quali valori del tratto sinistro la funzione \(y = 2x + 4\) è positiva, ovvero
+            \[
+                \begin{align*}
+                    2x + 4 \gt 0 \quad con\,\, x\in(-\infty\,,\,\,0)
+                    \\\\
+                    x  \gt -2 \quad con\,\, x\in(-\infty\,,\,\,0)
+                \end{align*}
+            \]
+                
+    
+            <div id="slide-container4" class="slide-container grayBorder">
+                <div class="slide4">
+                    <img src="img/28(9).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Visualizziamo il segno della funzione \(y = 2x + 4\) al variare della \(x\).                    
+                    </span>            
+                </div>
+                <div class="slide4">
+                    <img src="img/28(9).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Di questo segno ci interessa solo la parte in corrispondenza del <span style="color: blue">tratto sinistro</span>                                       
+                    </span>            
+                </div>
+                <div class="slide4">
+                    <img src="img/28(10).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Di questo segno ci interessa solo la parte in corrispondenza del <span style="color: blue">tratto sinistro</span>                                       
+                    </span>            
+                </div>
+                <div class="slide4">
+                    <img src="img/28(10).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Ignoriamo tutto ciò che accade per \(x \gt 0\)
+                    </span>            
+                </div>
+                <div class="slide4">
+                    <img src="img/28(11).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Ignoriamo tutto ciò che accade per \(x \gt 0\)
+                    </span>            
+                </div>
+                <div class="slide4">
+                    <img src="img/28(12).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Ignoriamo tutto ciò che accade per \(x \gt 0\)
+                    </span>            
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button4" onclick="previousSlide(4)">Indietro</button>
+                <button id="nextSlide-button4" onclick="nextSlide(4)">Avanti</button>
+            </div> 
+    
+            <br>
+            <br>       
+    
+            Osserviamo che la funzione \(y = -3\) è costantemente negativa.
+            
+            <br>
+            <br>
+            
+    
+            <div id="slide-container5" class="slide-container grayBorder">
+                <div class="slide5">
+                    <img src="img/28(13).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Visualizziamo il segno della funzione \(y = -3\) al variare della \(x\).                    
+                    </span>            
+                </div>
+                <div class="slide5">
+                    <img src="img/28(13).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Di questo segno ci interessa solo la parte in corrispondenza del <span style="color: blue">tratto destro</span>                                       
+                    </span>            
+                </div>
+                <div class="slide5">
+                    <img src="img/28(14).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Di questo segno ci interessa solo la parte in corrispondenza del <span style="color: blue">tratto destro</span>                                       
+                    </span>            
+                </div>
+                <div class="slide5">
+                    <img src="img/28(14).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Ignoriamo tutto ciò che accade per \(x \lt 0\)
+                    </span>            
+                </div>
+                <div class="slide5">
+                    <img src="img/28(15).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Ignoriamo tutto ciò che accade per \(x \lt 0\)
+                    </span>            
+                </div>
+                <div class="slide5">
+                    <img src="img/28(16).png" style="width: 100%; border: 0;">                
+                    <span class="gray">
+                        Ignoriamo tutto ciò che accade per \(x \lt 0\)
+                    </span>            
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button5" onclick="previousSlide(5)">Indietro</button>
+                <button id="nextSlide-button5" onclick="nextSlide(5)">Avanti</button>
+            </div> 
+            
+            <br>
+            <br>
+            
+    
+            Unendo i grafici dei segni sopra ottenuti per i tratti sinistro e destro possiamo visualizzare il segno della derivata ed effettuare 
+            lo schema di monotonia della funzione
+            
+            <br>
+            <br>
+            <img src="img/28(17).png" alt="">
+            <br>
+            
+            
+            Dal segno della derivata possiamo dedurre che la funzione \(f\) 
+            <br>
+            <br>
+            <ul>
+                <li>
+                    è crescente nell'intervallo \(\left(-2\,,\,\,0\right)\)
+                </li>
+                <br>
+                <li>
+                    è decrescente negli intervalli \(\left(-\infty\,,\,\,-2\right)\) e \(\left(0\,,\,\,+\infty\right)\)
+                </li>
+                <br>            
+                <li>
+                    assume un minimo relativo in \(x = -2\), che è un punto di flesso a tangente orizzontale (perché \(f'(-2) = 0\))
+                </li>
+                <br>            
+                <li>
+                    assume un massimo relativo in \(x = 0\), che è un punto angoloso.
+                </li>
+            </ul>
+            
+            <br>
+            <br>
+    
+            Per completezza allego di seguito il grafico della funzione, così che possiate osservarne la corrispondenza con
+            le informazioni ricavate.
+            <br>
+            <br>
+            <img src="img/28(18).png" style="width: 100%; border: 0;">
+        </div>
+    </div>
+    
+    <br>
     <br>
     <hr>
     <br>
@@ -1312,6 +1882,999 @@
         </li>
     </ul>
 
+    <br>
+
+    <button id="hint6-button" onclick="showHint(6)">Svolgimento n° 110</button>
+    <div id="hint6" class="hint" style="display: none;">  
+        <b class="gray">Svolgimento n° 110</b> 
+        <br> 
+        <div class="grayBorder">
+            Individuiamo massimi, minimi della funzione, distinguendo i punti stazionari da quelli angolosi.
+            \[
+                f(x) = \sqrt[3]{x^2} - x
+            \]
+    
+            <u><b>Dominio</b></u>
+            <br>
+            Il dominio di \(f\) è  \(D = \mathbb{R}\) perché la radice cubica è definita per qualsiasi valore dell'argomento.
+            
+            <br>
+            <br>
+    
+            <u><b>Continuità</b></u>
+            <br>
+            La funzione \(f\) è  continua in tutto il suo dominio \(\mathbb{R}\), poiché somma di funzioni continue.
+            
+            <br>
+            <br>
+            
+            <u><b>Derivabilità</b></u>
+            <br>
+            Calcoliamo la derivata di \(f\)
+    
+            <br>
+            <br>
+    
+            <div id="slide-container6" class="slide-container grayBorder">
+                <div class="slide6">
+                    <div class="formula">
+                        \(\Big[\sqrt[3]{x^2} - x\Big]' =\)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Trasformiamo la radice in una potenza con esponente frazionario
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(\Big[\sqrt[\color{red}{}3\color{black}{}]{x^{\color{blue}{}2\color{black}{}}} - x\Big]' =\)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Trasformiamo la radice in una potenza con esponente frazionario
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(\Big[x^\frac{\color{blue}{}2\color{black}{}}{\color{red}{}3\color{black}{}} - x\Big]' =\)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Trasformiamo la radice in una potenza con esponente frazionario
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(\Big[x^{\frac{2}{3}} - x\Big]' =\)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Applichiamo la linearità della derivata.
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(= \color{red}{}\Big[\color{black}{}x^{\frac{2}{3}} - x\color{red}{}\Big]'\color{black}{} =\)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Applichiamo la linearità della derivata.
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(= \color{red}{}\Big[\color{black}{}x^{\frac{2}{3}}\color{red}{}\Big]'\color{black}{} - x\color{red}{}'\color{black}{} =\)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(= \color{red}{}\Big[x^{\frac{2}{3}}\Big]'\color{black}{} - x' =\)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(= \color{red}{}\dfrac{2}{3}x^{\frac{2}{3} -1}\color{black}{} - x' =\)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(= \dfrac{2}{3}x^{\frac{2}{3} -1} - \color{red}{}x' \color{black}{}=\)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(= \dfrac{2}{3}x^{\frac{2}{3} -1} - \color{red}{}1 \color{black}{}=\)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(
+                            = \dfrac{2}{3}x^{\frac{2}{3} -1} - 1 =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(
+                            = \dfrac{2}{3}x^{-\frac{1}{3}} - 1 =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(
+                            = \dfrac{2}{3}\dfrac{1}{x^{\frac{1}{3}}} - 1 =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(
+                            = \dfrac{2}{3}\dfrac{1}{\sqrt[3]{x}} - 1 =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(
+                            = \dfrac{2}{3\,\sqrt[3]{x}} - 1 =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide6">
+                    <div class="formula">
+                        \(
+                            = \dfrac{2 - 3\,\sqrt[3]{x}}{3\,\sqrt[3]{x}}  
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button6" onclick="previousSlide(6)">Indietro</button>
+                <button id="nextSlide-button6" onclick="nextSlide(6)">Avanti</button>
+            </div> 
+            
+    
+            <br>
+            <br>
+            La derivata di \(f\) è 
+            \[
+                f'(x) = \dfrac{2 - 3\,\sqrt[3]{x}}{3\,\sqrt[3]{x}}  
+            \]
+            
+            ed è definita a patto che il denominatore sia differente da \(0\):
+            \[
+                3\,\sqrt[3]{x} \neq 0 \,\,\,\Leftrightarrow\,\,\,\sqrt[3]{x} \neq 0 \,\,\,\Leftrightarrow\,\,\,x \neq 0
+            \]
+            Rispetto all'insieme \(C = \mathbb{R}\) nel quale la funzione è definita e continua, abbiamo "perso" il punto \(x = 0\). 
+            La funzione è derivabile in
+            \[
+                D' = (-\infty\,,\,\,0) \cup (0\,,\,\,+\infty)
+            \]
+            Analizziamo di che tipo di punto non derivabile si tratta. 
+    
+            <br>
+            <br>
+    
+            <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; width: 100%;">
+                <div style="width: 40%; margin-left: 0; margin-right: 10%;">
+                    <b style="font-size: 1rem;">Limite derivata da sinistra</b>                    
+                    \[
+                        \begin{align*}
+                            &\lim_{x \to 0^{-}} f'(x) =
+                            \\\\
+                            = &\lim_{x \to 0^{-}} \dfrac{2 - 3\,\sqrt[3]{x}}{3\,\sqrt[3]{x}}   = 
+                            \\\\
+                            = & \dfrac{2 - 3\,\sqrt[3]{0}}{3\,\sqrt[3]{0^{-}}}
+                            \\\\
+                            = & \dfrac{2 - 3\,\cdot 0}{3\,\cdot 0^{-}}
+                            \\\\
+                            = & \dfrac{2}{0^{-}} = -\infty
+                        \end{align*}
+                    \]
+                </div>
+                <div style="width: 40%; margin-left: 10%;">
+                    <b style="font-size: 1rem;">Limite derivata da destra</b>                    
+                    \[
+                        \begin{align*}
+                            &\lim_{x \to 0^{+}} f'(x) =
+                            \\\\
+                            = &\lim_{x \to 0^{+}} \dfrac{2 - 3\,\sqrt[3]{x}}{3\,\sqrt[3]{x}}   = 
+                            \\\\
+                            = & \dfrac{2 - 3\,\sqrt[3]{0}}{3\,\sqrt[3]{0^{+}}}
+                            \\\\
+                            = & \dfrac{2 - 3\,\cdot 0}{3\,\cdot 0^{+}}
+                            \\\\
+                            = & \dfrac{2}{0^{+}} = +\infty
+                        \end{align*}
+                    \]
+                </div>
+            </div>
+            
+            Poiché i limiti da sinistra e destra della derivata divergono con segno opposto, \(x = 0\) è un punto di cuspide.
+    
+            <br>
+            <br>
+    
+            <u><b>Segno derivata</b></u>
+            <br>
+            Studiamo il segno della derivata        
+            \[
+                \begin{align*}
+                    f'(x) \gt 0 
+                    \\\\
+                    \dfrac{2 - 3\,\sqrt[3]{x}}{3\,\sqrt[3]{x}} \gt 0 
+                \end{align*}
+            \]
+            per risolvere questa disequazione fratta studiamo separatamente il segno del numeratore e denominatore per 
+            realizzare il grafico dei segni.
+            <br>
+            <br>
+            <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start; width: 100%;">
+                <div style="width: 40%; margin-left: 0; margin-right: 10%;">
+                    <b style="font-size: 1rem;">Segno numeratore</b>  
+                    \[        
+                        \begin{align*}
+                            &2 - 3\,\sqrt[3]{x} \gt 0
+                            \\\\
+                            &- 3\,\sqrt[3]{x} \gt -2
+                            \\\\
+                            &\,\sqrt[3]{x} \lt \dfrac{-2}{-3}
+                            \\\\
+                            &\,\sqrt[3]{x} \lt \dfrac{2}{3}
+                            \\\\
+                            &\,\left(\sqrt[3]{x}\right)^3 \lt \left(\dfrac{2}{3}\right)^3
+                            \\\\
+                            &\,x \lt \dfrac{8}{27}
+                        \end{align*}
+                    \]
+                </div>
+                <div style="width: 40%; margin-left: 10%;">
+                    <b style="font-size: 1rem;">Segno denominatore</b>    
+                    \[        
+                        \begin{align*}
+                            &3\,\sqrt[3]{x} \gt 0
+                            \\\\
+                            &\,\sqrt[3]{x} \gt 0
+                            \\\\
+                            &\,x \gt 0            
+                        \end{align*}
+                    \]
+                </div>
+            </div>
+            
+            <b style="font-size: 1rem;">Grafico dei segni e schema monotonia</b>
+            <br>
+            <img src="img/28(19).png" style="width: 100%; border: 0;">
+            <br>        
+            <br>
+    
+            Dal segno della derivata possiamo dedurre che la funzione \(f\) 
+    
+            <br>
+            <br>
+            <ul>
+                <li>
+                    è crescente nell'intervallo \(\left(0\,,\,\,\dfrac{8}{27}\right)\)
+                </li>
+                <br>
+                <li>
+                    è decrescente negli intervalli \(\left(-\infty\,,\,\,0\right)\) e \(\left(\dfrac{8}{27}\,,\,\,+\infty\right)\)
+                </li>
+                <br>            
+                <li>
+                    assume un minimo relativo in \(x = 0\), che è un punto di cuspide.
+                </li>
+                <br>            
+                <li>
+                    assume un massimo relativo in \(x = \dfrac{8}{27}\), che è un punto angoloso,  (perché \(f'\left(\dfrac{8}{27}\right) = 0\))
+                </li>
+            </ul>
+            
+            <br>
+            <br>
+    
+            Per completezza allego di seguito il grafico della funzione, così che possiate osservarne la corrispondenza con
+            le informazioni ricavate.
+            <br>
+            <br>
+            <img src="img/28(20).png" style="width: 100%; border: 0;">
+        </div>
+    </div>
+
+    <br>
+
+    <button id="hint7-button" onclick="showHint(7)">Svolgimento n° 111</button>
+    <div id="hint7" class="hint" style="display: none;">  
+        <b class="gray">Svolgimento n° 111</b> 
+        <br> 
+        <div class="grayBorder">
+            Individuiamo massimi, minimi della funzione, distinguendo i punti stazionari da quelli angolosi.
+            \[
+                f(x) = \sqrt[3]{x^3 -x^2} 
+            \]
+    
+            <u><b>Dominio</b></u>
+            <br>
+            Il dominio di \(f\) è  \(D = \mathbb{R}\) perché la radice cubica è definita per qualsiasi valore dell'argomento.
+            
+            <br>
+            <br>
+    
+            <u><b>Continuità</b></u>
+            <br>
+            La funzione \(f\) è  continua in tutto il suo dominio \(\mathbb{R}\), poiché composizione di funzioni continue.
+            
+            <br>
+            <br>
+            
+            <u><b>Derivabilità</b></u>
+            <br>
+            Calcoliamo la derivata di \(f\)
+    
+            <br>
+            <br>
+    
+            <div id="slide-container7" class="slide-container grayBorder">
+                <div class="slide7">
+                    <div class="formula">
+                        \(
+                            \Big[\sqrt[3]{x^3 -x^2}\Big]' =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Prima di tutto trasformiamo la radice cubica in potenza con esponente razionale.
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(
+                            \Big[\color{red}{}\sqrt[3]{\color{black}{}x^3 -x^2}\color{black}{}\Big]' =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Prima di tutto trasformiamo la radice cubica in potenza con esponente razionale.
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(
+                            \Big[\color{red}{}\left(\color{black}{}x^3 -x^2\color{red}{}\right)^{\frac{1}{3}}\color{black}{}\Big]' =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Prima di tutto trasformiamo la radice cubica in potenza con esponente razionale.
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(
+                            \Big[\left(x^3 -x^2\right)^{\frac{1}{3}}\Big]' =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Deriviamo questa funzione composta. Introduciamo la variabile \(z = x^3 -x^2\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(
+                            \Big[\left(\color{red}{}x^3 -x^2\color{black}{}\right)^{\frac{1}{3}}\Big]' =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Deriviamo questa funzione composta. Introduciamo la variabile \(z = x^3 - x^2\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(
+                            \Big[\left(x^3 -x^2\right)^{\frac{1}{3}}\Big]' =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Deriviamo questa funzione composta. Introduciamo la variabile \(z = \color{red}{}x^3 - x^2\color{gray}{}\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(
+                            \Big[\left(x^3 -x^2\right)^{\frac{1}{3}}\Big]' =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Deriviamo questa funzione composta. Introduciamo la variabile \(\color{red}{}z\color{gray}{} = x^3 - x^2\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(
+                            \Big[\color{red}{}z\color{black}{}^{\frac{1}{3}}\Big]' =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Deriviamo questa funzione composta. Introduciamo la variabile \(z = x^3 - x^2\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{1}{3} \color{red}{}z\color{black}{}^{\frac{1}{3} - 1} \,\cdot\, \color{red}{}z\color{black}{}'=
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Deriviamo questa funzione composta. Introduciamo la variabile \(z = x^3 - x^2\)
+                    </span>            
+                </div>            
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{1}{3} z^{\frac{1}{3} - 1} \,\cdot\, z'=
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Deriviamo questa funzione composta. Introduciamo la variabile \(\color{red}{}z\color{gray}{} = x^3 - x^2\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{1}{3} z^{\frac{1}{3} - 1} \,\cdot\, z'=
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Deriviamo questa funzione composta. Introduciamo la variabile \(z = \color{red}{}x^3 - x^2\color{gray}{}\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{1}{3} \color{red}{}(x^3 - x^2)\color{black}{}^{\frac{1}{3} - 1} \,\cdot\, \color{red}{}(x^3 - x^2)\color{black}{}'=
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Deriviamo questa funzione composta. Introduciamo la variabile \(z = x^3 - x^2\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{1}{3}(x^3 - x^2)^{\frac{1}{3} - 1} \,\cdot\, \color{red}{}(x^3 - x^2)'\color{black}{} =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{1}{3}(x^3 - x^2)^{\frac{1}{3} - 1} \,\cdot\, \color{red}{}(3x^2 -2x)\color{black}{} =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{1}{3}(x^3 - x^2)^{-\frac{2}{3}} \,\cdot\, (3x^2 -2x) =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{1}{3}\dfrac{1}{(x^3 - x^2)^{\frac{2}{3}}} \,\cdot\, (3x^2 -2x) =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{1}{3}\dfrac{1}{(x^3 - x^2)^{\frac{\color{red}{}2}{\color{blue}{}3}}}\color{black}{} \,\cdot\, (3x^2 -2x) =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{1}{3}\dfrac{1}{\sqrt[\color{blue}{}3]{(x^3 - x^2)^{\color{red}{}2}}}\color{black}{} \,\cdot\, (3x^2 -2x) =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{1}{3}\dfrac{1}{\sqrt[3]{(x^3 - x^2)^2}} \,\cdot\, (3x^2 -2x) =
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+                <div class="slide7">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{3x^2 -2x}{3\,\sqrt[3]{(x^3 - x^2)^2}} 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        \(\)
+                    </span>            
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button7" onclick="previousSlide(7)">Indietro</button>
+                <button id="nextSlide-button7" onclick="nextSlide(7)">Avanti</button>
+            </div> 
+            
+    
+            <br>
+            <br>
+            La derivata di \(f\) è 
+            \[
+                f'(x) = \dfrac{3x^2 -2x}{3\,\sqrt[3]{(x^3 - x^2)^2}} 
+            \]
+            
+            ed è definita a patto che il denominatore sia differente da \(0\):
+            \[
+                \begin{align*}
+                    &3\,\sqrt[3]{(x^3 - x^2)^2} \neq 0
+                    \\\\
+                    &\sqrt[3]{(x^3 - x^2)^2} \neq 0
+                    \\\\
+                    &(x^3 - x^2)^2 \neq 0
+                    \\\\
+                    &x^3 - x^2 \neq 0
+                    \\\\
+                    &\color{red}{}\underbrace{\color{black}{}x^2}\color{black}{}\,\cdot\,\color{blue}{}\underbrace{\color{black}{}(x - 1)}\color{black}{} \neq 0
+                \end{align*}
+            \]
+            L'ultima equazione scritta è risolta se entrambi i fattori evidenziati sono diversi da \(0\):
+            \[
+                \begin{align*}
+                    \color{red}{}\underbrace{\color{black}{}x^2}\color{black}{} \neq 0 \quad &e \quad \color{blue}{}\underbrace{\color{black}{}x - 1}\color{black}{} \neq 0
+                    \\\\
+                    x \neq 0 \quad &e \quad x \neq 1
+                \end{align*}
+            \]
+        
+            
+            Rispetto all'insieme \(C = \mathbb{R}\) nel quale la funzione è definita e continua, abbiamo "perso" i punti \(x = 0\) e \(x = 1\). 
+            Pertanto la funzione è derivabile in
+            \[
+                D' = (-\infty\,,\,\,0) \cup (0\,,\,\,1) \cup (1\,,\,\,+\infty)
+            \]
+            Analizziamo di che tipo di punti non derivabili si tratta. 
+            <br>
+            Nei calcoli che segue risulta comodo riscrivere la derivata in questo modo 
+            <br>
+            <br>
+            <div id="slide-container8" class="slide-container grayBorder">
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            \dfrac{3x^2 -2x}{3\,\sqrt[3]{\big(x^3 -x^2\big)^2}}  =
+                        \)
+                    </div>                            
+                </div>            
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{3x^2 -2x}{3\,\sqrt[3]{\big(\color{red}{}x^2\color{black}{} \cdot\color{blue}{} x\color{black}{} - \color{red}x^2 \color{black}{}\cdot\color{blue}{} 1\color{black}{}\big)^2}}  =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{3x^2 -2x}{3\,\sqrt[3]{\big(\color{red}x^2\color{black}{} \cdot \color{blue}{}(x - 1)\color{black}{}\big)^2}}  =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{\color{blue}{}3x\color{black}{}\cdot\color{red}{}x\color{black}{} \color{blue}{}-2\color{black}{}\cdot\color{red}{}x}{3\,\sqrt[3]{\big(x^2 \cdot (x - 1)\big)^2}}  =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{\color{red}{}x\color{black}{}\cdot \color{blue}{}(3x -2)}{3\,\sqrt[3]{\big(x^2 \cdot (x - 1)\big)^2}}  =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{x \cdot (3x -2)}{3\,\sqrt[3]{\big(x^2 \cdot (x - 1)\big)^2}}  =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{x \cdot(3x -2)}{3\,\sqrt[3]{\color{red}{}\big(\color{black}{}x^2 \cdot (x - 1)\color{red}{}\big)^2}\color{black}{}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{x \cdot(3x -2)}{3\,\sqrt[3]{\color{red}{}(\color{black}{}x^2\color{red}{})^{2\color{black}{}} \cdot \color{red}{}(\color{black}{}x - 1\color{red}{})^{2\color{black}{}}}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{x \cdot(3x -2)}{3\,\sqrt[3]{x^4 \cdot (x - 1)^{2}}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{x \cdot(3x -2)}{3\,\color{red}{}\sqrt[3]{\color{black}{}x^{4} \cdot (x - 1)^{2}}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{x \cdot(3x -2)}{3\,\color{red}{}\sqrt[3]{\color{black}{}x^{4}} \cdot \color{red}{}\sqrt[3]{\color{black}{}(x - 1)^{2}}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{x \cdot(3x -2)}{3\,\color{red}{}\sqrt[3]{\color{black}{}x^{\color{red}{}4}}\color{black}{} \cdot \sqrt[3]{(x - 1)^{2}}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{x \cdot(3x -2)}{3\,x^{\color{red}{}\frac{4}{3}}\color{black}{} \cdot \sqrt[3]{(x - 1)^{2}}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{x^{\color{red}{}1} \cdot(3x -2)}{3\,x^{\frac{4}{3}} \cdot \sqrt[3]{(x - 1)^{2}}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{3x -2}{3\,x^{\frac{4}{3}} \cdot x^{\color{red}{}-1}\cdot \sqrt[3]{(x - 1)^{2}}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{3x -2}{3\,x^{\color{red}{}\frac{4}{3}} \cdot x^{\color{red}{}-1}\cdot \sqrt[3]{(x - 1)^{2}}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{3x -2}{3\,x^{\color{red}{}\frac{4}{3} -1} \cdot \sqrt[3]{(x - 1)^{2}}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{3x -2}{3\,x^{\color{red}{}\frac{1}{3}} \cdot \sqrt[3]{(x - 1)^{2}}} =
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{3x -2}{3\,\color{red}{}\sqrt[3]{\color{black}{}x}\color{black}{} \cdot \sqrt[3]{(x - 1)^{2}}} 
+                        \)
+                    </div>                            
+                </div>
+                <div class="slide8">
+                    <div class="formula">
+                        \(                        
+                            = \dfrac{3x -2}{3\,\sqrt[3]{x} \cdot \sqrt[3]{(x - 1)^{2}}} 
+                        \)
+                    </div>                            
+                </div>
+                
+            </div>
+            <br>
+            <br>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button8" onclick="previousSlide(8)">Indietro</button>
+                <button id="nextSlide-button8" onclick="nextSlide(8)">Avanti</button>
+            </div> 
+    
+            
+    
+    
+            <br>
+            <br>
+    
+            <b style="font-size: 1rem;">Limite derivata per \(\boldsymbol{x \to 0}\) da sinistra</b>                    
+            <div class="formula">
+                \[
+                    \begin{align*}
+                        &\lim_{x \to 0^{-}} f'(x) =
+                        \\\\
+                        = &\lim_{x \to 0^{-}} \dfrac{3x -2}{3\,\sqrt[3]{x}\,\sqrt[3]{(x - 1)^{2}}}  = 
+                        \\\\
+                        &\dfrac{3\cdot 0 -2}{3\,\sqrt[3]{0^{-}}\,\sqrt[3]{(0 - 1)^{2}}}  = 
+                        \\\\
+                        &\dfrac{-2}{3\,\cdot\,0^{^-}\,\cdot\,\sqrt[3]{1}}  = 
+                        \\\\
+                        &\dfrac{-2}{0^{^-}\,\cdot\,1}  = 
+                        \\\\
+                        &\dfrac{-2}{0^{^-}}  = +\infty
+                    \end{align*}
+                \]
+            </div>
+    
+            <br>
+            <br>
+    
+            <b style="font-size: 1rem;">Limite derivata per \(\boldsymbol{x \to 0}\) da destra</b>                  
+            <div class="formula">
+                \[
+                    \begin{align*}
+                        &\lim_{x \to 0^{+}} f'(x) =
+                        \\\\
+                        = &\lim_{x \to 0^{+}} \dfrac{3x -2}{3\,\sqrt[3]{x}\,\sqrt[3]{(x - 1)^{2}}}  = 
+                        \\\\
+                        &\dfrac{3\cdot 0 -2}{3\,\sqrt[3]{0^{+}}\,\sqrt[3]{(0 - 1)^{2}}}  = 
+                        \\\\
+                        &\dfrac{-2}{3\,\cdot\,0^{^+}\,\cdot\,\sqrt[3]{1}}  = 
+                        \\\\
+                        &\dfrac{-2}{0^{^+}\,\cdot\,1}  = 
+                        \\\\
+                        &\dfrac{-2}{0^{^+}}  = -\infty
+                    \end{align*}
+                \]
+            </div>
+    
+            La derivata \(f'\) per \(x \to 0^{\pm}\) diverge a \(\mp \infty\), quindi il punto \(x = 0\) è di cuspide.
+    
+            <br>
+            <br>
+    
+            <b style="font-size: 1rem;">Limite derivata per \(\boldsymbol{x \to 1}\) da sinistra e destra</b>                   
+            <div class="formula">
+                \[
+                    \begin{align*}
+                        &\lim_{x \to 1^{\pm}} f'(x) =
+                        \\\\
+                        = &\lim_{x \to 1^{\pm}} \dfrac{3x -2}{3\,\sqrt[3]{x}\,\sqrt[3]{(x - 1)^{2}}}  = 
+                        \\\\
+                        &\dfrac{3\cdot 1 -2}{3\,\sqrt[3]{1}\,\sqrt[3]{(1^{^\pm} - 1)^{2}}}  = 
+                        \\\\
+                        &\dfrac{3 -2}{3\,\cdot \,1\,\cdot \sqrt[3]{(0^{^\pm})^{2}}}  = 
+                        \\\\
+                        &\dfrac{1}{3 \cdot \sqrt[3]{0^{^+}}}  = 
+                        \\\\
+                        &\dfrac{1}{3 \cdot 0^{^+}} =                     
+                        \\\\
+                        &\dfrac{1}{0^{^+}} = +\infty  
+                    \end{align*}
+                \]
+            </div>
+    
+            La derivata \(f'\) per \(x \to 1^{\pm}\) diverge a \(+\infty\), quindi il punto \(x = 0\) è di flesso a tangente verticale.
+    
+            <br>
+            <br>
+    
+            <u><b>Segno derivata</b></u>
+            <br>
+            Studiamo il segno della derivata. In questo caso usiamo nuovamente la scrittura iniziale della derivata 
+            \[
+                \begin{align*}
+                    &f'(x) \gt 0 
+                    \\\\
+                    &\dfrac{3x^2 -2x}{3\,\sqrt[3]{(x^3 - x^2)^2}} 
+                \end{align*}
+            \]
+            Osserviamo che il denominatore è sempre positivo per \(x \in D'\), perché è il triplo della radice cubica di un quadrato.
+            <br>
+            \[
+                \begin{align*}            
+                    &\dfrac{3x^2 -2x}{\underset{+}{\underbrace{3\,\sqrt[3]{(x^3 - x^2)^2}}}} \gt 0
+                    \\\\
+                    &3x^2 -2x \gt 0            
+                \end{align*}
+            \]
+            Usiamo il metodo della parabola.
+            Risolviamo l'associata 
+            \[
+                \begin{align*}                            
+                    &3x^2 -2x = 0            
+                    \\\\
+                    &x \cdot (3x -2) = 0            
+                    \\\\
+                    &x = 0 \quad oppure \quad 3x -2 = 0                            
+                    \\\\
+                    &x = 0 \quad oppure \quad x = \dfrac{2}{3}                            
+                \end{align*}
+            \]
+    
+            <img src="img/28(21).png" style="width: 60%; border: 0;">
+            
+            <br>
+            <br>
+            Effettuiamo lo schema di monotonia a partire dal grafico dei segni della derivata (ricordando che essa non esiste per \(x = 0\) ed \(x = 1\))
+            <br>
+            <br>
+            <img src="img/28(22).png" style="width: 100%; border: 0;">
+            <br>
+            <br>
+    
+            Si ha perciò che la funzione \(f\) 
+    
+            <br>
+            <br>
+            <ul>
+                <li>
+                    è crescente negli intervalli \(\left(-\infty\,,\,\,0\right)\), \(\left(\dfrac{2}{3}\,,\,\,1\right)\) e \(\left(1\,,\,\,+\infty\right)\);
+                </li>
+                <br>
+                <li>
+                    è decrescente nell'intervallo \(\left(0\,,\,\,\dfrac{2}{3}\right)\);
+                </li>
+                <br>            
+                <li>
+                    assume un massimo relativo in \(x = 0\), che è un punto di cuspide;
+                </li>
+                <br>            
+                <li>
+                    assume un massimo relativo in \(x = \dfrac{2}{3}\), che è un punto di flesso a tangente orizzontale;
+                </li>
+                <br>            
+                <li>
+                   presenta un flesso a tangente verticale in \(x = 1\)
+                </li>
+            </ul>
+            
+            <br>
+            <br>
+    
+            Per completezza allego di seguito il grafico della funzione, così che possiate osservarne la corrispondenza con
+            le informazioni ricavate.
+            <br>
+            <br>
+            <img src="img/28(23).png" style="width: 100%; border: 0;">
+        </div>
+    </div>
+
+    <br>
+    <br>
     
 
     <script src="../../js/hintAndSlide.js"></script>    
