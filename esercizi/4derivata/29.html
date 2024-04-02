@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+
+    <h3 class="yellow">Concavità e flessi</h3>    
+    <div class="esempi-container">
+        <u><b style="font-size: 1.3rem;">Concavità di una funzione in un punto</b></u>
+        <br>
+        <br>
+        Abbiamo già incontrato il concetto di concavità nello studio della parabola. Mettiamo in evidenza una proprietà
+        che ci permetterà di estendere il concetto al grafico di una qualsiasi funzione \(f\).
+        <br>
+        <br>
+
+        Prendiamo una parabola con concavità rivolta verso l'alto. Consideriamo un qualsiasi punto sulla parabola e 
+        disegnamo la tangente al grafico in tale punto.
+        Osserviamo che il grafico della funzione si trova tutto <u>sopra</u> la retta tangente.
+
+
+        <br>
+        <br>
+        <div class="grayBorder">
+            <div class="geogebra-container">
+                <div id="geogebra1"></div>
+            </div>
+            <span class="gray" style="font-size: 1rem;">
+                Usate lo slider per modificare il punto di tangenza. Comunque lo scegliate il grafico della parabola
+                si trova tutto sopra la retta tangente.
+            </span>
+        </div>
+
+        <br>
+        Viceversa, se consideriamo una parabola con concavità rivolta verso il basso, essa si troverà sempre <u>sotto</u> alla 
+        retta tangente, comunque scelto il punto di tangenza.
+
+        <br>
+        <br>
+        <div class="grayBorder">
+            <div class="geogebra-container">
+                <div id="geogebra2"></div>
+            </div>
+            <span class="gray" style="font-size: 1rem;">
+                Usate lo slider per modificare il punto di tangenza. Comunque lo scegliate il grafico della parabola
+                si trova tutto sotto la retta tangente.
+            </span>
+        </div>
+        
+        <br>
+
+        Prendiamo ora il grafico di una generica funzione \(f\). Siccome vogliamo poter disegnare la tangente in 
+        tutti i punti del grafico, supponiamo che la funzione \(f\) sia derivabile in tutto il suo dominio.
+        <br>
+        Guardando il grafico interattivo vediamo che in questo caso parte del grafico si trova sopra la retta tangente al punto 
+        \((x_0\,,\,\,f(x_0))\),
+        parte sotto.
+
+        <br>
+        <br>
+        <div class="grayBorder">
+            <div class="geogebra-container">
+                <div id="geogebra3"></div>
+            </div>       
+            <span class="gray" style="font-size: 1rem;">
+                Premete il pulsante "Avvia".
+            </span>     
+        </div>
+        
+        <br>
+
+        Se restringiamo l'attenzione ad un intorno di \(x_0\) effettivamente tutto il grafico evidenziato in nero è sopra 
+        la retta tangente. Diremo allora che la funzione \(f\) in \(x_0\) ha concavità verso l'alto.
+
+        <br>
+        <br>
+
+        Consideriamo un altro punto di tangenza (figura sotto). In questo caso in corrispondenza dell'intervallo 
+        evidenziato in rosso il tratto di grafico si trova sotto la retta. Diremo che la funzione \(f\) in \(x_0\) 
+        ha concavità verso il basso.
+
+        <br>
+        <br>
+        <div class="grayBorder">
+            <div class="geogebra-container">
+                <div id="geogebra4"></div>
+            </div>                       
+        </div>
+        
+        <br>
+
+        Siamo pronti per digerire le seguenti definizioni 
+
+        <br>
+        <br>
+
+        <b>Concavità verso l'alto</b>
+        <br>
+        <div class="grayBorder">
+            Una funzione derivabile \(f\) ha concavità in \(x_0\) rivolta verso l'alto se esiste un intorno \(I\) tale che
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <div style="width: fit-content; margin-right: 1rem;">
+                    \[
+                        f(x) \gt t(x)
+                    \]
+                </div>
+                <div style="width: fit-content;">
+                    per ogni \(x \in I - \{x_0\}\)
+                </div>
+            </div>
+            dove \(t\) indica la retta tangente.
+            <br>
+            <br>
+            <img src="img/definizioneConcavitaVersoAlto.png" style="width: 100%; border: 0">
+        </div>
+
+        <br>
+        <br>
+
+        <b>Concavità verso il basso</b>
+        <br>
+        <div class="grayBorder">
+            Una funzione derivabile \(f\) ha concavità in \(x_0\) rivolta verso il basso se esiste un intorno \(I\) tale che
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <div style="width: fit-content; margin-right: 1rem;">
+                    \[
+                        f(x) \lt t(x)
+                    \]
+                </div>
+                <div style="width: fit-content;">
+                    per ogni \(x \in I - \{x_0\}\)
+                </div>
+            </div>            
+            dove \(t\) indica la retta tangente.
+            <br>
+            <br>
+            <img src="img/definizioneConcavitaVersoBasso.png" style="width: 100%; border: 0">
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <u><b style="font-size: 1.3rem;">Flessi</b></u>
+        <br>
+        <br>
+        Riprendiamo il grafico interattivo mostrato in precedenza e consideriamo una posizione particolare della tangente.
+        <br>
+        <br>
+        <img src="img/flesso(1).png" alt="">
+        <br>
+        Guardando la parte di intervallo a sinistra di \(x_0\) osserviamo che il grafico è sotto la retta tangente. Viceversa
+        considerando la parte di intervallo a destra di \(x_0\) il grafico si trova sopra la retta tangente.
+        Diremo in questo caso che \(x_0\) è un <b>punto di flesso</b>.
+        
+        <br>
+        <br>
+
+        Non è la prima volta che incontriamo il termine "flesso". Tra le tipologie di punti di non derivabilità abbiamo 
+        presentato il flesso <b>a tangente verticale</b>.
+        <br>
+        <br>
+        <img src="img/flesso(2).png" style="width: 100%; border: 0;">
+        <br>
+        Come già visto caso si presenta se 
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <div style="width: fit-content; margin-right: 1rem;">
+                \(f\) non è 
+                <br>
+                derivabile in \(x_0\) 
+            </div>
+            <div style="width: fit-content; margin-right: 1rem;">
+                e
+            </div>
+            <div style="width: fit-content;">
+                \[            
+                \begin{cases} 
+                    \lim_{x \to x_0} f'(x) = \pm \infty 
+                    \\\\
+                    \lim_{x \to x_0} f'(x) = \mp \infty
+                \end{cases}
+            \]
+            </div>
+        </div>
+        
+        Analizziamo un ultimo caso di flesso, quello <b>a tangente orizzontale</b>. Questo si presenta quando la derivata
+        della funzione assume uno stesso segno in un intervallo \(I\) eccetto in un punto \(x_0\) dove vale zero.
+        <br>
+        <br>
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: flex-start;">
+            <img src="img/flesso(3).png" style="width: 48%; border: 0;">
+            <br>
+            <img src="img/flesso(4).png" style="width: 48%; border: 0;">
+        </div>
+    </div>  
+
+    <br>
+    <br>    
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 0</h3>
+    <br>
+    <div>
+        Studiare 
+        <br>
+        <br>
+        <ul>
+            <li>
+                le dispense allegate sopra.
+            </li>
+            <br>
+            <li>
+                i paragrafi <b>Concavità e segno della derivata seconda</b> e <b>Ricerca dei flessi e derivata seconda</b> pagg. da 1764 a 1769 (concentratevi in particolare sull'esempio svolto alle pagine 1767 e 1768)
+            </li>
+        </ul>
+        <br>
+        <br>
+        <span class="gray">
+            ⚠️⚠️ Studiate entrambe le dispense e le pagine assegnate sul libro nell'ordine menzionato, gli argomenti esposti sono diversi.
+        </span>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <ul>        
+        <li>
+            Studiare l'esercizio guida nel riquadro verde a pag. 1793 e 1794
+        </li>
+        <li>
+            Svolgere gli esercizi n° 281, 288 a pag. 1779
+        </li>
+    </ul>
+
+    <br>
+
+    <button id="hint1-button" onclick="showHint(1)">Svolgimento n° 281</button>
+    <div id="hint1" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento n° 281</b> 
+        <br>
+        <div class="grayBorder">
+            Determiniamo i flessi della funzione
+            \[
+                f(x) = \dfrac{x^3}{4 +3x^2}
+            \]
+    
+    
+            <u><b>Dominio</b></u>
+            <br>
+            La funzione è definita se il denominatore della frazione è diverso da \(0\)
+            \[
+                4  + 3x^2 \neq 0            
+            \]
+            osserviamo che la quantità \(3x^2\) è positiva o tutt'al più nulla, quindi 
+            \[ 
+                4 + \overset{\geq 0}{\overbrace{3x^2}} 
+            \] 
+            è sicuramente diverso da \(0\), qualsiasi sia il valore che scegliamo per \(x \in \mathbb{R}\).
+            <br>
+            Il dominio della funzione è  \(D = \mathbb{R}\)
+            
+    
+            <br>
+            <br>
+    
+    
+            <u><b>Continuità</b></u>
+            <br>
+            La funzione è continua in \(\mathbb{R}\) poiché rapporto tra funzioni continue.    
+            \[
+                C = D = \mathbb{R}
+            \]
+            
+            <br>
+            <br>
+    
+            <u><b>Derivabilità</b></u>
+            <br>
+            Calcoliamo la derivata di \(f\)
+            \[
+                \begin{align*}
+                    &\Big[\dfrac{x^3}{4 +3x^2}\Big]' = 
+                    \\\\
+                    &= \dfrac{(x^3)' \cdot (4 +3x^2) - (x^3) \cdot (4 +3x^2)'}{(4 +3x^2)^2} =
+                    \\\\
+                    &= \dfrac{3x^2 \cdot (4 +3x^2) - (x^3) \cdot 6x}{(4 +3x^2)^2} =
+                    \\\\
+                    &= \dfrac{12x^2 + 9x^4 - 6x^4}{(4 +3x^2)^2} =
+                    \\\\
+                    &= \dfrac{3x^4 + 12x^2}{(4 +3x^2)^2}               
+                \end{align*}
+            \]
+            La derivata è 
+            \[
+                f'(x) = \dfrac{3x^4 + 12x^2}{(4 +3x^2)^2}
+            \]
+            <b class="gray" style="font-size: 1rem;">Osservazione</b>
+            <br>
+            <div class="gray">
+            Se avessimo dovuto studiare il segno della derivata sarebbe stato conveniente scomporre il numeratore raccogliendo
+            la \(x^2\). Siccome in nostro obiettivo è calcolare la derivata seconda, lasciamo \(f'\) in questa forma
+            </div>
+    
+            <br>
+    
+            Osserviamo che la derivata è definita in tutto \(\mathbb{R}\), perché la condizione 
+            \[
+                \Big(4 + 3x^2\Big)^2 \neq 0
+            \]
+            sempre soddisfatta (stesso ragionamento fatto per il numeratore).
+            Quindi la funzione è derivabile in
+            \[
+                D' = C = D = \mathbb{R}
+            \]
+    
+            <u><b>Derivata seconda</b></u>
+            <br>
+            Calcoliamo la derivata seconda di \(f\) 
+            <br>
+            <span class="gray">(trovate prima lo svolgimento con i passaggi essenziali, poi lo svolgimento step by step)</span> 
+            
+            <div class="formula">
+                \[
+                    \begin{align*} 
+                        & \left[\dfrac{3x^4 + 12x^2}{\big(4 +3x^2\big)^2}\right]' =
+                        \\\\
+                        & =\dfrac{\left(3x^4 + 12x^2\right)' \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  \left[\left(4 +3x^2\right)^2\right]'}{\left[\left(4 +3x^2\right)^2\right]^2} = 
+                        \\\\
+                        & =\dfrac{\left(12x^3 + 24x\right) \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  12x\,\left(4 +3x^2\right)}{\left(4 +3x^2\right)^4} = 
+                        \\\\
+                        & =\dfrac{12x \,\left(x^2 + 2\right) \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  12x\,\left(4 +3x^2\right)}{\left(4 +3x^2\right)^4} = 
+                        \\\\
+                        & =\dfrac{12x\, \left(4 +3x^2\right) \,\left[\left(x^2 + 2\right) \cdot   \left(4 +3x^2\right)- \left(3x^4 + 12x^2\right)\right]}{\left(4 +3x^2\right)^4} =       
+                        \\\\
+                        & =\dfrac{12x\, \left(4 +3x^2\right) \,\left[3x^4 +10x^2 + 8 -3x^4 - 12x^2\right]}{\left(4 +3x^2\right)^4} = 
+                        \\\
+                        & =\dfrac{12x\, \left(4 +3x^2\right) \,\left(-2x^2 + 8\right)}{\left(4 +3x^2\right)^4} 
+                        \\\
+                        & =\dfrac{12x\,\left(-2x^2 + 8\right)}{\left(4 +3x^2\right)^3} 
+                    \end{align*}
+                \]   
+            </div>    
+            
+            <br>
+            <br>
+            <b class="gray" style="font-size: 1rem;">Svolgimento step-by-step</b>
+            <div class="slide-container grayBorder">
+                <div class="slide1">
+                    \[
+                        \left[\dfrac{3x^4 + 12x^2}{\big(4 +3x^2\big)^2}\right]'
+                    \]
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Applichiamo la regola di derivazione del rapporto di funzioni
+                    </span>
+                </div>
+                <div class="slide1">
+                    \[
+                        \color{red}{}\left[\color{black}{}\dfrac{3x^4 + 12x^2}{\big(4 +3x^2\big)^2}\color{red}{}\right]'
+                    \]
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Applichiamo la regola di derivazione del rapporto di funzioni
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{\left(3x^4 + 12x^2\right)' \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  \left[\left(4 +3x^2\right)^2\right]'}{\left[\left(4 +3x^2\right)^2\right]^2} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        Applichiamo la regola di derivazione del rapporto di funzioni
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{\left(3x^4 + 12x^2\right)' \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  \left[\left(4 +3x^2\right)^2\right]'}{\color{red}{}\left[\left(\color{black}{}4 +3x^2\color{red}{}\right)^2\right]^2} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{\left(3x^4 + 12x^2\right)' \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  \left[\left(4 +3x^2\right)^2\right]'}{\color{red}{}\left(\color{black}{}4 +3x^2\color{red}{}\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{\color{red}{}\left(3x^4 + 12x^2\right)'\color{black}{} \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  \left[\left(4 +3x^2\right)^2\right]'}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{\color{red}{}\left(12x^3 + 24x\right)\color{black}{} \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  \left[\left(4 +3x^2\right)^2\right]'}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{\left(12x^3 + 24x\right) \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  \color{red}{}\left[\left(4 +3x^2\right)^2\right]'\color{}{}}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                    <span class="gray">
+                        La funzione \(\left(4 +3x^2\right)^2\) è composta.
+                        <br>
+                        Introduciamo la variabile \(z = 4 +3x^2\).
+                        \[
+                            \begin{align*}
+                                &\left[\left(4 +3x^2\right)^2\right]' =
+                                \\\\
+                                &= \left[z^2\right]'=
+                                \\\\
+                                &= 2z \cdot z' =
+                                \\\\
+                                &= 2\,\left(4 +3x^2\right) \cdot \left(4 +3x^2\right)' =
+                                \\\\
+                                &= 2\,\left(4 +3x^2\right) \cdot 6x =
+                                \\\\
+                                &= 12x\,\left(4 +3x^2\right) =                            
+                            \end{align*}
+                        \]
+                        Siccome il fattore \(4 +3x^2\) è contenuto nel primo addendo del numeratore, conviene non sviluppare uleriormente i conti,
+                        così da poter raccogliere a fattor comune.
+                    </span>                
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{\left(12x^3 + 24x\right) \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  \color{red}{}12x\,\left(4 +3x^2\right)\color{black}{}}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{\left(\color{red}{}12x \color{black}{} \cdot x^2 + \color{red}{}12x \color{black}{} \cdot 2\right) \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  12x\,\left(4 +3x^2\right)}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{\color{red}{}12x \color{black}{} \,\left(x^2 + 2\right) \cdot  \left(4 +3x^2\right)^2 - \left(3x^4 + 12x^2\right) \cdot  12x\,\left(4 +3x^2\right)}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{\color{red}{}12x \color{black}{} \,\left(x^2 + 2\right) \cdot  \left(4 +3x^2\right) \color{red}{}\left(4 +3x^2\right)\color{black}{} - \left(3x^4 + 12x^2\right) \cdot  \color{red}{}12x\color{black}{}\,\color{red}{}\left(4 +3x^2\right)\color{black}{}}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{\color{red}{}12x\, \left(4 +3x^2\right)\color{black}{} \,\left[\left(x^2 + 2\right) \cdot   \left(4 +3x^2\right)- \left(3x^4 + 12x^2\right)\right]}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{12x\, \left(4 +3x^2\right) \,\left[\color{red}{}\left(x^2 + 2\right) \cdot   \left(4 +3x^2\right)\color{black}{}- \left(3x^4 + 12x^2\right)\right]}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{12x\, \left(4 +3x^2\right) \,\left[\color{red}{}3x^4 +10x^2 + 8\color{black}{}- \left(3x^4 + 12x^2\right)\right]}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{12x\, \left(4 +3x^2\right) \,\left[3x^4 +10x^2 + 8 -3x^4 - 12x^2\right]}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{12x\, \left(4 +3x^2\right) \,\left[\cancel{3x^4} +10x^2 + 8 -\cancel{3x^4} - 12x^2\right]}{\left(4 +3x^2\right)^4} = 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{12x\, \left(4 +3x^2\right) \,\left(-2x^2 + 8\right)}{\left(4 +3x^2\right)^4} 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{12x\, \cancel{\left(4 +3x^2\right)} \,\left(-2x^2 + 8\right)}{\left(4 +3x^2\right)^{\cancel{4}\,3}} 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{12x\,\left(-2x^2 + 8\right)}{\left(4 +3x^2\right)^{3}} 
+                        \)
+                    </div>
+                    <br>
+                    <br>
+                                    
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+                <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button utton>
+            </div>    
+    
+            <br>
+            
+            La derivata seconda è
+            \[
+                f''(x) = \dfrac{12x\,\left(-2x^2 + 8\right)}{\left(4 +3x^2\right)^{3}}
+            \]
+    
+            <u><b>Studio del segno della derivata seconda</b></u>
+            <br>
+            Studiamo il segno di \(f''\) per individuare la concavità della funzione ed eventuali flessi in \(\mathbb{R}\).
+            \[
+                \begin{align*}
+                    f''(x) \gt 0 
+                    \\\\
+                    \dfrac{12x\,\left(-2x^2 + 8\right)}{\left(4 +3x^2\right)^{3}} \gt 0
+                \end{align*}
+            \]
+            Osserviamo che il denominatore è sicuramente positivo, perché, come già mostrato in precedenza, \(4 +3x^2\) è una quantità positiva.
+            Quindi 
+            \[    
+                \begin{align*}
+                    \dfrac{12x\,\left(-2x^2 + 8\right)}{\underset{+}{\underbrace{\left(4 +3x^2\right)^{3}}}} \gt 0
+                    \\\\
+                    12x\,\left(-2x^2 + 8\right) \gt 0
+                \end{align*}
+            \]
+            per risolvere questa disequazione studiamo singolarmente il segno dei singoli fattori per poi realizzare il grafico dei segni.
+            \[
+                \underbrace{12x}\,\underbrace{\left(-2x^2 + 8\right)} \gt 0
+            \]
+            <br>
+            <br>
+            <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start;">
+                <div style="width: 48%;">
+                    <b style="font-size: 1rem;">Segno 1° fattore</b>
+                    <br>
+                    \[
+                        \begin{align*}
+                            &12x \gt 0
+                            \\\\
+                            &x \gt 0
+                        \end{align*}
+                    \]
+                </div>
+                <div style="width: 48%;">
+                    <b style="font-size: 1rem;">Segno 2° fattore</b>
+                    <br>
+                    \[        
+                        -2x^2 + 8 \gt 0                            
+                    \]
+                    Usiamo il metodo della parabola
+                    \[
+                        \begin{align*}
+                            -2x^2 + 8 = 0        
+                            \\\\
+                            x^2 = 4
+                            \\\\
+                            x^2 = \pm 2
+                        \end{align*}
+                    \]
+                    <img src="img/29(1).png" style="width: 100%; border: 0;">
+                </div>            
+            </div>
+    
+            <b style="font-size: 1rem;">Grafico dei segni e schema concavità</b>
+            <br>
+            <img src="img/29(2).png" style="width: 100%; border: 0rem;">
+            <br>
+    
+            La funzione cambia concavità in \(x = -2\), \(x = 0\), \(x = +2\), che sono quindi punti di flesso.
+            <br>
+            Per controllare se questi siano obliqui oppure orizzontali calcoliamo che valore assume la derivata prima in corrispondenza di ciascuno di essi.
+            Ricordiamo che
+            \[
+              f'(x) = \dfrac{3x^4 + 12x^2}{\big(4 +3x^2\big)^2}
+            \]
+            quindi 
+            \[
+                f'(-2) = \dfrac{3 \cdot (\pm2)^4 + 12\cdot(\pm2)^2}{\big(4 +3\cdot(\pm2)^2\big)^2} = \dfrac{3}{8} 
+            \]
+            \[
+                f'(0) = \dfrac{3 \cdot 0^4 + 12 \cdot 0^2}{\big(4 + 3\cdot 0^2\big)^2} = 0 
+            \]
+            Poiché \(f'(0) = 0\) il punto \(x = 0\) è di flesso a tangente orizzontale. In \(x = \pm 2\) la tangente è obliqua.
+            <br>
+            <br>
+    
+            Per completezza allego il grafico della funzione \(f\).
+            <br>
+            <br>
+            <div style="display:block; width: 100%; overflow-y: auto;">
+                <img src="img/29(3).png" style="display: block; width: 400%; border: 0;">
+            </div>            
+        </div>        
+    </div>
+
+    <br>
+
+    <button id="hint2-button" onclick="showHint(2)">Svolgimento n° 288</button>
+    <div id="hint2" class="hint" style="display: none;">  
+        <b class="gray">Svolgimento n° 288</b> 
+        <br>  
+        <div class="grayBorder">
+            Determiniamo i flessi della funzione
+            \[
+                f(x) = x \, \sqrt{9 - x^2}
+            \]
+    
+            <u><b>Dominio</b></u>
+            <br>
+            Imponiamo la condizione che rende definita la radice 
+            \[
+                9 - x^2 \geq 0
+            \]
+            ulitlizzando il metodo della parabola (non scrivo i passaggi intermedi) otteniamo 
+            <br>
+            <br>
+            <img src="img/29(4).png" style="width: 70%; border: 0;">
+        
+            Quindi 
+            \[
+                D = (-\infty\,,\,\,-3] \cup [3\,,\,\,+\infty)
+            \]
+    
+            <u><b>Continuità</b></u>
+            <br>
+            La funzione è continua in \(D\) in quanto prodotto di funzioni continue.
+            \[
+                C = D = (-\infty\,,\,\,-3] \cup [3\,,\,\,+\infty)
+            \]        
+    
+            <u><b>Derivabilità</b></u>
+            <br>
+            Calcoliamo la derviata prima della funzione 
+            <br>
+            <br>
+            <div class="grayBorder" style="max-height: 50vh; overflow-y: auto;">
+                \[
+                    \begin{align*}
+                        &\Big[x \, \sqrt{9 - x^2}\Big]' = 
+                        \\\\
+                        =&x' \cdot \sqrt{9 - x^2} + x \cdot \left[\sqrt{9 - x^2}\right]' = 
+                        \\\\
+                        =&1 \cdot \sqrt{9 - x^2} + x \cdot \left[(9 - x^2)^{\frac{1}{2}}\right]' = 
+                        \\\\
+                        &\text{poniamo}\,\,z = 9 - x^2
+                        \\\\
+                        =&\sqrt{9 - x^2} + x \cdot \left[z^{\frac{1}{2}}\right]' = 
+                        \\\\
+                        =&\sqrt{9 - x^2} + x \cdot z^{-\frac{1}{2}} \cdot z' = 
+                        \\\\
+                        &\text{sostituiamo nuovamente}\,\,z = 9 - x^2
+                        \\\\
+                        =&\sqrt{9 - x^2} + x \cdot (9 - x^2)^{-\frac{1}{2}} \cdot (9 - x^2)' = 
+                        \\\\
+                        =&\sqrt{9 - x^2} + x \cdot \dfrac{1}{(9 - x^2)^{\frac{1}{2}}} \cdot (-2x) = 
+                        \\\\
+                        =&\sqrt{9 - x^2} + x \cdot \dfrac{1}{\sqrt{9 - x^2}} \cdot (-2x) = 
+                        \\\\
+                        =&\sqrt{9 - x^2} - \dfrac{2x^2}{\sqrt{9 - x^2}}= 
+                        \\\\
+                        =&\dfrac{\left|9 - x^2\right| - 2x^2}{\sqrt{9 - x^2}}= 
+                        \\\\
+                        &\text{per il dominio abbiamo}
+                        \\
+                        &\text{imposto che } 9 - x^2 \geq 0                
+                        \\\\
+                        =&\dfrac{9 - x^2 - 2x^2}{\sqrt{9 - x^2}}= 
+                        \\\\
+                        =&\dfrac{9 - 3x^2}{\sqrt{9 - x^2}}
+                    \end{align*}
+                \]
+            </div>
+    
+            <br>
+    
+            
+            Dunque la derivata della funzione è 
+            \[
+                f'(x) = \dfrac{9 - 3x^2}{\sqrt{9 - x^2}}
+            \]
+            ed è definita a patto che 
+            \[
+                \begin{cases}
+                    \sqrt{9 - x^2} \neq 0
+                    \\\\
+                    9 - x^2 \geq 0
+                \end{cases}
+    
+                \,\,\Rightarrow\,\,
+                
+                9 - x^2 \gt 0
+            \]
+            Guardando la parabola già disegnata per il dominio, questa equazione è risolta per 
+            \[
+                -3 \lt x \lt 3
+            \]
+            Ovvero 
+            \[
+                D' = (-\infty\,,\,\,-3) \cup (3\,,\,\,+\infty)
+            \]
+            Rispetto all'insieme \(C\) nel quale la funzione non è continua abbiamo perso due punti, \(x = \pm 3\) in corrispondenza dei
+            quali la funzione non è derivabile.
+    
+            <br>
+            <br>
+    
+            <b><u>Derivata seconda</u></b>
+            <br>
+            Calcoliamo la derivata seconda della funzione 
+            <br>
+            <br>
+            <div class="grayBorder" style="max-height: 50vh; overflow-y: auto;">
+                \[
+                    \begin{align*}
+                        &\Big[\dfrac{9 - 3x^2}{\sqrt{9 - x^2}}\Big]' = 
+                        \\\\
+                        =&\dfrac{(9 - 3x^2)' \cdot \sqrt{9 - x^2} - (9 - 3x^2) \cdot \left[\sqrt{9 -x^2}\right]'}{\Big(\sqrt{9 - x^2}\Big)^2} =
+                        \\\\
+                        =&\dfrac{-6x \cdot \sqrt{9 - x^2} - (9 - 3x^2) \cdot \left[\sqrt{9 -x^2}\right]'}{\left|9 - x^2\right|} =
+                        \\\\
+                        =&\dfrac{-6x \cdot \sqrt{9 - x^2} - (9 - 3x^2) \cdot \overset{\text{derivata composta}}{\overbrace{\left[(9 -x^2)^{\frac{1}{2}}\right]'}}}{9 - x^2} =
+                        \\\\
+                        =&\dfrac{-6x \cdot \sqrt{9 - x^2} - (9 - 3x^2) \cdot \overbrace{(9 -x^2)^{-\frac{1}{2}} (-2x)}}{9 - x^2}     =
+                        \\\\
+                        =&\dfrac{1}{9 - x^2} \,\,\left(-6x \cdot \sqrt{9 - x^2} - (9 - 3x^2) \cdot (9 -x^2)^{-\frac{1}{2}} (-2x)\right) =
+                        \\\\
+                        =&\dfrac{1}{9 - x^2} \,\,\left(-6x \cdot \sqrt{9 - x^2} - \dfrac{9 - 3x^2}{\sqrt{9 - x^2}} (-2x)\right) =
+                        \\\\
+                        =&\dfrac{1}{9 - x^2} \,\,\left(-6x \cdot \sqrt{9 - x^2} + \dfrac{18x - 6x^3}{\sqrt{9 - x^2}}\right) =
+                        \\\\
+                        =&\dfrac{1}{9 - x^2} \,\,\dfrac{-6x \cdot \sqrt{9 - x^2} \cdot \sqrt{9 - x^2} + (18x - 6x^3)}{\sqrt{9 - x^2}} =
+                        \\\\
+                        =&\dfrac{1}{9 - x^2} \,\,\dfrac{-6x \cdot \left|9 - x^2\right| + (18x - 6x^3)}{\sqrt{9 - x^2}} =
+                        \\\\
+                        =&\dfrac{1}{9 - x^2} \,\,\dfrac{-6x \cdot (9 - x^2) + 18x - 6x^3}{\sqrt{9 - x^2}} =
+                        \\\\
+                        =&\dfrac{1}{9 - x^2} \,\,\dfrac{-54x +6x^3 + 18x - 6x^3}{\sqrt{9 - x^2}} =
+                        \\\\
+                        =&\dfrac{1}{9 - x^2} \,\,\dfrac{3x}{\sqrt{9 - x^2}} =
+                        \\\\
+                        =&\dfrac{1}{\sqrt{9 - x^2}} \,\, \dfrac{3x}{9 - x^2} =
+                    \end{align*}
+                \]
+            </div>
+            <br>
+            <br>
+            Si ha dunque
+            \[
+                f''(x) = \dfrac{1}{\sqrt{9 - x^2}} \,\, \dfrac{3x}{9 - x^2} 
+            \]
+            che è definita in tutto \(D'\).
+    
+            \[
+                D'' = D' = (-\infty\,,\,\,-3) \cup (3\,,\,\,+\infty)
+            \]
+    
+            <br>
+            <br>
+    
+            <u><b>Segno derivata seconda e schema concavità</b></u>
+            <br>
+            Studiamo il segno della derivata seconda al variare di \(x \in D''\) 
+            \[
+                \begin{align*}  
+                    &f''(x) \gt 0   
+                    \\\\
+                    &\dfrac{1}{\sqrt{9 - x^2}} \,\, \dfrac{3x}{9 - x^2} \gt 0
+                \end{align*}
+            \]
+            Il primo fattore è positivo, poiché sono positivi il numeratore \(1\) ed il denominatore \(\sqrt{9 - x^2}\).
+            Affinché il prodotto sia positivo, il secondo fattore deve essere positivo:
+            \[
+                \begin{align*}                  
+                    &\overset{+}{\overbrace{\dfrac{1}{\sqrt{9 - x^2}}}} \,\, \dfrac{3x}{9 - x^2} \gt 0
+                    \\\\
+                    &\dfrac{3x}{9 - x^2} \gt 0
+                \end{align*}
+            \]
+            Questa è una disequazione fratta, per risolverla vogliamo realizzare il grafico dei segni.
+            <br>
+            <br>
+            <img src="img/29(5).png" style="width: 100%; border: 0;">
+            <br>
+            Il punto \(x = 0\) è di flesso. 
+            Per capire se tale flesso è obliquo o orizzontale calcoliamo \(f'(0)\)
+            \[
+                f'(0) = \dfrac{9 -  0^2}{\sqrt{9 -0^2}} = \dfrac{9}{\sqrt{9}} = \dfrac{9}{3} = 3
+            \]
+            Siccome \(f'(0) \neq 0\) il flesso in \(x = 0\) è a tangente obliqua.
+    
+        </div>
+    </div>
+    
+
+
+    <br>
+    <br>
+    
+
+    <script src="../../js/hintAndSlide.js"></script>    
+
+    
+
+    <script>
+        var ggbApp1 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg1",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/concavitaVersoLAlto.ggb"
+            }, 
+            true
+        );
+
+        var ggbApp2 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg2",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/concavitaVersoIlBasso.ggb"
+            }, 
+            true
+        );
+
+        var ggbApp3 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg3",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/concavita.ggb"
+            }, 
+            true
+        );
+
+        var ggbApp4 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg4",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/concavita(2).ggb"
+            }, 
+            true
+        );
+
+        window.addEventListener("load", function() { 
+            ggbApp1.inject('geogebra1');			
+            ggbApp2.inject('geogebra2');			
+            ggbApp3.inject('geogebra3');	
+            ggbApp4.inject('geogebra4');			
+        });
+    </script>
+</body>
+
+
+<!--
+    <div class="slide-container grayBorder">
+        <div class="slide1">
+            
+        </div>
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+        <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+    </div> 
+ -->
+
+ <!-- 
+
+
+
+  -->
+
+ 
