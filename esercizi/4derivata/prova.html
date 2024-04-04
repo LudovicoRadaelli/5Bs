@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<style type="text/css" media="screen">
+    #editor { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 50vh;
+    }
+
+    #canvas {
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
+<body id="body">
+    
+    <div style="display: none;">
+        <div id="slide-container1" class="slide-container grayBorder">
+            <div class="slide1">
+                <div class="formula">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div> 
+    
+        <div id="slide-container2" class="slide-container grayBorder">
+            <div class="slide2">
+                <div class="formula">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button2" onclick="previousSlide(2)">Indietro</button>
+            <button id="nextSlide-button2" onclick="nextSlide(2)">Avanti</button>
+        </div> 
+
+        <div id="slide-container3" class="slide-container grayBorder">
+            <div class="slide3">                
+            </div>
+        </div>
+        <br>
+        <br>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button3" onclick="previousSlide(3)">Indietro</button>
+            <button id="nextSlide-button3" onclick="nextSlide(3)">Avanti</button>
+        </div> 
+
+        <div id="slide-container4" class="slide-container grayBorder">
+            <div class="slide4">                
+            </div>
+        </div>
+        <br>
+        <br>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button4" onclick="previousSlide(4)">Indietro</button>
+            <button id="nextSlide-button4" onclick="nextSlide(4)">Avanti</button>
+        </div> 
+
+        <div id="slide-container5" class="slide-container grayBorder">
+            <div class="slide5">                
+            </div>
+        </div>
+        <br>
+        <br>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button5" onclick="previousSlide(5)">Indietro</button>
+            <button id="nextSlide-button5" onclick="nextSlide(5)">Avanti</button>
+        </div> 
+
+        <div id="slide-container6" class="slide-container grayBorder">
+            <div class="slide6">                
+            </div>
+        </div>
+        <br>
+        <br>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button6" onclick="previousSlide(6)">Indietro</button>
+            <button id="nextSlide-button6" onclick="nextSlide(6)">Avanti</button>
+        </div> 
+
+        
+    </div>
+    
+    <br>
+
+    <iframe src="https://openprocessing.org/sketch/2229756/embed/" style="width: 100%; height: 100vh;"></iframe>
+
+    <!-- <div id="canvas" style="border: 0.01rem solid black;"></div>
+    <br>
+    <br>
+    
+    <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; position: relative; min-height: 50vh;">
+        <div id="editor">
+function setup() {
+    cnv = createCanvas(400, 400);
+    cnv.parent("canvas");
+    background(0);
+}  
+
+function draw() {
+    
+}
+
+        </div>        
+    </div>
+    <br>
+    <br>        
+    <button onclick="runCode()">Run</button> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.session.setMode("ace/mode/javascript");
+
+        function setup() {
+            cnv = createCanvas(400, 400);
+            cnv.parent("canvas");
+            background(200);
+            }
+            
+        function runCode() {    
+            let code = editor.getValue();            
+            console.log(code);            
+            eval(code);
+            setInterval(runCode, 1000);
+            
+        }
+    </script>
+    
+
+    
+    
+
+    <br>
+    <br>
+    
+    <br>
+    <br>
+    
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
+
+</html>
