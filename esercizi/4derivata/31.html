@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        Studiare la seguente funzione 
+        \[
+            f(x) = e^{\frac{1}{x + 1}}
+        \]
+        seguendo la seguente scaletta 
+        <br>
+        <br>
+        <ul>
+            <li>
+                <u><b>Dominio</b></u>
+                <br>
+                Individuare i valori per i quali la funzione è definita.
+            </li>
+            <br>
+            <li>
+                <u><b>Segno</b></u>
+                <br>
+                Stabilire per quali valori la funzione è positiva, negativa o nulla.
+            </li>
+            <br>
+            <br>
+            <li>
+                <u><b>Comportamento in prossimità degli estremi del dominio - ricerca asintoti</b></u>
+                <br>
+                Calcolare i limiti per \(x\) che tente agli estremi del dominio. 
+                <br>
+                Se ad esempio 
+                \[
+                    D = (1\,,\,\,2] \cup (3\,,\,\,+\infty)
+                \] 
+                calcoliamo i limiti per 
+                \[
+                    x \to 1^{+}\quad x \to 3^{+}\quad x \to +\infty
+                \]
+                Il valore \(x = 2\) appartiene al dominio, quindi non è di nostro interesse.
+            </li>
+            <br>
+            <br>
+            <li>
+                <u><b>Continuità</b></u>
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        Individuare l'insieme \(C\) in cui la funzione è continua.
+                    </li>
+                    <br>
+                    <li>
+                        Classificare evenutali punti di discontinuità (che sono automanticamente anche
+                        punti di non derivabilità)
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <br>
+            <li>
+                <u><b>Derivabilità</b></u>
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        Calcolare la derivata della funzione.
+                    </li>
+                    <br>
+                    <li>
+                        Studiare il dominio \(D'\) della derivata \(f'\) e confrontarlo con \(C\).
+                        <br>
+                        La funzione sarà derivabile in \(D'\). Eventuali valori "persi" da \(C\) a \(D'\) sono
+                        punti di non derivabilità per la funzione.
+                    </li>
+                    <br>
+                    <li>
+                        Classificare evenutali punti di non derivabilità.
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <br>
+            <li>
+                <u><b>Studio intervalli di monotonia</b></u>
+                <br>
+                <ul>
+                    <li>
+                        Studiare il segno della derivata e stabilire attraverso il grafico delle freccete gli intervalli 
+                        nei quali la funzione è crescente e decrescente;
+                    </li>
+                    <br>
+                    <li>
+                        Individuazione di massimi relativi, minimi relativi e flessi a tangente orizzontale.
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <br>
+            <li>
+                <u><b>Schema concavità</b></u>
+                <br>
+                <ul>
+                    <li>
+                        Calcolare la derivata seconda;
+                    </li>
+                    <br>
+                    <li>
+                        Studiare il segno della derivata seconda e stabilire gli intervalli 
+                        nei quali la funzione ha concavità verso l'alto o verso il basso. 
+                    </li>
+                    <br>
+                    <li>
+                        Individuazione dei flessi. 
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <u><b>Grafico</b></u>
+                <br>
+                Riassumere tutte le informazioni raccolte nei punti precedenti in un grafico.
+            </li>                
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <button id="hint1-button" onclick="showHint(1)">Svolgimento</button>
+    <div id="hint1" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento</b> 
+        <br>
+        <div class="grayBorder">
+            <b class="gray">Svolgimento</b> 
+            <br>        
+            \[
+                f(x) = e^{\frac{1}{x + 1}}
+            \]
+            <u><b>Dominio</b></u>
+            <br>
+            La funzione è definita se il denominatore della frazione è diverso da \(0\), quindi il         
+            dominio è 
+            \[
+                D = (-\infty\,,\,\,-1) \cup (-1\,,\,\,+\infty)
+            \]
+    
+            <u><b>Segno</b></u>
+            <br>
+            Studiamo per quali valori \(x \in D\) si ha \(f(x) \gt 0\), ovvero
+            \[
+                e^{\frac{1}{x + 1}} \gt 0
+            \]
+            Detto fatto: l'esponenziale dà sempre risultati positivi. 
+            Di conseguenza la funzione è positiva per ogni \(x \in D\) 
+    
+            <br>
+            <br>
+    
+    
+            <u><b>Comportamento in prossimità degli estremi del dominio - ricerca asintoti</b></u>
+            <br>
+            Ricordiamo che il dominio è \(D = (-\infty\,,\,\,-1) \cup (-1\,,\,\,+\infty)\).
+            <br>
+            Calcoliamo quindi i limiti per 
+            \[
+                x \to -\infty \quad x \to -1^{\pm} \quad x \to +\infty
+            \]
+            
+            <b style="font-size: 1rem;">\(\boxed{\boldsymbol{x \to \pm\infty}}\)</b>
+            \[
+                \begin{align*}
+                    \lim_{x \to \pm\infty} e^{\frac{1}{x + 1}} 
+                    &= e^{\frac{1}{\pm\infty + 1}} = 
+                    \\\\
+                    &= e^{\frac{1}{\pm\infty}} = 
+                    \\\\
+                    &= e^{0} = 1
+                \end{align*}
+            \]
+            La funzione ha la retta \(y = 1\) come asintoto orizzontale per \(x \to -\infty\) 
+            
+            <br>        
+            <br>
+    
+            <b style="font-size: 1rem;">\(\boxed{\boldsymbol{x \to 1^{+}}}\)</b>
+            \[
+                \begin{align*}
+                    \lim_{x \to 1^{+}} e^{\frac{1}{x + 1}} 
+                    &= e^{\frac{1}{1^{+} - 1}} =
+                    \\\\
+                    &= e^{\frac{1}{0^{+}}} =
+                    \\\\
+                    &= e^{+\infty} = +\infty
+                    
+                \end{align*}
+            \]
+    
+            <b style="font-size: 1rem;">\(\boxed{\boldsymbol{x \to 1^{-}}}\)</b>
+            \[
+                \begin{align*}
+                    \lim_{x \to 1^{+}} e^{\frac{1}{x + 1}} 
+                    &= e^{\frac{1}{1^{-} - 1}} =
+                    \\\\
+                    &= e^{\frac{1}{0^{-}}} =
+                    \\\\
+                    &= e^{-\infty} = 
+                    \\\\
+                    &= \dfrac{1}{e^{+\infty}} = 
+                    \\\\
+                    &= \dfrac{1}{+\infty} = 0                                     
+                \end{align*}
+            \]
+            Concludiamo che \(x = -1\) è un asintoto verticale per la funzione.
+            <br>
+            <br>
+    
+            <u><b>Continuità</b></u>
+            <br>
+            La funzione è continua in tutto il suo dominio, poiché composizione tra funzioni continue.
+            \[
+                C = D = (-\infty\,,\,\,-1) \cup (-1\,,\,\,+\infty)
+            \]
+            
+    
+            <u><b>Derivabilità</b></u>
+            <br>
+            Calcoliamo la derivata della funzione       
+            <br>
+            <br>
+            <div id="slide-container1" class="slide-container grayBorder">
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left[e^{\frac{1}{x + 1}}\right]' =
+                        \)
+                    </div>
+                    <span class="gray">
+                        La funzione è composta, usiamo la formula di derivazione relativa.
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left[e^{\color{blue}{}\frac{1}{x + 1}\color{black}{}}\right]' =
+                        \)
+                    </div>
+                    <span class="gray">
+                        La funzione è composta, usiamo la formula di derivazione relativa.
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \color{red}{}\left[\color{black}{}e^{\color{blue}{}\frac{1}{x + 1}\color{black}{}}\color{red}{}\right]'\color{black}{} =
+                        \)
+                    </div>
+                    <span class="gray">
+                        La funzione è composta, usiamo la formula di derivazione relativa.
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            e^{\color{blue}{}\frac{1}{x + 1}\color{black}{}} \cdot \left(\color{blue}{}\dfrac{1}{x + 1}\color{black}{}\right)'=
+                        \)
+                    </div>
+                    <span class="gray">
+                        La funzione è composta, usiamo la formula di derivazione relativa.
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \color{red}{}\left(\color{black}{}\dfrac{1}{x + 1}\color{red}{}\right)' \color{black}{}=
+                        \)
+                    </div>
+                    <span class="gray">
+                        
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1' \cdot (x + 1) - 1 \cdot (x + 1)'}{(x + 1)^2}=
+                        \)
+                    </div>
+                    <span class="gray">
+                        
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1\color{red}{}'\color{black}{} \cdot (x + 1) - 1 \cdot (x + 1)\color{red}{}'\color{black}{}}{(x + 1)^2}=
+                        \)
+                    </div>
+                    <span class="gray">
+                        
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{\color{red}{}0\color{black}{} \cdot (x + 1) - 1 \cdot \color{red}{}1\color{black}{}}{(x + 1)^2}=
+                        \)
+                    </div>
+                    <span class="gray">
+                        
+                    </span>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2}=
+                        \)
+                    </div>
+                    <span class="gray">
+                        
+                    </span>
+                </div>      
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2}=
+                        \)
+                    </div>
+                    <span class="gray">
+                        Riassumiamo i passaggi svolti.
+                    </span>
+                </div>    
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \begin{align*}                            
+                                &\left[e^{\frac{1}{x + 1}}\right]' =
+                                \\\\
+                                &e^{\frac{1}{x + 1}} \cdot \left(\dfrac{1}{x + 1}\right)' =
+                                \\\\
+                                &e^{\frac{1}{x + 1}} \cdot \dfrac{1' \cdot (x + 1) - 1 \cdot (x + 1)'}{(x + 1)^2} =
+                                \\\\
+                                &e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2} =
+                            \end{align*}
+                        \)
+                    </div>
+                    <span class="gray">
+                        Riassumiamo i passaggi svolti.
+                    </span>
+                </div>                                
+            </div>        
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+                <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+            </div>   
+            <br>
+            <br>
+            A seconda dei gusti di scrittura potremmo scrivere questa derivata in altre forme. Possiamo tenere questa trovata, in quanto
+            comoda per lo studio del segno.                        
+            <br>
+            La derivata 
+            \[
+                f'(x) = e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2}
+            \]
+            ed è definita su tutto \(C\).
+            \[
+                D' = C = D = (-\infty\,,\,\,-1) \cup (-1\,,\,\,+\infty)
+            \]
+    
+            <u><b>Studio intervalli di monotonia</b></u>
+            <br>
+            Studiamo il segno della derivata \(f'\) al variare di \(x \in D'\)
+            \[
+                \begin{align*}
+                    &e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2} 
+                    \\\\
+                    &\color{red}{}e^{\frac{1}{x + 1}}\color{black}{} \cdot \dfrac{\color{blue}{}-1}{\color{red}{}(x + 1)^2} 
+                    \\\\
+                    &\color{red}{}+\color{black}{} \cdot \dfrac{\color{blue}{}-}{\color{red}{}+} = \color{blue}{}- 
+                \end{align*}
+            \]
+            Vediamo che la derivata è ovunque negativa in \(x \in D'\). 
+            <br>
+            Si annulla per qualche valore di \(x\)?
+            <br>
+            \[
+                \begin{align*}
+                    &\underbrace{e^{\frac{1}{x + 1}}} \cdot \underbrace{\dfrac{-1}{(x + 1)^2}} = 0 
+                    \\\\
+                    &e^{\frac{1}{x + 1}} = 0 \,\,\,oppure\,\,\,\dfrac{-1}{(x + 1)^2} = 0
+                \end{align*}
+            \]
+            La frazione \(\frac{-1}{(x + 1)^2}\) non si annulla mai, perché il suo numeratore è una costante non nulla.
+            <br>
+            Il termine esponenziale non si annulla mai perché... è un'esponenziale.
+            <br>
+            Realizziamo lo schema di monotonia 
+            <br>
+            <br>
+            <img src="img/31(1).png" style="width: 100%; border: 0;">
+            <br>        
+            La funzione è decrescente negli intervalli \((-\infty\,,\,\, -1)\) e \((-1\,,\,\,+\infty)\)
+                
+            <br>
+            <br>
+    
+            <u><b>Studio della concavità</b></u>
+            <br>
+            Calcoliamo la derivata seconda  
+            <br>
+            <br>
+            <div id="slide-container2" class="slide-container grayBorder">
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            \left[e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2}\right]' =
+                        \)
+                    </div>
+                    <span class="gray">
+                        Usiamo la formula di Lebniz.
+                    </span>
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            \color{red}{}\left[\color{black}{}e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2}\color{red}{}\right]'\color{black}{} =
+                        \)
+                    </div>
+                    <span class="gray">
+                        Usiamo la formula di Lebniz.
+                    </span>
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            \left(e^{\frac{1}{x + 1}}\right)' \cdot \dfrac{-1}{(x + 1)^2} + e^{\frac{1}{x + 1}} \cdot \left(\dfrac{-1}{(x + 1)^2}\right)' =
+                        \)
+                    </div>
+                    <span class="gray">
+                        Usiamo la formula di Lebniz.
+                    </span>
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            \color{red}{}\left(\color{black}{}e^{\frac{1}{x + 1}}\color{red}{}\right)'\color{black}{} \cdot \dfrac{-1}{(x + 1)^2} + e^{\frac{1}{x + 1}} \cdot \left(\dfrac{-1}{(x + 1)^2}\right)' =
+                        \)
+                    </div>                    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            \color{red}{}\left(\color{black}{}e^{\frac{1}{x + 1}}\color{red}{}\right)'\color{black}{} \cdot \dfrac{-1}{(x + 1)^2} + e^{\frac{1}{x + 1}} \cdot \left(\dfrac{-1}{(x + 1)^2}\right)' =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                        Osserviamo che questa è esattamente la derivata della funzione \(f(x) = e^{\frac{1}{x + 1}}\). 
+                        Senza rifare da capo i calcoli scriviamo il risultato:
+                        \[
+                            \left(e^{\frac{1}{x + 1}}\right)' = e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2}
+                        \]
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            \color{red}{}e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2}\color{black}{} \cdot \dfrac{-1}{(x + 1)^2} + e^{\frac{1}{x + 1}} \cdot \left(\dfrac{-1}{(x + 1)^2}\right)' =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                        Osserviamo che questa è esattamente la derivata della funzione \(f(x) = e^{\frac{1}{x + 1}}\). 
+                        Senza rifare da capo i calcoli scriviamo il risultato:
+                        \[
+                            \left(e^{\frac{1}{x + 1}}\right)' = e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2}
+                        \]
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{\color{red}{}-1}{\color{blue}{}(x + 1)^2} \cdot \dfrac{\color{red}{}-1}{\color{blue}{}(x + 1)^2} + e^{\frac{1}{x + 1}} \cdot \left(\dfrac{-1}{(x + 1)^2}\right)' =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+    
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{\color{red}{}+1}{\color{blue}{}(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \left(\dfrac{-1}{(x + 1)^2}\right)' =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+    
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \color{red}{}\left(\color{black}{}\dfrac{-1}{(x + 1)^2}\color{red}{}\right)'\color{black}{} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+    
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \dfrac{(-1)'(x + 1)^2 - (-1) \cdot \left((x +1)^2\right)'}{(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+    
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \dfrac{(-1)'(x + 1)^2 - (-1) \cdot \left((x +1)^2\right)'}{(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+    
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \dfrac{\color{red}{}(\color{black}{}-1\color{red}{})'\color{black}{}(x + 1)^2 - (-1) \cdot \left((x +1)^2\right)'}{(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+    
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \dfrac{\color{red}{}0\color{black}{} \cdot (x + 1)^2 - (-1) \cdot \left((x +1)^2\right)'}{(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+    
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \dfrac{-(-1) \cdot \left((x +1)^2\right)'}{(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+    
+                    </span>    
+                </div>                
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \dfrac{\color{red}{}\left(\color{black}{}(x +1)^2\color{red}{}\right)'\color{black}{}}{(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                        Usiamo la formula di derivazione di una funzione composta
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \dfrac{\color{red}{}\left(\color{black}{}(\color{blue}{}x +1\color{black}{})^2\color{red}{}\right)'\color{black}{}}{(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                        Usiamo la formula di derivazione di una funzione composta
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \dfrac{2(\color{blue}{}x +1\color{black}{}) \cdot \color{blue}{}x\color{black}{}'}{(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                        Usiamo la formula di derivazione di una funzione composta
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \dfrac{2(x +1)}{(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \dfrac{2x +2}{(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{1}{(x + 1)^4}  + e^{\frac{1}{x + 1}} \cdot \dfrac{2x +2}{(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            \color{red}{}e^{\frac{1}{x + 1}}\color{black}{} \cdot \dfrac{1}{\color{blue}{}(x + 1)^4}  + \color{red}{}e^{\frac{1}{x + 1}}\color{black}{} \cdot \dfrac{2x +2}{\color{blue}{}(x + 1)^4} =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+    
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            \dfrac{\color{red}{}e^{\frac{1}{x + 1}}}{\color{blue}{}(x + 1)^4}\color{black}{} \,\, \left(1  \,\,+\,\,  2x +2\right) =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                        
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            \dfrac{e^{\frac{1}{x + 1}}}{(x + 1)^4} \,\, \left(2x + 3\right) =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                        
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            \dfrac{e^{\frac{1}{x + 1}}}{(x + 1)^4} \,\, \left(2x + 3\right) =
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                        Riassumiamo i passaggi effettuati
+                    </span>    
+                </div>
+                <div class="slide2">
+                    <div class="formula">
+                        \(
+                            \begin{align*}
+                                &\left[e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2}\right]' =
+                                \\\\
+                                &\left(e^{\frac{1}{x + 1}}\right)' \cdot \dfrac{-1}{(x + 1)^2} + e^{\frac{1}{x + 1}} \cdot \left(\dfrac{-1}{(x + 1)^2}\right)' =
+                                \\\\
+                                & e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2} \cdot \dfrac{-1}{(x + 1)^2} + e^{\frac{1}{x + 1}} \cdot \dfrac{(-1)' \cdot (x + 1)^2 - (-1) \cdot \left((x +1)^2\right)'}{(x + 1)^4} =
+                                \\\\
+                                & e^{\frac{1}{x + 1}} \dfrac{1}{(x + 1)^4} + e^{\frac{1}{x + 1}} \cdot \dfrac{\left((x +1)^2\right)'}{(x + 1)^4} =
+                                \\\\
+                                & e^{\frac{1}{x + 1}} \dfrac{1}{(x + 1)^4} + e^{\frac{1}{x + 1}} \cdot \dfrac{2(x +1)}{(x + 1)^4} =
+                                \\\\
+                                &  \dfrac{e^{\frac{1}{x + 1}}}{(x + 1)^4} \,\, \left(1 + 2(x +1)\right)=
+                                \\\\
+                                &  \dfrac{e^{\frac{1}{x + 1}}}{(x + 1)^4} \,\, \left(2x + 3\right)=
+                                
+                            \end{align*}
+                        \)
+                    </div>                                    
+                    <span class="gray">
+                        Riassumiamo i passaggi effettuati
+                    </span>    
+                </div>
+            </div>
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button2" onclick="previousSlide(2)">Indietro</button>
+                <button id="nextSlide-button2" onclick="nextSlide(2)">Avanti</button>
+            </div> 
+            
+            <br>
+            <br>
+    
+            Il segno di \(f''\) dipende unicamente da quello del fattore \(2x + 3\) in quanto il segno della prima 
+            frazione è sicuramente positivo
+            \[
+                \begin{align*}
+                    \dfrac{e^{\frac{1}{x + 1}}}{(x + 1)^4} \,\, \left(2x + 3\right)
+                    \\\\
+                    \dfrac{\color{red}{}e^{\frac{1}{x + 1}}}{\color{red}{}(x + 1)^4} \,\, \left(2x + 3\right)
+                    \\\\
+                    \dfrac{\color{red}{}+}{\color{red}{}+} \,\, \left(2x + 3\right)
+                    \\\\
+                    \color{red}{}+\color{black}{} \,\, \left(2x + 3\right)
+                \end{align*}
+            \]
+            Quindi 
+            <div class="formula">
+                \[
+                    f''(x) \gt 0 \,\,\Leftrightarrow\,\,  2x + 3 \gt 0 \,\,\Leftrightarrow\,\, x \gt -\dfrac{3}{2}
+                \]      
+            </div>      
+            
+            Scriviamo lo schema di concavità
+            <br>
+            <br>
+            <img src="img/31(2).png" style="width: 100%; border: 0;">
+    
+            <br>
+            <br>        
+    
+            <u><b>Grafico</b></u>
+            <br>
+            Riassumiamo in un grafico le informazioni ottenute fino a questo momento 
+            <br>
+            <br>
+            <img src="img/31(3).png" style="width: 100%; border: 0;">
+        
+        </div>
+        
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button4" onclick="previousSlide(4)">Indietro</button>
+            <button id="nextSlide-button4" onclick="nextSlide(4)">Avanti</button>
+        </div> 
+
+        </div>    
+    </div>
+
+       
+    <br>
+    <br>
+
+    <!-- <button id="hint2-button" onclick="showHint(2)">Svolgimento n° 288</button>
+    <div id="hint2" class="hint" style="display: none;">  
+        <b class="gray">Svolgimento n° 288</b> 
+        <br>  
+        <div class="grayBorder">
+            Determiniamo i flessi della funzione
+            \[
+                f(x) = x \, \sqrt{9 - x^2}
+            \]
+    
+            <u><b>Dominio</b></u>
+            <br>
+            Imponiamo la condizione che rende definita la radice 
+            \[
+                9 - x^2 \geq 0
+            \]
+            ulitlizzando il metodo della parabola (non scrivo i passaggi intermedi) otteniamo 
+            <br>
+            <br>
+            <img src="img/29(4).png" style="width: 70%; border: 0;">
+        
+            Quindi 
+            \[
+                D = (-\infty\,,\,\,-3] \cup [3\,,\,\,+\infty)
+            \]
+    
+            <u><b>Continuità</b></u>
+            <br>
+            La funzione è continua in \(D\) in quanto prodotto di funzioni continue.
+            \[
+                C = D = (-\infty\,,\,\,-3] \cup [3\,,\,\,+\infty)
+            \]        
+    
+            <u><b>Derivabilità</b></u>
+            <br>
+            Calcoliamo la derviata prima della funzione 
+            <br>
+            <br>
+            <div class="grayBorder" style="max-height: 50vh; overflow-y: auto;">
+                \[
+                    \begin{align*}
+                        &\Big[x \, \sqrt{9 - x^2}\Big]' = 
+                        \\\\
+                        =&x' \cdot \sqrt{9 - x^2} + x \cdot \left[\sqrt{9 - x^2}\right]' = 
+                        \\\\
+                        =&1 \cdot \sqrt{9 - x^2} + x \cdot \left[(9 - x^2)^{\frac{1}{2}}\right]' = 
+                        \\\\
+                        &\text{poniamo}\,\,z = 9 - x^2
+                        \\\\
+                        =&\sqrt{9 - x^2} + x \cdot \left[z^{\frac{1}{2}}\right]' = 
+                        \\\\
+                        =&\sqrt{9 - x^2} + x \cdot \dfrac{1}{2} z^{-\frac{1}{2}} \cdot z' = 
+                        \\\\
+                        &\text{sostituiamo nuovamente}\,\,z = 9 - x^2
+                        \\\\
+                        =&\sqrt{9 - x^2} + x \cdot \dfrac{1}{2}\,(9 - x^2)^{-\frac{1}{2}} \cdot (9 - x^2)' = 
+                        \\\\
+                        =&\sqrt{9 - x^2} + x \cdot \dfrac{1}{2}\,\dfrac{1}{(9 - x^2)^{\frac{1}{2}}} \cdot (-2x) = 
+                        \\\\
+                        =&\sqrt{9 - x^2} + x \cdot \dfrac{1}{2}\,\dfrac{1}{\sqrt{9 - x^2}} \cdot (-2x) = 
+                        \\\\
+                        =&\sqrt{9 - x^2} - \dfrac{x^2}{\sqrt{9 - x^2}}= 
+                        \\\\
+                        =&\dfrac{\left|9 - x^2\right| - x^2}{\sqrt{9 - x^2}}= 
+                        \\\\
+                        &\text{per il dominio abbiamo}
+                        \\
+                        &\text{imposto che } 9 - x^2 \geq 0                
+                        \\\\
+                        =&\dfrac{9 - x^2 - x^2}{\sqrt{9 - x^2}}= 
+                        \\\\
+                        =&\dfrac{9 - 2x^2}{\sqrt{9 - x^2}}
+                    \end{align*}
+                \]
+            </div>
+            <br>
+            <br>
+
+            <iframe style="width: 100%;" src="https://www.youtube.com/embed/tN-p41Uu-hQ?si=XwkGyPIRnpAUULjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+    
+            <br>
+    
+            
+            Dunque la derivata della funzione è 
+            \[
+                f'(x) = \dfrac{9 - 2x^2}{\sqrt{9 - x^2}}
+            \]
+            ed è definita a patto che 
+            \[
+                \begin{cases}
+                    \sqrt{9 - x^2} \neq 0
+                    \\\\
+                    9 - x^2 \geq 0
+                \end{cases}
+    
+                \,\,\Rightarrow\,\,
+                
+                9 - x^2 \gt 0
+            \]
+            Guardando la parabola già disegnata per il dominio, questa equazione è risolta per 
+            \[
+                -3 \lt x \lt 3
+            \]
+            Ovvero 
+            \[
+                D' = (-\infty\,,\,\,-3) \cup (3\,,\,\,+\infty)
+            \]
+            Rispetto all'insieme \(C\) nel quale la funzione non è continua abbiamo perso due punti, \(x = \pm 3\) in corrispondenza dei
+            quali la funzione non è derivabile.
+    
+            <br>
+            <br>
+    
+            <b><u>Derivata seconda</u></b>
+            <br>
+            Calcoliamo la derivata seconda della funzione 
+            <br>
+            <br>
+            <div class="grayBorder" style="max-height: 50vh; overflow-y: auto;">
+                \[
+                    \begin{align*}
+                        &\Big[\dfrac{9 - 2x^2}{\sqrt{9 - x^2}}\Big]' = 
+                        \\\\
+                        =&\dfrac{(9 - 2x^2)' \cdot \sqrt{9 - x^2} - (9 - 2x^2) \cdot \left[\sqrt{9 -x^2}\right]'}{\Big(\sqrt{9 - x^2}\Big)^2} =
+                        \\\\
+                        =&\dfrac{-4x \cdot \sqrt{9 - x^2} - (9 - 2x^2) \cdot \left[\sqrt{9 -x^2}\right]'}{\left|9 - x^2\right|} =
+                        \\\\
+                        =&\dfrac{-4x \cdot \sqrt{9 - x^2} - (9 - 2x^2) \cdot \overset{\text{derivata composta}}{\overbrace{\left[(9 -x^2)^{\frac{1}{2}}\right]'}}}{9 - x^2} =
+                        \\\\
+                        =&\dfrac{-4x \cdot \sqrt{9 - x^2} - (9 - 2x^2) \cdot \overbrace{\frac{1}{2}(9 -x^2)^{-\frac{1}{2}} (-2x)}}{9 - x^2}     =                
+                        \\\\
+                        =&\dfrac{1}{9 - x^2} \,\,\left(-4x \cdot \sqrt{9 - x^2} - \dfrac{9 - 2x^2}{\sqrt{9 - x^2}} (-x)\right) =
+                        \\\\
+                        =&\dfrac{1}{9 - x^2} \,\,\left(-4x \cdot \sqrt{9 - x^2} + \dfrac{x \cdot (9 - 2x^2)}{\sqrt{9 - x^2}}\right) =
+                        \\\\
+                        =&\dfrac{x}{9 - x^2} \,\,\left(-4 \cdot \sqrt{9 - x^2} + \dfrac{9 - 2x^2}{\sqrt{9 - x^2}}\right) =
+                        \\\\
+                        =&\dfrac{x}{9 - x^2} \,\, \dfrac{-4 \cdot \sqrt{9 - x^2}^2 + 9 - 2x^2}{\sqrt{9 - x^2}} =
+                        \\\\
+                        =&\dfrac{x}{9 - x^2} \,\, \dfrac{-4 \cdot \left|9 - x^2\right| + 9 - 2x^2}{\sqrt{9 - x^2}} =
+                        \\\\
+                        =&\dfrac{x}{9 - x^2} \,\, \dfrac{-4 \cdot (9 - x^2) + 9 - 2x^2}{\sqrt{9 - x^2}} =
+                        \\\\
+                        =&\dfrac{x}{9 - x^2} \,\, \dfrac{-36 + 4x^2 + 9 - 2x^2}{\sqrt{9 - x^2}} =
+                        \\\\
+                        =&\dfrac{x}{9 - x^2} \,\, \dfrac{-27 + 2x^2}{\sqrt{9 - x^2}} =
+                        \\\\
+                        =&\dfrac{x}{(9 - x^2)^1} \,\, \dfrac{-27 + 2x^2}{(9 - x^2)^\frac{1}{2}} =
+                        \\\\
+                        =&\dfrac{x\cdot(-27 + 2x^2)}{(9 - x^2)^{1 + \frac{1}{2}}} =
+                        \\\\
+                        =&\dfrac{x\cdot(-27 + 2x^2)}{(9 - x^2)^{\frac{3}{2}}} =
+                        \\\\
+                        =&\dfrac{x\cdot(-27 + 2x^2)}{\sqrt[3]{9 - x^2}} 
+                        
+                    \end{align*}
+                \]
+            </div>
+            <br>
+            <br>            
+            <iframe style="width: 100%;" src="https://www.youtube.com/embed/kiXvXTHQXfA?si=wuXH39RKJkiJsP4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+
+            Si ha dunque
+            \[
+                f''(x) = \dfrac{x\cdot(-27 + 2x^2)}{\sqrt[3]{9 - x^2}} 
+            \]
+            che è definita in tutto \(D'\).
+    
+            \[
+                D'' = D' = (-\infty\,,\,\,-3) \cup (3\,,\,\,+\infty)
+            \]
+    
+            <br>
+            <br>
+    
+            <u><b>Segno derivata seconda e schema concavità</b></u>
+            <br>
+            Studiamo il segno della derivata seconda al variare di \(x \in D''\) 
+            \[
+                \begin{align*}  
+                    &f''(x) \gt 0   
+                    \\\\
+                    &\dfrac{x\cdot(-27 + 2x^2)}{\sqrt[3]{9 - x^2}}  \gt 0
+                \end{align*}
+            \]
+            
+
+            Il denominatore è sempre positivo. Quindi la frazione è positiva a patto che il numeratore sia positivo, ovvero        
+            \[
+                \begin{align*}                  
+                    &\dfrac{x\cdot(-27 + 2x^2)}{\underset{+}{\underbrace{\sqrt[3]{9 - x^2}}}}  \gt 0
+                    \\\\
+                    & x\cdot(-27 + 2x^2) \gt 0
+                \end{align*}
+            \]
+            Per risolvere questa disequazione realizziamo il grafico dei segni.
+            <br>
+            <br>
+            <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start;">
+                <div style="width: 38%; margin-right: 2rem;">
+                    <b style="font-size: 1rem;">Segno 1° fattore</b>
+                    <br>
+                    \(x \gt 0\)
+                </div>
+                <div>
+                    <b style="font-size: 1rem; width: 60%;">Segno 2° fattore</b>
+                    <br>                    
+                    \(-27 + 2x^2 \gt 0\)
+                    <br>
+                    Utilizziamo il metodo della parabola (ometto i conti intermedi)
+                    <br>
+                    <br>
+                    <img src="img/29(6).png" style="width: 100%; border: 0;">
+                </div>
+            </div>
+            <b style="font-size: 1rem;">Grafico dei segni e schema concavità</b>            
+            <br>
+            <br>
+            <img src="img/29(5).png" style="width: 100%; border: 0;">
+            <br>
+            Il punto \(x = 0\) è di flesso. 
+            Per capire se tale flesso è obliquo o orizzontale calcoliamo \(f'(0)\)
+            \[
+                f'(0) = \dfrac{9 -  0^2}{\sqrt{9 -0^2}} = \dfrac{9}{\sqrt{9}} = \dfrac{9}{3} = 3
+            \]
+            Siccome \(f'(0) \neq 0\) il flesso in \(x = 0\) è a tangente obliqua.
+    
+            <br>
+            <br>
+            Per completezza allego il grafico della funzione \(f\)
+            <br>
+            <br>
+            <img src="img/29(7).png" style="width: 100%; border: 0;">
+        </div>
+    </div>
+     -->
+
+
+    <br>
+    <br>
+    
+
+    <script src="../../js/hintAndSlide.js"></script>    
+
+    
+
+    <script>
+        var ggbApp1 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg1",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/concavitaVersoLAlto.ggb"
+            }, 
+            true
+        );
+
+        var ggbApp2 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg2",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/concavitaVersoIlBasso.ggb"
+            }, 
+            true
+        );
+
+        var ggbApp3 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg3",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/concavita.ggb"
+            }, 
+            true
+        );
+
+        var ggbApp4 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg4",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/concavita(2).ggb"
+            }, 
+            true
+        );
+
+        window.addEventListener("load", function() { 
+            ggbApp1.inject('geogebra1');			
+            ggbApp2.inject('geogebra2');			
+            ggbApp3.inject('geogebra3');	
+            ggbApp4.inject('geogebra4');			
+        });
+    </script>
+</body>
+
+
+<!--
+    <div class="slide-container grayBorder">
+        <div class="slide1">
+            
+        </div>
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+        <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+    </div> 
+ -->
+
+ <!-- 
+
+
+
+  -->
+
+ 
