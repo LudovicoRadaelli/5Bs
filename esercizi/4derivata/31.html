@@ -16,8 +16,11 @@
     
     <br>
 
-    <h3 class="green">Esercizio 1</h3>
-    <br>
+    <h3 class="green">Esercizio 1</h3>    
+    <div class="gray" style="font-size: 1rem;">
+        Concludete i punti dell'esercizio che non siete riusciti a svolgere in classe.
+    </div>
+    <br>    
     <div>
         Studiare la seguente funzione 
         \[
@@ -336,7 +339,7 @@
                 <div class="slide1">
                     <div class="formula">
                         \(
-                            e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2}=
+                            e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2}
                         \)
                     </div>
                     <span class="gray">
@@ -353,7 +356,7 @@
                                 \\\\
                                 &e^{\frac{1}{x + 1}} \cdot \dfrac{1' \cdot (x + 1) - 1 \cdot (x + 1)'}{(x + 1)^2} =
                                 \\\\
-                                &e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2} =
+                                &e^{\frac{1}{x + 1}} \cdot \dfrac{-1}{(x + 1)^2} 
                             \end{align*}
                         \)
                     </div>
@@ -734,331 +737,94 @@
             <br>
             <img src="img/31(3).png" style="width: 100%; border: 0;">
         
-        </div>
-        
-        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
-            <button id="previousSlide-button4" onclick="previousSlide(4)">Indietro</button>
-            <button id="nextSlide-button4" onclick="nextSlide(4)">Avanti</button>
-        </div> 
+        </div>            
+    </div>
 
-        </div>    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Svolgere l'esercizio n° 129, 145 pag. 1716        
+    </div>
+    <br>
+    <br>
+    <div class="gray">
+        Nel caso in cui abbiate difficoltà
+    </div>
+    <br>
+    <button id="hint2-button" onclick="showHint(2)">Pulsante di emergenza</button>
+    <div id="hint2" class="hint" style="display: none;">  
+        <ul class="gray">
+            <li>
+                Ripassate il teorema di Lagrange. 
+                <br>
+                Trovate <a  class="gray" href="23.html">QUI</a> le dispense relative e
+                alle pagg. da 1694 a 1697 la spiegazione del libro di testo
+            </li>        
+            <br>
+            <li>
+                Ripassate l'esecizio guida n° 125 pag. 1715 e l'esercizio n° 135 che trovate svolto 
+                <a class="gray" href="23.html">QUI</a>.
+            </li>        
+        </ul>
     </div>
 
        
+    
+    <br>
+    <br>
+    <hr>
     <br>
     <br>
 
-    <!-- <button id="hint2-button" onclick="showHint(2)">Svolgimento n° 288</button>
-    <div id="hint2" class="hint" style="display: none;">  
-        <b class="gray">Svolgimento n° 288</b> 
-        <br>  
-        <div class="grayBorder">
-            Determiniamo i flessi della funzione
-            \[
-                f(x) = x \, \sqrt{9 - x^2}
-            \]
+    <h3 class="green">Esercizio 3</h3>
+    <br>
+    <ul>
+        <li>
+            Svolgere gli esercizi n° 119, 120  a pag. 1783 seguendo questa scaletta:
+            <br>
+            <br>
+            <ul>
+                <li>
+                    Scrivere il dominio \(D\) della funzione.
+                </li>
+                <br>
+                <li>
+                    Scrivere l'insieme \(C\) nel quale la funzione è continua.
+                </li>
+                <br>
+                <li>
+                    Scrivere l'insieme \(D'\) nel quale la funzione è derivabile.
+                </li>
+                <br>
+                <li>
+                    Scrivere il grafico di monotonia per la funzione.
+                </li>
+                <br>
+                <li>
+                    Stabilire se il punto \(x_0\) è un punto di minimo o massimo relativo
+                </li>
+            </ul>
+        </li>
+        <br>
+        <li>
+            Svolgere l'esercizio n° 122 a pag. 1783.
+        </li>
+    </ul>
+
     
-            <u><b>Dominio</b></u>
-            <br>
-            Imponiamo la condizione che rende definita la radice 
-            \[
-                9 - x^2 \geq 0
-            \]
-            ulitlizzando il metodo della parabola (non scrivo i passaggi intermedi) otteniamo 
-            <br>
-            <br>
-            <img src="img/29(4).png" style="width: 70%; border: 0;">
         
-            Quindi 
-            \[
-                D = (-\infty\,,\,\,-3] \cup [3\,,\,\,+\infty)
-            \]
-    
-            <u><b>Continuità</b></u>
-            <br>
-            La funzione è continua in \(D\) in quanto prodotto di funzioni continue.
-            \[
-                C = D = (-\infty\,,\,\,-3] \cup [3\,,\,\,+\infty)
-            \]        
-    
-            <u><b>Derivabilità</b></u>
-            <br>
-            Calcoliamo la derviata prima della funzione 
-            <br>
-            <br>
-            <div class="grayBorder" style="max-height: 50vh; overflow-y: auto;">
-                \[
-                    \begin{align*}
-                        &\Big[x \, \sqrt{9 - x^2}\Big]' = 
-                        \\\\
-                        =&x' \cdot \sqrt{9 - x^2} + x \cdot \left[\sqrt{9 - x^2}\right]' = 
-                        \\\\
-                        =&1 \cdot \sqrt{9 - x^2} + x \cdot \left[(9 - x^2)^{\frac{1}{2}}\right]' = 
-                        \\\\
-                        &\text{poniamo}\,\,z = 9 - x^2
-                        \\\\
-                        =&\sqrt{9 - x^2} + x \cdot \left[z^{\frac{1}{2}}\right]' = 
-                        \\\\
-                        =&\sqrt{9 - x^2} + x \cdot \dfrac{1}{2} z^{-\frac{1}{2}} \cdot z' = 
-                        \\\\
-                        &\text{sostituiamo nuovamente}\,\,z = 9 - x^2
-                        \\\\
-                        =&\sqrt{9 - x^2} + x \cdot \dfrac{1}{2}\,(9 - x^2)^{-\frac{1}{2}} \cdot (9 - x^2)' = 
-                        \\\\
-                        =&\sqrt{9 - x^2} + x \cdot \dfrac{1}{2}\,\dfrac{1}{(9 - x^2)^{\frac{1}{2}}} \cdot (-2x) = 
-                        \\\\
-                        =&\sqrt{9 - x^2} + x \cdot \dfrac{1}{2}\,\dfrac{1}{\sqrt{9 - x^2}} \cdot (-2x) = 
-                        \\\\
-                        =&\sqrt{9 - x^2} - \dfrac{x^2}{\sqrt{9 - x^2}}= 
-                        \\\\
-                        =&\dfrac{\left|9 - x^2\right| - x^2}{\sqrt{9 - x^2}}= 
-                        \\\\
-                        &\text{per il dominio abbiamo}
-                        \\
-                        &\text{imposto che } 9 - x^2 \geq 0                
-                        \\\\
-                        =&\dfrac{9 - x^2 - x^2}{\sqrt{9 - x^2}}= 
-                        \\\\
-                        =&\dfrac{9 - 2x^2}{\sqrt{9 - x^2}}
-                    \end{align*}
-                \]
-            </div>
-            <br>
-            <br>
-
-            <iframe style="width: 100%;" src="https://www.youtube.com/embed/tN-p41Uu-hQ?si=XwkGyPIRnpAUULjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
-    
-            <br>
-    
-            
-            Dunque la derivata della funzione è 
-            \[
-                f'(x) = \dfrac{9 - 2x^2}{\sqrt{9 - x^2}}
-            \]
-            ed è definita a patto che 
-            \[
-                \begin{cases}
-                    \sqrt{9 - x^2} \neq 0
-                    \\\\
-                    9 - x^2 \geq 0
-                \end{cases}
-    
-                \,\,\Rightarrow\,\,
-                
-                9 - x^2 \gt 0
-            \]
-            Guardando la parabola già disegnata per il dominio, questa equazione è risolta per 
-            \[
-                -3 \lt x \lt 3
-            \]
-            Ovvero 
-            \[
-                D' = (-\infty\,,\,\,-3) \cup (3\,,\,\,+\infty)
-            \]
-            Rispetto all'insieme \(C\) nel quale la funzione non è continua abbiamo perso due punti, \(x = \pm 3\) in corrispondenza dei
-            quali la funzione non è derivabile.
-    
-            <br>
-            <br>
-    
-            <b><u>Derivata seconda</u></b>
-            <br>
-            Calcoliamo la derivata seconda della funzione 
-            <br>
-            <br>
-            <div class="grayBorder" style="max-height: 50vh; overflow-y: auto;">
-                \[
-                    \begin{align*}
-                        &\Big[\dfrac{9 - 2x^2}{\sqrt{9 - x^2}}\Big]' = 
-                        \\\\
-                        =&\dfrac{(9 - 2x^2)' \cdot \sqrt{9 - x^2} - (9 - 2x^2) \cdot \left[\sqrt{9 -x^2}\right]'}{\Big(\sqrt{9 - x^2}\Big)^2} =
-                        \\\\
-                        =&\dfrac{-4x \cdot \sqrt{9 - x^2} - (9 - 2x^2) \cdot \left[\sqrt{9 -x^2}\right]'}{\left|9 - x^2\right|} =
-                        \\\\
-                        =&\dfrac{-4x \cdot \sqrt{9 - x^2} - (9 - 2x^2) \cdot \overset{\text{derivata composta}}{\overbrace{\left[(9 -x^2)^{\frac{1}{2}}\right]'}}}{9 - x^2} =
-                        \\\\
-                        =&\dfrac{-4x \cdot \sqrt{9 - x^2} - (9 - 2x^2) \cdot \overbrace{\frac{1}{2}(9 -x^2)^{-\frac{1}{2}} (-2x)}}{9 - x^2}     =                
-                        \\\\
-                        =&\dfrac{1}{9 - x^2} \,\,\left(-4x \cdot \sqrt{9 - x^2} - \dfrac{9 - 2x^2}{\sqrt{9 - x^2}} (-x)\right) =
-                        \\\\
-                        =&\dfrac{1}{9 - x^2} \,\,\left(-4x \cdot \sqrt{9 - x^2} + \dfrac{x \cdot (9 - 2x^2)}{\sqrt{9 - x^2}}\right) =
-                        \\\\
-                        =&\dfrac{x}{9 - x^2} \,\,\left(-4 \cdot \sqrt{9 - x^2} + \dfrac{9 - 2x^2}{\sqrt{9 - x^2}}\right) =
-                        \\\\
-                        =&\dfrac{x}{9 - x^2} \,\, \dfrac{-4 \cdot \sqrt{9 - x^2}^2 + 9 - 2x^2}{\sqrt{9 - x^2}} =
-                        \\\\
-                        =&\dfrac{x}{9 - x^2} \,\, \dfrac{-4 \cdot \left|9 - x^2\right| + 9 - 2x^2}{\sqrt{9 - x^2}} =
-                        \\\\
-                        =&\dfrac{x}{9 - x^2} \,\, \dfrac{-4 \cdot (9 - x^2) + 9 - 2x^2}{\sqrt{9 - x^2}} =
-                        \\\\
-                        =&\dfrac{x}{9 - x^2} \,\, \dfrac{-36 + 4x^2 + 9 - 2x^2}{\sqrt{9 - x^2}} =
-                        \\\\
-                        =&\dfrac{x}{9 - x^2} \,\, \dfrac{-27 + 2x^2}{\sqrt{9 - x^2}} =
-                        \\\\
-                        =&\dfrac{x}{(9 - x^2)^1} \,\, \dfrac{-27 + 2x^2}{(9 - x^2)^\frac{1}{2}} =
-                        \\\\
-                        =&\dfrac{x\cdot(-27 + 2x^2)}{(9 - x^2)^{1 + \frac{1}{2}}} =
-                        \\\\
-                        =&\dfrac{x\cdot(-27 + 2x^2)}{(9 - x^2)^{\frac{3}{2}}} =
-                        \\\\
-                        =&\dfrac{x\cdot(-27 + 2x^2)}{\sqrt[3]{9 - x^2}} 
-                        
-                    \end{align*}
-                \]
-            </div>
-            <br>
-            <br>            
-            <iframe style="width: 100%;" src="https://www.youtube.com/embed/kiXvXTHQXfA?si=wuXH39RKJkiJsP4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <br>
-
-            Si ha dunque
-            \[
-                f''(x) = \dfrac{x\cdot(-27 + 2x^2)}{\sqrt[3]{9 - x^2}} 
-            \]
-            che è definita in tutto \(D'\).
-    
-            \[
-                D'' = D' = (-\infty\,,\,\,-3) \cup (3\,,\,\,+\infty)
-            \]
-    
-            <br>
-            <br>
-    
-            <u><b>Segno derivata seconda e schema concavità</b></u>
-            <br>
-            Studiamo il segno della derivata seconda al variare di \(x \in D''\) 
-            \[
-                \begin{align*}  
-                    &f''(x) \gt 0   
-                    \\\\
-                    &\dfrac{x\cdot(-27 + 2x^2)}{\sqrt[3]{9 - x^2}}  \gt 0
-                \end{align*}
-            \]
-            
-
-            Il denominatore è sempre positivo. Quindi la frazione è positiva a patto che il numeratore sia positivo, ovvero        
-            \[
-                \begin{align*}                  
-                    &\dfrac{x\cdot(-27 + 2x^2)}{\underset{+}{\underbrace{\sqrt[3]{9 - x^2}}}}  \gt 0
-                    \\\\
-                    & x\cdot(-27 + 2x^2) \gt 0
-                \end{align*}
-            \]
-            Per risolvere questa disequazione realizziamo il grafico dei segni.
-            <br>
-            <br>
-            <div style="display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start;">
-                <div style="width: 38%; margin-right: 2rem;">
-                    <b style="font-size: 1rem;">Segno 1° fattore</b>
-                    <br>
-                    \(x \gt 0\)
-                </div>
-                <div>
-                    <b style="font-size: 1rem; width: 60%;">Segno 2° fattore</b>
-                    <br>                    
-                    \(-27 + 2x^2 \gt 0\)
-                    <br>
-                    Utilizziamo il metodo della parabola (ometto i conti intermedi)
-                    <br>
-                    <br>
-                    <img src="img/29(6).png" style="width: 100%; border: 0;">
-                </div>
-            </div>
-            <b style="font-size: 1rem;">Grafico dei segni e schema concavità</b>            
-            <br>
-            <br>
-            <img src="img/29(5).png" style="width: 100%; border: 0;">
-            <br>
-            Il punto \(x = 0\) è di flesso. 
-            Per capire se tale flesso è obliquo o orizzontale calcoliamo \(f'(0)\)
-            \[
-                f'(0) = \dfrac{9 -  0^2}{\sqrt{9 -0^2}} = \dfrac{9}{\sqrt{9}} = \dfrac{9}{3} = 3
-            \]
-            Siccome \(f'(0) \neq 0\) il flesso in \(x = 0\) è a tangente obliqua.
-    
-            <br>
-            <br>
-            Per completezza allego il grafico della funzione \(f\)
-            <br>
-            <br>
-            <img src="img/29(7).png" style="width: 100%; border: 0;">
-        </div>
-    </div>
-     -->
-
 
     <br>
     <br>
     
 
-    <script src="../../js/hintAndSlide.js"></script>    
-
-    
-
-    <script>
-        var ggbApp1 = new GGBApplet(
-            {
-                "appName": "classic", 
-                "id": "gg1",
-                "showToolBar": false, 
-                "showAlgebraInput": false, 
-                "showMenuBar": false, 
-                "enableShiftDragZoom": false,
-                "scaleContainerClass":"geogebra-container",
-                "filename":"img/concavitaVersoLAlto.ggb"
-            }, 
-            true
-        );
-
-        var ggbApp2 = new GGBApplet(
-            {
-                "appName": "classic", 
-                "id": "gg2",
-                "showToolBar": false, 
-                "showAlgebraInput": false, 
-                "showMenuBar": false, 
-                "enableShiftDragZoom": false,
-                "scaleContainerClass":"geogebra-container",
-                "filename":"img/concavitaVersoIlBasso.ggb"
-            }, 
-            true
-        );
-
-        var ggbApp3 = new GGBApplet(
-            {
-                "appName": "classic", 
-                "id": "gg3",
-                "showToolBar": false, 
-                "showAlgebraInput": false, 
-                "showMenuBar": false, 
-                "enableShiftDragZoom": false,
-                "scaleContainerClass":"geogebra-container",
-                "filename":"img/concavita.ggb"
-            }, 
-            true
-        );
-
-        var ggbApp4 = new GGBApplet(
-            {
-                "appName": "classic", 
-                "id": "gg4",
-                "showToolBar": false, 
-                "showAlgebraInput": false, 
-                "showMenuBar": false, 
-                "enableShiftDragZoom": false,
-                "scaleContainerClass":"geogebra-container",
-                "filename":"img/concavita(2).ggb"
-            }, 
-            true
-        );
-
-        window.addEventListener("load", function() { 
-            ggbApp1.inject('geogebra1');			
-            ggbApp2.inject('geogebra2');			
-            ggbApp3.inject('geogebra3');	
-            ggbApp4.inject('geogebra4');			
-        });
-    </script>
+    <script src="../../js/hintAndSlide.js"></script>        
 </body>
 
 
