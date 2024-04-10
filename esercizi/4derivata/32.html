@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>    
+
+    <h3 class="yellow">Teorema di De L'Hospital</h3>
+    <div class="esempi-container">
+        Nello studio dei limiti abbiamo incontrato le temibili <b>forme indeterminate</b>. Scioglierle ha richiesto 
+        la messa a punto di tecniche risolutive elaborate, che hanno successo con una classe ristretta di problemi.
+        <br>
+        <br>
+        Il teorema di De L'Hospital costituisce un nuovo ed efficace strumento per la risoluzione delle forme indeterminate.
+        <br>
+        <br>
+
+        <b style="font-size: 1.3rem;">Enunciato</b>
+        <br>
+        <div class="grayBorder">
+            Siano \(f\) e \(g\) due funzioni definite in un intorno \(I\) di \(x_0\). Se 
+            <br>
+            <br>
+            <ol>
+                <li>
+                    \(x_0\) è uno zero di entrambe le funzioni, ovvero 
+                    \[
+                        f(x_0) = g(x_0) = 0
+                    \]
+                </li>
+                <br>
+                <li>
+                    \(f\) e \(g\) sono continue in \(x_0\)
+                </li>
+                <br>
+                <li>
+                    \(f\) e \(g\) sono derivabili in \(I -{x_0}\)
+                </li>
+                <br>
+                <li>
+                    \(g'(x) \neq 0\) in \(I -{x_0}\)
+                </li>                
+            </ol>
+            <br>
+            <br>
+            allora esiste il limite 
+            \[
+                \lim_{x \to x_0} \dfrac{f(x)}{g(x)} 
+            \]
+            e vale la seguente uguaglianza
+            \[
+                \lim_{x \to x_0} \dfrac{f(x)}{g(x)} = \lim_{x \to x_0} \dfrac{f'(x)}{g'(x)} 
+            \]
+        </div>
+
+        <br>
+        <br>
+
+        Sostanzialmente questo teorema ci dà un ulteriore strumento per fronteggiare le forme indeterminate. 
+        Vediamo un esempio
+
+        <br>
+        <br>
+
+
+        <b style="font-size: 1.3rem;">Esempio</b>
+        <br>
+        <div class="grayBorder">
+            Calcolare il limite 
+            \[
+                \lim_{x \to -2} \dfrac{2x^3 -x^2 -7x +6}{x^2 +x -2}
+            \]
+
+            <b>Svolgimento</b>
+            <br>
+            Proviamo a risolverlo per sostituzione.
+            <div class="formula">
+                \[
+                    \begin{align*}
+                        &\lim_{x \to -2} \dfrac{2x^3 -x^2 -7x +6}{x^2 +x -2} =
+                        \\\\
+                        = \,\,&\dfrac{2\,(-2)^3 -(-2)^2 -7(-2) +6}{(-2)^2 -2 -2} =
+                        \\\\
+                        = \,\,&\dfrac{-16 -4 +14 +6}{4 -2 -2} = \dfrac{0}{0}
+                    \end{align*}
+                \]
+            </div>
+            Otteniamo la forma indeterminata \(\dfrac{0}{0}\). 
+            Possiamo riformulare questo fatto dicendo che \(x = -2\) è uno zero sia della funzione \(f(x)\) al numeratore che della funzione \(g(x)\) al 
+            denominatore (prima ipotesi del teorema).
+            <br>
+            Siccome \(f\) e \(g\) sono polinomi, esse sono continue e derivabili in tutto \(\mathbb{R}\). Valgono dunque la seconda e terza ipotesi 
+            del teorema.
+            <br>
+            Controlliamo l'ultima. La derivata del denominatore è 
+            \[
+                \begin{align*} 
+                    g'(x) =& \left(x^2 +x -2\right)' = 
+                    \\\\
+                    =& 2x +1 
+                \end{align*}
+            \]
+            Si ha 
+            \[
+                g'(x) \neq 0 \,\,\Leftrightarrow\,\, 2x +1 \neq 0 \,\,\Leftrightarrow\,\, x \neq -\dfrac{1}{2}
+            \]
+            quindi la derivata del denominatore è sicuramente diversa da \(0\) in un intorno di \(x = -2\).
+            <br>
+            <br>
+            Possiamo usare il teorema di De L'Hospital:
+            \[
+                \begin{align*}
+                    &\lim_{x \to -2} \dfrac{2x^3 -x^2 -7x +6}{x^2 +x -2} =
+                    \\\\
+                    &\lim_{x \to -2} \dfrac{(2x^3 -x^2 -7x +6)'}{(x^2 +x -2)'} =
+                    \\\\
+                    &\lim_{x \to -2} \dfrac{6x^2 -2x -7}{2x +1} =
+                    \\\\
+                    &\dfrac{6\,(-2)^2 -2\,(-2) -7}{2\,(-2) +1} =
+                    \\\\
+                    &\dfrac{24 +4 -7}{-4 +1} =\dfrac{\overset{7}{\cancel{21}}}{-\underset{1}{\cancel{3}}}
+                \end{align*}
+            \]
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <div class="gray" style="font-size: 0.9rem;">Forme indeterminate \(\dfrac{0}{0}\)</div>
+    <br>
+    <ul>
+        <li>
+            Studiare sia le dispense sopra disponibili che le pagine da 1701 a 1705 (dove trovate trattate altre forme 
+            indeterminate oltre a \(\frac{0}{0}\). 
+        </li>
+        <br>
+        <li>
+            Studiare l'esercizio guida n° 304 a pag. 1729.
+        </li>
+        <br>
+        <li>
+            Svolgere l'esercizio n° 316, 323, 325, 327 a pag. 1729.
+        </li>
+    </ul>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <div class="gray" style="font-size: 0.9rem;">Forme indeterminate \(\dfrac{\infty}{\infty}\)</div>
+    <br>
+    <ul>                
+        <li>
+            Svolgere l'esercizio n° 337, 338 a pag. 1730.
+        </li>
+    </ul>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>    
+    <br>
+    <div>
+        Trovare massimi, minimi e flessi della funzione 
+        \[
+            f(x) = \dfrac{1}{12}x^4 - \dfrac{1}{2}x^3 + x^2
+        \]
+    </div>
+
+    
+        
+
+    <br>
+    <br>
+    
+
+    <script src="../../js/hintAndSlide.js"></script>        
+</body>
+
+
+<!--
+    <div class="slide-container grayBorder">
+        <div class="slide1">
+            
+        </div>
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+        <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+    </div> 
+ -->
+
+ <!-- 
+
+
+
+  -->
+
+ 
