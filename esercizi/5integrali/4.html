@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Compiti per casa</h1>
-     
+    
     <br>
     
     <!-- ARGOMENTI SVOLTI -->
@@ -703,6 +703,868 @@
             Svolgere gli eserczi n° 145, 146, 148, 150, 153  a pag. 1960 e seguenti.
         </li>
     </ul>
+
+    <br>
+    <br>
+
+    <button id="hint1-button" onclick="showHint(1)">Svolgimento n° 145</button>
+    <div id="hint1" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento n° 145</b> 
+        <br>
+        <div id="slide-container4" class="slide-container grayBorder">
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 5 \left(5x - 2\right)^3 \,dx = 
+                    \]     
+                </div>
+            </div>
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 5 \left(5x - 2\right)^3 \,dx = 
+                    \]     
+                </div>
+                <span class="gray">
+                    Osserviamo la potenza alla \(3\).
+                </span>
+            </div>
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 5 \color{red}{}\left(\color{black}{}5x - 2\color{red}{}\right)^3\color{black}{} \,dx = 
+                    \]     
+                </div>
+                <span class="gray">
+                    Osserviamo la potenza alla \(3\).
+                </span>
+            </div>
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 5 \color{red}{}\left(\color{black}{}5x - 2\color{red}{}\right)^3\color{black}{} \,dx = 
+                    \]     
+                </div>
+                <span class="gray">
+                    Evidenziamo la funzione che viene elevata alla \(3\).
+                </span>
+            </div>
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 5 \left(\color{blue}{}5x - 2\color{black}{}\right)^3 \,dx = 
+                    \]     
+                </div>
+                <span class="gray">
+                    Evidenziamo la funzione che viene elevata alla \(3\).
+                </span>
+            </div>
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 5 \underset{\color{gray}{}f(x)}{\color{gray}{}\underbrace{\color{black}{}\left(\color{blue}{}{5x - 2}\color{black}{}\right)}}^3 \,dx = 
+                    \]     
+                </div>
+                <span class="gray">
+                    Evidenziamo la funzione che viene elevata alla \(3\).
+                </span>
+            </div>
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 5 \underset{\color{gray}{}f(x)}{\color{gray}{}\underbrace{\color{black}{}\left(\color{blue}{}{5x - 2}\color{black}{}\right)}}^3 \,dx = 
+                    \]     
+                </div>
+                <span class="gray">
+                    La derivata di \(\color{blue}{}5x - 2\) è \(\color{red}5\), che vediamo come fattore della funzione integranda.
+                </span>
+            </div>        
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \color{red}{}5\color{black}{} \underset{\color{gray}{}f(x)}{\color{gray}{}\underbrace{\color{black}{}\left(\color{blue}{}{5x - 2}\color{black}{}\right)}}^3 \,dx = 
+                    \]     
+                </div>
+                <span class="gray">
+                    La derivata di \(\color{blue}{}5x - 2\) è \(\color{red}5\), che vediamo come fattore della funzione integranda.
+                </span>
+            </div>
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \underset{\color{gray}{}f'(x)}{\color{gray}{}\underbrace{\color{red}{}5}}\color{black}{} \underset{\color{gray}{}f(x)}{\color{gray}{}\underbrace{\color{black}{}\left(\color{blue}{}{5x - 2}\color{black}{}\right)}}^3 \,dx = 
+                    \]     
+                </div>
+                <span class="gray">
+                    La derivata di \(\color{blue}{}5x - 2\) è \(\color{red}5\), che vediamo come fattore della funzione integranda.
+                </span>
+            </div>
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 5 \,\,\left(5x - 2\right)^3 \,dx = 
+                    \]     
+                </div>
+                <span class="gray">
+                    Applichiamo la regola generalizzata 
+                    <div class="formula">
+                        \[
+                            \int f(x)^{\alpha} \cdot f'(x) \,\,dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
+                        \]
+                    </div>
+                </span>
+            </div>
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \color{gray}{}5\color{black}{} \,\,\left(\color{blue}{}{5x - 2}\color{black}{}\right)^3 \,dx = 
+                    \]     
+                </div>
+                <span class="gray">
+                    Applichiamo la regola generalizzata 
+                    <div class="formula">
+                        \[
+                            \int f(x)^{\alpha} \cdot f'(x) \,\,dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
+                        \]
+                    </div>
+                </span>
+            </div>
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \color{gray}{}5\color{black}{} \,\,\left(\color{blue}{}{5x - 2}\color{black}{}\right)^3 \,dx = \dfrac{\left(\color{blue}{}{5x - 2}\color{black}{}\right)^4}{4} + c
+                    \]     
+                </div>
+                <span class="gray">
+                    Applichiamo la regola generalizzata 
+                    <div class="formula">
+                        \[
+                            \int f(x)^{\alpha} \cdot f'(x) \,\,dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
+                        \]
+                    </div>
+                </span>
+            </div>
+            <div class="slide4">           
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 5 \,\,\left(5x - 2\right)^3 \,dx = \dfrac{\left(5x - 2\right)^4}{4} + c
+                    \]     
+                </div>            
+            </div>
+        </div>        
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button4" onclick="previousSlide(4)">Indietro</button>
+            <button id="nextSlide-button4" onclick="nextSlide(4)">Avanti</button>
+        </div> 
+    </div>
+
+    <br>
+    <br>
+
+    <button id="hint2-button" onclick="showHint(2)">Svolgimento n° 146</button>
+    <div id="hint2" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento n° 146</b> 
+        <br>
+        <div id="slide-container5" class="slide-container grayBorder">
+            <div class="slide5">  
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 4x \,\, \left(2x^2 + 3\right)^6 \,dx = 
+                    \]
+                </div>              
+            </div>
+            <div class="slide5">  
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 4x \,\, \left(\color{blue}{}2x^2 + 3\color{black}{}\right)^6 \,dx = 
+                    \]
+                </div>              
+            </div>
+            <div class="slide5">  
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 4x \,\, \underset{\color{gray}{}f(x)}{\left(\color{blue}{}2x^2 + 3\color{black}{}\right)^6} \,dx = 
+                    \]
+                </div>              
+            </div>
+            <div class="slide5">  
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int {\color{red}{}4x} \,\, \underset{\color{gray}{}f(x)}{\left(\color{blue}{}2x^2 + 3\color{black}{}\right)^6} \,dx = 
+                    \]
+                </div>              
+            </div>
+            <div class="slide5">  
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \underset{{\color{transparent}{}\Big(}\color{gray}{}f'(x)}{\color{red}{}4x} \,\, \underset{\color{gray}{}f(x)}{\left(\color{blue}{}2x^2 + 3\color{black}{}\right)^6} \,dx = 
+                    \]
+                </div>              
+            </div>
+            <div class="slide5">  
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 4x \,\, \left(2x^2 + 3\right)^6 \,dx = 
+                    \]
+                </div>              
+            </div>
+            <div class="slide5">  
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int {\color{gray}{}4x} \,\, \left(\color{blue}{}2x^2 + 3\color{black}{}\right)^6 \,dx = 
+                    \]
+                </div>              
+            </div>
+            <div class="slide5">  
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int {\color{gray}{}4x} \,\, \left(\color{blue}{}2x^2 + 3\color{black}{}\right)^6 \,dx = \dfrac{\left(\color{blue}{}2x^2 + 3\color{black}{}\right)^7}{7} + c
+                    \]
+                </div>              
+            </div>
+            <div class="slide5">  
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 4x \,\, \left(2x^2 + 3\right)^6 \,dx = \dfrac{\left(2x^2 + 3\right)^7}{7} + c
+                    \]
+                </div>              
+            </div>
+        </div>        
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button5" onclick="previousSlide(5)">Indietro</button>
+            <button id="nextSlide-button5" onclick="nextSlide(5)">Avanti</button>
+        </div> 
+    </div>
+
+    <br>
+    <br>
+
+    <button id="hint3-button" onclick="showHint(3)">Svolgimento n° 148</button>
+    <div id="hint3" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento n° 148</b> 
+        <br>
+        <div id="slide-container6" class="slide-container grayBorder">
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 15 \,\, \sqrt{6 - 5x} \, dx =
+                    \]
+                </div>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 15 \,\, \sqrt{\color{blue}{}6 - 5x} \, dx =
+                    \]
+                </div>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 15 \,\, \sqrt{\color{blue}{}6 - 5x} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,6 - 5x\,\) è \(\,-5\). 
+                    <br>
+                    Tuttavia il termine moltiplicato alla radice non è \(\,-5\), ma \(\,15\).
+                </span>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int 15 \,\, \sqrt{\color{blue}{}6 - 5x} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,6 - 5x\,\) è \(\,-5\). 
+                    <br>
+                    Tuttavia il termine moltiplicato alla radice non è \(\,-5\), ma \(\,15\).
+                    <br>
+                    <br>
+                    Facciamo uscire \(15\) dal segno di integrale.
+                </span>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        15 \,\, \int \sqrt{\color{blue}{}6 - 5x} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,6 - 5x\,\) è \(\,-5\). 
+                    <br>
+                    Tuttavia il termine moltiplicato alla radice non è \(\,-5\), ma \(\,15\).
+                    <br>
+                    <br>
+                    Facciamo uscire \(15\) dal segno di integrale.
+                </span>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        15 \,\, \int \sqrt{\color{blue}{}6 - 5x} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,6 - 5x\,\) è \(\,-5\). 
+                    <br>
+                    Tuttavia il termine moltiplicato alla radice non è \(\,-5\), ma \(\,15\).
+                    <br>
+                    <br>
+                    Facciamo uscire \(15\) dal segno di integrale.
+                    <br>
+                    <br>
+                    Moltiplichiamo e dividiamo la funzione integranda per il \(-5\).
+                </span>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        15 \,\, \int \dfrac{\color{red}{}-5}{\color{red}{}-5}\sqrt{\color{blue}{}6 - 5x} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,6 - 5x\,\) è \(\,-5\). 
+                    <br>
+                    Tuttavia il termine moltiplicato alla radice non è \(\,-5\), ma \(\,15\).
+                    <br>
+                    <br>
+                    Facciamo uscire \(15\) dal segno di integrale.
+                    <br>
+                    <br>
+                    Moltiplichiamo e dividiamo la funzione integranda per il \(-5\).
+                </span>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{15}{\color{red}{}-5} \,\, \int \dfrac{\color{red}{}-5}{1} \sqrt{\color{blue}{}6 - 5x} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,6 - 5x\,\) è \(\,-5\). 
+                    <br>
+                    Tuttavia il termine moltiplicato alla radice non è \(\,-5\), ma \(\,15\).
+                    <br>
+                    <br>
+                    Facciamo uscire \(15\) dal segno di integrale.
+                    <br>
+                    <br>
+                    Moltiplichiamo e dividiamo la funzione integranda per il \(-5\).
+                </span>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -3 \,\, \int {\color{red}{}-5} \,\,\sqrt{\color{blue}{}6 - 5x} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,6 - 5x\,\) è \(\,-5\). 
+                    <br>
+                    Tuttavia il termine moltiplicato alla radice non è \(\,-5\), ma \(\,15\).
+                    <br>
+                    <br>
+                    Facciamo uscire \(15\) dal segno di integrale.
+                    <br>
+                    <br>
+                    Moltiplichiamo e dividiamo la funzione integranda per il \(-5\).
+                </span>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -3 \,\, \int {\color{red}{}-5} \,\,\left(\color{blue}{}6 - 5x\right)^\frac{1}{2} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,6 - 5x\,\) è \(\,-5\). 
+                    <br>
+                    Tuttavia il termine moltiplicato alla radice non è \(\,-5\), ma \(\,15\).
+                    <br>
+                    <br>
+                    Facciamo uscire \(15\) dal segno di integrale.
+                    <br>
+                    <br>
+                    Moltiplichiamo e dividiamo la funzione integranda per il \(-5\).       
+                </span>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -3 \,\, \int {\color{red}{}-5} \,\,\left(\color{blue}{}6 - 5x\right)^\frac{1}{2} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    Abbiamo riscritto l'integrale in modo da osservare la forma 
+                    \[
+                        \int \, {\color{blue}{}f(x)}^\alpha \, {\color{red}{}f'(x)} dx 
+                    \]
+                </span>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -3 \,\, \int -5 \,\,\left(6 - 5x\right)^\frac{1}{2} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    Applichiamo la regola 
+                    \[
+                        \int \, f(x)^\alpha \, f'(x) dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1}
+                    \]
+                </span>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -3 \,\, \int {\color{gray}{}-5} \,\,\left({\color{blue}{}6 - 5x}\right)^\frac{1}{2} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    Applichiamo la regola 
+                    \[
+                        \int \, f(x)^\alpha \, f'(x) dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1}
+                    \]
+                </span>
+            </div>        
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -3\,\,\dfrac{\left({\color{blue}{}6 - 5x}\right)^{\frac{1}{2} + 1}}{\frac{1}{2} + 1} + c
+                    \]
+                </div>
+                <span class="gray">
+                    Applichiamo la regola 
+                    \[
+                        \int \, f(x)^\alpha \, f'(x) dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1}
+                    \]
+                </span>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -3\,\,\dfrac{\left(6 - 5x\right)^{\frac{3}{2}}}{\frac{3}{2}} + c
+                    \]
+                </div>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -3\,\,\dfrac{\left(6 - 5x\right)^{\frac{3}{2}}}{\frac{\color{red}{}3}{\color{blue}{}2}} + c
+                    \]
+                </div>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -3\,\,\frac{\color{blue}{}2}{\color{red}{}3}\,\,\left(6 - 5x\right)^{\frac{3}{2}} + c
+                    \]
+                </div>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\cancel{3}\,\,\frac{2}{\cancel{3}}\,\,\left(6 - 5x\right)^{\frac{3}{2}} + c
+                    \]
+                </div>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -2\,\,\left(6 - 5x\right)^{\frac{3}{2}} + c
+                    \]
+                </div>
+            </div>
+            <div class="slide6">                
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -2\,\,\sqrt{(6 - 5x)^3} + c
+                    \]
+                </div>
+            </div>
+        </div>        
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button6" onclick="previousSlide(6)">Indietro</button>
+            <button id="nextSlide-button6" onclick="nextSlide(6)">Avanti</button>
+        </div> 
+        
+    </div>
+
+    <br>
+    <br>
+
+    <button id="hint4-button" onclick="showHint(4)">Svolgimento n° 150</button>
+    <div id="hint4" class="hint" style="display: none;">    
+        <b class="gray">Svolgimento n° 150</b> 
+        <br>
+        <div id="slide-container7" class="slide-container grayBorder">
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, \dfrac{x}{\sqrt{1 -x^2}} \, dx =
+                    \]
+                </div>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, \dfrac{x}{\color{red}{}\sqrt{\color{black}{}1 -x^2}} \, dx =
+                    \]
+                </div>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, \dfrac{x}{(1 -x^2)^{\color{red}{}\frac{1}{2}}} \, dx =
+                    \]
+                </div>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, x\,\,(1 -x^2)^{\color{red}{}-\frac{1}{2}} \, dx =
+                    \]
+                </div>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, x\,\,({\color{blue}{}1 -x^2})^{-\frac{1}{2}} \, dx =
+                    \]
+                </div>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, x\,\,({\color{blue}{}1 -x^2})^{-\frac{1}{2}} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,1 -x^2\,\) è \(\,-2x\,\), ma il termine che moltiplica la potenza è solo \(x\).
+                </span>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, x\,\,({\color{blue}{}1 -x^2})^{-\frac{1}{2}} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,1 -x^2\,\) è \(\,-2x\,\), ma il termine che moltiplica la potenza è solo \(x\).
+                    <br>
+                    <br>
+                    Moltiplichiamo e dividiamo la funzione integranda per \(-2\).
+                </span>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, \dfrac{\color{red}{}-2}{\color{red}{}-2}\,\,x\,\,({\color{blue}{}1 -x^2})^{-\frac{1}{2}} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,1 -x^2\,\) è \(\,-2x\,\), ma il termine che moltiplica la potenza è solo \(x\).
+                    <br>
+                    <br>
+                    Moltiplichiamo e dividiamo la funzione integranda per \(-2\).
+                </span>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{{\color{red}{}-2}} \,\, \int \, {\color{red}{}-2}\,\,x\,\,({\color{blue}{}1 -x^2})^{-\frac{1}{2}} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,1 -x^2\,\) è \(\,-2x\,\), ma il termine che moltiplica la potenza è solo \(x\).
+                    <br>
+                    <br>
+                    Moltiplichiamo e dividiamo la funzione integranda per \(-2\).
+                </span>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{2} \,\, \int \, {\color{red}{}-2x}\,\,({\color{blue}{}1 -x^2})^{-\frac{1}{2}} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,1 -x^2\,\) è \(\,-2x\,\), ma il termine che moltiplica la potenza è solo \(x\).
+                    <br>
+                    <br>
+                    Abbiamo riscritto l'integrale in modo da osservare la forma 
+                    \[
+                        \int \, {\color{blue}{}f(x)}^{\alpha} {\color{red}{}f'(x)}
+                    \]
+                </span>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{2} \,\, \int \, -2x\,\,(1 -x^2)^{-\frac{1}{2}} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    Applichiamo la formula
+                    \[
+                        \int f(x)^{\alpha} f'(x) \, dx = \dfrac{f(x)^{\alpha} + 1}{\alpha + 1} + c
+                    \]
+                </span>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{2} \,\, \int \, {\color{gray}{}-2x}\,\,({\color{blue}{}1 -x^2})^{-\frac{1}{2}} \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    Applichiamo la formula
+                    \[
+                        \int f(x)^{\alpha} f'(x) \, dx = \dfrac{f(x)^{\alpha} + 1}{\alpha + 1} + c
+                    \]
+                </span>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{2} \,\, \dfrac{({\color{blue}{}1 -x^2})^{-\frac{1}{2} + 1}}{{-\frac{1}{2} + 1}} =
+                    \]
+                </div>
+                <span class="gray">
+                    Applichiamo la formula
+                    \[
+                        \int f(x)^{\alpha} f'(x) \, dx = \dfrac{f(x)^{\alpha} + 1}{\alpha + 1} + c
+                    \]
+                </span>
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{2} \,\, \dfrac{(1 -x^2)^{\frac{1}{2}}}{\frac{1}{2}} + c =
+                    \]
+                </div>            
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{2} \,\, \dfrac{(1 -x^2)^{\frac{1}{2}}}{\frac{\color{red}{}1}{\color{blue}{}2}} + c =
+                    \]
+                </div>            
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{2} \,\,\frac{\color{blue}{}2}{\color{red}{}1} \,\, (1 -x^2)^{\frac{1}{2}} + c =
+                    \]
+                </div>            
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{\cancel{2}} \,\,\frac{\cancel{2}}{1} \,\, (1 -x^2)^{\frac{1}{2}} + c =
+                    \]
+                </div>            
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\,\, (1 -x^2)^{\frac{1}{2}} + c =
+                    \]
+                </div>            
+            </div>
+            <div class="slide7">            
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\,\, \sqrt{1 -x^2} + c =
+                    \]
+                </div>            
+            </div>
+            
+        </div>        
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button7" onclick="previousSlide(7)">Indietro</button>
+            <button id="nextSlide-button7" onclick="nextSlide(7)">Avanti</button>
+        </div> 
+    </div>
+
+    <br>
+    <br>
+
+    <button id="hint5-button" onclick="showHint(5)">Svolgimento n° 153</button>
+    <div id="hint5" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento n° 153</b> 
+        <br>
+        <div id="slide-container8" class="slide-container grayBorder">
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, e^{2x} \,\, \sqrt{5 + e^{2x}} \,\, dx = 
+                    \]
+                </div>
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, e^{2x} \,\, \sqrt{\color{blue}{5 + e^{2x}}} \,\, dx = 
+                    \]
+                </div>
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, e^{2x} \,\, \sqrt{\color{blue}{5 + e^{2x}}} \,\, dx = 
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,5 + e^{2x}\,\) è \(\,\,2\,e^{2x}\,\)
+                </span>
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \, e^{2x} \,\, \sqrt{\color{blue}{5 + e^{2x}}} \,\, dx = 
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,5 + e^{2x}\,\) è \(\,\,2\,e^{2x}\,\)
+                    <br>
+                    <br>
+                    Moltiplichiamo e dividiamo la funzione integranda per \(2\)
+                </span>
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \,  \dfrac{\color{red}{}2}{\color{red}{}2} \, e^{2x} \,\, \sqrt{\color{blue}{5 + e^{2x}}} \,\, dx = 
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,5 + e^{2x}\,\) è \(\,\,2\,e^{2x}\,\)
+                    <br>
+                    <br>
+                    Moltiplichiamo e dividiamo la funzione integranda per \(2\)
+                </span>
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{\color{red}{}2} \int \,  {\color{red}{}2} \, e^{2x} \,\, \sqrt{\color{blue}{5 + e^{2x}}} \,\, dx = 
+                    \]
+                </div>
+                <span class="gray">
+                    La derivata di \(\,5 + e^{2x}\,\) è \(\,\,2\,e^{2x}\,\)
+                    <br>
+                    <br>
+                    Moltiplichiamo e dividiamo la funzione integranda per \(2\)
+                </span>
+            </div>        
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{2} \int \,  2e^{2x} \,\, \left(5 + e^{2x}\right)^{\frac{1}{2}} \,\, dx = 
+                    \]
+                </div>
+                <span class="gray">
+                    Abbiamo riscritto l'integrale in modo da osservare la forma
+                    \[
+                        \int \, {\color{blue}{}f(x)}^{\alpha} {\color{red}{}f'(x)} \, dx 
+                    \]
+                </span>
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{2} \int \,  {2e^{2x}} \,\, \left({5 + e^{2x}}\right)^{\frac{1}{2}} \,\, dx = 
+                    \]
+                </div>
+                <span class="gray">
+                    Applichiamo la regola
+                    \[
+                        \int \, f(x)^{\alpha} f'(x) \, dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1} + c
+                    \]
+                </span>
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{2} \int \,  {\color{gray}{}2e^{2x}} \,\, \left({\color{blue}{}5 + e^{2x}}\right)^{\frac{1}{2}} \,\, dx = 
+                    \]
+                </div>
+                <span class="gray">
+                    Applichiamo la regola
+                    \[
+                        \int \, f(x)^{\alpha} f'(x) \, dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1} + c
+                    \]
+                </span>
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{2} \,\, \dfrac{\left({\color{blue}{}5 + e^{2x}}\right)^{\frac{1}{2} + 1}}{\frac{1}{2} + 1} + c = 
+                    \]
+                </div>+ c
+                <span class="gray">
+                    Applichiamo la regola
+                    \[
+                        \int \, f(x)^{\alpha} f'(x) \, dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1} + c
+                    \]
+                </span>
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{2} \,\, \dfrac{\left(5 + e^{2x}\right)^{\frac{3}{2}}}{\frac{3}{2}} + c = 
+                    \]
+                </div>            
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{2} \,\, \dfrac{\left(5 + e^{2x}\right)^{\frac{3}{2}}}{\frac{\color{red}{}3}{\color{blue}{}2}} + c = 
+                    \]
+                </div>            
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{2} \,\, \dfrac{\color{blue}{}2}{\color{red}{}3} \,\, \left(5 + e^{2x}\right)^{\frac{3}{2}} + c = 
+                    \]
+                </div>            
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{\cancel{2}} \,\, \dfrac{\cancel{2}}{3} \,\, \left(5 + e^{2x}\right)^{\frac{3}{2}} + c = 
+                    \]
+                </div>            
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{3}  \,\, \left(5 + e^{2x}\right)^{\frac{3}{2}} + c = 
+                    \]
+                </div>            
+            </div>
+            <div class="slide8">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{1}{3}  \,\, \sqrt{\left(5 + e^{2x}\right)^{3}} + c 
+                    \]
+                </div>            
+            </div>
+            
+        </div>   
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button8" onclick="previousSlide(8)">Indietro</button>
+            <button id="nextSlide-button8" onclick="nextSlide(8)">Avanti</button>
+        </div> 
+    </div>
+
+    <br>
+    <br>
+
 
     <br>
     <br>
