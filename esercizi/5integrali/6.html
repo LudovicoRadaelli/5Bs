@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>    
+
+    <h3 class="yellow">Integrali fondamentali</h3>
+    <div class="esempi-container" style="max-height: 40vh; overflow-y: scroll;">                    
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int f(x)^{\alpha} \cdot f'(x) \,\,dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
+                \]
+            </div>                                   
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int \dfrac{f'(x)}{f(x)} \,\, dx = ln\left(\left|f(x)\right|\right) + c 
+                \]
+            </div>                                               
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int e^{f(x)}\cdot f'(x) \,\, dx = e^{f(x)} + c
+                \]
+            </div>             
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int a^{f(x)} \cdot f'(x) \,\, dx = \dfrac{a^{f(x)}}{ln(a)} + c
+                \]
+            </div>                                   
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int sin(f(x)) \cdot f'(x) \,\, dx = -cos(f(x)) + c
+                \]
+            </div>                                   
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int cos(f(x)) \cdot f'(x) \,\, dx = sin(f(x)) + c
+                \]
+            </div>                                   
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int \dfrac{f'(x)}{cos^2(f(x))} \,\, dx = tan(f(x)) + c
+                \]
+            </div>                                   
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int \dfrac{f'(x)}{sin^2(f(x))} \,\, dx = -cotan(f(x)) + c
+                \]
+            </div>                                    
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int \dfrac{f'(x)}{\sqrt{1 -f(x)^2}} \,\, dx = arcsin(f(x)) + c
+                \]
+            </div>                                    
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int \dfrac{f'(x)}{1 + f(x)^2} \,\, dx = arctan(f(x)) + c
+                \]
+            </div>            
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <h3 class="yellow">Regole di integrazione</h3>
+    <div class="esempi-container" style="max-height: 40vh; overflow-y: scroll;">
+        <b>Linearità dell'integrale - 1</b>
+        <br>
+        <div class="formula" style="width: fit-content;">
+            \[
+                \int \big[f(x) + g(x)\big] \,\,dx = \int f(x) \,\,dx + \int g(x) \,\,dx 
+            \]
+            <span class="gray">
+                &Eacute; possibile distribuire l'integrale su una somma di funzioni.
+            </span>
+        </div>
+        
+
+        <b>Linearità dell'integrale - 2</b>
+        <br>
+        <div class="formula" style="width: fit-content;">
+            \[
+                \int \big[a \,f(x) \big] \,\,dx = a \, \int f(x) \,\,dx  
+            \]
+            <span class="gray">
+                &Eacute; possibile portare le costanti moltiplicative fuori dal segno di integrazione.
+            </span>
+        </div>
+
+        <b>Integrazione per parti</b>
+        <br>
+        <div class="formula" style="font-size: 1rem;">
+            \[
+                \int \, f'(x) \cdot g(x) \,\, dx = f(x) \cdot g(x) - \int \, f(x) \cdot g'(x) \,\,dx
+            \]
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        Svolgere gli esercizi n° 552, 553, 558, 561, 575, 576, 577  a pag. 1981    
+        <br>
+        <br>
+        <div class="gray">
+            Per ciascuna delle scorse lezioni vi ho assegnato esercizi appartenenti 
+            ad un'unica tipologia. Qui trovate un fritto misto. L'obiettivo è che riusciate 
+            ad individuare da voi la tecnica adeguata da applicare.
+            &Eacute; <u>fisiologico</u> sbagliare: quando vi rendete conto di aver intrapreso una strada 
+            infruttuosa fate un passo indietro ed andate avanti con un altro tentativo.
+        </div>
+        <br>
+        <br>
+        <img src="img/integralByPartsMeme.jpg" alt="">
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Svolgere gli esercizi n° 731 a pag. 1657.
+
+        <br>
+        <br>
+
+        ⚠️⚠️
+        <br>
+        <span class="gray">
+            Questo è un esercizio svolto qualche mese. Vi consiglio di risvolgerlo (senza consultare la 
+            soluzione). &Eacute; fondamentale che teniate "in fresco" tutto il lavoro fatto sulle derivate.
+        </span>
+    </div>    
+
+    <br>
+    <br>
+    <div class="gray">
+        <b>Svolgimento</b>
+        <br>
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/288DjsOAjKk?si=OlLY-6RcFbOxbCIy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/ucWXkXUDlxs?si=Tuwt1ykWv_k4RkGv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+    <br>
+    <br>
+    
+
+    
+
+
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
