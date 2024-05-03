@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>    
+    
+    <h3 class="yellow">Integrazione per sostituzione</h3>
+    <div class="esempi-container">
+        <b class="gray">Disclaimer</b>
+        <br>
+        <div class="gray">
+            In queste dispense affrontiamo l'integrazione per parti dal punto di vista procedurale. 
+            Sostazialmente qua trovate il <i>come</i> si fa, non il <i>perché</i> questo metodo sia fondato, 
+            problema al quale verrà dato spazio nelle prossime lezioni.
+        </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        Consideriamo l'integrale 
+        \[
+            \int \, \dfrac{x}{\sqrt{x -1}} \, dx 
+        \]
+        Etichettiamo la quantità \(\sqrt{x - 1}\) con la lettera \(t\)
+        \[
+            \sqrt{x - 1} = t
+        \]
+        Isoliamo la \(x\) in modo da esprimerla rispetto alla variabile \(t\)
+        \[
+            \begin{align*} 
+                \sqrt{x - 1} &= t
+                \\\\
+                \left(\sqrt{x - 1}\right)^{\color{red}{}2} &= t^{\color{red}{}2}
+                \\\\
+                x - 1 &= t^{2}
+                \\\\
+                x &= t^{2} + 1
+            \end{align*}
+        \]
+        Attraverso le due uguaglianze
+        \[
+            t = \sqrt{x - 1}  \qquad x = t^{2} + 1
+        \]
+        possiamo riscrivere l'integrale  come segue
+        <br>
+        <br>
+        <div id="slide-container1" class="slide-container grayBorder">
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{x}{\sqrt{x -1}} \, dx =
+                    \]
+                </div>                
+            </div>                   
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{x}{\sqrt{x -1}} \, dx =
+                    \]
+                </div> 
+                <span class="gray">
+                    \[
+                        \sqrt{x - 1} = t \qquad x = t^{2} + 1
+                    \]
+                </span>      
+            </div>           
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{x}{\color{red}{}\sqrt{x -1}} \, dx =
+                    \]
+                </div> 
+                <span class="gray">
+                    \[
+                        \sqrt{x - 1} = t  \qquad x = t^{2} + 1
+                    \]
+                </span>      
+            </div>                   
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{x}{\sqrt{x -1}} \, dx =
+                    \]
+                </div> 
+                <span class="gray">
+                    \[
+                        {\color{red}{}\sqrt{x - 1}} = t  \qquad x = t^{2} + 1
+                    \]
+                </span>      
+            </div>                   
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{x}{\sqrt{x -1}} \, dx =
+                    \]
+                </div> 
+                <span class="gray">
+                    \[
+                        \sqrt{x - 1} = {\color{red}{}t}  \qquad x = t^{2} + 1
+                    \]
+                </span>      
+            </div>           
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{x}{\color{red}{}t} \, dx =
+                    \]
+                </div> 
+                <span class="gray">
+                    \[
+                        \sqrt{x - 1} = t  \qquad x = t^{2} + 1
+                    \]
+                </span>      
+            </div>      
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{\color{red}{}x}{t} \, dx =
+                    \]
+                </div> 
+                <span class="gray">
+                    \[
+                        \sqrt{x - 1} = t  \qquad x = t^{2} + 1
+                    \]
+                </span>      
+            </div> 
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{x}{t} \, dx =
+                    \]
+                </div> 
+                <span class="gray">
+                    \[
+                        \sqrt{x - 1} = t  \qquad {\color{red}{}x} = t^{2} + 1
+                    \]
+                </span>      
+            </div>      
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{x}{t} \, dx =
+                    \]
+                </div> 
+                <span class="gray">
+                    \[
+                        \sqrt{x - 1} = t  \qquad x = {\color{red}{}t^{2} + 1}
+                    \]
+                </span>      
+            </div>    
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{\color{red}{}t^2 + 1}{t} \, dx =
+                    \]
+                </div> 
+                <span class="gray">
+                    \[
+                        \sqrt{x - 1} = t  \qquad x = t^{2} + 1
+                    \]
+                </span>      
+            </div>                   
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{t^2 + 1}{t} \, dx =
+                    \]
+                </div>                 
+            </div>      
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div>	
+        <br>
+        <br>
+        L'ultimo passo per concludere la sostituzione è scrivere il \(dx\) in termini del \(dt\).
+        <br>
+        Vediamo il procedimento, rimandando la sua spiegazione del senso di questi passaggi alle prossime 
+        lezioni.
+        <br>
+        <br>
+        <div id="slide-container2" class="slide-container grayBorder">
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        x = t^2 + 1
+                    \]
+                </div>                
+                <span class="gray">
+                    Partiamo dall'uguaglianza ricavata precedentemente.
+                </span>
+            </div>     
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        x = t^2 + 1
+                    \]
+                </div>                
+                <span class="gray">
+                    Applichiamo \(d\) ad entrambi i membri.
+                </span>
+            </div>                                  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \begin{align*}
+                            {\color{red}{}d}x &= {\color{red}{}d\big(}t^2 + 1{\color{red}{}\big)}
+                        \end{align*}
+                    \]
+                </div>                
+                <span class="gray">
+                    Applichiamo \(d\) ad entrambi i membri.
+                </span>
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \begin{align*}
+                            {\color{red}{}d}x &= {\color{red}{}d\big(}t^2 + 1{\color{red}{}\big)}
+                        \end{align*}
+                    \]
+                </div>                
+                <span class="gray">
+                    Applichiamo la linearità.
+                </span>
+            </div>      
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \begin{align*}
+                            dx &= {\color{red}{}d}\big(t^2 + 1\big)
+                        \end{align*}
+                    \]
+                </div>                
+                <span class="gray">
+                    Applichiamo la linearità.
+                </span>
+            </div>     
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \begin{align*}
+                            dx &= {\color{red}{}d}(t^2) + {\color{red}{}d}(1)
+                        \end{align*}
+                    \]
+                </div>                
+                <span class="gray">
+                    Applichiamo la linearità.
+                </span>
+            </div>                                  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \begin{align*}
+                            dx &= {d}(t^2) + {\color{red}{}d}(1)
+                        \end{align*}
+                    \]
+                </div>                
+                <span class="gray">
+                    Applichiamo la linearità.
+                </span>
+            </div>                                  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \begin{align*}
+                            dx &= {d}(t^2) + 0
+                        \end{align*}
+                    \]
+                </div>                
+                <span class="gray">
+                    Applichiamo la linearità.
+                </span>
+            </div>                          
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \begin{align*}
+                            dx &= {d}(t^2) 
+                        \end{align*}
+                    \]
+                </div>                
+                <span class="gray">
+                    Applichiamo la linearità.
+                </span>
+            </div>                       
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \begin{align*}
+                            dx &= {d}(t^2) 
+                        \end{align*}
+                    \]
+                </div>                
+                <span class="gray">
+                    Effettuiamo l'operazione \(d(t^2)\) come se fosse la derivata di una funzione composta 
+                    con funzione più interna \(t\).
+                </span>
+            </div>                                 
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \begin{align*}
+                            dx &= 2t \,\, dt
+                        \end{align*}
+                    \]
+                </div>                
+                <span class="gray">
+                    Effettuiamo l'operazione \(d(t^2)\) come se fosse la derivata di una funzione composta 
+                    con funzione più interna \(t\).
+                </span>
+            </div>                                  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \begin{align*}
+                            dx &= 2t \,\, dt
+                        \end{align*}
+                    \]
+                </div>                                
+            </div>                       
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button2" onclick="previousSlide(2)">Indietro</button>
+            <button id="nextSlide-button2" onclick="nextSlide(2)">Avanti</button>
+        </div>	
+        <br>
+        <br>
+        Mettiamo in evidenza di seguito l'analogia formale tra l'ultima delle operazioni appena svolte e la derivazione di una funzione 
+        composta.
+        <br>
+        <br>
+        <div id="slide-container3" class="slide-container grayBorder">
+            <div class="slide3">                
+                \[
+                    d(t^2) = 2{t} \,\, d{t}
+                \]
+                \[
+                    \Big(f(x)^2\Big)' = 2 f(x) \,\, f'(x)
+                \]                 
+            </div>
+            <div class="slide3">                
+                \[
+                    d(t^2) = 2{t} \,\, d{t}
+                \]
+                \[
+                    \Big(f(x)^2\Big)' = 2 f(x) \,\, f'(x)
+                \] 
+                <span class="gray">
+                    Il \(d\) svolge un ruolo analogo alla derivazione.
+                </span>
+            </div>
+            <div class="slide3">                
+                \[
+                    {\color{red}{}d}(t^2) = 2{t} \,\, {\color{red}{}d}{t}
+                \]
+                \[
+                    \Big({\color{red}{}}f(x)^2\Big){\color{red}{}'} = 2 f(x) \,\, f{\color{red}{}'}(x)
+                \] 
+                <span class="gray">
+                    Il \(d\) svolge un ruolo analogo alla derivazione.
+                </span>
+            </div>
+            <div class="slide3">                
+                \[
+                    d(t^2) = 2{t} \,\, d{t}
+                \]
+                \[
+                    \Big(f(x)^2\Big)' = 2 f(x) \,\, f'(x)
+                \]    
+                <span class="gray">
+                    La variabile \(t\) svolge un ruolo analogo a quello della funzione più interna.
+                </span>
+            </div>
+            <div class="slide3">                
+                \[
+                    d({\color{blue}{}t}^2) = 2{{\color{blue}{}t}} \,\, d{{\color{blue}{}t}}
+                \]
+                \[
+                    \Big({\color{blue}{}f(x)}^2\Big)' = 2 {\color{blue}{}f(x)} \,\, {\color{blue}{}f^{\color{black}{}'}(x)}
+                \]    
+                <span class="gray">
+                    La variabile \(t\) svolge un ruolo analogo a quello della funzione più interna.
+                </span>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button3" onclick="previousSlide(3)">Indietro</button>
+            <button id="nextSlide-button3" onclick="nextSlide(3)">Avanti</button>
+        </div>	
+        
+        <br>
+        <br>
+
+        Ora che abbiamo ricavato l'uguaglianza 
+        \[
+            d(t^2) = 2{t} \,\, d{t}
+        \]
+        possiamo ultimare la sostituzione nell'integrale
+        
+        <div id="slide-container4" class="slide-container grayBorder">
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{t^2 + 1}{t} \, dx =
+                    \]
+                </div>                                
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{t^2 + 1}{t} \, dx =
+                    \]
+                </div>                
+                <span class="gray">
+                    \[
+                        dx = 2{t} \,\, d{t}
+                    \]
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{t^2 + 1}{t} \, {\color{red}{}dx} =
+                    \]
+                </div>                
+                <span class="gray">
+                    \[
+                        dx = 2{t} \,\, d{t}
+                    \]
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{t^2 + 1}{t} \, dx =
+                    \]
+                </div>                
+                <span class="gray">
+                    \[
+                        {\color{red}{}dx} = 2{t} \,\, d{t}
+                    \]
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{t^2 + 1}{t} \, dx =
+                    \]
+                </div>                
+                <span class="gray">
+                    \[
+                        dx = {\color{red}{}2{t} \,\, d{t}}
+                    \]
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{t^2 + 1}{t} \, {\color{red}{}2t \,\, dt} =
+                    \]
+                </div>                
+                <span class="gray">
+                    \[
+                        dx = 2{t} \,\, d{t}
+                    \]
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{t^2 + 1}{t} \, 2t \,\, dt =
+                    \]
+                </div>                                
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{t^2 + 1}{t} \, 2t \,\, dt =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Svolgiamo l'integrale.
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, \dfrac{t^2 + 1}{\cancel{t}} \, 2\cancel{t} \,\, dt =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Svolgiamo l'integrale.
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \, (t^2 + 1) \, 2 \,\, dt =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Svolgiamo l'integrale.
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        2 \, \int \, (t^2 + 1) \,\, dt =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Svolgiamo l'integrale.
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        2 \, \left(\dfrac{t^3}{3} + t\right) + c =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Svolgiamo l'integrale.
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        2 \, \left(\dfrac{t^3}{3} + t\right) + c =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Ricordiamo che \(t\) era l'etichetta che avevamo usato per inidcare 
+                    \(\sqrt{x - 1}\), ovvero
+                    \[
+                        t = \sqrt{x -1}
+                    \]
+                    Sostituiamola nuovamente nel risultato.
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        2 \, \left(\dfrac{{\color{red}{}t}^3}{3} + {\color{red}{}t}\right) + c =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Ricordiamo che \(t\) era l'etichetta che avevamo usato per inidcare 
+                    \(\sqrt{x - 1}\), ovvero
+                    \[
+                        t = \sqrt{x -1}
+                    \]
+                    Sostituiamola nuovamente nel risultato.
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        2 \, \left(\dfrac{{t}^3}{3} + {t}\right) + c =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Ricordiamo che \(t\) era l'etichetta che avevamo usato per inidcare 
+                    \(\sqrt{x - 1}\), ovvero
+                    \[
+                        {\color{red}{}t} = \sqrt{x -1}
+                    \]
+                    Sostituiamola nuovamente nel risultato.
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        2 \, \left(\dfrac{{t}^3}{3} + {t}\right) + c =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Ricordiamo che \(t\) era l'etichetta che avevamo usato per inidcare 
+                    \(\sqrt{x - 1}\), ovvero
+                    \[
+                        t = {\color{red}{}\sqrt{x -1}}
+                    \]
+                    Sostituiamola nuovamente nel risultato.
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        2 \, \left(\dfrac{({\color{red}{}\sqrt{x -1}})^3}{3} + {\color{red}{}\sqrt{x -1}}\right) + c =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Ricordiamo che \(t\) era l'etichetta che avevamo usato per inidcare 
+                    \(\sqrt{x - 1}\), ovvero
+                    \[
+                        t = \sqrt{x -1}
+                    \]
+                    Sostituiamola nuovamente nel risultato.
+                </span>
+            </div>  
+            <div class="slide4">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        2 \, \left(\dfrac{(\sqrt{x -1})^3}{3} + {\sqrt{x -1}}\right) + c    
+                    \]
+                </div>                                                
+            </div>  
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button4" onclick="previousSlide(4)">Indietro</button>
+            <button id="nextSlide-button4" onclick="nextSlide(4)">Avanti</button>
+        </div>	
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <ul>
+        <li>
+            Studiare le dispense disponibili ad inizio pagina ed il paragrafo <b>Integrazione per sostituzione</b>
+            a pagg. 1938 e 1939.
+        </li>
+        <br>
+        <li>
+            Studiare l'esercizio  guida n° 346 a pag. 1968.
+        </li>
+        <br>
+        <li>
+            Svolgere gli esercizi n° 347, 348, 349, 350, 351  a pag. 1968            
+        </li>
+
+        
+    </ul>    
+
+    <br>
+    <br>
+    
+
+    
+
+
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
