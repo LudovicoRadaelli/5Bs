@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+
+    <h3 class="yellow">Alcune conseguenze delle proprietà dell'integrale definito</h3>
+    <div class="esempi-container">  
+        Consideriamo l'integrale definito
+        \[
+            \int_{3}^{3} \, f(x) \, dx 
+        \]
+        Per definizione esso è l'area sottesa al grafico di \(f\) in corrispondenza dell'intervallo \([3\,,\,\,3]\).
+        <br>
+        Siccome l'intervallo di integrazione ha ampiezza nulla... anche l'integrale vale \(0\)!
+        <br>
+        Immaginiamo ora che 
+        \[
+            \int_{\color{red}{}3}^{\color{blue}{}5} \, f(x) \, dx  = 2
+        \]
+        Ci poniamo la domanda: quanto vale l'integrale con gli estremi invertiti?
+        \[
+            \int_{\color{blue}{}5}^{\color{red}{}3} \, f(x) \, dx \,\, = \,\,?
+        \]
+        Applichiamo la proprietà di additività dell'integrale  rispetto all'intervallo di integrazione alla seguente somma
+        <br>
+        <br>
+        <div class="slide-container grayBorder">
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int_{3}^{5} \, f(x) \, dx + \int_{5}^{3} \, f(x) \, dx =    
+                    \]
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int_{3}^{5} \, f(x) \, dx + \int_{5}^{3} \, f(x) \, dx =    
+                    \]
+                </div>
+                <span class="gray">
+                    \[
+                        \int_{a}^{b} \, f(x) \, dx + \int_{b}^{c} \, f(x) \, dx =    
+                        \int_{a}^{c} \, f(x) \, dx
+                    \]
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int_{3}^{5} \, f(x) \, dx + \int_{5}^{3} \, f(x) \, dx =    
+                    \]
+                </div>
+                <span class="gray">
+                    \[
+                        \int_{\color{red}{}a}^{\color{violet}{}b} \, f(x) \, dx + \int_{\color{violet}{}b}^{\color{blue}{}c} \, f(x) \, dx =    
+                        \int_{\color{red}{}a}^{\color{blue}{}c} \, f(x) \, dx
+                    \]
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int_{\color{red}{}3}^{\color{violet}{}5} \, f(x) \, dx + \int_{\color{violet}{}5}^{\color{blue}{}3} \, f(x) \, dx =    
+                    \]
+                </div>
+                <span class="gray">
+                    \[
+                        \int_{a}^{b} \, f(x) \, dx + \int_{b}^{c} \, f(x) \, dx =    
+                        \int_{a}^{c} \, f(x) \, dx
+                    \]
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int_{\color{red}{}3}^{\color{violet}{}5} \, f(x) \, dx + \int_{\color{violet}{}5}^{\color{blue}{}3} \, f(x) \, dx =   
+                        \int_{\color{red}{}3}^{\color{blue}{}3} \, f(x) \, dx 
+                    \]
+                </div>
+                <span class="gray">
+                    \[
+                        \int_{a}^{b} \, f(x) \, dx + \int_{b}^{c} \, f(x) \, dx =    
+                        \int_{a}^{c} \, f(x) \, dx
+                    \]
+                </span>
+            </div>            
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int_{\color{red}{}3}^{\color{violet}{}5} \, f(x) \, dx + \int_{\color{violet}{}5}^{\color{blue}{}3} \, f(x) \, dx =   
+                        \underset{0}{\underbrace{\int_{\color{red}{}3}^{\color{blue}{}3} \, f(x) \, dx}}
+                    \]
+                </div>
+                <span class="gray">
+                    \[
+                        \int_{a}^{b} \, f(x) \, dx + \int_{b}^{c} \, f(x) \, dx =    
+                        \int_{a}^{c} \, f(x) \, dx
+                    \]
+                </span>
+            </div>            
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int_{\color{red}{}3}^{\color{violet}{}5} \, f(x) \, dx + \int_{\color{violet}{}5}^{\color{blue}{}3} \, f(x) \, dx 
+                        = 0
+                    \]
+                </div>
+                <span class="gray">
+                    \[
+                        \int_{a}^{b} \, f(x) \, dx + \int_{b}^{c} \, f(x) \, dx =    
+                        \int_{a}^{c} \, f(x) \, dx 
+                    \]
+                </span>
+            </div>            
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int_{3}^{5} \, f(x) \, dx + \int_{5}^{3} \, f(x) \, dx 
+                        = 0
+                    \]
+                </div>
+                <span class="gray">
+                    \[
+                        \int_{a}^{b} \, f(x) \, dx + \int_{b}^{c} \, f(x) \, dx =    
+                        \int_{a}^{c} \, f(x) \, dx 
+                    \]
+                </span>
+            </div>     
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int_{5}^{3} \, f(x) \, dx 
+                        = - \int_{3}^{5} \, f(x) \, dx
+                    \]
+                </div>                
+            </div>           
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int_{\color{blue}{}5}^{\color{red}{}3} \, f(x) \, dx 
+                        = - \int_{\color{red}{}3}^{\color{blue}{}5} \, f(x) \, dx
+                    \]
+                </div>                
+            </div>            
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div>         
+
+        <br>
+        <br>
+
+        Morale della favola: vale la seguente regola
+        
+        <div class="grayBackground">
+            \[
+                \int_{\color{red}{}a}^{\color{blue}{}b} \, f(x) \, dx = - \int_{\color{blue}{}b}^{\color{red}{}a} \, f(x) \, dx
+            \]
+            Invertendo gli estremi di integrazione si inverte il segno dell'integrale.
+        </div>
+        
+        
+
+
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <h3 class="green">Esercizio 0</h3>
+    <br>
+    <div>
+        Studiare il paragrafo <b>Proprietà dell'integrale definito</b> pagg. da 2070 a 2008.
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        Svolgere gli esercizi n° 26, 27, 28, 29, 30, 31, 33 a pag. 2035
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <span class="gray" style="font-size: 0.9rem;">(Quesito 10 dell'esame del 2014)</span>
+    <br>
+    <br>
+    <div>
+        Si determinino i valori reali di \(x\) per cui 
+        \[
+            \left(\dfrac{1}{5}\left(x^2 - 10x + 26\right)\right)^{x^2 -6x + 1} = 1
+        \]
+    </div>
+
+    <br>
+    <br>
+
+    <b class="gray">Soluzione</b>
+    <br>
+    <div class="gray">
+        <a class="blue" href="http://www.matematica.it/tomasi/matls/2014/ord/ordques10.pdf">Link soluzione</a> 
+    </div>
+    
+
+
+    <br>
+    <br>
+    
+
+    
+
+    
+
+
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
