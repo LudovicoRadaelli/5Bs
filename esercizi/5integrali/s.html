@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <!-- <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>  -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>    
+
+    <h1>Seconda prova</h1>
+    
+    <br>
+    <br>
+
+    La sequenza di Fibonacci è una lista infinita di numeri. Ogni numero della lista si ottiene 
+    sommando i <b>due</b> elementi precedenti della lista, a partire dalla coppia
+    \[
+        1\,\,\,\,1
+    \]
+    Di seguito viene mostrato il calcolo dei primi dieci numeri della lista.
+    <br>
+    <br>
+
+    <div class="grayBorder">
+        
+        <div id="slide-container1" class="slide-container grayBorder">
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(\color{red}{}1\,\,\,1\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,\color{red}{}2\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,\color{red}{}1\,\,\,2\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,\color{red}{}3\)
+                </div>
+            </div>            
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,\color{red}{}2\,\,\,3\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,3\,\,\,\color{red}{}5\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,\color{red}{}3\,\,\,5\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,3\,\,\,5\,\,\,\color{red}{}8\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,3\,\,\,\color{red}{}5\,\,\,8\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,3\,\,\,5\,\,\,8\,\,\,\color{red}{}13\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,3\,\,\,5\,\,\,\color{red}{}8\,\,\,13\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,3\,\,\,5\,\,\,8\,\,\,13\,\,\,\color{red}{}21\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,3\,\,\,5\,\,\,8\,\,\,\color{red}{}13\,\,\,21\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,3\,\,\,5\,\,\,8\,\,\,13\,\,\,21\,\,\,\color{red}{}34\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,3\,\,\,5\,\,\,8\,\,\,13\,\,\,\color{red}{}21\,\,\,34\)
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(1\,\,\,1\,\,\,2\,\,\,3\,\,\,5\,\,\,8\,\,\,13\,\,\,21\,\,\,34\,\,\color{red}{}55\)
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div> 
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <b>Prima richiesta</b>
+    <br>
+    <br>
+    Scrivi un file Excel che stampi su una colonna i primi 50 termini della successione di Fibonacci.
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <b>Seconda richiesta</b>
+    <br>
+    <br>
+    Scrivi un file Excel che calcoli il risultato della divisione tra un termine della lista ed il precedente 
+    per i primi 50 termini.     
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <b>Terza richiesta</b>
+    <br>
+    <br>
+    Consideriamo una sequenza simile a quella di Fibonacci determinata dalla seguente regola: 
+    <br>
+    <br>
+    <div class="grayBorder" style="width: 90%; margin: auto;">
+        Ogni numero della lista si ottiene 
+        sommando i <b>tre</b> elementi precedenti della lista, a partire dalla terna
+    \[
+        1\,\,\,\,2\,\,\,\,3
+    \]
+    </div>
+
+    <br>
+    <br>
+
+    Scrivi un file Excel che calcoli i primi 50 termini della lista.
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <b>Quarta richiesta</b>
+    <br>
+    <br>
+    Inventare una regola simile a quella della successione di Fibonacci.
+    Scrivi un file Excel che stampi su una colonna i primi 50 termini della successione inventata.
+
+    
+    
+
+    
+    
+
+    <br>
+    <br>
+
+    
+
+    
+
+    
+    <br>
+    <br>
+    
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
+
+</html>
